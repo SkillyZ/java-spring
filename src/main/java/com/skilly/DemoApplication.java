@@ -2,9 +2,7 @@ package com.skilly;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @SpringBootApplication
 @RestController
@@ -20,9 +18,20 @@ public class DemoApplication {
 		return "Login Page";
 	}
 
+	@GetMapping("login2")
+	public String loginGet2()
+	{
+		return "Login Page2";
+	}
+
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
 	public String loginPost() {
 		return "Login Post Request";
+	}
+
+	@PostMapping(value = "/login2")
+	public String loginPost2() {
+		return "Login Post Request2";
 	}
 
 	public static void main(String[] args) {
