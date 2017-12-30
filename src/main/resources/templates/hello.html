@@ -3,8 +3,18 @@
 <head>
     <title>Getting Started: Serving Web Content</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script src="/js/main.js"></script>
+    <link rel="stylesheet" href="/css/style.css" />
 </head>
 <body>
+        <div id="test">测试css</div>
+        <!--测试参数传递-->
         <p th:text="'Hello, ' + ${name} + '!'" />
+        <!--测试文件上传-->
+        <form method="post" enctype="multipart/form-data">
+            <input type="text" name="title" value="skilly"/>
+            <input type="file" name="avatar"/>
+            <input type="submit"/>
+        </form>
 </body>
 </html>

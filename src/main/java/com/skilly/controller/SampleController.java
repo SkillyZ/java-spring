@@ -3,6 +3,8 @@ package com.skilly.controller;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -14,6 +16,19 @@ public class SampleController {
     @ResponseBody
     String home() {
         return "Hello World!";
+    }
+
+
+    @RequestMapping("/posts/{id}")
+    public String post(@PathVariable("id") int id) {
+        return String.format("post %d", id);
+    }
+
+    @RequestMapping("hello/{name}")
+    public String hello (@PathVariable("name") String name, Model model)
+    {
+        model.addAttribute(model);
+        return "hello";
     }
 
     public static void main(String[] args) throws Exception {

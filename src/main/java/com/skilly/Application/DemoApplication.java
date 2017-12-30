@@ -34,6 +34,16 @@ public class DemoApplication {
 		return "Login Post Request2";
 	}
 
+	@RequestMapping("/users/{username}")
+	public String userProfile(@PathVariable("username") String username) {
+		return String.format("user %s", username);
+	}
+
+	@RequestMapping("/posts/{id}")
+	public String post(@PathVariable("id") int id) {
+		return String.format("post %d", id);
+	}
+
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 	}
