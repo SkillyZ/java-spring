@@ -1,21 +1,44 @@
-package com.skilly.controller;
+package com.skilly.Application;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
 @EnableAutoConfiguration
 public class SampleController {
 
+    @Value("${cupSize}")
+    private String cupSize;
+
+    @Value("${age}")
+    private Integer age;
+
+    @Autowired
+    private GirlProperties girlProperties;
+
+    /**
+     * ResponseBody 按照数值原本返回， 不进行渲染
+     * @return
+     */
     @RequestMapping("/test")
     @ResponseBody
     String home() {
-        return "Hello World!";
+        return "Hello World!" + cupSize + age;
+    }
+
+    @RequestMapping("/hello")
+    @ResponseBody
+    String hello() {
+        return girlProperties.getCupSize() + girlProperties.getAge();
+    }
+
+    @RequestMapping("/")
+    public String greeting1() {
+        return "Hello World222!";
     }
 
 
@@ -24,11 +47,30 @@ public class SampleController {
         return String.format("post %d", id);
     }
 
-    @RequestMapping("hello/{name}")
-    public String hello (@PathVariable("name") String name, Model model)
+    @RequestMapping(value = "/login", method = RequestMethod.GET)
+    public String loginGet() {
+        return "Login Page";
+    }
+
+    @GetMapping("login2")
+    public String loginGet2()
     {
-        model.addAttribute(model);
-        return "hello";
+        return "Login Page2";
+    }
+
+    @RequestMapping(value = "/login", method = RequestMethod.POST)
+    public String loginPost() {
+        return "Login Post Request";
+    }
+
+    @PostMapping(value = "/login2")
+    public String loginPost2() {
+        return "Login Post Request2";
+    }
+
+    @RequestMapping("/users/{username}")
+    public String userProfile(@PathVariable("username") String username) {
+        return String.format("user %s", username);
     }
 
     public static void main(String[] args) throws Exception {
