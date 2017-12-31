@@ -1,7 +1,7 @@
 package com.skilly.Service;
 
-import com.skilly.Application.GirlProperties;
-import com.skilly.Application.Girl;
+import com.skilly.properties.GirlProperties;
+import com.skilly.entity.Girl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

@@ -1,5 +1,6 @@
-package com.skilly.Application;
+package com.skilly.repository;
 
+import com.skilly.entity.Girl;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**

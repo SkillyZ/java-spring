@@ -1,4 +1,4 @@
-package com.skilly.Application;
+package com.skilly.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;

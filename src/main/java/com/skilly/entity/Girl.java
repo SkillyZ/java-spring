@@ -1,4 +1,4 @@
-package com.skilly.Application;
+package com.skilly.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

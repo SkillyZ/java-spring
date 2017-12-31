@@ -1,5 +1,7 @@
-package com.skilly.Application;
+package com.skilly.controller;
 
+import com.skilly.entity.Girl;
+import com.skilly.repository.GirlRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

@@ -1,5 +1,6 @@
-package com.skilly.Application;
+package com.skilly.controller;
 
+import com.skilly.properties.GirlProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
