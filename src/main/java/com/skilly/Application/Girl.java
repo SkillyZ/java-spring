@@ -1,11 +1,13 @@
-package com.skilly.entity;
+package com.skilly.Application;
 
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 /**
  * Created by 1254109699@qq.com on 2018/1/1.
  */
+@Entity
 public class Girl {
 
     @Id
