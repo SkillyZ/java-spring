@@ -4,10 +4,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-@Controller
+@RestController
 @EnableAutoConfiguration
 public class SampleController {
 
@@ -39,6 +38,12 @@ public class SampleController {
     @RequestMapping("/")
     public String greeting1() {
         return "Hello World222!";
+    }
+
+    //传统获取url参数and url美化获取参数
+    @RequestMapping("/say")
+    public String say(@RequestParam(value ="id", required = false, defaultValue = "0") int id) {
+        return String.format("id: %d", id);
     }
 
 

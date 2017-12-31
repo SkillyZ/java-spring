@@ -18,7 +18,6 @@ public class SpringBootMybatisApplication implements CommandLineRunner{
 
     @Override
     public void run(String... args) throws Exception {
-        System.out.println(1112);
         System.out.println(this.personMapper.getById(2));
     }
 }
