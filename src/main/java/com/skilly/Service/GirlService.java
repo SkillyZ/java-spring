@@ -1,6 +1,8 @@
 package com.skilly.Service;
 
 import com.skilly.entity.Girl;
+import com.skilly.enums.ResultEnum;
+import com.skilly.excecption.GirlException;
 import com.skilly.repository.GirlRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -32,11 +34,11 @@ public class GirlService {
     public void getAge(Integer id) throws Exception{
         Girl girl =girlRepository.findOne(id);
         Integer age= girl.getAge();
-//        if(age<10) {
-//            throw new GirlException(ResultEnum.PRIMARY_SCHOOL);
-//        }else if(age>10 && age<16){
-//            throw new GirlException(ResultEnum.MIDDLE_SCHOOL);
-//        }
+        if(age<10) {
+            throw new GirlException(ResultEnum.PRIMARY_SCHOOL);
+        }else if(age>10 && age<16){
+            throw new GirlException(ResultEnum.MIDDLE_SCHOOL);
+        }
     }
 
     /**

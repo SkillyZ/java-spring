@@ -28,6 +28,16 @@ public class Girl {
         return money;
     }
 
+    @Override
+    public String toString() {
+        return "Girl{" +
+                "id=" + id +
+                ", cupSize='" + cupSize + '\'' +
+                ", age=" + age +
+                ", money=" + money +
+                '}';
+    }
+
     public void setMoney(Double money) {
         this.money = money;
     }
@@ -56,12 +66,4 @@ public class Girl {
         this.age = age;
     }
 
-    @Override
-    public String toString() {
-        return "Girl{" +
-                "id=" + id +
-                ", cupSize='" + cupSize + '\'' +
-                ", age=" + age +
-                '}';
-    }
 }

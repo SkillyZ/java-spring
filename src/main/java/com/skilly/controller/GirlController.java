@@ -2,7 +2,9 @@ package com.skilly.controller;
 
 import com.skilly.Service.GirlService;
 import com.skilly.entity.Girl;
+import com.skilly.entity.Result;
 import com.skilly.repository.GirlRepository;
+import com.skilly.util.ResultUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
@@ -19,6 +21,9 @@ public class GirlController {
     @Autowired
     private GirlRepository girlRepository;
 
+    @Autowired
+    private GirlService girlService;
+
     @GetMapping("/girls")
     public List<Girl> girlList () {
         return girlRepository.findAll();
@@ -30,15 +35,18 @@ public class GirlController {
     }
 
     @PostMapping("/girls")
-    public Girl girlAdd(@Valid Girl girl, BindingResult bindingResult) {
-        if (bindingResult.hasErrors()) {
-            System.out.println(bindingResult.getFieldError().getDefaultMessage());
-            return null;
+    public Result<Girl> add(@Valid Girl girl, BindingResult bindingResult) {
+
+        if(bindingResult.hasErrors()) {//错误情况
+
+            //return null;
+            return ResultUtil.error(1, bindingResult.getFieldError().getDefaultMessage());
         }
+
 //        girl.setCupSize(girl.getCupSize());
 //        girl.setAge(girl.getAge());
 
-        return girlRepository.save(girl);
+        return ResultUtil.success(girlRepository.save(girl));
     }
 
 //    public Girl girlAdd(@RequestParam("cupSize") String cupSize,
@@ -70,8 +78,8 @@ public class GirlController {
 
     //判断妹纸年级
 
-    @GetMapping(value="girls/getage/{id}")
+    @GetMapping(value="girls/getAge/{id}")
     public void getAge(@PathVariable("id") Integer id) throws Exception {
-        GirlService.getAge(id);
+        girlService.getAge(id);
     }
 }

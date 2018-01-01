@@ -58,7 +58,7 @@ public class HttpAspect {
     //获取返回值
     @AfterReturning(returning="object",pointcut="log()")
     public void doAfterReturning(Object object) {
-        logger.info("response={}",object.toString());//不加toString得对象
+        logger.info("response={}",object);
 
     }
 }
