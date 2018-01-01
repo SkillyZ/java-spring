@@ -1,5 +1,6 @@
 package com.skilly.controller;
 
+import com.skilly.Service.GirlService;
 import com.skilly.entity.Girl;
 import com.skilly.repository.GirlRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -65,5 +66,12 @@ public class GirlController {
     @DeleteMapping(value ="/girls/{id}")
     public void girlDelete (@PathVariable("id") Integer id) {
         girlRepository.delete(id);
+    }
+
+    //判断妹纸年级
+
+    @GetMapping(value="girls/getage/{id}")
+    public void getAge(@PathVariable("id") Integer id) throws Exception {
+        GirlService.getAge(id);
     }
 }
