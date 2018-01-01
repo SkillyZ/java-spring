@@ -3,6 +3,7 @@ package com.skilly.entity;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.validation.constraints.Min;
 
 /**
  * Created by 1254109699@qq.com on 2018/1/1.
@@ -15,6 +16,9 @@ public class Girl {
     private Integer id;
 
     private String cupSize;
+
+    @Min(value = 18, message = "未成年少女禁止入内")
+    private Integer age;
 
     public Integer getId() {
         return id;
@@ -39,7 +43,5 @@ public class Girl {
     public void setAge(Integer age) {
         this.age = age;
     }
-
-    private Integer age;
 
 }
