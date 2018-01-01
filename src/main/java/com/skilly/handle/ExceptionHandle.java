@@ -22,8 +22,8 @@ public class ExceptionHandle {
     public Result handleGirlAge(Exception e) {
         if(e instanceof GirlException) {
             GirlException girlException= (GirlException)e;
-                return ResultUtil.error(girlException.getCode(), girlException.getMessage());
-        }else {
+            return ResultUtil.error(girlException.getCode(), girlException.getMessage());
+        } else {
             logger.error("<系统异常> {}" ,e);
             return ResultUtil.error(-1, "未知错误");
         }
