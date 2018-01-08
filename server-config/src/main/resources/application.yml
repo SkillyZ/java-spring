@@ -17,3 +17,4 @@ server:
 
 #https://github.com/forezp/SpringcloudConfig/blob/master/respo/config-client-dev.properties
 #https://github.com/forezp/SpringcloudConfig/respo/config-client-dev.properties
+#访问地址 http://localhost:8888/config-client/dev
