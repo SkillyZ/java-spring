@@ -1,5 +1,6 @@
 package com.skilly.reflect;
 
+import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
@@ -60,6 +61,31 @@ public class ClassUtil {
             //得到成员变量的名称
             String fieldName = field.getName();
             System.out.println(typeName+" "+fieldName);
+        }
+    }
+
+    /**
+     * 打印对象的构造函数的信息
+     * @param obj
+     */
+    public static void printConMessage(Object obj){
+        Class c = obj.getClass();
+        /*
+         * 构造函数也是对象
+         * java.lang. Constructor中封装了构造函数的信息
+         * getConstructors获取所有的public的构造函数
+         * getDeclaredConstructors得到所有的构造函数
+         */
+        //Constructor[] cs = c.getConstructors();
+        Constructor[] cs = c.getDeclaredConstructors();
+        for (Constructor constructor : cs) {
+            System.out.print(constructor.getName()+"(");
+            //获取构造函数的参数列表--->得到的是参数列表的类类型
+            Class[] paramTypes = constructor.getParameterTypes();
+            for (Class class1 : paramTypes) {
+                System.out.print(class1.getName()+",");
+            }
+            System.out.println(")");
         }
     }
 
