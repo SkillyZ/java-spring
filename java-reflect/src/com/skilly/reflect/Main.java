@@ -1,3 +1,5 @@
+package com.skilly.reflect;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -25,7 +27,7 @@ public class Main {
         //第三种表达方式
         Class c3 = null;
         try {
-            c3 = Class.forName("Foo");
+            c3 = Class.forName("com.skilly.reflect.Foo");
         } catch (ClassNotFoundException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
