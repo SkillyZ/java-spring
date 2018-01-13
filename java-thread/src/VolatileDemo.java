@@ -1,4 +1,5 @@
 
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -10,6 +11,13 @@ public class VolatileDemo {
 	public int getNumber(){
 		return this.number;
 	}
+
+	/**
+	 * 三种方法保证number++的原子性
+	 * 1 使用synchronized关键字
+	 * 2 使用ReentrantLock
+	 * 3 使用AtomicInteger
+	 */
 
 	public void increase(){
 		try {
