@@ -13,6 +13,7 @@ import java.nio.charset.Charset;
 
 /**
  * Created by ${1254109699@qq.com} on 2018/1/13.
+ * @document https://www.jianshu.com/p/b9f3f6a16911
  */
 public class NettyOioServer {
 
