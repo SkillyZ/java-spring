@@ -1,4 +1,4 @@
-
+package com.skilly.thread;
 
 public class SynchronizedDemo {
 	//共享变量
