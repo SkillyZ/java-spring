@@ -15,11 +15,10 @@ server:
             username:
             password:
 
-
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8889/eureka/
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:8889/eureka/
 
 #https://github.com/forezp/SpringcloudConfig/blob/master/respo/config-client-dev.properties
 #https://github.com/forezp/SpringcloudConfig/respo/config-client-dev.properties
