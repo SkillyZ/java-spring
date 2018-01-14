@@ -1,4 +1,4 @@
-package com.skilly.neety;
+package com.skilly.neety.jianshu;
 
 /**
  * Created by 1254109699@qq.com on 2018/1/15.

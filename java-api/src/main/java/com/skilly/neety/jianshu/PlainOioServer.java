@@ -1,4 +1,4 @@
-package com.skilly.neety;
+package com.skilly.neety.jianshu;
 
 import java.io.IOException;
 import java.io.OutputStream;

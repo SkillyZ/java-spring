@@ -1,4 +1,4 @@
-package com.skilly.neety;
+package com.skilly.neety.jianshu;
 
 import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelHandlerContext;
