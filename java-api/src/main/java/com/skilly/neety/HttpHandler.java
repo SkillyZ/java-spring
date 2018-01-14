@@ -11,6 +11,10 @@ import io.netty.util.AsciiString;
  */
 public class HttpHandler extends SimpleChannelInboundHandler<FullHttpRequest> { // 1
 
+    //Handler需要声明泛型为<FullHttpRequest>，声明之后，只有msg为FullHttpRequest的消息才能进来。
+    //由于泛型的过滤比较简单，我们就不改代码来验证了，但是在这里我们可以利用泛型的特性另外做个小测试，将泛型去掉，并且将HttpServer中.addLast("aggregator", new HttpObjectAggregator(512 * 1024)) // 3这一行代码注释掉，然后观察注释前后的log。
+    //注释前：
+
     private AsciiString contentType = HttpHeaderValues.TEXT_PLAIN;
 
     @Override
@@ -38,7 +42,12 @@ public class HttpHandler extends SimpleChannelInboundHandler<FullHttpRequest> { 
     @Override
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
         System.out.println("exceptionCaught");
-        if(null != cause) cause.printStackTrace();
-        if(null != ctx) ctx.close();
+        if(null != cause)
+        {
+            cause.printStackTrace();
+        }
+        if(null != ctx) {
+            ctx.close();
+        }
     }
 }

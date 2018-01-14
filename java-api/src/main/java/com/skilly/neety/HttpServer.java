@@ -26,6 +26,7 @@ public class HttpServer {
     HttpObjectAggregator(512 * 1024)的参数含义是消息合并的数据大小，如此代表聚合的消息内容长度不超过512kb。
     添加我们自己的处理接口
     完成启动类之后，接下来就是我们的业务处理类HttpHandler了，先上代码：
+    完成启动类之后，接下来就是我们的业务处理类HttpHandler了，先上代码：
      */
     private final int port;
 
@@ -34,13 +35,14 @@ public class HttpServer {
     }
 
     public static void main(String[] args) throws Exception {
-        if (args.length != 1) {
-            System.err.println(
-                    "Usage: " + HttpServer.class.getSimpleName() +
-                            " <port>");
-            return;
+        int port = 9327;
+        if (args.length > 0) {
+//            System.err.println(
+//                    "Usage: " + HttpServer.class.getSimpleName() +
+//                            " <port>");
+//            return;
+            port = Integer.parseInt(args[0]);
         }
-        int port = Integer.parseInt(args[0]);
         new HttpServer(port).start();
     }
 

@@ -1,4 +1,4 @@
-package com.imooc;
+package com.skilly.socket;
 
 import java.io.BufferedReader;
 import java.io.IOException;
