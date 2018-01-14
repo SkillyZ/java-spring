@@ -1,6 +1,9 @@
-spring:
-  application:
-    name: config-client
+server:
+  port: 8888
+
+  spring:
+    application:
+      name: config-server
   cloud:
     config:
       label: master
@@ -11,9 +14,12 @@ spring:
             searchPaths: respo
             username:
             password:
-server:
-  port: 8888
 
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8889/eureka/
 
 #https://github.com/forezp/SpringcloudConfig/blob/master/respo/config-client-dev.properties
 #https://github.com/forezp/SpringcloudConfig/respo/config-client-dev.properties
