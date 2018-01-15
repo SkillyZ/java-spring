@@ -54,7 +54,7 @@
         <dependency>
             <groupId>org.quartz-scheduler</groupId>
             <artifactId>quartz</artifactId>
-            <version>2.3.0</version>
+            <version>2.2.3</version>
         </dependency>
 
         <dependency>
@@ -63,5 +63,14 @@
             <version>3.8.1</version>
             <scope>test</scope>
         </dependency>
+        <!--解决Quartz时SLF4J错误-->
+        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-nop -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-nop</artifactId>
+            <version>1.7.25</version>
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
 </project>

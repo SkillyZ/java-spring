@@ -20,8 +20,10 @@ public class HelloScheduler {
 		SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		System.out.println("Current Time Is : " + sf.format(date));
 		// 创建一个JobDetail实例，将该实例与HelloJob Class绑定
-		JobDetail jobDetail = JobBuilder.newJob(HelloJob.class)
-				.withIdentity("myJob").build();
+		JobDetail jobDetail = JobBuilder
+				.newJob(HelloJob.class)
+				.withIdentity("myJob")
+				.build();
 		CronTrigger trigger = (CronTrigger) TriggerBuilder
 				.newTrigger()
 				.withIdentity("myTrigger", "group1")
