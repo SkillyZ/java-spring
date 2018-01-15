@@ -29,7 +29,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <mainClass>com.skilly.neety.book.chapter01.EchoServer</mainClass>
+                    <mainClass>com.skilly.neety.book.chapter01.EchoClient</mainClass>
                 </configuration>
             </plugin>
         </plugins>
