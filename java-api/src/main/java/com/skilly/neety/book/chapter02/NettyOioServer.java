@@ -1,4 +1,4 @@
-package com.skilly.neety.jianshu;
+package com.skilly.neety.book.chapter02;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.buffer.ByteBuf;
@@ -12,8 +12,20 @@ import java.net.InetSocketAddress;
 import java.nio.charset.Charset;
 
 /**
- * Created by ${1254109699@qq.com} on 2018/1/13.
- * @document https://www.jianshu.com/p/b9f3f6a16911
+ * Created by ${1254109699@qq.com} on 2018/1/15.
+ * document 1.创建一个 ServerBootstrap
+
+         2.使用 OioEventLoopGroup 允许阻塞模式（Old-IO）
+
+         3.指定 ChannelInitializer 将给每个接受的连接调用
+
+         4.添加的 ChannelHandler 拦截事件，并允许他们作出反应
+
+         5.写信息到客户端，并添加 ChannelFutureListener 当一旦消息写入就关闭连接
+
+         6.绑定服务器来接受连接
+
+         7.释放所有资源
  */
 public class NettyOioServer {
 
