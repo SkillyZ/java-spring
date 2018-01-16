@@ -35,6 +35,7 @@ public class HelloScheduler {
 						CronScheduleBuilder.cronSchedule("* * * * * ?"))
 				.build();
 		// 创建 Scheduler 实例
+
 		SchedulerFactory sfact = new StdSchedulerFactory();
 		Scheduler scheduler = sfact.getScheduler();
 

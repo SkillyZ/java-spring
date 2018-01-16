@@ -38,13 +38,12 @@ public class HelloJob implements Job{
 		SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		System.out.println("Current Exec Time Is : " + sf.format(date));
 
-		// 编写具体的业务逻辑
-		//System.out.println("Hello World!");
-
 		JobKey key = context.getJobDetail().getKey();
 		System.out.println("My name and group are : " + key.getName() + " : " + key.getGroup());
 
-		TriggerKey trkey = context.getTrigger().getKey();
+		Trigger currentTrigger = context.getTrigger();
+//		JobKey jobKey = currentTrigger.getJobKey();
+		TriggerKey trkey = currentTrigger.getKey();
 		System.out.println("My Trigger name and group are : " + trkey.getName() + " : " + trkey.getGroup());
 
 		// 方式一：Map中直接  获取自定义参数
