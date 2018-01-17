@@ -4,7 +4,10 @@ import org.quartz.JobDataMap;
 import org.quartz.JobDetail;
 import org.quartz.Trigger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.quartz.*;
 
@@ -13,8 +16,11 @@ import org.springframework.scheduling.quartz.*;
  * Created by ${1254109699@qq.com} on 2018/1/16.
  */
 @Configuration
+@EnableAutoConfiguration
+@ComponentScan
 public class QuartzConfig {
 
+    //SpringBootApplication == @Configuration+EnableAutoConfiguration+ComponentScan
     @Autowired
     private MyBean myBean;
 
