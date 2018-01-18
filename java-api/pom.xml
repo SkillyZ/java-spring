@@ -25,7 +25,7 @@
                     <execution>
                         <goals>
                             <goal>java</goal>
-                        </goals>
+                        </goals> 
                     </execution>
                 </executions>
                 <configuration>
