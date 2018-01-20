@@ -1,4 +1,4 @@
-package com.skilly1.house.autoconfig;
+package com.skilly.house.web.autoconfig;
 
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.config.RequestConfig;
@@ -15,7 +15,7 @@ import org.springframework.context.annotation.Configuration;
 public class HttpClientAutoConfiguration {
 
 	private final HttpClientProperties properties;
-	
+
 	public HttpClientAutoConfiguration(HttpClientProperties properties){
 		this.properties = properties;
 	}

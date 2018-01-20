@@ -1,32 +1,31 @@
 package com.skilly.house.web.filter;
 
-import java.io.IOException;
-
-import javax.servlet.Filter;
-import javax.servlet.FilterChain;
-import javax.servlet.FilterConfig;
-import javax.servlet.ServletException;
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import javax.servlet.*;
+import java.io.IOException;
+
+/**
+ * Created by ${1254109699@qq.com} on 2018/1/19.
+ */
 public class LogFilter implements Filter {
-	private Logger logger = LoggerFactory.getLogger(LogFilter.class);
+    private Logger logger = LoggerFactory.getLogger(LogFilter.class);
 
-	public void init(FilterConfig filterConfig) throws ServletException {
+    @Override
+    public void init(FilterConfig filterConfig) throws ServletException {
 
-	}
+    }
 
-	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
-			throws IOException, ServletException {
-//        logger.info("Request--coming");
+    @Override
+    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
+        logger.info("Request coming");
         chain.doFilter(request, response);
-	}
+    }
 
-	public void destroy() {
+    @Override
+    public void destroy() {
 
-	}
-
+    }
 }

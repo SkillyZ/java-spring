@@ -1,5 +1,6 @@
-package com.skilly.house;
+package com.skilly.house.web;
 
+import org.apache.http.ParseException;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
@@ -11,7 +12,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.io.IOException;
-import java.text.ParseException;
 
 
 @RunWith(SpringRunner.class)

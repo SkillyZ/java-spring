@@ -26,6 +26,12 @@
      <version>1.0.0-SNAPSHOT</version>
     </dependency>
 
+	  <dependency>
+		  <groupId>com.skilly.house</groupId>
+		  <artifactId>house-biz</artifactId>
+		  <version>1.0.0-SNAPSHOT</version>
+	  </dependency>
+
 
 	<dependency>
 		<groupId>org.springframework.boot</groupId>
@@ -75,8 +81,17 @@
 	   <artifactId>disruptor</artifactId>
 	   <version>3.3.6</version>
 	</dependency>
-     
-     
+
+	  <dependency>
+		  <groupId>org.apache.httpcomponents</groupId>
+		  <artifactId>httpclient</artifactId>
+	  </dependency>
+	  <dependency>
+		  <groupId>org.springframework</groupId>
+		  <artifactId>spring-beans</artifactId>
+		  <version>4.3.13.RELEASE</version>
+	  </dependency>
+
   </dependencies>
   
   <build>

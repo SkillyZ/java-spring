@@ -1,4 +1,4 @@
-package com.skilly1.house.autoconfig;
+package com.skilly.house.web.autoconfig;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 

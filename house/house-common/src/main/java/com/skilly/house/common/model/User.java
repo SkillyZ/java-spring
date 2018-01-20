@@ -1,172 +1,47 @@
 package com.skilly.house.common.model;
 
-
-import java.util.Date;
-
-import org.springframework.web.multipart.MultipartFile;
-
+/**
+ * Created by ${1254109699@qq.com} on 2018/1/19.
+ */
 public class User {
 
-	private Long id;
-	
-	private String email;
-	
-	private String phone;
-	
-	private String name;
-	
-	private String passwd;
-	
-	private String confirmPasswd;
-	
-	private Integer type;//普通用户1，经纪人2
-	
-	private Date   createTime;
-	
-	private Integer enable;
-	
-	private String  avatar;
-	
-	private MultipartFile avatarFile;
-	
-	private String newPassword;
-	
-	private String key;
-	
-	private Long   agencyId;
-	
-	private String aboutme;
-	
-	private String agencyName;
+    private Long id;
 
-	public Long getId() {
-		return id;
-	}
+    private String name;
 
-	public String getEmail() {
-		return email;
-	}
+    private String email;
 
-	public void setEmail(String email) {
-		this.email = email;
-	}
+    private String phone;
 
-	public String getPhone() {
-		return phone;
-	}
+    public Long getId() {
+        return id;
+    }
 
-	public void setPhone(String phone) {
-		this.phone = phone;
-	}
+    public void setId(Long id) {
+        this.id = id;
+    }
 
-	public String getPasswd() {
-		return passwd;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public void setPasswd(String passwd) {
-		this.passwd = passwd;
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	public String getConfirmPasswd() {
-		return confirmPasswd;
-	}
+    public String getEmail() {
+        return email;
+    }
 
-	public void setConfirmPasswd(String confirmPasswd) {
-		this.confirmPasswd = confirmPasswd;
-	}
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
-	public String getAboutme() {
-		return aboutme;
-	}
+    public String getPhone() {
+        return phone;
+    }
 
-	public void setAboutme(String aboutme) {
-		this.aboutme = aboutme;
-	}
-
-	public Integer getType() {
-		return type;
-	}
-
-	public void setType(Integer type) {
-		this.type = type;
-	}
-
-	public Date getCreateTime() {
-		return createTime;
-	}
-
-	public void setCreateTime(Date createTime) {
-		this.createTime = createTime;
-	}
-
-	public Integer getEnable() {
-		return enable;
-	}
-
-	public void setEnable(Integer enable) {
-		this.enable = enable;
-	}
-
-
-	public String getNewPassword() {
-		return newPassword;
-	}
-
-	public void setNewPassword(String newPassword) {
-		this.newPassword = newPassword;
-	}
-
-	public MultipartFile getAvatarFile() {
-		return avatarFile;
-	}
-
-	public void setAvatarFile(MultipartFile avatarFile) {
-		this.avatarFile = avatarFile;
-	}
-
-	public String getAgencyName() {
-    return agencyName;
-  }
-
-  public void setAgencyName(String agencyName) {
-    this.agencyName = agencyName;
-  }
-
-  public String getKey() {
-		return key;
-	}
-
-	public void setKey(String key) {
-		this.key = key;
-	}
-
-	public Long getAgencyId() {
-		return agencyId;
-	}
-
-	public void setAgencyId(Long agencyId) {
-		this.agencyId = agencyId;
-	}
-
-	public String getAvatar() {
-		return avatar;
-	}
-
-	public void setAvatar(String avatar) {
-		this.avatar = avatar;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
-	
-	
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
 }
