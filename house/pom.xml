@@ -5,8 +5,13 @@
 
 	<groupId>com.skilly.house</groupId>
 	<artifactId>house</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<version>1.0.0-SNAPSHOT</version>
+	<modules>
+		<module>house-common</module>
+		<module>house-biz</module>
+		<module>house-web</module>
+	</modules>
+	<packaging>pom</packaging>
 
 	<name>house</name>
 	<description>房产销售平台</description>
