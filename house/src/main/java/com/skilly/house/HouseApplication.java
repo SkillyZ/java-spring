@@ -1,5 +1,6 @@
 package com.skilly.house;
 
+import com.skilly1.house.autoconfig.EnableHttpClient;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -7,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @SpringBootApplication
+@EnableHttpClient
 public class HouseApplication {
 
 	public static void fizzBuzz()
