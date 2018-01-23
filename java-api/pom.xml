@@ -30,7 +30,7 @@
                 </executions>
                 <configuration>
                     <mainClass>com.skilly.neety.book.chapter01.EchoClient</mainClass>
-                </configuration>
+                </configuration> 
             </plugin>
         </plugins>
 
