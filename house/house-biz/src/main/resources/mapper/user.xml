@@ -7,4 +7,30 @@
     </select>
 
 
+    <insert id="insert">
+        insert into user (
+        name,
+        phone,
+        email,
+        aboutme,
+        passwd,
+        avatar,
+        type,
+        create_time,
+        enable
+        )
+        values(
+        #{name},
+        #{phone},
+        #{email},
+        #{aboutme},
+        #{passwd},
+        #{avatar},
+        #{type},
+        #{createTime},
+        #{enable}
+        )
+
+    </insert>
+
 </mapper>
