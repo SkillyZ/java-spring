@@ -4,37 +4,22 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
     <settings>
-         <!-- 配置关闭缓存  -->
-         <setting name="cacheEnabled" value="false"/>
-         <setting name="mapUnderscoreToCamelCase" value="true"/>
-         <setting name="useGeneratedKeys" value="true"/>
-         <setting name="defaultExecutorType" value="REUSE"/>
-         <!-- 事务超时时间 -->
-         <setting name="defaultStatementTimeout" value="600"/>
+        <!-- 配置关闭缓存  -->
+        <setting name="cacheEnabled" value="false"/>
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+        <setting name="useGeneratedKeys" value="true"/>
+        <setting name="defaultExecutorType" value="REUSE"/>
+        <!-- 事务超时时间 -->
+        <setting name="defaultStatementTimeout" value="600"/>
     </settings>
-    
-    
+
+
     <typeAliases>
-       <typeAlias type="User" alias="user" />
-        <typeAlias type="Agency"      alias="agency"/>
-       <typeAlias type="House" alias="house" />
-       <typeAlias type="City" alias="city" />
-       <typeAlias type="Comment"     alias="comment"/>
-       <typeAlias type="Community" alias="community" />
-       <typeAlias type="HouseUser" alias="houseUser" />
-       <typeAlias type="Blog"        alias="blog"/>
-       <typeAlias type="User"        alias="user"/>
-       <typeAlias type="UserMsg"     alias="userMsg"/>
-       <typeAlias type="HouseUser"     alias="houseUser"/>
-    
+        <typeAlias type="com.skilly.house.common.model.User" alias="user" />
     </typeAliases>
-    
+
     <mappers>
-       <mapper resource="mapper/user.xml" />
-       <mapper resource="mapper/blog.xml"/> 
-       <mapper resource="mapper/house.xml" />
-       <mapper resource="mapper/comment.xml"/> 
-       <mapper resource="mapper/agency.xml" />
+        <mapper resource="mapper/user.xml" />
     </mappers>
 
 </configuration>
