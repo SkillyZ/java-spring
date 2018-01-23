@@ -1,4 +1,4 @@
-package com.skilly.house.web;
+package com.skilly.house;
 
 import org.apache.http.ParseException;
 import org.apache.http.client.ClientProtocolException;

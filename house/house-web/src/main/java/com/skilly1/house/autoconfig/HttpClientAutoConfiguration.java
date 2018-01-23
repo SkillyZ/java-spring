@@ -1,4 +1,4 @@
-package com.skilly.house.web.autoconfig;
+package com.skilly1.house.autoconfig;
 
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.config.RequestConfig;
@@ -19,7 +19,7 @@ public class HttpClientAutoConfiguration {
 	public HttpClientAutoConfiguration(HttpClientProperties properties){
 		this.properties = properties;
 	}
-	
+
 	/**
 	 * httpclient bean 的定义
 	 * 有三种方式都可以让HttpClientAutoConfiguration这个自动配置生效
@@ -31,17 +31,17 @@ public class HttpClientAutoConfiguration {
 	@Bean
 	@ConditionalOnMissingBean(HttpClient.class)
 	public HttpClient httpClient(){
-	   //构建requestConfig
+		//构建requestConfig
 		RequestConfig requestConfig = RequestConfig.custom()
-		        .setConnectTimeout(properties.getConnectTimeOut())//设置连接超时时间，默认1秒
+				.setConnectTimeout(properties.getConnectTimeOut())//设置连接超时时间，默认1秒
 				.setSocketTimeout(properties.getSocketTimeOut()).build();//设置读超时时间，默认10秒
 		HttpClient client = HttpClientBuilder.create()
-		         .setDefaultRequestConfig(requestConfig) //设置requestConfig
-		         .setUserAgent(properties.getAgent())//设置User-Agent
-				 .setMaxConnPerRoute(properties.getMaxConnPerRoute())//设置一个远端IP最大的连接数
-				 .setMaxConnTotal(properties.getMaxConnTotaol())//设置总的连接数
+				.setDefaultRequestConfig(requestConfig) //设置requestConfig
+				.setUserAgent(properties.getAgent())//设置User-Agent
+				.setMaxConnPerRoute(properties.getMaxConnPerRoute())//设置一个远端IP最大的连接数
+				.setMaxConnTotal(properties.getMaxConnTotaol())//设置总的连接数
 //				 .setConnectionReuseStrategy(new NoConnectionReuseStrategy())//不重用连接，默认是重用，建议保持默认开启连接池，节省建立连接开销
-				 .build();
+				.build();
 		return client;
 	}
 }

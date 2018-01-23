@@ -1,12 +1,12 @@
-package com.skilly.house.web.autoconfig;
+package com.skilly1.house.autoconfig;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 @ConfigurationProperties(prefix="spring.httpclient")
 public class HttpClientProperties {
-	
+
 	private Integer connectTimeOut = 1000;
-	
+
 	private Integer socketTimeOut = 10000;
 
 	private String agent = "agent";
@@ -42,7 +42,5 @@ public class HttpClientProperties {
 	public void setMaxConnTotaol(Integer maxConnTotaol) {
 		this.maxConnTotaol = maxConnTotaol;
 	}
-	
-	
-	
+
 }

@@ -1,4 +1,4 @@
-package com.skilly.house.web;
+package com.skilly.house;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

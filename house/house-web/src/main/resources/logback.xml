@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration debug="true" scan="true" scanPeriod="40 seconds">
 
-<!--注意: logback.xml在单体中只为了做测试使用，未来会换成log4j2，课程最后几章也会讲到log4j2及log4j2的相比logback的优势  -->
+	<!--注意: logback.xml在单体中只为了做测试使用，未来会换成log4j2，课程最后几章也会讲到log4j2及log4j2的相比logback的优势  -->
 	<property name="log.base" value="logs" />
 
 	<contextListener class="ch.qos.logback.classic.jul.LevelChangePropagator">
@@ -17,7 +17,7 @@
 
 
 	<appender name="FILE-ERROR"
-		class="ch.qos.logback.core.rolling.RollingFileAppender">
+			  class="ch.qos.logback.core.rolling.RollingFileAppender">
 		<filter class="ch.qos.logback.classic.filter.LevelFilter">
 			<level>ERROR</level>
 			<onMatch>ACCEPT</onMatch>
@@ -37,7 +37,7 @@
 
 
 	<appender name="FILE-INFO"
-		class="ch.qos.logback.core.rolling.RollingFileAppender">
+			  class="ch.qos.logback.core.rolling.RollingFileAppender">
 		<filter class="ch.qos.logback.classic.filter.LevelFilter">
 			<level>INFO</level>
 			<onMatch>ACCEPT</onMatch>
@@ -56,7 +56,7 @@
 	</appender>
 
 	<appender name="FILE-WARN"
-		class="ch.qos.logback.core.rolling.RollingFileAppender">
+			  class="ch.qos.logback.core.rolling.RollingFileAppender">
 		<filter class="ch.qos.logback.classic.filter.LevelFilter">
 			<level>WARN</level>
 			<onMatch>ACCEPT</onMatch>
@@ -75,7 +75,7 @@
 	</appender>
 
 	<appender name="FILE-DEBUG"
-		class="ch.qos.logback.core.rolling.RollingFileAppender">
+			  class="ch.qos.logback.core.rolling.RollingFileAppender">
 		<filter class="ch.qos.logback.classic.filter.LevelFilter">
 			<level>DEBUG</level>
 			<onMatch>ACCEPT</onMatch>
@@ -92,13 +92,13 @@
 			<charset>UTF-8</charset>
 		</encoder>
 	</appender>
-	
 
 
-     <!--<logger name="com.skilly.house.mapper" level="DEBUG" additivity="false" >-->
-         <!--<appender-ref ref="FILE-DEBUG" />-->
-         <!--<appender-ref ref="CONSOLE" />-->
-     <!--</logger>-->
+
+	<!--<logger name="com.skilly.house.mapper" level="DEBUG" additivity="false" >-->
+	<!--<appender-ref ref="FILE-DEBUG" />-->
+	<!--<appender-ref ref="CONSOLE" />-->
+	<!--</logger>-->
 
 	<root level="DEBUG">
 		<appender-ref ref="FILE-DEBUG" />

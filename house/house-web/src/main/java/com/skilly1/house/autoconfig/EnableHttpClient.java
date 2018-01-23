@@ -1,11 +1,11 @@
-package com.skilly.house.web.autoconfig;
-
-import org.springframework.context.annotation.Import;
+package com.skilly1.house.autoconfig;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
+
+import org.springframework.context.annotation.Import;
 
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
@@ -13,3 +13,4 @@ import java.lang.annotation.Target;
 public @interface EnableHttpClient {
 
 }
+
