@@ -33,4 +33,31 @@
 
     </insert>
 
+    <delete id="delete">
+        delete from user
+        where  email=#{email}
+    </delete>
+
+    <update id="update">
+        update user
+        <set>
+            <if test="phone !=null and phone != '' ">
+                phone = #{phone},
+            </if>
+            <if test="name !=null and name != '' ">
+                name = #{name},
+            </if>
+            <if test="aboutme !=null and aboutme != '' ">
+                aboutme = #{aboutme},
+            </if>
+            <if test="passwd !=null and passwd != '' ">
+                passwd = #{passwd},
+            </if>
+            <if test="enable !=null ">
+                enable = #{enable},
+            </if>
+        </set>
+        where email = #{email}
+    </update>
+
 </mapper>
