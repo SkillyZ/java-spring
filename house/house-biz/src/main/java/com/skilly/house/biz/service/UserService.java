@@ -6,6 +6,7 @@ import com.skilly.house.common.model.User;
 import com.skilly.house.common.utils.BeanHelper;
 import com.skilly.house.common.utils.HashUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -25,6 +26,9 @@ public class UserService {
 
     @Autowired
     private MailService mailService;
+
+    @Value("${file.prefix}")
+    private String imgPrefix;
 
     public List<User> getUsers()
     {
@@ -55,5 +59,26 @@ public class UserService {
 
     public boolean enable(String key) {
         return mailService.enable(key);
+    }
+
+    public User auth(String username, String password) {
+        User user = new User();
+        user.setEmail(username);
+        user.setPasswd(HashUtils.encryPassword(password));
+        user.setEnable(1);
+        List<User> list = getUserByQuery(user);
+        if (!list.isEmpty()) {
+            return list.get(0);
+        }
+
+        return null;
+    }
+
+    private List<User> getUserByQuery(User user) {
+        List<User> list = userMapper.selectUsersByQuery(user);
+        list.forEach(u -> {
+            u.setAvatar(imgPrefix + u.getAvatar());
+        });
+        return list;
     }
 }

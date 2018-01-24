@@ -6,6 +6,26 @@
         select name,phone,email from user
     </select>
 
+    <select id="selectUsersByQuery" resultType="user">
+        select * from user
+        <where>
+            <if test="id !=null" >
+                and id = #{id}
+            </if>
+            <if test="email != null">
+                and email = #{email}
+            </if>
+            <if test="passwd != null">
+                and passwd = #{passwd}
+            </if>
+            <if test="enable != null">
+                and enable = #{enable}
+            </if>
+            <if test = "type != null and type!=0">
+                and type = #{type}
+            </if>
+        </where>
+    </select>
 
     <insert id="insert">
         insert into user (
