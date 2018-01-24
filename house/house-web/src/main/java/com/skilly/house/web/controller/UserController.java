@@ -4,16 +4,16 @@ import com.skilly.house.biz.service.UserService;
 import com.skilly.house.common.model.User;
 import com.skilly.house.common.result.ResultMsg;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
 /**
  * Created by ${1254109699@qq.com} on 2018/1/19.
  */
-@RestController
+@Controller
 public class UserController {
 
     @Autowired

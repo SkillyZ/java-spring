@@ -97,6 +97,7 @@ public class User {
         return createTime;
     }
 
+    //可能会被外部修改
     public void setCreateTime(Date createTime) {
         this.createTime = createTime;
     }

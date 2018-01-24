@@ -16,45 +16,45 @@ import com.google.common.io.Files;
 
 @Service
 public class FileService {
-	
-	@Value("${file.path:}")
-	private String filePath;
-	
-	
-	public List<String> getImgPaths(List<MultipartFile> files) {
-	    if (Strings.isNullOrEmpty(filePath)) {
+
+    @Value("${file.path:}")
+    private String filePath;
+
+
+    public List<String> getImgPaths(List<MultipartFile> files) {
+        if (Strings.isNullOrEmpty(filePath)) {
             filePath = getResourcePath();
         }
-		List<String> paths = Lists.newArrayList();
-		files.forEach(file -> {
-			File localFile = null;
-			if (!file.isEmpty()) {
-				try {
-					localFile =  saveToLocal(file, filePath);
-					String path = StringUtils.substringAfterLast(localFile.getAbsolutePath(), filePath);
-					paths.add(path);
-				} catch (IOException e) {
-					throw new IllegalArgumentException(e);
-				}
-			}
-		});
-		return paths;
-	}
-	
-	public static String getResourcePath(){
-	  File file = new File(".");
-	  String absolutePath = file.getAbsolutePath();
-	  return absolutePath;
-	}
+        List<String> paths = Lists.newArrayList();
+        files.forEach(file -> {
+            File localFile = null;
+            if (!file.isEmpty()) {
+                try {
+                    localFile = saveToLocal(file, filePath);
+                    String path = StringUtils.substringAfterLast(localFile.getAbsolutePath(), filePath);
+                    paths.add(path);
+                } catch (IOException e) {
+                    throw new IllegalArgumentException(e);
+                }
+            }
+        });
+        return paths;
+    }
 
-	private File saveToLocal(MultipartFile file, String filePath2) throws IOException {
-	 File newFile = new File(filePath + "/" + Instant.now().getEpochSecond() + "/" + file.getOriginalFilename());
-	 if (!newFile.exists()) {
-		 newFile.getParentFile().mkdirs();
-		 newFile.createNewFile();
-	 }
-	 Files.write(file.getBytes(), newFile);
-     return newFile;
-	}
+    public static String getResourcePath() {
+        File file = new File(".");
+        String absolutePath = file.getAbsolutePath();
+        return absolutePath;
+    }
+
+    private File saveToLocal(MultipartFile file, String filePath2) throws IOException {
+        File newFile = new File(filePath + "/" + Instant.now().getEpochSecond() + "/" + file.getOriginalFilename());
+        if (!newFile.exists()) {
+            newFile.getParentFile().mkdirs();
+            newFile.createNewFile();
+        }
+        Files.write(file.getBytes(), newFile);
+        return newFile;
+    }
 
 }
