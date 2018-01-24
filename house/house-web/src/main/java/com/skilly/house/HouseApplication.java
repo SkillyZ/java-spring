@@ -8,9 +8,9 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 
 @SpringBootApplication
-//@EnableHttpClient
 @EnableAsync//注解的意思是可以异步执行，就是开启多线程的意思。可以标注在方法、类上。
 @EnableSwagger2 //Swagger2构建强大的RESTful API文档
+//@EnableHttpClient
 //@ComponentScan(value = "com.skilly.house")
 //@MapperScan(value = "com.skilly.house.biz.mapper")
 public class HouseApplication {
