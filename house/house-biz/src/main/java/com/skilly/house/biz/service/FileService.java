@@ -31,6 +31,7 @@ public class FileService {
             if (!file.isEmpty()) {
                 try {
                     localFile = saveToLocal(file, filePath);
+                    //WINDOWS和linux 分隔符不一致
                     String path = StringUtils.substringAfterLast(localFile.getAbsolutePath(), filePath);
                     paths.add(path);
                 } catch (IOException e) {

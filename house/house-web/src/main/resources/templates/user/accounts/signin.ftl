@@ -7,7 +7,7 @@
 <!-- Wrapper -->
 <div class="wrapper">
     <!-- Navigation -->
-    <@common.nav/>
+<@common.nav/>
     <!-- end Navigation -->
     <!-- Page Content -->
     <div id="page-content">
@@ -27,13 +27,15 @@
                     <form role="form" id="form-create-account" method="post" action="/accounts/signin">
                         <div class="form-group">
                             <label for="form-create-account-email">Email:</label>
-                            <input type="text"  name="username" value="${username!}" class="form-control" id="form-create-account-email" required>
+                            <input type="text" name="username" value="${username!}" class="form-control"
+                                   id="form-create-account-email" required>
                         </div><!-- /.form-group -->
                         <div class="form-group">
                             <label for="form-create-account-password">密码:</label>
-                            <input type="password" name="password" value="${password!}" class="form-control" id="form-create-account-password" required>
+                            <input type="password" name="password" value="${password!}" class="form-control"
+                                   id="form-create-account-password" required>
                         </div><!-- /.form-group -->
-                        <input type="hidden" value="${target!}" name="target" />
+                        <input type="hidden" value="${target!}" name="target"/>
                         <div class="form-group clearfix">
                             <button type="submit" class="btn pull-right btn-default" id="account-submit">登录</button>
                         </div><!-- /.form-group -->
@@ -42,12 +44,12 @@
                     <div class="center"><a href="#" onclick="openRemember()">忘记密码</a></div>
                 </div>
             </div>
-           
+
         </div><!-- /.container -->
     </div>
     <!-- end Page Content -->
     <!-- Page Footer -->
-    <@common.footer/>
+<@common.footer/>
     <!-- end Page Footer -->
 </div>
 
@@ -55,24 +57,24 @@
 <!--[if gt IE 8]>
 <script type="text/javascript" src="/assets/js/ie.js"></script>
 <![endif]-->
- <script  type="text/javascript" >
-       $(document).ready(function() {
-          var errorMsg   = "${errorMsg!""}";
-          var successMsg = "${successMsg!""}";
-          if(errorMsg){ 
-              errormsg("error",errorMsg);
-          }
-          if(successMsg) {
-              successmsg("success",successMsg);
-          }
-        })
+<script type="text/javascript">
+    $(document).ready(function () {
+        var errorMsg = "${errorMsg!""}";
+        var successMsg = "${successMsg!""}";
+        if (errorMsg) {
+            errormsg("error", errorMsg);
+        }
+        if (successMsg) {
+            successmsg("success", successMsg);
+        }
+    })
 
-    function openRemember(){
+    function openRemember() {
         var email = document.getElementById('form-create-account-email');
-        window.open('/accounts/remember?username='+email.value);
+        window.open('/accounts/remember?username=' + email.value);
     }
-        
- </script>
-    }
+
+</script>
+}
 </body>
 </html>
