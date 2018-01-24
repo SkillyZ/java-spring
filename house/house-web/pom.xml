@@ -124,7 +124,7 @@
 
     <build>
         <resources>
-            <!--maven根本没有把mapper输出，所以pom.xml 加入如下--> 
+            <!--maven根本没有把mapper输出，所以pom.xml 加入如下-->
             <resource>
                 <directory>src/main/java</directory>
                 <includes>
