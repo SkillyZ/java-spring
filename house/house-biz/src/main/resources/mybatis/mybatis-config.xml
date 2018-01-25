@@ -17,6 +17,7 @@
     <typeAliases>
         <typeAlias type="com.skilly.house.common.model.User" alias="user" />
         <typeAlias type="com.skilly.house.common.model.House" alias="house" />
+        <typeAlias type="com.skilly.house.common.model.Community" alias="community" />
     </typeAliases>
 
     <mappers>

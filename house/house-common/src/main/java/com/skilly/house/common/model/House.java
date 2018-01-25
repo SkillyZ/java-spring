@@ -41,14 +41,11 @@ public class House {
     private List<String> featureList = Lists.newArrayList();
 
     private List<MultipartFile> houseFiles;
-
     private List<MultipartFile> floorPlanFiles;
-
 
     private String priceStr;
 
     private String typeStr;
-
 
     private Long userId;
 
