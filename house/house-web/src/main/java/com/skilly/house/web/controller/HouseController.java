@@ -1,10 +1,13 @@
 package com.skilly.house.web.controller;
 
+import com.skilly.house.biz.service.AgencyService;
 import com.skilly.house.biz.service.HouseService;
 import com.skilly.house.common.constants.CommonConstants;
 import com.skilly.house.common.constants.HouseUserType;
 import com.skilly.house.common.model.House;
+import com.skilly.house.common.model.HouseUser;
 import com.skilly.house.common.model.User;
+import com.skilly.house.common.model.UserMsg;
 import com.skilly.house.common.page.PageData;
 import com.skilly.house.common.page.PageParams;
 import com.skilly.house.common.result.ResultMsg;
@@ -32,8 +35,8 @@ public class HouseController {
 //    @Autowired
 //    private RecommendService recommendService;
 //
-//    @Autowired
-//    private AgencyService agencyService;
+    @Autowired
+    private AgencyService agencyService;
 //
 //    @Autowired
 //    private CommentService commentService;
@@ -82,16 +85,22 @@ public class HouseController {
 //        return "/house/ownlist";
 //    }
 //
-//    /**
-//     * 查询房屋详情
-//     * 查询关联经纪人
-//     * @param id
-//     * @return
-//     */
-//    @RequestMapping("house/detail")
-//    public String houseDetail(Long id,ModelMap modelMap){
-//        House house = houseService.queryOneHouse(id);
-//        HouseUser houseUser = houseService.getHouseUser(id);
+    /**
+     * 查询房屋详情
+     * 查询关联经纪人
+     * @param id
+     * @return
+     */
+    @RequestMapping("house/detail")
+    public String houseDetail(Long id,ModelMap modelMap){
+        House house = houseService.queryOneHouse(id);
+        HouseUser houseUser = houseService.getHouseUser(id);
+
+        if (houseUser.getUserId() != null && !houseUser.getUserId().equals(0)) {
+            modelMap.put("agent", agencyService.getAgentDeail(houseUser.getUserId()));
+        }
+        modelMap.put("house", house);
+
 //        recommendService.increase(id);
 //        List<Comment> comments = commentService.getHouseComments(id,8);
 //        if (houseUser.getUserId() != null && !houseUser.getUserId().equals(0)) {
@@ -101,15 +110,15 @@ public class HouseController {
 //        modelMap.put("recomHouses", rcHouses);
 //        modelMap.put("house", house);
 //        modelMap.put("commentList", comments);
-//        return "/house/detail";
-//    }
-//
-//    @RequestMapping("house/leaveMsg")
-//    public String houseMsg(UserMsg userMsg){
-//        houseService.addUserMsg(userMsg);
-//        return "redirect:/house/detail?id=" + userMsg.getHouseId() + ResultMsg.successMsg("留言成功").asUrlParams();
-//    }
-//
+        return "/house/detail";
+    }
+
+    @RequestMapping("house/leaveMsg")
+    public String houseMsg(UserMsg userMsg){
+        houseService.addUserMsg(userMsg);
+        return "redirect:/house/detail?id=" + userMsg.getHouseId() + ResultMsg.successMsg("留言成功").asUrlParams();
+    }
+
 //    //1.评分
 //    @ResponseBody
 //    @RequestMapping("house/rating")

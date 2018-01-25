@@ -5,9 +5,7 @@ import com.google.common.base.Strings;
 import com.google.common.collect.Lists;
 import com.skilly.house.biz.mapper.HouseMapper;
 import com.skilly.house.common.constants.HouseUserType;
-import com.skilly.house.common.model.Community;
-import com.skilly.house.common.model.House;
-import com.skilly.house.common.model.User;
+import com.skilly.house.common.model.*;
 import com.skilly.house.common.page.PageData;
 import com.skilly.house.common.page.PageParams;
 import com.skilly.house.common.utils.BeanHelper;
@@ -36,6 +34,9 @@ public class HouseService {
 
     @Autowired
     private MailService mailService;
+
+    @Autowired
+    private AgencyService agencyService;
 
 
     /**
@@ -99,6 +100,24 @@ public class HouseService {
 //        bindUser2House(house.getId(), user.getId(), false);
     }
 
+
+    public House queryOneHouse(Long id) {
+        House query = new House();
+        query.setId(id);
+        List<House> houses = queryAndSetImg(query, PageParams.build(1, 1));
+        if (!houses.isEmpty()) {
+            return houses.get(0);
+        }
+        return null;
+    }
+
+    public void addUserMsg(UserMsg userMsg) {
+        BeanHelper.onInsert(userMsg);
+        houseMapper.insertUserMsg(userMsg);
+        User agent = agencyService.getAgentDeail(userMsg.getAgentId());
+        mailService.sendMail("来自用户"+userMsg.getEmail()+"的留言", userMsg.getMsg(), agent.getEmail());
+    }
+
 //    public void bindUser2House(Long houseId, Long userId, boolean collect) {
 //        HouseUser existhouseUser = houseMapper.selectHouseUser(userId, houseId, collect ? HouseUserType.BOOKMARK.value : HouseUserType.SALE.value);
 //        if (existhouseUser != null) {
@@ -112,11 +131,11 @@ public class HouseService {
 //        BeanHelper.onInsert(houseUser);
 //        houseMapper.insertHouseUser(houseUser);
 //    }
-//
-//    public HouseUser getHouseUser(Long houseId) {
-//        HouseUser houseUser = houseMapper.selectSaleHouseUser(houseId);
-//        return houseUser;
-//    }
+
+    public HouseUser getHouseUser(Long houseId) {
+        HouseUser houseUser = houseMapper.selectSaleHouseUser(houseId);
+        return houseUser;
+    }
 
 
 }

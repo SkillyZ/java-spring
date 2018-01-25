@@ -1,8 +1,6 @@
 package com.skilly.house.biz.mapper;
 
-import com.skilly.house.common.model.Community;
-import com.skilly.house.common.model.House;
-import com.skilly.house.common.model.User;
+import com.skilly.house.common.model.*;
 import com.skilly.house.common.page.PageParams;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
@@ -26,12 +24,12 @@ public interface HouseMapper {
     public int insert(House house);
 
 //    public HouseUser selectHouseUser(@Param("userId") Long userId, @Param("id") Long houseId, @Param("type") Integer integer);
-//
-//    public HouseUser selectSaleHouseUser(@Param("id") Long houseId);
-//
+
+    public HouseUser selectSaleHouseUser(@Param("id") Long houseId);
+
 //    public int insertHouseUser(HouseUser houseUser);
 
-//    public int insertUserMsg(UserMsg userMsg);
+    public int insertUserMsg(UserMsg userMsg);
 
     public int updateHouse(House updateHouse);
 

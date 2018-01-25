@@ -15,14 +15,18 @@
 
 
     <typeAliases>
-        <typeAlias type="com.skilly.house.common.model.User" alias="user" />
-        <typeAlias type="com.skilly.house.common.model.House" alias="house" />
-        <typeAlias type="com.skilly.house.common.model.Community" alias="community" />
+        <typeAlias type="com.skilly.house.common.model.User" alias="user"/>
+        <typeAlias type="com.skilly.house.common.model.House" alias="house"/>
+        <typeAlias type="com.skilly.house.common.model.Community" alias="community"/>
+        <typeAlias type="com.skilly.house.common.model.Agency" alias="agency"/>
+        <typeAlias type="com.skilly.house.common.model.UserMsg" alias="userMsg"/>
+        <typeAlias type="com.skilly.house.common.model.HouseUser" alias="houseUser"/>
     </typeAliases>
 
     <mappers>
-        <mapper resource="mapper/user.xml" />
-        <mapper resource="mapper/house.xml" />
+        <mapper resource="mapper/user.xml"/>
+        <mapper resource="mapper/house.xml"/>
+        <mapper resource="mapper/agency.xml"/>
     </mappers>
 
 </configuration>
