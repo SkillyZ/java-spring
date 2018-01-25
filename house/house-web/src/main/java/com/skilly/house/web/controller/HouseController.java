@@ -116,7 +116,7 @@ public class HouseController {
     @RequestMapping("house/leaveMsg")
     public String houseMsg(UserMsg userMsg){
         houseService.addUserMsg(userMsg);
-        return "redirect:/house/detail?id=" + userMsg.getHouseId() + ResultMsg.successMsg("留言成功").asUrlParams();
+        return "redirect:/house/detail?id=" + userMsg.getHouseId() + "&" + ResultMsg.successMsg("留言成功").asUrlParams();
     }
 
 //    //1.评分
