@@ -2,6 +2,7 @@ package com.skilly.house.web.controller;
 
 import com.skilly.house.biz.service.AgencyService;
 import com.skilly.house.biz.service.HouseService;
+import com.skilly.house.biz.service.RecommendService;
 import com.skilly.house.common.constants.CommonConstants;
 import com.skilly.house.common.constants.HouseUserType;
 import com.skilly.house.common.model.House;
@@ -32,9 +33,9 @@ public class HouseController {
 //    @Autowired
 //    private CityService cityService;
 
-//    @Autowired
-//    private RecommendService recommendService;
-//
+    @Autowired
+    private RecommendService recommendService;
+
     @Autowired
     private AgencyService agencyService;
 //
@@ -46,15 +47,16 @@ public class HouseController {
      * 2.支持小区搜索、类型搜索
      * 3.支持排序
      * 4.支持展示图片、价格、标题、地址等信息
-     *
+     * <p>
      * spring自动将modelMap 数据抽取出来渲染到模版引擎里面
+     *
      * @return
      */
     @RequestMapping("/house/list")
-    public String houseList(Integer pageSize, Integer pageNum, House query, ModelMap modelMap){
-        PageData<House> ps =  houseService.queryHouse(query, PageParams.build(pageSize, pageNum));
-//        List<House> hotHouses =  recommendService.getHotHouse(CommonConstants.RECOM_SIZE);
-//        modelMap.put("recomHouses", hotHouses);
+    public String houseList(Integer pageSize, Integer pageNum, House query, ModelMap modelMap) {
+        PageData<House> ps = houseService.queryHouse(query, PageParams.build(pageSize, pageNum));
+        List<House> hotHouses = recommendService.getHotHouse(CommonConstants.RECOM_SIZE);
+        modelMap.put("recomHouses", hotHouses);
         modelMap.put("ps", ps);
         modelMap.put("vo", query);
         return "house/listing";
@@ -68,10 +70,10 @@ public class HouseController {
 //    }
 
     @RequestMapping("/house/add")
-    public String doAdd(House house){
+    public String doAdd(House house) {
         User user = UserContext.getUser();
         house.setState(CommonConstants.HOUSE_STATE_UP);
-        houseService.addHouse(house,user);
+        houseService.addHouse(house, user);
         return "redirect:/house/ownlist";
     }
 
@@ -85,36 +87,37 @@ public class HouseController {
 //        return "/house/ownlist";
 //    }
 //
+
     /**
      * 查询房屋详情
      * 查询关联经纪人
+     *
      * @param id
      * @return
      */
     @RequestMapping("house/detail")
-    public String houseDetail(Long id,ModelMap modelMap){
+    public String houseDetail(Long id, ModelMap modelMap) {
         House house = houseService.queryOneHouse(id);
         HouseUser houseUser = houseService.getHouseUser(id);
 
         if (houseUser.getUserId() != null && !houseUser.getUserId().equals(0)) {
             modelMap.put("agent", agencyService.getAgentDeail(houseUser.getUserId()));
         }
-        modelMap.put("house", house);
 
-//        recommendService.increase(id);
+        recommendService.increase(id);
 //        List<Comment> comments = commentService.getHouseComments(id,8);
 //        if (houseUser.getUserId() != null && !houseUser.getUserId().equals(0)) {
 //            modelMap.put("agent", agencyService.getAgentDeail(houseUser.getUserId()));
 //        }
-//        List<House> rcHouses =  recommendService.getHotHouse(CommonConstants.RECOM_SIZE);
-//        modelMap.put("recomHouses", rcHouses);
-//        modelMap.put("house", house);
+        List<House> rcHouses = recommendService.getHotHouse(CommonConstants.RECOM_SIZE);
+        modelMap.put("recomHouses", rcHouses);
+        modelMap.put("house", house);
 //        modelMap.put("commentList", comments);
         return "/house/detail";
     }
 
     @RequestMapping("house/leaveMsg")
-    public String houseMsg(UserMsg userMsg){
+    public String houseMsg(UserMsg userMsg) {
         houseService.addUserMsg(userMsg);
         return "redirect:/house/detail?id=" + userMsg.getHouseId() + "&" + ResultMsg.successMsg("留言成功").asUrlParams();
     }
