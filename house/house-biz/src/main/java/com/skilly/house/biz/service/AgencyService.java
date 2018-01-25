@@ -3,6 +3,7 @@ package com.skilly.house.biz.service;
 import com.skilly.house.biz.mapper.AgencyMapper;
 import com.skilly.house.common.model.Agency;
 import com.skilly.house.common.model.User;
+import com.skilly.house.common.page.PageData;
 import com.skilly.house.common.page.PageParams;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -53,4 +54,13 @@ public class AgencyService {
             i.setAvatar(imgPrefix + i.getAvatar());
         });
     }
+
+
+    public PageData<User> getAllAgent(PageParams pageParams) {
+        List<User> agents = agencyMapper.selectAgent(new User(), pageParams);
+        setImg(agents);
+        Long count = agencyMapper.selectAgentCount(new User());
+        return PageData.buildPage(agents, count, pageParams.getPageSize(), pageParams.getPageNum());
+    }
+
 }

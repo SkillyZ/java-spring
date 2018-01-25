@@ -87,7 +87,7 @@
         from user
         <where>
             enable =1 and type =2
-            <if test="user.id != null and user.id !=0">
+            <if test="user.id !=null and user.id !=0">
                 and id = #{user.id}
             </if>
             <if test="user.name !=null and user.name != ''">
