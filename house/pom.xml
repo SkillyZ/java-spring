@@ -101,5 +101,7 @@
 		<module>house-common</module>
 		<module>house-biz</module>
 		<module>house-web</module>
+        <module>springadmin</module>
+		<module>springadmin</module>
 	</modules>
 </project>
