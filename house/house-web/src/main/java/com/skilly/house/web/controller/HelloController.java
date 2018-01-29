@@ -13,20 +13,14 @@ import java.util.List;
 public class HelloController {
 
 
-  @Autowired
-  private UserService userService;
-  
-  @RequestMapping("hello")
-  public String  hello(ModelMap modelMap){
-    List<User> users = userService.getUsers();
-    User one = users.get(0);
-    modelMap.put("user", one);
-    return "hello";
-  }
-  
-  @RequestMapping("index")
-  public String index(){
-     return "homepage/index";
-  }
+    @Autowired
+    private UserService userService;
 
+    @RequestMapping("hello")
+    public String hello(ModelMap modelMap) {
+        List<User> users = userService.getUsers();
+        User one = users.get(0);
+        modelMap.put("user", one);
+        return "hello";
+    }
 }

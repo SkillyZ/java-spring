@@ -104,42 +104,42 @@
                     <a href="/house/list" class="link-arrow">所有房源</a>
                 </header>
                 <div class="row">
-                   <#--<#list recomHouses as house>-->
-                    <#--<div class="col-md-3 col-sm-6">-->
-                        <#--<div class="property">-->
-                            <#--<a href="/house/detail?id=${house.id}">-->
-                                <#--<div class="property-image">-->
-                                    <#--<img alt="" src="${(house.firstImg)!}" style="width: 262px;height: 196px">-->
-                                <#--</div>-->
-                                <#--<div class="overlay">-->
-                                    <#--<div class="info">-->
-                                        <#--<div class="tag price">￥ ${house.price} 万元</div>-->
-                                        <#--<h3>${house.name}</h3>-->
-                                        <#--<figure>${house.address}</figure>-->
-                                    <#--</div>-->
-                                    <#--<ul class="additional-info">-->
-                                        <#--<li>-->
-                                            <#--<header>面积:</header>-->
-                                            <#--<figure>${house.area}m<sup>2</sup></figure>-->
-                                        <#--</li>-->
-                                        <#--<li>-->
-                                            <#--<header>床:</header>-->
-                                            <#--<figure>${house.beds}</figure>-->
-                                        <#--</li>-->
-                                        <#--<li>-->
-                                            <#--<header>卫生间:</header>-->
-                                            <#--<figure>${house.baths}</figure>-->
-                                        <#--</li>-->
-                                        <#--<li>-->
-                                            <#--<header>车库:</header>-->
-                                            <#--<figure>0</figure>-->
-                                        <#--</li>-->
-                                    <#--</ul>-->
-                                <#--</div>-->
-                            <#--</a>-->
-                        <#--</div><!-- /.property &ndash;&gt;-->
-                    <#--</div><!-- /.col-md-3 &ndash;&gt;-->
-                   <#--</#list>-->
+                   <#list recomHouses as house>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="property">
+                            <a href="/house/detail?id=${house.id}">
+                                <div class="property-image">
+                                    <img alt="" src="${(house.firstImg)!}" style="width: 262px;height: 196px">
+                                </div>
+                                <div class="overlay">
+                                    <div class="info">
+                                        <div class="tag price">￥ ${house.price} 万元</div>
+                                        <h3>${house.name}</h3>
+                                        <figure>${house.address}</figure>
+                                    </div>
+                                    <ul class="additional-info">
+                                        <li>
+                                            <header>面积:</header>
+                                            <figure>${house.area}m<sup>2</sup></figure>
+                                        </li>
+                                        <li>
+                                            <header>床:</header>
+                                            <figure>${house.beds}</figure>
+                                        </li>
+                                        <li>
+                                            <header>卫生间:</header>
+                                            <figure>${house.baths}</figure>
+                                        </li>
+                                        <li>
+                                            <header>车库:</header>
+                                            <figure>0</figure>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div><!-- /.property -->
+                    </div><!-- /.col-md-3 -->
+                   </#list>
                  
                 </div><!-- /.row-->
             </div><!-- /.container-->
