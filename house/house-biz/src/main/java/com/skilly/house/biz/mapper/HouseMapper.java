@@ -23,11 +23,11 @@ public interface HouseMapper {
 
     public int insert(House house);
 
-//    public HouseUser selectHouseUser(@Param("userId") Long userId, @Param("id") Long houseId, @Param("type") Integer integer);
+    public HouseUser selectHouseUser(@Param("userId") Long userId, @Param("id") Long houseId, @Param("type") Integer integer);
 
     public HouseUser selectSaleHouseUser(@Param("id") Long houseId);
 
-//    public int insertHouseUser(HouseUser houseUser);
+    public int insertHouseUser(HouseUser houseUser);
 
     public int insertUserMsg(UserMsg userMsg);
 

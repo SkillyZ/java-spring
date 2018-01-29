@@ -117,7 +117,7 @@
         where  id = #{id}
     </update>
 
-
+    <!--把我们刚插入到数据库记录里的id设置到我们的pojo对象上-->
     <insert id="insert"  useGeneratedKeys="true" keyProperty="id">
         insert into house(
         type,
@@ -183,5 +183,32 @@
         where house_id = #{id} and  type = 1
         limit 1
     </select>
+
+    <select id="selectHouseUser" resultType="houseUser">
+        select id,house_id,user_id,create_time,type
+        from house_user
+        where house_id = #{id} and user_id = #{userId} and type = #{type}
+    </select>
+
+    <insert id="insertHouseUser">
+        insert into house_user (house_id,
+        user_id,
+        create_time,
+        type)
+        value(
+        #{houseId},
+        #{userId},
+        #{createTime},
+        #{type}
+        )
+
+    </insert>
+
+
+    <delete id="deleteHouseUser">
+        delete from house_user
+        where  house_id = #{id} and user_id = #{userId} and type=#{type}
+
+    </delete>
 
 </mapper>

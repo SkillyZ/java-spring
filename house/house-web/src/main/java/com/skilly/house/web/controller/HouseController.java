@@ -1,6 +1,7 @@
 package com.skilly.house.web.controller;
 
 import com.skilly.house.biz.service.AgencyService;
+import com.skilly.house.biz.service.CityService;
 import com.skilly.house.biz.service.HouseService;
 import com.skilly.house.biz.service.RecommendService;
 import com.skilly.house.common.constants.CommonConstants;
@@ -30,8 +31,8 @@ public class HouseController {
     @Autowired
     private HouseService houseService;
 
-//    @Autowired
-//    private CityService cityService;
+    @Autowired
+    private CityService cityService;
 
     @Autowired
     private RecommendService recommendService;
@@ -62,12 +63,12 @@ public class HouseController {
         return "house/listing";
     }
 
-//    @RequestMapping("/house/toAdd")
-//    public String toAdd(ModelMap modelMap) {
-//        modelMap.put("citys", cityService.getAllCitys());
-//        modelMap.put("communitys", houseService.getAllCommunitys());
-//        return "/house/add";
-//    }
+    @RequestMapping("/house/toAdd")
+    public String toAdd(ModelMap modelMap) {
+        modelMap.put("citys", cityService.getAllCitys());
+        modelMap.put("communitys", houseService.getAllCommunitys());
+        return "/house/add";
+    }
 
     @RequestMapping("/house/add")
     public String doAdd(House house) {
@@ -77,16 +78,16 @@ public class HouseController {
         return "redirect:/house/ownlist";
     }
 
-//    @RequestMapping("house/ownlist")
-//    public String ownlist(House house,Integer pageNum,Integer pageSize,ModelMap modelMap){
-//        User user = UserContext.getUser();
-//        house.setUserId(user.getId());
-//        house.setBookmarked(false);
-//        modelMap.put("ps", houseService.queryHouse(house, PageParams.build(pageSize, pageNum)));
-//        modelMap.put("pageType", "own");
-//        return "/house/ownlist";
-//    }
-//
+    @RequestMapping("house/ownlist")
+    public String ownlist(House house,Integer pageNum,Integer pageSize,ModelMap modelMap){
+        User user = UserContext.getUser();
+        house.setUserId(user.getId());
+        house.setBookmarked(false);
+        modelMap.put("ps", houseService.queryHouse(house, PageParams.build(pageSize, pageNum)));
+        modelMap.put("pageType", "own");
+        return "/house/ownlist";
+    }
+
 
     /**
      * 查询房屋详情
@@ -122,48 +123,48 @@ public class HouseController {
         return "redirect:/house/detail?id=" + userMsg.getHouseId() + "&" + ResultMsg.successMsg("留言成功").asUrlParams();
     }
 
-//    //1.评分
-//    @ResponseBody
-//    @RequestMapping("house/rating")
-//    public ResultMsg houseRate(Double rating,Long id){
-//        houseService.updateRating(id,rating);
-//        return ResultMsg.successMsg("ok");
-//    }
-//
-//
-//    //2.收藏
-//    @ResponseBody
-//    @RequestMapping("house/bookmark")
-//    public ResultMsg bookmark(Long id){
-//        User user =	UserContext.getUser();
-//        houseService.bindUser2House(id, user.getId(), true);
-//        return ResultMsg.successMsg("ok");
-//    }
-//
-//    //3.删除收藏
-//    @ResponseBody
-//    @RequestMapping("house/unbookmark")
-//    public ResultMsg unbookmark(Long id){
-//        User user =	UserContext.getUser();
-//        houseService.unbindUser2House(id,user.getId(), HouseUserType.BOOKMARK);
-//        return ResultMsg.successMsg("ok");
-//    }
-//
-//    @RequestMapping(value="house/del")
-//    public String delsale(Long id,String pageType){
-//        User user = UserContext.getUser();
-//        houseService.unbindUser2House(id,user.getId(),pageType.equals("own")?HouseUserType.SALE:HouseUserType.BOOKMARK);
-//        return "redirect:/house/ownlist";
-//    }
-//
-//    //4.收藏列表
-//    @RequestMapping("house/bookmarked")
-//    public String bookmarked(House house,Integer pageNum,Integer pageSize,ModelMap modelMap){
-//        User user = UserContext.getUser();
-//        house.setBookmarked(true);
-//        house.setUserId(user.getId());
-//        modelMap.put("ps", houseService.queryHouse(house, PageParams.build(pageSize, pageNum)));
-//        modelMap.put("pageType", "book");
-//        return "/house/ownlist";
-//    }
+    //1.评分
+    @ResponseBody
+    @RequestMapping("house/rating")
+    public ResultMsg houseRate(Double rating,Long id){
+        houseService.updateRating(id,rating);
+        return ResultMsg.successMsg("ok");
+    }
+
+
+    //2.收藏
+    @ResponseBody
+    @RequestMapping("house/bookmark")
+    public ResultMsg bookmark(Long id){
+        User user =	UserContext.getUser();
+        houseService.bindUser2House(id, user.getId(), true);
+        return ResultMsg.successMsg("ok");
+    }
+
+    //3.删除收藏
+    @ResponseBody
+    @RequestMapping("house/unbookmark")
+    public ResultMsg unbookmark(Long id){
+        User user =	UserContext.getUser();
+        houseService.unbindUser2House(id,user.getId(), HouseUserType.BOOKMARK);
+        return ResultMsg.successMsg("ok");
+    }
+
+    @RequestMapping(value="house/del")
+    public String delsale(Long id,String pageType){
+        User user = UserContext.getUser();
+        houseService.unbindUser2House(id,user.getId(),pageType.equals("own")?HouseUserType.SALE:HouseUserType.BOOKMARK);
+        return "redirect:/house/ownlist";
+    }
+
+    //4.收藏列表
+    @RequestMapping("house/bookmarked")
+    public String bookmarked(House house,Integer pageNum,Integer pageSize,ModelMap modelMap){
+        User user = UserContext.getUser();
+        house.setBookmarked(true);
+        house.setUserId(user.getId());
+        modelMap.put("ps", houseService.queryHouse(house, PageParams.build(pageSize, pageNum)));
+        modelMap.put("pageType", "book");
+        return "/house/ownlist";
+    }
 }

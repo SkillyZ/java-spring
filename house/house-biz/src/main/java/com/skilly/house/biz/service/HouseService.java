@@ -97,7 +97,7 @@ public class HouseService {
         }
         BeanHelper.onInsert(house);
         houseMapper.insert(house);
-//        bindUser2House(house.getId(), user.getId(), false);
+        bindUser2House(house.getId(), user.getId(), false);
     }
 
 
@@ -115,22 +115,22 @@ public class HouseService {
         BeanHelper.onInsert(userMsg);
         houseMapper.insertUserMsg(userMsg);
         User agent = agencyService.getAgentDeail(userMsg.getAgentId());
-        mailService.sendMail("来自用户"+userMsg.getEmail()+"的留言", userMsg.getMsg(), agent.getEmail());
+        mailService.sendMail("来自用户" + userMsg.getEmail() + "的留言", userMsg.getMsg(), agent.getEmail());
     }
 
-//    public void bindUser2House(Long houseId, Long userId, boolean collect) {
-//        HouseUser existhouseUser = houseMapper.selectHouseUser(userId, houseId, collect ? HouseUserType.BOOKMARK.value : HouseUserType.SALE.value);
-//        if (existhouseUser != null) {
-//            return;
-//        }
-//        HouseUser houseUser = new HouseUser();
-//        houseUser.setHouseId(houseId);
-//        houseUser.setUserId(userId);
-//        houseUser.setType(collect ? HouseUserType.BOOKMARK.value : HouseUserType.SALE.value);
-//        BeanHelper.setDefaultProp(houseUser, HouseUser.class);
-//        BeanHelper.onInsert(houseUser);
-//        houseMapper.insertHouseUser(houseUser);
-//    }
+    public void bindUser2House(Long houseId, Long userId, boolean collect) {
+        HouseUser existhouseUser = houseMapper.selectHouseUser(userId, houseId, collect ? HouseUserType.BOOKMARK.value : HouseUserType.SALE.value);
+        if (existhouseUser != null) {
+            return;
+        }
+        HouseUser houseUser = new HouseUser();
+        houseUser.setHouseId(houseId);
+        houseUser.setUserId(userId);
+        houseUser.setType(collect ? HouseUserType.BOOKMARK.value : HouseUserType.SALE.value);
+        BeanHelper.setDefaultProp(houseUser, HouseUser.class);
+        BeanHelper.onInsert(houseUser);
+        houseMapper.insertHouseUser(houseUser);
+    }
 
     public HouseUser getHouseUser(Long houseId) {
         HouseUser houseUser = houseMapper.selectSaleHouseUser(houseId);
@@ -138,4 +138,23 @@ public class HouseService {
     }
 
 
+    public void updateRating(Long id, Double rating) {
+        House house = queryOneHouse(id);
+        Double oldRating = house.getRating();
+        Double newRating = oldRating.equals(0D) ? rating : Math.min((oldRating + rating) / 2, 5);
+        House updateHouse = new House();
+        updateHouse.setId(id);
+        updateHouse.setRating(newRating);
+        BeanHelper.onUpdate(updateHouse);
+        houseMapper.updateHouse(updateHouse);
+    }
+
+    public void unbindUser2House(Long id, Long userId, HouseUserType type) {
+        if (type.equals(HouseUserType.SALE)) {
+            houseMapper.downHouse(id);
+        } else {
+            houseMapper.deleteHouseUser(id, userId, type.value);
+        }
+
+    }
 }
