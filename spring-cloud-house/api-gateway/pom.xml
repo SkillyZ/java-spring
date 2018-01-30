@@ -4,19 +4,19 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.skilly.house</groupId>
-	<artifactId>demo</artifactId>
+	<artifactId>api-gateway</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>demo</name>
-	<description>Demo project for Spring Boot</description>
+	<name>api-gateway</name>
+	<description>网关服务</description>
 
-	<!--<parent>-->
-		<!--<groupId>org.springframework.boot</groupId>-->
-		<!--<artifactId>spring-boot-starter-parent</artifactId>-->
-		<!--<version>1.5.9.RELEASE</version>-->
-		<!--<relativePath/> &lt;!&ndash; lookup parent from repository &ndash;&gt;-->
-	<!--</parent>-->
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.5.9.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -50,9 +50,7 @@
 				<artifactId>spring-boot-dependencies</artifactId>
 				<version>1.5.9.RELEASE</version>
 				<type>pom</type>
-				<scope>import</scope> <!--  我们一贯习惯以import的方式来导入sb和spring cloud，所以我们这里改变引入方式，将parent删除然后将sb import进来好了，一个拥有spring cloud的sping boot工程就创建好了
-那么引入spring cloud dependencies有什么好处呢，和spring boot dependencies一样，为我们进行版本管理，这里版本管理是组件的版本，它可以提供给我们一套兼容的组件；
-而无需我们关心版本也不用在pom中输入版本，比如我们这里的Eureka为例，我们无需输入版本号 -->
+				<scope>import</scope>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
@@ -70,18 +68,6 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<version>1.5.9.RELEASE</version>
-				<configuration>
-					<mainClass>com.skilly.house.user.UserServiceApplication</mainClass>
-					<layout>ZIP</layout>
-				</configuration>
-				<executions>
-					<execution>
-						<goals>
-							<goal>repackage</goal>
-						</goals>
-					</execution>
-				</executions>
 			</plugin>
 		</plugins>
 	</build>
