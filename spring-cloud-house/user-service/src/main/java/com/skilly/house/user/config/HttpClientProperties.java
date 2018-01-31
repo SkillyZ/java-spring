@@ -1,13 +1,13 @@
-package com.skilly.house.api.config;
+package com.skilly.house.user.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 @ConfigurationProperties(prefix="spring.httpclient")
 public class HttpClientProperties {
-	
+
 	private Integer connectTimeOut = 1000;
-	
-	private Integer socketTimeOut = 1000000;
+
+	private Integer socketTimeOut = 10000;
 
 	private String agent = "agent";
 	private Integer maxConnPerRoute = 10;
@@ -42,7 +42,5 @@ public class HttpClientProperties {
 	public void setMaxConnTotaol(Integer maxConnTotaol) {
 		this.maxConnTotaol = maxConnTotaol;
 	}
-	
-	
-	
+
 }
