@@ -1,6 +1,7 @@
 package com.skilly.house.user.controller;
 
 import com.skilly.house.user.common.RestResponse;
+import com.skilly.house.user.exception.IllegalParamsException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
@@ -17,12 +18,15 @@ public class UserController {
 
     private static final Logger logger = LoggerFactory.getLogger(UserController.class);
 
-    @Value("${server.post}")
-    private Integer port;
+//    @Value("${server.port}")
+//    private Integer port;
 
     @RequestMapping("getusername")
     public RestResponse<String> getusername(Long id) {
-        logger.info("Incoming Request and my server port is" + port);
-        return RestResponse.success("test-username" + port);
+        logger.info("Incoming Request and my server port is");
+        if (id == null) {
+            throw new IllegalParamsException(IllegalParamsException.Type.WRONG_PAGE_NUM, "错误分页");
+        }
+        return RestResponse.success("test-username" );
     }
 }
