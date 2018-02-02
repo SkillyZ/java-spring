@@ -3,7 +3,7 @@ package com.skilly.house.user.common;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 
-@JsonInclude(Include.NON_NULL)
+@JsonInclude(Include.NON_NULL) //　前端的同事要求说尽量不要有null，可有为空串“” 或者 0 或者 []， 但尽量不要null。 所以@JsonInclude(Include.NON_NULL) 这个注解放在类头上就可以解决。 实体类与json互转的时候 属性值为null的不参与序列化
 public class RestResponse<T> {
 
     private int code;
