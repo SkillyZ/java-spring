@@ -2,6 +2,7 @@ package com.skilly.house.user.service;
 
 import java.time.Instant;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 import com.google.common.collect.ImmutableMap;
@@ -153,7 +154,7 @@ public class UserService {
         try {
             map = JwtHelper.verifyToken(token);
         } catch (Exception e) {
-            throw new UserException(Type.USER_NOT_LOGIN, "User not login");
+            throw new UserException(UserException.Type.USER_NOT_LOGIN, "User not login");
         }
         String email = map.get("email");
         Long expired = redisTemplate.getExpire(email);
@@ -163,9 +164,22 @@ public class UserService {
             user.setToken(token);
             return user;
         }
-        throw new UserException(Type.USER_NOT_LOGIN, "user not login");
+        throw new UserException(UserException.Type.USER_NOT_LOGIN, "user not login");
 
     }
 
+    private User getUserByEmail(String email) {
+        User user = new User();
+        user.setEmail(email);
+        List<User> list = getUserByQuery(user);
+        if (!list.isEmpty()) {
+            return list.get(0);
+        }
+        throw new UserException(UserException.Type.USER_NOT_FOUND,"User not found for " + email);
+    }
 
+    public void invalidate(String token) {
+        Map<String, String> map = JwtHelper.verifyToken(token);
+        redisTemplate.delete(map.get("email"));
+    }
 }
