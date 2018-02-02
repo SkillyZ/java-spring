@@ -108,6 +108,11 @@
             <version>1.4.7.RELEASE</version>
         </dependency>
 
+
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils</artifactId>
+		</dependency>
     </dependencies>
 
 	<dependencyManagement>

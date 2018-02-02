@@ -49,16 +49,31 @@ public class UserController {
     //------------------------------ 查询----------------------
 
     @RequestMapping("getById")
-    public RestResponse<User> getUserById(Long id){
+    public RestResponse<User> getUserById(Long id) {
         User user = userService.getUserById(id);
         return RestResponse.success(user);
     }
 
     @RequestMapping("getList")
-    public RestResponse<List<User>> getUserList(@RequestBody User user){
+    public RestResponse<List<User>> getUserList(@RequestBody User user) {
         List<User> users = userService.getUserByQuery(user);
         return RestResponse.success(users);
     }
 
 
+    //----------------------注册----------------------------------
+    @RequestMapping("add")
+    public RestResponse<User> add(@RequestBody User user) {
+        userService.addAccount(user, user.getEnableUrl());
+        return RestResponse.success();
+    }
+
+    /**
+     * 主要激活key的验证
+     */
+    @RequestMapping("enable")
+    public RestResponse<Object> enable(String key) {
+        userService.enable(key);
+        return RestResponse.success();
+    }
 }
