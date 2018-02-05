@@ -28,23 +28,22 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    /*
     @Autowired
     private StringRedisTemplate redisTemplate;
 
-//    @Value("${server.port}")
-//    private Integer port;
+    @Value("${server.port}")
+    private Integer port;
 
     @RequestMapping("getusername")
     public RestResponse<String> getusername(Long id) {
-        logger.info("Incoming Request and my server port is");
+        logger.info("Incoming Request and my server port is" + port);
         if (id == null) {
             throw new IllegalParamsException(IllegalParamsException.Type.WRONG_PAGE_NUM, "错误分页");
         }
         redisTemplate.opsForValue().set("key1", "val1");
         logger.info(redisTemplate.opsForValue().get("key1"));
         return RestResponse.success("test-username" );
-    }*/
+    }
 
     //------------------------------ 查询----------------------
 

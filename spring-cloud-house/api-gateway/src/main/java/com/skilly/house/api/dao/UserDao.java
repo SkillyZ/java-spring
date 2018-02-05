@@ -26,7 +26,7 @@ public class UserDao {
 
 //    -----------------测试方法
     public String getusername(Long id) {
-        String url = "http://user/getusername?id=" + id;
+        String url = "http://user/user/getusername?id=" + id;
         return rest.get(url, new ParameterizedTypeReference<RestResponse<String>>() {} ).getBody().getResult();
     }
 
