@@ -38,24 +38,25 @@ public class UserController {
 
     @RequestMapping(value = "accounts/register", method = {RequestMethod.POST, RequestMethod.GET})
     public String accountsSubmit(User account, ModelMap modelMap) {
-        if (account == null || account.getName() == null) {
-//            modelMap.put("agencyList", agencyService.getAllAgency());
-            return "/user/accounts/register";
-        }
-        ResultMsg retMsg = UserHelper.validate(account);
-
-        if (retMsg.isSuccess()) {
-            boolean exist = accountService.isExist(account.getEmail());
-            if (!exist) {
-                accountService.addAccount(account);
-                modelMap.put("success_email", account.getEmail());
-                return "/user/accounts/registerSubmit";
-            } else {
-                return "redirect:/accounts/register?" + ResultMsg.errorMsg("邮箱已被占用").asUrlParams();
-            }
-        } else {
-            return "redirect:/accounts/register?" + ResultMsg.errorMsg("参数错误").asUrlParams();
-        }
+        return "/user/accounts/register";
+//        if (account == null || account.getName() == null) {
+////            modelMap.put("agencyList", agencyService.getAllAgency());
+//            return "/user/accounts/register";
+//        }
+//        ResultMsg retMsg = UserHelper.validate(account);
+//
+//        if (retMsg.isSuccess()) {
+//            boolean exist = accountService.isExist(account.getEmail());
+//            if (!exist) {
+//                accountService.addAccount(account);
+//                modelMap.put("success_email", account.getEmail());
+//                return "/user/accounts/registerSubmit";
+//            } else {
+//                return "redirect:/accounts/register?" + ResultMsg.errorMsg("邮箱已被占用").asUrlParams();
+//            }
+//        } else {
+//            return "redirect:/accounts/register?" + ResultMsg.errorMsg("参数错误").asUrlParams();
+//        }
     }
 
     @RequestMapping("accounts/verify")
