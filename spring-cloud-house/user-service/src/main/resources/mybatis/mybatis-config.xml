@@ -18,7 +18,7 @@
 
     <typeAliases>
       <typeAlias type="com.skilly.house.user.model.User"        alias="user"/>
-      <!--<typeAlias type="com.skilly.house.user.model.Agency"        alias="agency"/>-->
+      <typeAlias type="com.skilly.house.user.model.Agency"        alias="agency"/>
     </typeAliases>
 
     <typeHandlers>
@@ -26,7 +26,7 @@
 
     <mappers> 
       <mapper resource="mapper/user.xml"/> 
-      <!--<mapper resource="mapper/agency.xml"/> -->
+      <mapper resource="mapper/agency.xml"/>
     </mappers>
 
 
