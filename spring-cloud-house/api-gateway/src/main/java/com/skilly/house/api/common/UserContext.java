@@ -1,6 +1,6 @@
 package com.skilly.house.api.common;
 
-import com.mooc.house.api.model.User;
+import com.skilly.house.api.model.User;
 
 public class UserContext {
   private static final ThreadLocal<User> USER_HOLDER = new ThreadLocal<>();

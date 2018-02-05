@@ -78,68 +78,67 @@ public class AccountService {
      * @return 返回成功与失败
      */
     public boolean enable(String key) {
-        userDao.enable(key);
-        return true;
+        return userDao.enable(key);
     }
 
-
-    /**
-     * 调用重置通知接口
-     *
-     * @param email
-     */
-    @Async
-    public void remember(String email) {
-        userDao.resetNotify(email, "http://" + domainName + "/accounts/reset");
-    }
-
-    /**
-     * 重置密码操作
-     *
-     * @param email
-     * @param key
-     */
-    public User reset(String key, String password) {
-        return userDao.reset(key, password);
-    }
-
-
-    public String getResetEmail(String key) {
-        String email = userDao.getEmail(key);
-        return email;
-    }
-
-
-    public User updateUser(User user) {
-        BeanHelper.onUpdate(user);
-        return userDao.updateUser(user);
-    }
-
-    public void logout(String token) {
-        userDao.logout(token);
-    }
-
-    /**
-     * 校验用户名密码并返回用户对象
-     *
-     * @param username
-     * @param password
-     * @return
-     */
-    public User auth(String username, String password) {
-        if (StringUtils.isBlank(username) || StringUtils.isBlank(password)) {
-            return null;
-        }
-        User user = new User();
-        user.setEmail(username);
-        user.setPasswd(password);
-        try {
-            user = userDao.authUser(user);
-        } catch (Exception e) {
-            return null;
-        }
-        return user;
-    }
+//
+//    /**
+//     * 调用重置通知接口
+//     *
+//     * @param email
+//     */
+//    @Async
+//    public void remember(String email) {
+//        userDao.resetNotify(email, "http://" + domainName + "/accounts/reset");
+//    }
+//
+//    /**
+//     * 重置密码操作
+//     *
+//     * @param email
+//     * @param key
+//     */
+//    public User reset(String key, String password) {
+//        return userDao.reset(key, password);
+//    }
+//
+//
+//    public String getResetEmail(String key) {
+//        String email = userDao.getEmail(key);
+//        return email;
+//    }
+//
+//
+//    public User updateUser(User user) {
+//        BeanHelper.onUpdate(user);
+//        return userDao.updateUser(user);
+//    }
+//
+//    public void logout(String token) {
+//        userDao.logout(token);
+//    }
+//
+//    /**
+//     * 校验用户名密码并返回用户对象
+//     *
+//     * @param username
+//     * @param password
+//     * @return
+//     */
+//    public User auth(String username, String password) {
+//        if (StringUtils.isBlank(username) || StringUtils.isBlank(password)) {
+//            return null;
+//        }
+//        User user = new User();
+//        user.setEmail(username);
+//        user.setPasswd(password);
+//        try {
+//            user = userDao.authUser(user);
+//        } catch (Exception e) {
+//            return null;
+//        }
+//        return user;
+//    }
 
 
 }
