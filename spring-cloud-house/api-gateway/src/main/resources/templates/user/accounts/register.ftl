@@ -41,9 +41,9 @@
                                 <label for="account-agency">选择经纪机构:</label>
                                 <select name="account-agency" id="account-agency">
                                       <option value="0" >请选择经纪机构</option>
-                                     <#list agencyList as agency>
-                                        <option value="${agency.id}" >${agency.name}</option>
-                                     </#list>
+                                     <#--<#list agencyList as agency>-->
+                                        <#--<option value="${agency.id}" >${agency.name}</option>-->
+                                     <#--</#list>-->
                                 </select>
                             </div><!-- /.form-group -->
                         </div>
