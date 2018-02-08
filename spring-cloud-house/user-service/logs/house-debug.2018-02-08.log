@@ -1,0 +1,3 @@
+2018-02-08 14:59:59.118 [http-nio-8083-exec-2] DEBUG [com.skilly.house.user.mapper.UserMapper.select:159] - ==>  Preparing: select id, name, phone, email, aboutme, passwd, avatar, type, create_time, enable, agency_id from user WHERE email = ? and passwd = ? and enable = ? 
+2018-02-08 14:59:59.140 [http-nio-8083-exec-2] DEBUG [com.skilly.house.user.mapper.UserMapper.select:159] - ==> Parameters: 1254109699@qq.com(String), 4f15e76927cdee4f618f1c15c2ccb529(String), 1(Integer)
+2018-02-08 14:59:59.149 [http-nio-8083-exec-2] DEBUG [com.skilly.house.user.mapper.UserMapper.select:159] - <==      Total: 0

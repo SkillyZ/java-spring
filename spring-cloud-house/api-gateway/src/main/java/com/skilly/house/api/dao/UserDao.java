@@ -3,7 +3,9 @@ package com.skilly.house.api.dao;
 import com.google.common.collect.Lists;
 import com.skilly.house.api.common.RestResponse;
 import com.skilly.house.api.config.GenericRest;
+import com.skilly.house.api.model.Agency;
 import com.skilly.house.api.model.User;
+import com.skilly.house.api.utils.Rests;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.ParameterizedTypeReference;
@@ -105,4 +107,33 @@ public class UserDao {
         }
         return response.getResult();
     }
+
+
+    public List<Agency> getAllAgency() {
+        return Rests.exc(() ->{
+            String url = Rests.toUrl(userServiceName, "/agency/list");
+            ResponseEntity<RestResponse<List<Agency>>> responseEntity =
+                    rest.get(url, new ParameterizedTypeReference<RestResponse<List<Agency>>>() {});
+            return responseEntity.getBody();
+        }).getResult();
+    }
+
+    public User updateUser(User user) {
+        return Rests.exc(() ->{
+            String url = Rests.toUrl(userServiceName, "/user/update");
+            ResponseEntity<RestResponse<User>> responseEntity =
+                    rest.post(url, user, new ParameterizedTypeReference<RestResponse<User>>() {});
+            return responseEntity.getBody();
+        }).getResult();
+    }
+
+    public User getAgentById(Long id) {
+        return Rests.exc(() ->{
+            String url = Rests.toUrl(userServiceName, "/agency/agentDetail?id=" +id);
+            ResponseEntity<RestResponse<User>> responseEntity =
+                    rest.get(url, new ParameterizedTypeReference<RestResponse<User>>() {});
+            return responseEntity.getBody();
+        }).getResult();
+    }
+
 }
