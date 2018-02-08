@@ -4,6 +4,7 @@ import com.google.common.collect.Lists;
 import com.skilly.house.api.common.RestResponse;
 import com.skilly.house.api.config.GenericRest;
 import com.skilly.house.api.model.Agency;
+import com.skilly.house.api.model.ListResponse;
 import com.skilly.house.api.model.User;
 import com.skilly.house.api.utils.Rests;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -91,7 +92,8 @@ public class UserDao {
 
     public void logout(String token) {
         String url = "http://" + userServiceName + "/user/logout?token=" + token;
-        rest.get(url, new ParameterizedTypeReference<RestResponse<Object>>() {});
+        rest.get(url, new ParameterizedTypeReference<RestResponse<Object>>() {
+        });
     }
 
     public User getUserByTokenFb(String token) {
@@ -100,7 +102,8 @@ public class UserDao {
 
     public User getUserByToken(String token) {
         String url = "http://" + userServiceName + "/user/get?token=" + token;
-        ResponseEntity<RestResponse<User>> responseEntity = rest.get(url, new ParameterizedTypeReference<RestResponse<User>>() {});
+        ResponseEntity<RestResponse<User>> responseEntity = rest.get(url, new ParameterizedTypeReference<RestResponse<User>>() {
+        });
         RestResponse<User> response = responseEntity.getBody();
         if (response == null || response.getCode() != 0) {
             return null;
@@ -110,30 +113,73 @@ public class UserDao {
 
 
     public List<Agency> getAllAgency() {
-        return Rests.exc(() ->{
+        return Rests.exc(() -> {
             String url = Rests.toUrl(userServiceName, "/agency/list");
             ResponseEntity<RestResponse<List<Agency>>> responseEntity =
-                    rest.get(url, new ParameterizedTypeReference<RestResponse<List<Agency>>>() {});
+                    rest.get(url, new ParameterizedTypeReference<RestResponse<List<Agency>>>() {
+                    });
             return responseEntity.getBody();
         }).getResult();
     }
 
     public User updateUser(User user) {
-        return Rests.exc(() ->{
+        return Rests.exc(() -> {
             String url = Rests.toUrl(userServiceName, "/user/update");
             ResponseEntity<RestResponse<User>> responseEntity =
-                    rest.post(url, user, new ParameterizedTypeReference<RestResponse<User>>() {});
+                    rest.post(url, user, new ParameterizedTypeReference<RestResponse<User>>() {
+                    });
             return responseEntity.getBody();
         }).getResult();
     }
 
     public User getAgentById(Long id) {
-        return Rests.exc(() ->{
-            String url = Rests.toUrl(userServiceName, "/agency/agentDetail?id=" +id);
+        return Rests.exc(() -> {
+            String url = Rests.toUrl(userServiceName, "/agency/agentDetail?id=" + id);
             ResponseEntity<RestResponse<User>> responseEntity =
-                    rest.get(url, new ParameterizedTypeReference<RestResponse<User>>() {});
+                    rest.get(url, new ParameterizedTypeReference<RestResponse<User>>() {
+                    });
             return responseEntity.getBody();
         }).getResult();
     }
 
+
+    public Agency getAgencyById(Integer id) {
+        return Rests.exc(() -> {
+            String url = Rests.toUrl(userServiceName, "/agency/agencyDetail?id=" + id);
+            ResponseEntity<RestResponse<Agency>> responseEntity =
+                    rest.get(url, new ParameterizedTypeReference<RestResponse<Agency>>() {
+                    });
+            return responseEntity.getBody();
+        }).getResult();
+    }
+
+    public void addAgency(Agency agency) {
+        Rests.exc(() -> {
+            String url = Rests.toUrl(userServiceName, "/agency/add");
+            ResponseEntity<RestResponse<Object>> responseEntity =
+                    rest.post(url, agency, new ParameterizedTypeReference<RestResponse<Object>>() {
+                    });
+            return responseEntity.getBody();
+        });
+    }
+
+    public ListResponse<User> getAgentList(Integer limit, Integer offset) {
+        return Rests.exc(() -> {
+            String url = Rests.toUrl(userServiceName, "/agency/agentList?limit=" + limit + "&offset=" + offset);
+            ResponseEntity<RestResponse<ListResponse<User>>> responseEntity =
+                    rest.get(url, new ParameterizedTypeReference<RestResponse<ListResponse<User>>>() {
+                    });
+            return responseEntity.getBody();
+        }).getResult();
+    }
+
+    public String getEmail(String key) {
+        return Rests.exc(() -> {
+            String url = Rests.toUrl(userServiceName, "/user/getKeyEmail?key=" + key);
+            ResponseEntity<RestResponse<String>> responseEntity =
+                    rest.get(url, new ParameterizedTypeReference<RestResponse<String>>() {
+                    });
+            return responseEntity.getBody();
+        }).getResult();
+    }
 }
