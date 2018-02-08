@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <settings>
+        <!-- 这个配置使全局的映射器启用或禁用缓存 -->
+        <setting name="cacheEnabled" value="false"/>
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+        <setting name="useGeneratedKeys" value="true"/>
+        <setting name="safeRowBoundsEnabled" value="false"/>
+        <setting name="defaultExecutorType" value="REUSE"/>
+        <!-- 设置超时时间，它决定驱动等待一个数据库响应的时间 -->
+        <setting name="defaultStatementTimeout" value="600"/>
+    </settings>
+
+
+    <typeAliases>
+      <typeAlias type="com.mooc.house.hsrv.model.House"       alias="house"/>
+      <typeAlias type="com.mooc.house.hsrv.model.City"        alias="city"/>
+      <typeAlias type="com.mooc.house.hsrv.model.Community"   alias="community"/>
+      <typeAlias type="com.mooc.house.hsrv.model.HouseUser"   alias="houseUser"/>
+      <typeAlias type="com.mooc.house.hsrv.model.User"        alias="user"/>
+      <typeAlias type="com.mooc.house.hsrv.model.UserMsg"     alias="userMsg"/>
+      <typeAlias type="com.mooc.house.hsrv.model.HouseUser"     alias="houseUser"/>
+    </typeAliases>
+
+    <typeHandlers>
+    </typeHandlers>
+
+    <mappers> 
+      <mapper resource="mapper/house.xml"/> 
+      <mapper resource="mapper/city.xml"/> 
+    </mappers>
+
+
+</configuration>

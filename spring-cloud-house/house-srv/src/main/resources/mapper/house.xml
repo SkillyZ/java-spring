@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mooc.house.hsrv.mapper.HouseMapper">
+
+    <sql id="houseField">
+          a.id ,
+		  a.type,
+		  a.name,
+		  a.price,
+		  a.images ,
+		  a.area  ,
+		  a.beds  , 
+		  a.baths ,
+		  a.rating  ,
+		  a.remarks ,
+		  a.properties ,
+		  a.floor_plan ,
+		  a.tags ,
+		  a.create_time ,
+		  a.city_id ,
+		  a.community_id ,
+		  a.address,
+		  a.state,
+		  b.user_id
+   </sql>
+   
+    <sql id="communityField">
+          id ,
+		  city_code,
+		  name,
+		  city_name
+   </sql>
+   
+    <select id="selectCommunity" resultType="community">
+      select <include refid="communityField"/>
+      from   community
+      <where>
+         <if test="id != null   and id != 0">
+             and id   = #{id}
+         </if>
+         <if test="name != null and name != '' ">
+             and name = #{name}  
+         </if>
+      </where>
+    </select>
+    
+     <select id="selectHouse" resultType="house">
+       select <include refid="houseField"/>
+       from   house a
+      <include refid="houseCondition" />
+      <choose>
+	    <when test="house.sort != null and house.sort == 'price_asc'">
+	       order by a.price asc
+	    </when>
+	    <when test="house.sort != null and house.sort == 'price_desc'">
+	       order by a.price desc
+	    </when>
+	    <otherwise>
+	      order by a.create_time desc
+	    </otherwise>
+      </choose>
+       
+       <if test='pageParams.offset != null and pageParams.limit != null'>
+            limit #{pageParams.offset}, #{pageParams.limit}
+       </if>
+       <if test='pageParams.offset == null and pageParams.limit != null'>
+            limit #{pageParams.limit}
+       </if>
+    </select>
+   
+     <sql id="houseCondition">
+         inner join ( select house_id,user_id from house_user
+                      <where>
+                        
+                        <if test="house.userId != null   and house.userId != 0">
+                        and user_id = #{house.userId} 
+                        </if>
+                        <if test="house.bookmarked != null   and house.bookmarked == true">
+                        and type   = 2
+                        </if>
+                        <if test="house.bookmarked != null   and house.bookmarked == false">
+                        and type   = 1
+                        </if>
+                      </where>
+                    ) b
+         on a.id = b.house_id
+      <where>
+         <!-- 这里要注意只显示上架的房产,属于后期修复 -->
+         state = 1 
+         <if test="house.id != null   and house.id != 0">
+             and a.id   = #{house.id}
+         </if>
+         <if test="house.type != null and house.type !=0 ">
+             and a.type = #{house.type}  
+         </if>
+         <if test="house.cityId != null and house.cityId !=0 ">
+             and a.city_id = #{house.cityId}  
+         </if>
+         <if test="house.communityId != null and house.communityId !=0 ">
+             and a.community_id = #{house.communityId}  
+         </if>
+         <if test="house.name != null and house.name != '' ">
+              <bind name="pattern1" value="'%' + house.name + '%'" />
+             and a.name like #{pattern1}  
+         </if>
+         <if test="house.ids != null and house.ids.size() > 0 ">
+               and id in 
+                 <foreach collection="house.ids" item="item" index="index" open="(" separator="," close=")" >
+                    #{item}
+                 </foreach>
+            </if>
+      </where>
+     
+    </sql>
+    
+      
+     <select id="selectHouseCount" resultType="long" >
+      select count(id)
+      from   house a
+      <include refid="houseCondition" />
+    </select>
+    
+     <update id="updateHouse">
+      update house
+      set    rating = #{rating}
+      where  id = #{id}
+    </update>
+    
+    <update id="downHouse">
+      update house
+      set    state = 2
+      where  id = #{id}
+    </update>
+    
+    <insert id="insertUserMsg">
+      insert into house_msg(
+				          msg ,
+                          create_time ,
+                          agent_id ,
+                          house_id,
+                          user_name )
+                  value(
+                       #{msg},
+                       #{createTime},
+                       #{agentId},
+                       #{houseId},
+                       #{userName}
+                  )
+    </insert>
+    
+      <select id="selectHouseUser" resultType="houseUser">
+      select  id,house_id, user_id, create_time,type
+      from    house_user
+      where   house_id = #{id} and user_id=#{userId} and type = #{type}
+    </select>
+    
+    
+     <select id="selectHouseUserById" resultType="houseUser">
+      select  id,house_id, user_id, create_time,agent_id,type
+      from    house_user
+      where   house_id = #{id} and type = #{type}
+    </select>
+    
+      <insert id="insert"  useGeneratedKeys="true" keyProperty="id" >
+     insert into house(  
+						  type,
+						  name,
+						  price,
+						  images ,
+						  area  ,
+						  beds  , 
+						  baths ,
+						  rating  ,
+						  remarks ,
+						  properties ,
+						  floor_plan ,
+						  tags ,
+						  create_time ,
+						  city_id ,
+						  community_id ,
+						  address,
+						  state
+                      )
+                 value(
+                       #{type},
+                       #{name},
+                       #{price},
+                       #{images},
+                       #{area},
+                       #{beds},
+                       #{baths},
+                       #{rating},
+                       #{remarks},
+                       #{properties},
+                       #{floorPlan},
+                       #{tags},
+                       #{createTime},
+                       #{cityId},
+                       #{communityId},
+                       #{address},
+                       #{state}
+                 )
+    </insert>
+    
+      <insert id="insertHouseUser">
+        insert into house_user (
+                             house_id,
+                             user_id,
+                             create_time,
+                             type)
+                     value(
+                       #{houseId},
+                       #{userId},
+                       #{createTime},
+                       #{type}
+                     )
+                     
+      </insert>
+    
+     <delete id="deleteHouseUser">
+     delete from house_user
+     where  house_id = #{id} and user_id=#{userId} and type = #{type}
+    </delete>
+     
+
+</mapper> 

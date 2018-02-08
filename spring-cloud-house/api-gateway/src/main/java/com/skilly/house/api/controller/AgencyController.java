@@ -7,6 +7,7 @@ import com.skilly.house.api.model.Agency;
 import com.skilly.house.api.model.House;
 import com.skilly.house.api.model.User;
 import com.skilly.house.api.service.AgencyService;
+import com.skilly.house.api.service.HouseService;
 import com.skilly.house.api.service.MailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -21,8 +22,8 @@ public class AgencyController {
     @Autowired
     private AgencyService agencyService;
 
-//  @Autowired
-//  private HouseService houseService;
+  @Autowired
+  private HouseService houseService;
 
     @Autowired
     private MailService mailService;

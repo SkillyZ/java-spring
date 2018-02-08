@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mooc.house.hsrv.mapper.CityMapper">
+
+  <sql id="cityField">
+          id ,
+		  city_name,
+		  city_code
+   </sql>
+    
+   <select id="selectCitys" resultType="city">
+      select <include refid="cityField"/>
+      from   city
+      <where>
+         <if test="id != null   and id != 0">
+             and id   = #{id}
+         </if>
+         <if test="cityName != null and cityName !='' ">
+             and city_name = #{cityName}  
+         </if>
+         <if test="cityCode != null and cityCode !=0 ">
+             and city_code = #{cityCode}  
+         </if>
+      </where>
+   </select>
+    
+
+</mapper> 
