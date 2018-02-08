@@ -24,10 +24,11 @@ public class UserDao {
     @Value("${user.service.name}")
     private String userServiceName;
 
-//    -----------------测试方法
+    //    -----------------测试方法
     public String getusername(Long id) {
         String url = "http://user/user/getusername?id=" + id;
-        return rest.get(url, new ParameterizedTypeReference<RestResponse<String>>() {} ).getBody().getResult();
+        return rest.get(url, new ParameterizedTypeReference<RestResponse<String>>() {
+        }).getBody().getResult();
     }
 
 
@@ -72,4 +73,36 @@ public class UserDao {
         return restResponse.getCode() == 0;
     }
 
+
+    public User authUser(User user) {
+        String url = "http://" + userServiceName + "/user/auth";
+        ResponseEntity<RestResponse<User>> responseEntity = rest.post(url, user, new ParameterizedTypeReference<RestResponse<User>>() {
+        });
+        RestResponse<User> response = responseEntity.getBody();
+        if (response.getCode() == 0) {
+            return response.getResult();
+        }
+        {
+            throw new IllegalStateException("Can not add user");
+        }
+    }
+
+    public void logout(String token) {
+        String url = "http://" + userServiceName + "/user/logout?token=" + token;
+        rest.get(url, new ParameterizedTypeReference<RestResponse<Object>>() {});
+    }
+
+    public User getUserByTokenFb(String token) {
+        return new User();
+    }
+
+    public User getUserByToken(String token) {
+        String url = "http://" + userServiceName + "/user/get?token=" + token;
+        ResponseEntity<RestResponse<User>> responseEntity = rest.get(url, new ParameterizedTypeReference<RestResponse<User>>() {});
+        RestResponse<User> response = responseEntity.getBody();
+        if (response == null || response.getCode() != 0) {
+            return null;
+        }
+        return response.getResult();
+    }
 }

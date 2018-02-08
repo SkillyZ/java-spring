@@ -35,7 +35,6 @@ public class UserController {
 
 //----------------------------注册流程-------------------------------------------
 
-
     @RequestMapping(value = "accounts/register", method = {RequestMethod.POST, RequestMethod.GET})
     public String accountsSubmit(User account, ModelMap modelMap) {
         if (account == null || account.getName() == null) {
@@ -72,6 +71,33 @@ public class UserController {
     //----------------------------登录流程-------------------------------------------
 
 
+    @RequestMapping(value = "/accounts/signin", method = {RequestMethod.POST, RequestMethod.GET})
+    public String loginSubmit(HttpServletRequest req) {
+        String username = req.getParameter("username");
+        String password = req.getParameter("password");
+        if (username == null || password == null) {
+            req.setAttribute("target", req.getParameter("target"));
+            return "/user/accounts/signin";
+        }
+        User user = accountService.auth(username, password);
+        if (user == null) {
+            return "redirect:/accounts/signin?" + "username=" + username + "&" + ResultMsg.errorMsg("用户名或密码错误").asUrlParams();
+        } else {
+            UserContext.setUser(user);
+            return StringUtils.isNotBlank(req.getParameter("target")) ? "redirect:" + req.getParameter("target") : "redirect:/index";
+        }
+    }
+
+    /**
+     * @param req
+     * @return
+     */
+    @RequestMapping("accounts/logout")
+    public String logout(HttpServletRequest req) {
+        User user = UserContext.getUser();
+        accountService.logout(user.getToken());
+        return "redirect:/index";
+    }
 
 }
 

@@ -113,32 +113,32 @@ public class AccountService {
 //        BeanHelper.onUpdate(user);
 //        return userDao.updateUser(user);
 //    }
-//
-//    public void logout(String token) {
-//        userDao.logout(token);
-//    }
-//
-//    /**
-//     * 校验用户名密码并返回用户对象
-//     *
-//     * @param username
-//     * @param password
-//     * @return
-//     */
-//    public User auth(String username, String password) {
-//        if (StringUtils.isBlank(username) || StringUtils.isBlank(password)) {
-//            return null;
-//        }
-//        User user = new User();
-//        user.setEmail(username);
-//        user.setPasswd(password);
-//        try {
-//            user = userDao.authUser(user);
-//        } catch (Exception e) {
-//            return null;
-//        }
-//        return user;
-//    }
+
+    public void logout(String token) {
+        userDao.logout(token);
+    }
+
+    /**
+     * 校验用户名密码并返回用户对象
+     *
+     * @param username
+     * @param password
+     * @return
+     */
+    public User auth(String username, String password) {
+        if (StringUtils.isBlank(username) || StringUtils.isBlank(password)) {
+            return null;
+        }
+        User user = new User();
+        user.setEmail(username);
+        user.setPasswd(password);
+        try {
+            user = userDao.authUser(user);
+        } catch (Exception e) {
+            return null;
+        }
+        return user;
+    }
 
 
 }
