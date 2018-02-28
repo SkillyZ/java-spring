@@ -1,4 +1,4 @@
-package com.mooc.house.hsrv.exception;
+package com.skilly.house.hsrv.exception;
 
 public class IllegalParamsException extends RuntimeException implements WithTypeException{
 

@@ -1,4 +1,4 @@
-package com.mooc.house.hsrv.config;
+package com.skilly.house.hsrv.config;
 
 import java.sql.SQLException;
 
@@ -27,7 +27,7 @@ public class CommonConfig {
 
   private static final Integer HTTPCLIENT_CONNECTTIMEOUT = 1000;
   private static final Integer HTTPCLIENT_SOCKETTIMEOUT  = 30000;
-  private static final String HTTPCLIENT_AGENT           = "mooc-agent";
+  private static final String HTTPCLIENT_AGENT           = "skilly-agent";
 
   @Bean
   HttpClient httpClient() {

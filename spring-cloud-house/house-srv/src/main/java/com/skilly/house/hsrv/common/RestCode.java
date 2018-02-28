@@ -1,4 +1,4 @@
-package com.mooc.house.hsrv.common;
+package com.skilly.house.hsrv.common;
 
 public enum RestCode {
   OK(0,"OK"),

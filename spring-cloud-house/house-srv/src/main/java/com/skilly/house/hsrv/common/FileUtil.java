@@ -1,4 +1,4 @@
-package com.mooc.house.hsrv.common;
+package com.skilly.house.hsrv.common;
 
 import java.io.File;
 import java.io.IOException;

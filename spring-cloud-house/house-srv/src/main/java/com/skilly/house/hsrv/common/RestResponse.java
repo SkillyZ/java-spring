@@ -1,4 +1,4 @@
-package com.mooc.house.hsrv.common;
+package com.skilly.house.hsrv.common;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;

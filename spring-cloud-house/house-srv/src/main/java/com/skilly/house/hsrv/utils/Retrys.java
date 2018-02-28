@@ -1,4 +1,4 @@
-package com.mooc.house.hsrv.utils;
+package com.skilly.house.hsrv.utils;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

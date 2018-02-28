@@ -1,4 +1,4 @@
-package com.mooc.house.hsrv.service;
+package com.skilly.house.hsrv.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

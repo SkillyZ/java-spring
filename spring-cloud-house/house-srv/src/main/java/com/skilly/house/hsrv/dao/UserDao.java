@@ -1,4 +1,4 @@
-package com.mooc.house.hsrv.dao;
+package com.skilly.house.hsrv.dao;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -6,10 +6,10 @@ import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Repository;
 
-import com.mooc.house.hsrv.common.RestResponse;
-import com.mooc.house.hsrv.model.User;
-import com.mooc.house.hsrv.service.GenericRest;
-import com.mooc.house.hsrv.utils.Rests;
+import com.skilly.house.hsrv.common.RestResponse;
+import com.skilly.house.hsrv.model.User;
+import com.skilly.house.hsrv.service.GenericRest;
+import com.skilly.house.hsrv.utils.Rests;
 
 @Repository
 public class UserDao {

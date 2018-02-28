@@ -1,10 +1,10 @@
-package com.mooc.house.hsrv.mapper;
+package com.skilly.house.hsrv.mapper;
 
 import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
 
-import com.mooc.house.hsrv.model.City;
+import com.skilly.house.hsrv.model.City;
 
 @Mapper
 public interface CityMapper {

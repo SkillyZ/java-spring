@@ -1,4 +1,4 @@
-package com.mooc.house.hsrv.model;
+package com.skilly.house.hsrv.model;
 
 public class Community {
   

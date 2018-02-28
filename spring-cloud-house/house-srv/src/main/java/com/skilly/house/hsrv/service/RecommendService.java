@@ -1,4 +1,4 @@
-package com.mooc.house.hsrv.service;
+package com.skilly.house.hsrv.service;
 
 import java.util.List;
 import java.util.Set;
@@ -8,8 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
 
-import com.mooc.house.hsrv.common.LimitOffset;
-import com.mooc.house.hsrv.model.House;
+import com.skilly.house.hsrv.common.LimitOffset;
+import com.skilly.house.hsrv.model.House;
 
 @Service
 public class RecommendService {

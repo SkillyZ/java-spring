@@ -1,4 +1,4 @@
-package com.mooc.house.hsrv.config;
+package com.skilly.house.hsrv.config;
 
 import java.util.List;
 

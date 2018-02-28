@@ -1,4 +1,4 @@
-package com.mooc.house.hsrv;
+package com.skilly.house.hsrv;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

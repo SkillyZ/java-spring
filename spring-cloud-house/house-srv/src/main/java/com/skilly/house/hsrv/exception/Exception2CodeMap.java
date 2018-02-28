@@ -1,7 +1,7 @@
-package com.mooc.house.hsrv.exception;
+package com.skilly.house.hsrv.exception;
 
 import com.google.common.collect.ImmutableMap;
-import com.mooc.house.hsrv.common.RestCode;
+import com.skilly.house.hsrv.common.RestCode;
 
 public class Exception2CodeMap {
   

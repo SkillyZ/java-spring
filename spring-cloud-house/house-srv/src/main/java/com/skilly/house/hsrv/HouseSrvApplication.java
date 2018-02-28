@@ -1,4 +1,4 @@
-package com.mooc.house.hsrv;
+package com.skilly.house.hsrv;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

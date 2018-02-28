@@ -1,4 +1,4 @@
-package com.mooc.house.hsrv.utils;
+package com.skilly.house.hsrv.utils;
 
 import java.util.Map;
 import java.util.concurrent.Callable;

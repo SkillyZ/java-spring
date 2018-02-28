@@ -1,15 +1,15 @@
-package com.mooc.house.hsrv.mapper;
+package com.skilly.house.hsrv.mapper;
 
 import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
-import com.mooc.house.hsrv.common.LimitOffset;
-import com.mooc.house.hsrv.model.Community;
-import com.mooc.house.hsrv.model.House;
-import com.mooc.house.hsrv.model.HouseUser;
-import com.mooc.house.hsrv.model.UserMsg;
+import com.skilly.house.hsrv.common.LimitOffset;
+import com.skilly.house.hsrv.model.Community;
+import com.skilly.house.hsrv.model.House;
+import com.skilly.house.hsrv.model.HouseUser;
+import com.skilly.house.hsrv.model.UserMsg;
 
 @Mapper
 public interface HouseMapper {

@@ -1,4 +1,4 @@
-package com.mooc.house.hsrv.common;
+package com.skilly.house.hsrv.common;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
-import com.mooc.house.hsrv.exception.Exception2CodeMap;
-import com.mooc.house.hsrv.exception.WithTypeException;
+import com.skilly.house.hsrv.exception.Exception2CodeMap;
+import com.skilly.house.hsrv.exception.WithTypeException;
 
 @ControllerAdvice
 public class GlobalExceptionHandler {

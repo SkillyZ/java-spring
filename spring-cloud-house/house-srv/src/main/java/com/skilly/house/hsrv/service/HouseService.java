@@ -1,4 +1,4 @@
-package com.mooc.house.hsrv.service;
+package com.skilly.house.hsrv.service;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -12,18 +12,18 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.google.common.collect.Lists;
-import com.mooc.house.hsrv.common.BeanHelper;
-import com.mooc.house.hsrv.common.HouseUserType;
-import com.mooc.house.hsrv.common.LimitOffset;
-import com.mooc.house.hsrv.dao.UserDao;
-import com.mooc.house.hsrv.mapper.CityMapper;
-import com.mooc.house.hsrv.mapper.HouseMapper;
-import com.mooc.house.hsrv.model.City;
-import com.mooc.house.hsrv.model.Community;
-import com.mooc.house.hsrv.model.House;
-import com.mooc.house.hsrv.model.HouseUser;
-import com.mooc.house.hsrv.model.User;
-import com.mooc.house.hsrv.model.UserMsg;
+import com.skilly.house.hsrv.common.BeanHelper;
+import com.skilly.house.hsrv.common.HouseUserType;
+import com.skilly.house.hsrv.common.LimitOffset;
+import com.skilly.house.hsrv.dao.UserDao;
+import com.skilly.house.hsrv.mapper.CityMapper;
+import com.skilly.house.hsrv.mapper.HouseMapper;
+import com.skilly.house.hsrv.model.City;
+import com.skilly.house.hsrv.model.Community;
+import com.skilly.house.hsrv.model.House;
+import com.skilly.house.hsrv.model.HouseUser;
+import com.skilly.house.hsrv.model.User;
+import com.skilly.house.hsrv.model.UserMsg;
 
 @Service
 public class HouseService {
@@ -35,10 +35,10 @@ public class HouseService {
     private CityMapper cityMapper;
 
     @Autowired
-    private com.mooc.house.hsrv.service.FileService fileService;
+    private com.skilly.house.hsrv.service.FileService fileService;
 
     @Autowired
-    private com.mooc.house.hsrv.service.MailService mailService;
+    private com.skilly.house.hsrv.service.MailService mailService;
 
     @Autowired
     private UserDao userDao;

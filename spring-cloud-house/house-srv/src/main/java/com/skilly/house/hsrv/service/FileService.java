@@ -1,4 +1,4 @@
-package com.mooc.house.hsrv.service;
+package com.skilly.house.hsrv.service;
 
 import java.io.File;
 import java.io.IOException;
@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.google.common.collect.Lists;
-import com.mooc.house.hsrv.common.FileUtil;
+import com.skilly.house.hsrv.common.FileUtil;
 
 @Service
 public class FileService {
