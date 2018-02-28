@@ -10,7 +10,10 @@ public final class Rests {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(Rests.class);
 
-    private Rests() {}
+    private Rests() {
+    }
+
+    ;
 
     private static DefaultHanlder defaultHanlder = new DefaultHanlder();
 
@@ -70,5 +73,6 @@ public final class Rests {
         return result;
 
     }
+
 
 }

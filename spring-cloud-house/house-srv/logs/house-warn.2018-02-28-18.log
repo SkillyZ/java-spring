@@ -1,0 +1,78 @@
+2018-02-28 18:36:56.103 [main] WARN  [com.netflix.config.sources.URLConfigurationSource:121] maincid - No URLs will be polled as dynamic configuration sources.
+2018-02-28 18:36:56.107 [main] WARN  [com.netflix.config.sources.URLConfigurationSource:121] maincid - No URLs will be polled as dynamic configuration sources.
+2018-02-28 18:36:57.568 [main] WARN  [org.springframework.boot.starter.redis.RedisStarterDeprecationWarningAutoConfiguration:43] maincid - spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2018-02-28 18:36:57.836 [main] WARN  [org.springframework.cloud.starter.eureka.EurekaStarterDeprecationWarningAutoConfiguration:19] maincid - spring-cloud-starter-eureka is deprecated as of Spring Cloud Netflix 1.4.0, please migrate to spring-cloud-starter-netflix-eureka
+2018-02-28 18:36:59.494 [main] ERROR [org.springframework.boot.SpringApplication:771] maincid - Application startup failed
+java.lang.NoSuchMethodError: com.fasterxml.classmate.TypeBindings.withAdditionalBinding(Ljava/lang/String;Lcom/fasterxml/classmate/ResolvedType;)Lcom/fasterxml/classmate/TypeBindings;
+	at springfox.documentation.schema.WildcardType.adjustedTypeBindings(WildcardType.java:137) ~[springfox-core-2.2.2.jar:2.2.2]
+	at springfox.documentation.schema.WildcardType.breadthFirstSearch(WildcardType.java:117) ~[springfox-core-2.2.2.jar:2.2.2]
+	at springfox.documentation.schema.WildcardType.collectReplaceables(WildcardType.java:74) ~[springfox-core-2.2.2.jar:2.2.2]
+	at springfox.documentation.schema.AlternateTypeRule.alternateFor(AlternateTypeRule.java:50) ~[springfox-core-2.2.2.jar:2.2.2]
+	at springfox.documentation.spi.schema.AlternateTypeProvider.alternateFor(AlternateTypeProvider.java:44) ~[springfox-spi-2.2.2.jar:2.2.2]
+	at springfox.documentation.spi.service.contexts.RequestMappingContext.alternateFor(RequestMappingContext.java:118) ~[springfox-spi-2.2.2.jar:2.2.2]
+	at springfox.documentation.spring.web.readers.operation.OperationModelsProvider.collectFromReturnType(OperationModelsProvider.java:70) ~[springfox-spring-web-2.2.2.jar:2.2.2]
+	at springfox.documentation.spring.web.readers.operation.OperationModelsProvider.apply(OperationModelsProvider.java:59) ~[springfox-spring-web-2.2.2.jar:2.2.2]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsManager.modelContexts(DocumentationPluginsManager.java:129) ~[springfox-spring-web-2.2.2.jar:2.2.2]
+	at springfox.documentation.spring.web.scanners.ApiModelReader.read(ApiModelReader.java:62) ~[springfox-spring-web-2.2.2.jar:2.2.2]
+	at springfox.documentation.spring.web.scanners.ApiListingScanner.scan(ApiListingScanner.java:91) ~[springfox-spring-web-2.2.2.jar:2.2.2]
+	at springfox.documentation.spring.web.scanners.ApiDocumentationScanner.scan(ApiDocumentationScanner.java:62) ~[springfox-spring-web-2.2.2.jar:2.2.2]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.scanDocumentation(DocumentationPluginsBootstrapper.java:101) ~[springfox-spring-web-2.2.2.jar:2.2.2]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.onApplicationEvent(DocumentationPluginsBootstrapper.java:87) ~[springfox-spring-web-2.2.2.jar:2.2.2]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.onApplicationEvent(DocumentationPluginsBootstrapper.java:50) ~[springfox-spring-web-2.2.2.jar:2.2.2]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:393) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:347) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:883) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:144) ~[spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) ~[spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) ~[spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) ~[spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) ~[spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at com.skilly.house.hsrv.HouseSrvApplication.main(HouseSrvApplication.java:15) ~[classes/:?]
+2018-02-28 18:36:59.496 [main] WARN  [com.netflix.discovery.DiscoveryClient:1286] maincid - Saw local status change event StatusChangeEvent [timestamp=1519814219496, current=DOWN, previous=UP]
+2018-02-28 18:58:43.212 [main] WARN  [com.netflix.config.sources.URLConfigurationSource:121] maincid - No URLs will be polled as dynamic configuration sources.
+2018-02-28 18:58:43.216 [main] WARN  [com.netflix.config.sources.URLConfigurationSource:121] maincid - No URLs will be polled as dynamic configuration sources.
+2018-02-28 18:58:44.529 [main] WARN  [org.springframework.boot.starter.redis.RedisStarterDeprecationWarningAutoConfiguration:43] maincid - spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2018-02-28 18:58:44.780 [main] WARN  [org.springframework.cloud.starter.eureka.EurekaStarterDeprecationWarningAutoConfiguration:19] maincid - spring-cloud-starter-eureka is deprecated as of Spring Cloud Netflix 1.4.0, please migrate to spring-cloud-starter-netflix-eureka
+2018-02-28 18:58:46.297 [main] ERROR [org.springframework.boot.SpringApplication:771] maincid - Application startup failed
+java.lang.NoSuchMethodError: com.fasterxml.classmate.TypeBindings.withAdditionalBinding(Ljava/lang/String;Lcom/fasterxml/classmate/ResolvedType;)Lcom/fasterxml/classmate/TypeBindings;
+	at springfox.documentation.schema.WildcardType.adjustedTypeBindings(WildcardType.java:137) ~[springfox-core-2.2.2.jar:2.2.2]
+	at springfox.documentation.schema.WildcardType.breadthFirstSearch(WildcardType.java:117) ~[springfox-core-2.2.2.jar:2.2.2]
+	at springfox.documentation.schema.WildcardType.collectReplaceables(WildcardType.java:74) ~[springfox-core-2.2.2.jar:2.2.2]
+	at springfox.documentation.schema.AlternateTypeRule.alternateFor(AlternateTypeRule.java:50) ~[springfox-core-2.2.2.jar:2.2.2]
+	at springfox.documentation.spi.schema.AlternateTypeProvider.alternateFor(AlternateTypeProvider.java:44) ~[springfox-spi-2.2.2.jar:2.2.2]
+	at springfox.documentation.spi.service.contexts.RequestMappingContext.alternateFor(RequestMappingContext.java:118) ~[springfox-spi-2.2.2.jar:2.2.2]
+	at springfox.documentation.spring.web.readers.operation.OperationModelsProvider.collectFromReturnType(OperationModelsProvider.java:70) ~[springfox-spring-web-2.2.2.jar:2.2.2]
+	at springfox.documentation.spring.web.readers.operation.OperationModelsProvider.apply(OperationModelsProvider.java:59) ~[springfox-spring-web-2.2.2.jar:2.2.2]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsManager.modelContexts(DocumentationPluginsManager.java:129) ~[springfox-spring-web-2.2.2.jar:2.2.2]
+	at springfox.documentation.spring.web.scanners.ApiModelReader.read(ApiModelReader.java:62) ~[springfox-spring-web-2.2.2.jar:2.2.2]
+	at springfox.documentation.spring.web.scanners.ApiListingScanner.scan(ApiListingScanner.java:91) ~[springfox-spring-web-2.2.2.jar:2.2.2]
+	at springfox.documentation.spring.web.scanners.ApiDocumentationScanner.scan(ApiDocumentationScanner.java:62) ~[springfox-spring-web-2.2.2.jar:2.2.2]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.scanDocumentation(DocumentationPluginsBootstrapper.java:101) ~[springfox-spring-web-2.2.2.jar:2.2.2]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.onApplicationEvent(DocumentationPluginsBootstrapper.java:87) ~[springfox-spring-web-2.2.2.jar:2.2.2]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.onApplicationEvent(DocumentationPluginsBootstrapper.java:50) ~[springfox-spring-web-2.2.2.jar:2.2.2]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:393) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:347) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:883) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:144) ~[spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) ~[spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) ~[spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) ~[spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) ~[spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at com.skilly.house.hsrv.HouseSrvApplication.main(HouseSrvApplication.java:15) ~[classes/:?]
+2018-02-28 18:58:46.299 [main] WARN  [com.netflix.discovery.DiscoveryClient:1286] maincid - Saw local status change event StatusChangeEvent [timestamp=1519815526299, current=DOWN, previous=UP]
+2018-02-28 18:59:57.989 [main] WARN  [com.netflix.config.sources.URLConfigurationSource:121] maincid - No URLs will be polled as dynamic configuration sources.
+2018-02-28 18:59:57.994 [main] WARN  [com.netflix.config.sources.URLConfigurationSource:121] maincid - No URLs will be polled as dynamic configuration sources.
+2018-02-28 18:59:59.689 [main] WARN  [org.springframework.boot.starter.redis.RedisStarterDeprecationWarningAutoConfiguration:43] maincid - spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2018-02-28 18:59:59.961 [main] WARN  [org.springframework.cloud.starter.eureka.EurekaStarterDeprecationWarningAutoConfiguration:19] maincid - spring-cloud-starter-eureka is deprecated as of Spring Cloud Netflix 1.4.0, please migrate to spring-cloud-starter-netflix-eureka

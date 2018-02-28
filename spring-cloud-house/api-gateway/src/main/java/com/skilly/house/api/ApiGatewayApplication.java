@@ -8,6 +8,7 @@ import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.ribbon.RibbonClient;
+import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,6 +20,7 @@ import java.util.List;
 //@EnableDiscoveryClient
 @Controller
 @RibbonClient(name="user",configuration=NewRuleConfig.class)
+@EnableZuulProxy
 public class ApiGatewayApplication {
 
 	public static void main(String[] args) {

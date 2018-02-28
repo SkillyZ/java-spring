@@ -81,17 +81,29 @@ public class HouseDao {
         return resp.getResult();
     }
 
+
     public ListResponse<House> getHouses(House query, Integer limit, Integer offset) {
-        RestResponse<ListResponse<House>> resp = Rests.exc(() -> {
-            HouseQueryReq req = new HouseQueryReq();
-            req.setLimit(limit);
-            req.setOffset(offset);
-            req.setQuery(query);
-            String url = Rests.toUrl(houseServiceName, "/house/list");
-            ResponseEntity<RestResponse<ListResponse<House>>> responseEntity = rest.post(url, req, new ParameterizedTypeReference<RestResponse<ListResponse<House>>>() {
-            });
-            return responseEntity.getBody();
+//        RestResponse<ListResponse<House>> resp = Rests.exc(() -> {
+//            HouseQueryReq req = new HouseQueryReq();
+//            req.setLimit(limit);
+//            req.setOffset(offset);
+//            req.setQuery(query);
+//            String url = Rests.toUrl(houseServiceName, "/house/list");
+//            ResponseEntity<RestResponse<ListResponse<House>>> responseEntity = rest.post(url, req, new ParameterizedTypeReference<RestResponse<ListResponse<House>>>() {
+//            });
+//            return responseEntity.getBody();
+//        });
+
+
+        HouseQueryReq req = new HouseQueryReq();
+        req.setLimit(limit);
+        req.setOffset(offset);
+        req.setQuery(query);
+        String url = Rests.toUrl(houseServiceName, "/house/list");
+        ResponseEntity<RestResponse<ListResponse<House>>> responseEntity = rest.post(url, req, new ParameterizedTypeReference<RestResponse<ListResponse<House>>>() {
         });
+        RestResponse<ListResponse<House>> resp = responseEntity.getBody();
+
         return resp.getResult();
     }
 
