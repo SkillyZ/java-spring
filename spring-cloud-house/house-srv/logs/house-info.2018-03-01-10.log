@@ -1,0 +1,1104 @@
+2018-03-01 10:46:27.435 [main] INFO  [org.springframework.context.annotation.AnnotationConfigApplicationContext:583] maincid - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@59a008ba: startup date [Thu Mar 01 10:46:27 CST 2018]; root of context hierarchy
+2018-03-01 10:46:27.763 [background-preinit] INFO  [org.hibernate.validator.internal.util.Version:30] background-preinitcid - HV000001: Hibernate Validator 5.3.6.Final
+2018-03-01 10:46:27.852 [main] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor:155] maincid - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-03-01 10:46:27.885 [main] INFO  [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:327] maincid - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$67ea5b63] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-01 10:46:28.659 [main] INFO  [com.skilly.house.hsrv.HouseSrvApplication:597] maincid - The following profiles are active: local
+2018-03-01 10:46:28.671 [main] INFO  [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext:583] maincid - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5ed190be: startup date [Thu Mar 01 10:46:28 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@59a008ba
+2018-03-01 10:46:30.186 [main] INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate:165] maincid - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-03-01 10:46:30.475 [main] INFO  [org.springframework.cloud.context.scope.GenericScope:287] maincid - BeanFactory id=d0049d25-7fb5-3d01-bbdb-276daebf359d
+2018-03-01 10:46:30.491 [main] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor:155] maincid - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-03-01 10:46:30.617 [main] INFO  [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:327] maincid - Bean 'org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration' of type [org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration$$EnhancerBySpringCGLIB$$4e359e98] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-01 10:46:30.725 [main] INFO  [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:327] maincid - Bean 'sleuthAdvisorConfig' of type [org.springframework.cloud.sleuth.annotation.SleuthAdvisorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-01 10:46:30.752 [main] INFO  [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:327] maincid - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4bd05866] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-01 10:46:30.788 [main] INFO  [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:327] maincid - Bean 'org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration' of type [org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration$$EnhancerBySpringCGLIB$$7dfcfea7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-01 10:46:30.802 [main] INFO  [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:327] maincid - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$67ea5b63] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-01 10:46:30.816 [main] INFO  [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:327] maincid - Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$$EnhancerBySpringCGLIB$$33b40485] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-01 10:46:30.829 [main] INFO  [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:327] maincid - Bean 'org.springframework.cloud.sleuth.instrument.web.client.TraceWebClientAutoConfiguration' of type [org.springframework.cloud.sleuth.instrument.web.client.TraceWebClientAutoConfiguration$$EnhancerBySpringCGLIB$$f86323e5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-01 10:46:31.624 [main] INFO  [org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer:89] maincid - Tomcat initialized with port(s): 8084 (http)
+2018-03-01 10:46:31.632 [main] INFO  [org.apache.catalina.core.StandardService:179] maincid - Starting service [Tomcat]
+2018-03-01 10:46:31.633 [main] INFO  [org.apache.catalina.core.StandardEngine:179] maincid - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-03-01 10:46:31.741 [localhost-startStop-1] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:179] localhost-startStop-1cid - Initializing Spring embedded WebApplicationContext
+2018-03-01 10:46:31.741 [localhost-startStop-1] INFO  [org.springframework.web.context.ContextLoader:276] localhost-startStop-1cid - Root WebApplicationContext: initialization completed in 3070 ms
+2018-03-01 10:46:32.311 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean:258] localhost-startStop-1cid - Mapping filter: 'metricsFilter' to: [/*]
+2018-03-01 10:46:32.311 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean:258] localhost-startStop-1cid - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-01 10:46:32.311 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean:258] localhost-startStop-1cid - Mapping filter: 'traceFilter' to: [/*]
+2018-03-01 10:46:32.311 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean:258] localhost-startStop-1cid - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-01 10:46:32.312 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean:258] localhost-startStop-1cid - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-01 10:46:32.312 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean:258] localhost-startStop-1cid - Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-01 10:46:32.312 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean:258] localhost-startStop-1cid - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2018-03-01 10:46:32.312 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean:258] localhost-startStop-1cid - Mapping filter: 'authorizedLogbookFilter' to: [/*]
+2018-03-01 10:46:32.312 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean:258] localhost-startStop-1cid - Mapping filter: 'applicationContextIdFilter' to: [/*]
+2018-03-01 10:46:32.312 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.ServletRegistrationBean:190] localhost-startStop-1cid - Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-01 10:46:32.868 [main] INFO  [com.alibaba.druid.pool.DruidDataSource:922] maincid - {dataSource-1} inited
+2018-03-01 10:46:34.668 [main] WARN  [com.netflix.config.sources.URLConfigurationSource:121] maincid - No URLs will be polled as dynamic configuration sources.
+2018-03-01 10:46:34.668 [main] INFO  [com.netflix.config.sources.URLConfigurationSource:122] maincid - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-03-01 10:46:34.673 [main] WARN  [com.netflix.config.sources.URLConfigurationSource:121] maincid - No URLs will be polled as dynamic configuration sources.
+2018-03-01 10:46:34.674 [main] INFO  [com.netflix.config.sources.URLConfigurationSource:122] maincid - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-03-01 10:46:35.042 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:534] maincid - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5ed190be: startup date [Thu Mar 01 10:46:28 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@59a008ba
+2018-03-01 10:46:35.138 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543] maincid - Mapped "{[/house/allCommunitys]}" onto public com.skilly.house.hsrv.common.RestResponse<java.util.List<com.skilly.house.hsrv.model.Community>> com.skilly.house.hsrv.controller.HouseController.toAdd()
+2018-03-01 10:46:35.138 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543] maincid - Mapped "{[/house/allCitys]}" onto public com.skilly.house.hsrv.common.RestResponse<java.util.List<com.skilly.house.hsrv.model.City>> com.skilly.house.hsrv.controller.HouseController.allCitys()
+2018-03-01 10:46:35.140 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543] maincid - Mapped "{[/house/hot]}" onto public com.skilly.house.hsrv.common.RestResponse<java.util.List<com.skilly.house.hsrv.model.House>> com.skilly.house.hsrv.controller.HouseController.getHotHouse(java.lang.Integer)
+2018-03-01 10:46:35.140 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543] maincid - Mapped "{[/house/lastest]}" onto public com.skilly.house.hsrv.common.RestResponse<java.util.List<com.skilly.house.hsrv.model.House>> com.skilly.house.hsrv.controller.HouseController.getLastest()
+2018-03-01 10:46:35.140 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543] maincid - Mapped "{[/house/detail]}" onto public com.skilly.house.hsrv.common.RestResponse<com.skilly.house.hsrv.model.House> com.skilly.house.hsrv.controller.HouseController.houseDetail(long)
+2018-03-01 10:46:35.140 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543] maincid - Mapped "{[/house/addUserMsg]}" onto public com.skilly.house.hsrv.common.RestResponse<java.lang.Object> com.skilly.house.hsrv.controller.HouseController.houseMsg(com.skilly.house.hsrv.model.UserMsg)
+2018-03-01 10:46:35.140 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543] maincid - Mapped "{[/house/list]}" onto public com.skilly.house.hsrv.common.RestResponse<com.skilly.house.hsrv.model.ListResponse<com.skilly.house.hsrv.model.House>> com.skilly.house.hsrv.controller.HouseController.houseList(com.skilly.house.hsrv.model.HouseQueryReq)
+2018-03-01 10:46:35.141 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543] maincid - Mapped "{[/house/rating]}" onto public com.skilly.house.hsrv.common.RestResponse<java.lang.Object> com.skilly.house.hsrv.controller.HouseController.houseRate(java.lang.Double,java.lang.Long)
+2018-03-01 10:46:35.141 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543] maincid - Mapped "{[/house/add]}" onto public com.skilly.house.hsrv.common.RestResponse<java.lang.Object> com.skilly.house.hsrv.controller.HouseController.doAdd(com.skilly.house.hsrv.model.House)
+2018-03-01 10:46:35.141 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543] maincid - Mapped "{[/house/bind]}" onto public com.skilly.house.hsrv.common.RestResponse<java.lang.Object> com.skilly.house.hsrv.controller.HouseController.delsale(com.skilly.house.hsrv.model.HouseUserReq)
+2018-03-01 10:46:35.141 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543] maincid - Mapped "{[/house/v1/rating]}" onto public com.skilly.house.hsrv.common.RestResponse<java.lang.Object> com.skilly.house.hsrv.controller.HouseController.houseV1Rate(java.lang.Double,java.lang.Long)
+2018-03-01 10:46:35.143 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543] maincid - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-01 10:46:35.143 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543] maincid - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-01 10:46:35.203 [main] INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:362] maincid - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-01 10:46:35.203 [main] INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:362] maincid - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-01 10:46:35.233 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver:273] maincid - Detected @ExceptionHandler methods in globalExceptionHandler
+2018-03-01 10:46:35.271 [main] INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:362] maincid - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-01 10:46:37.185 [main] INFO  [org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping:543] maincid - Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-03-01 10:46:37.187 [main] INFO  [org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping:543] maincid - Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2018-03-01 10:46:37.187 [main] INFO  [org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping:543] maincid - Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-03-01 10:46:37.187 [main] INFO  [org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping:543] maincid - Mapped "{[/service-registry/instance-status],methods=[GET]}" onto public org.springframework.http.ResponseEntity org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.getStatus()
+2018-03-01 10:46:37.187 [main] INFO  [org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping:543] maincid - Mapped "{[/service-registry/instance-status],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.setStatus(java.lang.String)
+2018-03-01 10:46:37.187 [main] INFO  [org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping:543] maincid - Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-03-01 10:46:37.189 [main] INFO  [org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping:543] maincid - Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2018-03-01 10:46:37.189 [main] INFO  [org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping:543] maincid - Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2018-03-01 10:46:37.189 [main] INFO  [org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping:543] maincid - Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-03-01 10:46:37.190 [main] INFO  [org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping:543] maincid - Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2018-03-01 10:46:37.190 [main] INFO  [org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping:543] maincid - Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-03-01 10:46:37.191 [main] INFO  [org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping:543] maincid - Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2018-03-01 10:46:37.192 [main] INFO  [org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping:543] maincid - Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2018-03-01 10:46:37.192 [main] INFO  [org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping:543] maincid - Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-03-01 10:46:37.192 [main] INFO  [org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping:543] maincid - Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-03-01 10:46:37.192 [main] INFO  [org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping:543] maincid - Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-03-01 10:46:37.193 [main] INFO  [org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping:543] maincid - Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-03-01 10:46:37.193 [main] INFO  [org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping:543] maincid - Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-03-01 10:46:37.193 [main] INFO  [org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping:543] maincid - Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2018-03-01 10:46:37.194 [main] INFO  [org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping:543] maincid - Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+2018-03-01 10:46:37.194 [main] INFO  [org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping:543] maincid - Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+2018-03-01 10:46:37.194 [main] INFO  [org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping:543] maincid - Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-03-01 10:46:37.194 [main] INFO  [org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping:543] maincid - Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-03-01 10:46:37.195 [main] INFO  [org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping:543] maincid - Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-03-01 10:46:37.408 [main] INFO  [org.springframework.ui.freemarker.SpringTemplateLoader:61] maincid - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5ed190be: startup date [Thu Mar 01 10:46:28 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@59a008ba] and template loader path [classpath:/templates/]
+2018-03-01 10:46:37.409 [main] INFO  [org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer:127] maincid - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-03-01 10:46:37.770 [main] WARN  [org.springframework.boot.starter.redis.RedisStarterDeprecationWarningAutoConfiguration:43] maincid - spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2018-03-01 10:46:37.961 [main] INFO  [org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler:165] maincid - Initializing ExecutorService 
+2018-03-01 10:46:37.991 [main] WARN  [org.springframework.cloud.starter.eureka.EurekaStarterDeprecationWarningAutoConfiguration:19] maincid - spring-cloud-starter-eureka is deprecated as of Spring Cloud Netflix 1.4.0, please migrate to spring-cloud-starter-netflix-eureka
+2018-03-01 10:46:38.073 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:431] maincid - Registering beans for JMX exposure on startup
+2018-03-01 10:46:38.073 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:916] maincid - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-03-01 10:46:38.074 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:916] maincid - Bean with name 'statFilter' has been autodetected for JMX exposure
+2018-03-01 10:46:38.083 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:916] maincid - Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-03-01 10:46:38.085 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:916] maincid - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-03-01 10:46:38.085 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:916] maincid - Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+2018-03-01 10:46:38.086 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:916] maincid - Bean with name 'serviceRegistryEndpoint' has been autodetected for JMX exposure
+2018-03-01 10:46:38.087 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:916] maincid - Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-03-01 10:46:38.090 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:678] maincid - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-03-01 10:46:38.101 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:678] maincid - Located managed bean 'serviceRegistryEndpoint': registering with JMX server as MBean [org.springframework.cloud.client.serviceregistry.endpoint:name=serviceRegistryEndpoint,type=ServiceRegistryEndpoint]
+2018-03-01 10:46:38.107 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:678] maincid - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-03-01 10:46:38.117 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:678] maincid - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=5ed190be,type=ConfigurationPropertiesRebinder]
+2018-03-01 10:46:38.122 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:671] maincid - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-03-01 10:46:38.123 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:678] maincid - Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+2018-03-01 10:46:38.127 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:671] maincid - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2018-03-01 10:46:38.127 [main] INFO  [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter:431] maincid - Registering beans for JMX exposure on startup
+2018-03-01 10:46:38.140 [main] INFO  [org.springframework.context.support.DefaultLifecycleProcessor:343] maincid - Starting beans in phase 0
+2018-03-01 10:46:38.147 [main] INFO  [org.springframework.cloud.netflix.eureka.InstanceInfoFactory:71] maincid - Setting initial instance status as: STARTING
+2018-03-01 10:46:38.174 [main] INFO  [com.netflix.discovery.DiscoveryClient:347] maincid - Initializing Eureka in region us-east-1
+2018-03-01 10:46:38.218 [main] INFO  [com.netflix.discovery.provider.DiscoveryJerseyProvider:70] maincid - Using JSON encoding codec LegacyJacksonJson
+2018-03-01 10:46:38.218 [main] INFO  [com.netflix.discovery.provider.DiscoveryJerseyProvider:71] maincid - Using JSON decoding codec LegacyJacksonJson
+2018-03-01 10:46:38.317 [main] INFO  [com.netflix.discovery.provider.DiscoveryJerseyProvider:80] maincid - Using XML encoding codec XStreamXml
+2018-03-01 10:46:38.317 [main] INFO  [com.netflix.discovery.provider.DiscoveryJerseyProvider:81] maincid - Using XML decoding codec XStreamXml
+2018-03-01 10:46:38.452 [main] INFO  [com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver:43] maincid - Resolving eureka endpoints via configuration
+2018-03-01 10:46:38.699 [main] INFO  [com.netflix.discovery.DiscoveryClient:929] maincid - Disable delta property : false
+2018-03-01 10:46:38.699 [main] INFO  [com.netflix.discovery.DiscoveryClient:930] maincid - Single vip registry refresh property : null
+2018-03-01 10:46:38.699 [main] INFO  [com.netflix.discovery.DiscoveryClient:931] maincid - Force full registry fetch : false
+2018-03-01 10:46:38.699 [main] INFO  [com.netflix.discovery.DiscoveryClient:932] maincid - Application is null : false
+2018-03-01 10:46:38.699 [main] INFO  [com.netflix.discovery.DiscoveryClient:933] maincid - Registered Applications size is zero : true
+2018-03-01 10:46:38.699 [main] INFO  [com.netflix.discovery.DiscoveryClient:935] maincid - Application version is -1: true
+2018-03-01 10:46:38.700 [main] INFO  [com.netflix.discovery.DiscoveryClient:1018] maincid - Getting all instance registry info from the eureka server
+2018-03-01 10:46:38.784 [main] INFO  [com.netflix.discovery.DiscoveryClient:1027] maincid - The response status is 200
+2018-03-01 10:46:38.786 [main] INFO  [com.netflix.discovery.DiscoveryClient:1253] maincid - Starting heartbeat executor: renew interval is: 5
+2018-03-01 10:46:38.789 [main] INFO  [com.netflix.discovery.InstanceInfoReplicator:59] maincid - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-03-01 10:46:38.791 [main] INFO  [com.netflix.discovery.DiscoveryClient:434] maincid - Discovery Client initialized at timestamp 1519872398791 with initial instances count: 0
+2018-03-01 10:46:38.804 [main] INFO  [org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry:40] maincid - Registering application house with eureka with status UP
+2018-03-01 10:46:38.805 [main] INFO  [com.netflix.discovery.DiscoveryClient:1288] maincid - Saw local status change event StatusChangeEvent [timestamp=1519872398805, current=UP, previous=STARTING]
+2018-03-01 10:46:38.806 [DiscoveryClient-InstanceInfoReplicator-0] INFO  [com.netflix.discovery.DiscoveryClient:804] DiscoveryClient-InstanceInfoReplicator-0cid - DiscoveryClient_HOUSE/DESKTOP-9MBSSTD:house:8084: registering service...
+2018-03-01 10:46:38.812 [main] INFO  [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter:678] maincid - Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+2018-03-01 10:46:38.818 [main] INFO  [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter:678] maincid - Located managed bean 'archaiusEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=archaiusEndpoint]
+2018-03-01 10:46:38.826 [main] INFO  [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter:678] maincid - Located managed bean 'featuresEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=featuresEndpoint]
+2018-03-01 10:46:38.829 [main] INFO  [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter:678] maincid - Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+2018-03-01 10:46:38.832 [main] INFO  [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter:678] maincid - Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+2018-03-01 10:46:38.834 [main] INFO  [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter:678] maincid - Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+2018-03-01 10:46:38.836 [main] INFO  [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter:678] maincid - Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+2018-03-01 10:46:38.838 [main] INFO  [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter:678] maincid - Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+2018-03-01 10:46:38.841 [main] INFO  [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter:678] maincid - Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+2018-03-01 10:46:38.845 [main] INFO  [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter:678] maincid - Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+2018-03-01 10:46:38.848 [main] INFO  [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter:678] maincid - Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+2018-03-01 10:46:38.850 [main] INFO  [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter:678] maincid - Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+2018-03-01 10:46:38.852 [main] INFO  [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter:678] maincid - Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+2018-03-01 10:46:38.854 [main] INFO  [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter:678] maincid - Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+2018-03-01 10:46:38.884 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:179] maincid - Initializing ProtocolHandler ["http-nio-8084"]
+2018-03-01 10:46:38.893 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:179] maincid - Starting ProtocolHandler ["http-nio-8084"]
+2018-03-01 10:46:38.905 [main] INFO  [org.apache.tomcat.util.net.NioSelectorPool:179] maincid - Using a shared selector for servlet write/read
+2018-03-01 10:46:38.926 [main] INFO  [org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer:201] maincid - Tomcat started on port(s): 8084 (http)
+2018-03-01 10:46:38.927 [main] INFO  [org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration:124] maincid - Updating port to 8084
+2018-03-01 10:46:38.933 [DiscoveryClient-InstanceInfoReplicator-0] INFO  [com.netflix.discovery.DiscoveryClient:813] DiscoveryClient-InstanceInfoReplicator-0cid - DiscoveryClient_HOUSE/DESKTOP-9MBSSTD:house:8084 - registration status: 204
+2018-03-01 10:46:38.934 [main] INFO  [com.skilly.house.hsrv.HouseSrvApplication:57] maincid - Started HouseSrvApplication in 12.303 seconds (JVM running for 14.188)
+2018-03-01 10:47:08.786 [DiscoveryClient-CacheRefreshExecutor-0] INFO  [com.netflix.discovery.DiscoveryClient:929] DiscoveryClient-CacheRefreshExecutor-0cid - Disable delta property : false
+2018-03-01 10:47:08.786 [DiscoveryClient-CacheRefreshExecutor-0] INFO  [com.netflix.discovery.DiscoveryClient:930] DiscoveryClient-CacheRefreshExecutor-0cid - Single vip registry refresh property : null
+2018-03-01 10:47:08.786 [DiscoveryClient-CacheRefreshExecutor-0] INFO  [com.netflix.discovery.DiscoveryClient:931] DiscoveryClient-CacheRefreshExecutor-0cid - Force full registry fetch : false
+2018-03-01 10:47:08.786 [DiscoveryClient-CacheRefreshExecutor-0] INFO  [com.netflix.discovery.DiscoveryClient:932] DiscoveryClient-CacheRefreshExecutor-0cid - Application is null : false
+2018-03-01 10:47:08.786 [DiscoveryClient-CacheRefreshExecutor-0] INFO  [com.netflix.discovery.DiscoveryClient:933] DiscoveryClient-CacheRefreshExecutor-0cid - Registered Applications size is zero : true
+2018-03-01 10:47:08.786 [DiscoveryClient-CacheRefreshExecutor-0] INFO  [com.netflix.discovery.DiscoveryClient:935] DiscoveryClient-CacheRefreshExecutor-0cid - Application version is -1: false
+2018-03-01 10:47:08.786 [DiscoveryClient-CacheRefreshExecutor-0] INFO  [com.netflix.discovery.DiscoveryClient:1018] DiscoveryClient-CacheRefreshExecutor-0cid - Getting all instance registry info from the eureka server
+2018-03-01 10:47:08.810 [DiscoveryClient-CacheRefreshExecutor-0] INFO  [com.netflix.discovery.DiscoveryClient:1027] DiscoveryClient-CacheRefreshExecutor-0cid - The response status is 200
+2018-03-01 10:47:52.330 [main] INFO  [org.springframework.context.annotation.AnnotationConfigApplicationContext:583] maincid - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@35e52059: startup date [Thu Mar 01 10:47:52 CST 2018]; root of context hierarchy
+2018-03-01 10:47:52.441 [background-preinit] INFO  [org.hibernate.validator.internal.util.Version:30] background-preinitcid - HV000001: Hibernate Validator 5.3.6.Final
+2018-03-01 10:47:52.675 [main] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor:155] maincid - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-03-01 10:47:52.717 [main] INFO  [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:327] maincid - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$87cddc30] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-01 10:47:53.597 [main] INFO  [com.skilly.house.hsrv.HouseSrvApplication:597] maincid - The following profiles are active: local
+2018-03-01 10:47:53.609 [main] INFO  [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext:583] maincid - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@702b06fb: startup date [Thu Mar 01 10:47:53 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@35e52059
+2018-03-01 10:47:54.664 [main] INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate:165] maincid - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-03-01 10:47:54.976 [main] INFO  [org.springframework.cloud.context.scope.GenericScope:287] maincid - BeanFactory id=d0049d25-7fb5-3d01-bbdb-276daebf359d
+2018-03-01 10:47:54.995 [main] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor:155] maincid - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-03-01 10:47:55.138 [main] INFO  [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:327] maincid - Bean 'org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration' of type [org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration$$EnhancerBySpringCGLIB$$6e191f65] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-01 10:47:55.262 [main] INFO  [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:327] maincid - Bean 'sleuthAdvisorConfig' of type [org.springframework.cloud.sleuth.annotation.SleuthAdvisorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-01 10:47:55.271 [main] INFO  [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:327] maincid - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6bb3d933] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-01 10:47:55.311 [main] INFO  [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:327] maincid - Bean 'org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration' of type [org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration$$EnhancerBySpringCGLIB$$9de07f74] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-01 10:47:55.326 [main] INFO  [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:327] maincid - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$87cddc30] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-01 10:47:55.341 [main] INFO  [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:327] maincid - Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$$EnhancerBySpringCGLIB$$53978552] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-01 10:47:55.356 [main] INFO  [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:327] maincid - Bean 'org.springframework.cloud.sleuth.instrument.web.client.TraceWebClientAutoConfiguration' of type [org.springframework.cloud.sleuth.instrument.web.client.TraceWebClientAutoConfiguration$$EnhancerBySpringCGLIB$$1846a4b2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-01 10:47:56.119 [main] INFO  [org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer:89] maincid - Tomcat initialized with port(s): 8084 (http)
+2018-03-01 10:47:56.127 [main] INFO  [org.apache.catalina.core.StandardService:179] maincid - Starting service [Tomcat]
+2018-03-01 10:47:56.129 [main] INFO  [org.apache.catalina.core.StandardEngine:179] maincid - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-03-01 10:47:56.246 [localhost-startStop-1] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:179] localhost-startStop-1cid - Initializing Spring embedded WebApplicationContext
+2018-03-01 10:47:56.246 [localhost-startStop-1] INFO  [org.springframework.web.context.ContextLoader:276] localhost-startStop-1cid - Root WebApplicationContext: initialization completed in 2638 ms
+2018-03-01 10:47:56.901 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean:258] localhost-startStop-1cid - Mapping filter: 'metricsFilter' to: [/*]
+2018-03-01 10:47:56.901 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean:258] localhost-startStop-1cid - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-01 10:47:56.902 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean:258] localhost-startStop-1cid - Mapping filter: 'traceFilter' to: [/*]
+2018-03-01 10:47:56.902 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean:258] localhost-startStop-1cid - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-01 10:47:56.902 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean:258] localhost-startStop-1cid - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-01 10:47:56.902 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean:258] localhost-startStop-1cid - Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-01 10:47:56.902 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean:258] localhost-startStop-1cid - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2018-03-01 10:47:56.902 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean:258] localhost-startStop-1cid - Mapping filter: 'authorizedLogbookFilter' to: [/*]
+2018-03-01 10:47:56.902 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean:258] localhost-startStop-1cid - Mapping filter: 'applicationContextIdFilter' to: [/*]
+2018-03-01 10:47:56.902 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.ServletRegistrationBean:190] localhost-startStop-1cid - Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-01 10:47:57.430 [main] INFO  [com.alibaba.druid.pool.DruidDataSource:922] maincid - {dataSource-1} inited
+2018-03-01 10:47:58.704 [main] WARN  [com.netflix.config.sources.URLConfigurationSource:121] maincid - No URLs will be polled as dynamic configuration sources.
+2018-03-01 10:47:58.704 [main] INFO  [com.netflix.config.sources.URLConfigurationSource:122] maincid - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-03-01 10:47:58.709 [main] WARN  [com.netflix.config.sources.URLConfigurationSource:121] maincid - No URLs will be polled as dynamic configuration sources.
+2018-03-01 10:47:58.709 [main] INFO  [com.netflix.config.sources.URLConfigurationSource:122] maincid - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-03-01 10:47:59.145 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:534] maincid - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@702b06fb: startup date [Thu Mar 01 10:47:53 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@35e52059
+2018-03-01 10:47:59.262 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543] maincid - Mapped "{[/house/allCommunitys]}" onto public com.skilly.house.hsrv.common.RestResponse<java.util.List<com.skilly.house.hsrv.model.Community>> com.skilly.house.hsrv.controller.HouseController.toAdd()
+2018-03-01 10:47:59.265 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543] maincid - Mapped "{[/house/bind]}" onto public com.skilly.house.hsrv.common.RestResponse<java.lang.Object> com.skilly.house.hsrv.controller.HouseController.delsale(com.skilly.house.hsrv.model.HouseUserReq)
+2018-03-01 10:47:59.265 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543] maincid - Mapped "{[/house/list]}" onto public com.skilly.house.hsrv.common.RestResponse<com.skilly.house.hsrv.model.ListResponse<com.skilly.house.hsrv.model.House>> com.skilly.house.hsrv.controller.HouseController.houseList(com.skilly.house.hsrv.model.HouseQueryReq)
+2018-03-01 10:47:59.265 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543] maincid - Mapped "{[/house/detail]}" onto public com.skilly.house.hsrv.common.RestResponse<com.skilly.house.hsrv.model.House> com.skilly.house.hsrv.controller.HouseController.houseDetail(long)
+2018-03-01 10:47:59.265 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543] maincid - Mapped "{[/house/hot]}" onto public com.skilly.house.hsrv.common.RestResponse<java.util.List<com.skilly.house.hsrv.model.House>> com.skilly.house.hsrv.controller.HouseController.getHotHouse(java.lang.Integer)
+2018-03-01 10:47:59.265 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543] maincid - Mapped "{[/house/add]}" onto public com.skilly.house.hsrv.common.RestResponse<java.lang.Object> com.skilly.house.hsrv.controller.HouseController.doAdd(com.skilly.house.hsrv.model.House)
+2018-03-01 10:47:59.266 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543] maincid - Mapped "{[/house/rating]}" onto public com.skilly.house.hsrv.common.RestResponse<java.lang.Object> com.skilly.house.hsrv.controller.HouseController.houseRate(java.lang.Double,java.lang.Long)
+2018-03-01 10:47:59.266 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543] maincid - Mapped "{[/house/lastest]}" onto public com.skilly.house.hsrv.common.RestResponse<java.util.List<com.skilly.house.hsrv.model.House>> com.skilly.house.hsrv.controller.HouseController.getLastest()
+2018-03-01 10:47:59.266 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543] maincid - Mapped "{[/house/addUserMsg]}" onto public com.skilly.house.hsrv.common.RestResponse<java.lang.Object> com.skilly.house.hsrv.controller.HouseController.houseMsg(com.skilly.house.hsrv.model.UserMsg)
+2018-03-01 10:47:59.266 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543] maincid - Mapped "{[/house/v1/rating]}" onto public com.skilly.house.hsrv.common.RestResponse<java.lang.Object> com.skilly.house.hsrv.controller.HouseController.houseV1Rate(java.lang.Double,java.lang.Long)
+2018-03-01 10:47:59.266 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543] maincid - Mapped "{[/house/allCitys]}" onto public com.skilly.house.hsrv.common.RestResponse<java.util.List<com.skilly.house.hsrv.model.City>> com.skilly.house.hsrv.controller.HouseController.allCitys()
+2018-03-01 10:47:59.268 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543] maincid - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-01 10:47:59.268 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543] maincid - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-01 10:47:59.355 [main] INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:362] maincid - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-01 10:47:59.355 [main] INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:362] maincid - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-01 10:47:59.397 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver:273] maincid - Detected @ExceptionHandler methods in globalExceptionHandler
+2018-03-01 10:47:59.449 [main] INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:362] maincid - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-01 10:48:01.555 [main] INFO  [org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping:543] maincid - Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-03-01 10:48:01.557 [main] INFO  [org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping:543] maincid - Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-03-01 10:48:01.557 [main] INFO  [org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping:543] maincid - Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+2018-03-01 10:48:01.558 [main] INFO  [org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping:543] maincid - Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+2018-03-01 10:48:01.558 [main] INFO  [org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping:543] maincid - Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2018-03-01 10:48:01.558 [main] INFO  [org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping:543] maincid - Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-03-01 10:48:01.559 [main] INFO  [org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping:543] maincid - Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-03-01 10:48:01.559 [main] INFO  [org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping:543] maincid - Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-03-01 10:48:01.559 [main] INFO  [org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping:543] maincid - Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-03-01 10:48:01.560 [main] INFO  [org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping:543] maincid - Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-03-01 10:48:01.562 [main] INFO  [org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping:543] maincid - Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2018-03-01 10:48:01.566 [main] INFO  [org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping:543] maincid - Mapped "{[/service-registry/instance-status],methods=[GET]}" onto public org.springframework.http.ResponseEntity org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.getStatus()
+2018-03-01 10:48:01.566 [main] INFO  [org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping:543] maincid - Mapped "{[/service-registry/instance-status],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.setStatus(java.lang.String)
+2018-03-01 10:48:01.567 [main] INFO  [org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping:543] maincid - Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-03-01 10:48:01.568 [main] INFO  [org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping:543] maincid - Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2018-03-01 10:48:01.568 [main] INFO  [org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping:543] maincid - Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-03-01 10:48:01.570 [main] INFO  [org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping:543] maincid - Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2018-03-01 10:48:01.571 [main] INFO  [org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping:543] maincid - Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2018-03-01 10:48:01.571 [main] INFO  [org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping:543] maincid - Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-03-01 10:48:01.572 [main] INFO  [org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping:543] maincid - Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2018-03-01 10:48:01.572 [main] INFO  [org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping:543] maincid - Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-03-01 10:48:01.572 [main] INFO  [org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping:543] maincid - Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2018-03-01 10:48:01.573 [main] INFO  [org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping:543] maincid - Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-03-01 10:48:01.573 [main] INFO  [org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping:543] maincid - Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-03-01 10:48:01.835 [main] INFO  [org.springframework.ui.freemarker.SpringTemplateLoader:61] maincid - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@702b06fb: startup date [Thu Mar 01 10:47:53 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@35e52059] and template loader path [classpath:/templates/]
+2018-03-01 10:48:01.836 [main] INFO  [org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer:127] maincid - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-03-01 10:48:02.267 [main] WARN  [org.springframework.boot.starter.redis.RedisStarterDeprecationWarningAutoConfiguration:43] maincid - spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2018-03-01 10:48:02.493 [main] INFO  [org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler:165] maincid - Initializing ExecutorService 
+2018-03-01 10:48:02.533 [main] WARN  [org.springframework.cloud.starter.eureka.EurekaStarterDeprecationWarningAutoConfiguration:19] maincid - spring-cloud-starter-eureka is deprecated as of Spring Cloud Netflix 1.4.0, please migrate to spring-cloud-starter-netflix-eureka
+2018-03-01 10:48:02.787 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:431] maincid - Registering beans for JMX exposure on startup
+2018-03-01 10:48:02.789 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:916] maincid - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-03-01 10:48:02.789 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:916] maincid - Bean with name 'statFilter' has been autodetected for JMX exposure
+2018-03-01 10:48:02.797 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:916] maincid - Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-03-01 10:48:02.800 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:916] maincid - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-03-01 10:48:02.800 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:916] maincid - Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+2018-03-01 10:48:02.801 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:916] maincid - Bean with name 'serviceRegistryEndpoint' has been autodetected for JMX exposure
+2018-03-01 10:48:02.802 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:916] maincid - Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-03-01 10:48:02.805 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:678] maincid - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-03-01 10:48:02.819 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:678] maincid - Located managed bean 'serviceRegistryEndpoint': registering with JMX server as MBean [org.springframework.cloud.client.serviceregistry.endpoint:name=serviceRegistryEndpoint,type=ServiceRegistryEndpoint]
+2018-03-01 10:48:02.826 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:678] maincid - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-03-01 10:48:02.838 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:678] maincid - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=702b06fb,type=ConfigurationPropertiesRebinder]
+2018-03-01 10:48:02.844 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:671] maincid - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-03-01 10:48:02.846 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:678] maincid - Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+2018-03-01 10:48:02.850 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter:671] maincid - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2018-03-01 10:48:02.850 [main] INFO  [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter:431] maincid - Registering beans for JMX exposure on startup
+2018-03-01 10:48:02.864 [main] INFO  [org.springframework.context.support.DefaultLifecycleProcessor:343] maincid - Starting beans in phase 0
+2018-03-01 10:48:02.872 [main] INFO  [org.springframework.cloud.netflix.eureka.InstanceInfoFactory:71] maincid - Setting initial instance status as: STARTING
+2018-03-01 10:48:02.903 [main] INFO  [com.netflix.discovery.DiscoveryClient:347] maincid - Initializing Eureka in region us-east-1
+2018-03-01 10:48:02.950 [main] INFO  [com.netflix.discovery.provider.DiscoveryJerseyProvider:70] maincid - Using JSON encoding codec LegacyJacksonJson
+2018-03-01 10:48:02.950 [main] INFO  [com.netflix.discovery.provider.DiscoveryJerseyProvider:71] maincid - Using JSON decoding codec LegacyJacksonJson
+2018-03-01 10:48:03.040 [main] INFO  [com.netflix.discovery.provider.DiscoveryJerseyProvider:80] maincid - Using XML encoding codec XStreamXml
+2018-03-01 10:48:03.040 [main] INFO  [com.netflix.discovery.provider.DiscoveryJerseyProvider:81] maincid - Using XML decoding codec XStreamXml
+2018-03-01 10:48:03.244 [main] INFO  [com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver:43] maincid - Resolving eureka endpoints via configuration
+2018-03-01 10:48:03.489 [main] INFO  [com.netflix.discovery.DiscoveryClient:929] maincid - Disable delta property : false
+2018-03-01 10:48:03.489 [main] INFO  [com.netflix.discovery.DiscoveryClient:930] maincid - Single vip registry refresh property : null
+2018-03-01 10:48:03.489 [main] INFO  [com.netflix.discovery.DiscoveryClient:931] maincid - Force full registry fetch : false
+2018-03-01 10:48:03.489 [main] INFO  [com.netflix.discovery.DiscoveryClient:932] maincid - Application is null : false
+2018-03-01 10:48:03.489 [main] INFO  [com.netflix.discovery.DiscoveryClient:933] maincid - Registered Applications size is zero : true
+2018-03-01 10:48:03.489 [main] INFO  [com.netflix.discovery.DiscoveryClient:935] maincid - Application version is -1: true
+2018-03-01 10:48:03.490 [main] INFO  [com.netflix.discovery.DiscoveryClient:1018] maincid - Getting all instance registry info from the eureka server
+2018-03-01 10:48:03.652 [main] INFO  [com.netflix.discovery.DiscoveryClient:1027] maincid - The response status is 200
+2018-03-01 10:48:03.655 [main] INFO  [com.netflix.discovery.DiscoveryClient:1253] maincid - Starting heartbeat executor: renew interval is: 5
+2018-03-01 10:48:03.659 [main] INFO  [com.netflix.discovery.InstanceInfoReplicator:59] maincid - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-03-01 10:48:03.661 [main] INFO  [com.netflix.discovery.DiscoveryClient:434] maincid - Discovery Client initialized at timestamp 1519872483661 with initial instances count: 1
+2018-03-01 10:48:03.676 [main] INFO  [org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry:40] maincid - Registering application house with eureka with status UP
+2018-03-01 10:48:03.676 [main] INFO  [com.netflix.discovery.DiscoveryClient:1288] maincid - Saw local status change event StatusChangeEvent [timestamp=1519872483676, current=UP, previous=STARTING]
+2018-03-01 10:48:03.678 [DiscoveryClient-InstanceInfoReplicator-0] INFO  [com.netflix.discovery.DiscoveryClient:804] DiscoveryClient-InstanceInfoReplicator-0cid - DiscoveryClient_HOUSE/DESKTOP-9MBSSTD:house:8084: registering service...
+2018-03-01 10:48:03.683 [main] INFO  [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter:678] maincid - Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+2018-03-01 10:48:03.690 [main] INFO  [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter:678] maincid - Located managed bean 'archaiusEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=archaiusEndpoint]
+2018-03-01 10:48:03.703 [main] INFO  [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter:678] maincid - Located managed bean 'featuresEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=featuresEndpoint]
+2018-03-01 10:48:03.706 [main] INFO  [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter:678] maincid - Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+2018-03-01 10:48:03.708 [main] INFO  [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter:678] maincid - Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+2018-03-01 10:48:03.711 [main] INFO  [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter:678] maincid - Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+2018-03-01 10:48:03.714 [main] INFO  [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter:678] maincid - Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+2018-03-01 10:48:03.716 [DiscoveryClient-InstanceInfoReplicator-0] INFO  [com.netflix.discovery.DiscoveryClient:813] DiscoveryClient-InstanceInfoReplicator-0cid - DiscoveryClient_HOUSE/DESKTOP-9MBSSTD:house:8084 - registration status: 204
+2018-03-01 10:48:03.717 [main] INFO  [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter:678] maincid - Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+2018-03-01 10:48:03.721 [main] INFO  [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter:678] maincid - Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+2018-03-01 10:48:03.726 [main] INFO  [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter:678] maincid - Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+2018-03-01 10:48:03.729 [main] INFO  [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter:678] maincid - Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+2018-03-01 10:48:03.732 [main] INFO  [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter:678] maincid - Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+2018-03-01 10:48:03.734 [main] INFO  [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter:678] maincid - Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+2018-03-01 10:48:03.736 [main] INFO  [org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter:678] maincid - Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+2018-03-01 10:48:03.767 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:179] maincid - Initializing ProtocolHandler ["http-nio-8084"]
+2018-03-01 10:48:03.779 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:179] maincid - Starting ProtocolHandler ["http-nio-8084"]
+2018-03-01 10:48:03.794 [main] INFO  [org.apache.tomcat.util.net.NioSelectorPool:179] maincid - Using a shared selector for servlet write/read
+2018-03-01 10:48:03.816 [main] INFO  [org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer:201] maincid - Tomcat started on port(s): 8084 (http)
+2018-03-01 10:48:03.816 [main] INFO  [org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration:124] maincid - Updating port to 8084
+2018-03-01 10:48:03.822 [main] INFO  [com.skilly.house.hsrv.HouseSrvApplication:57] maincid - Started HouseSrvApplication in 12.4 seconds (JVM running for 14.018)
+2018-03-01 10:48:09.645 [http-nio-8084-exec-1] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:179] http-nio-8084-exec-1cid - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-01 10:48:09.645 [http-nio-8084-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet:489] http-nio-8084-exec-1cid - FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-01 10:48:09.680 [http-nio-8084-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet:508] http-nio-8084-exec-1cid - FrameworkServlet 'dispatcherServlet': initialization completed in 35 ms
+2018-03-01 10:48:10.000 [http-nio-8084-exec-1] INFO  [org.zalando.logbook.Logbook:74] http-nio-8084-exec-1cid - Incoming Request: 8e2c6071-d101-41e5-8de2-85ec6f90b065
+POST http://DESKTOP-9MBSSTD:8084/house/list HTTP/1.1
+content-length: 137
+host: DESKTOP-9MBSSTD:8084
+content-type: application/json;charset=UTF-8
+connection: Keep-Alive
+accept-encoding: gzip,deflate
+user-agent: agent
+accept: application/json, application/json, application/*+json, application/*+json
+
+{"limit":2,"offset":0,"query":{"bookmarked":false,"featureList":[],"floorPlanList":[],"imageList":[],"roundRating":0,"sort":"time_desc"}}
+2018-03-01 10:48:27.198 [DiscoveryClient-0] ERROR [com.netflix.discovery.TimedSupervisorTask:67] DiscoveryClient-0cid - task supervisor timed out
+java.util.concurrent.TimeoutException: null
+	at java.util.concurrent.FutureTask.get(FutureTask.java:205) ~[?:1.8.0_151]
+	at com.netflix.discovery.TimedSupervisorTask.run(TimedSupervisorTask.java:63) ~[eureka-client-1.7.0.jar:1.7.0]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_151]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_151]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) ~[?:1.8.0_151]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) ~[?:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_151]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_151]
+2018-03-01 10:48:28.379 [http-nio-8084-exec-1] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] http-nio-8084-exec-1cid - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2018-03-01 10:48:28.603 [http-nio-8084-exec-1] INFO  [org.springframework.jdbc.support.SQLErrorCodesFactory:127] http-nio-8084-exec-1cid - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2018-03-01 10:54:12.486 [AsyncResolver-bootstrap-executor-0] INFO  [com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver:43] AsyncResolver-bootstrap-executor-0cid - Resolving eureka endpoints via configuration
+2018-03-01 10:54:12.498 [http-nio-8084-exec-1] ERROR [com.skilly.house.hsrv.common.GlobalExceptionHandler:27] http-nio-8084-exec-1cid - 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'house.house' doesn't exist
+### The error may exist in mapper/house.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select             a.id ,     a.type,     a.name,     a.price,     a.images ,     a.area  ,     a.beds  ,      a.baths ,     a.rating  ,     a.remarks ,     a.properties ,     a.floor_plan ,     a.tags ,     a.create_time ,     a.city_id ,     a.community_id ,     a.address,     a.state,     b.user_id             from   house a                  inner join ( select house_id,user_id from house_user                        WHERE  type   = 1                      ) b          on a.id = b.house_id        WHERE state = 1                             order by a.create_time desc                                     limit ?, ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'house.house' doesn't exist
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'house.house' doesn't exist
+org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'house.house' doesn't exist
+### The error may exist in mapper/house.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select             a.id ,     a.type,     a.name,     a.price,     a.images ,     a.area  ,     a.beds  ,      a.baths ,     a.rating  ,     a.remarks ,     a.properties ,     a.floor_plan ,     a.tags ,     a.create_time ,     a.city_id ,     a.community_id ,     a.address,     a.state,     b.user_id             from   house a                  inner join ( select house_id,user_id from house_user                        WHERE  type   = 1                      ) b          on a.id = b.house_id        WHERE state = 1                             order by a.create_time desc                                     limit ?, ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'house.house' doesn't exist
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'house.house' doesn't exist
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:231) ~[spring-jdbc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73) ~[spring-jdbc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:73) ~[mybatis-spring-1.3.1.jar:1.3.1]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:446) ~[mybatis-spring-1.3.1.jar:1.3.1]
+	at com.sun.proxy.$Proxy119.selectList(Unknown Source) ~[?:?]
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230) ~[mybatis-spring-1.3.1.jar:1.3.1]
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:137) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:75) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59) ~[mybatis-3.4.5.jar:3.4.5]
+	at com.sun.proxy.$Proxy120.selectHouse(Unknown Source) ~[?:?]
+	at com.skilly.house.hsrv.service.HouseService.queryAndSetImg(HouseService.java:52) ~[classes/:?]
+	at com.skilly.house.hsrv.service.HouseService.queryHouse(HouseService.java:149) ~[classes/:?]
+	at com.skilly.house.hsrv.service.HouseService$$FastClassBySpringCGLIB$$c0424846.invoke(<generated>) ~[classes/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204) ~[spring-core-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:669) ~[spring-aop-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at com.skilly.house.hsrv.service.HouseService$$EnhancerBySpringCGLIB$$4b3a152a.queryHouse(<generated>) ~[classes/:?]
+	at com.skilly.house.hsrv.controller.HouseController.houseList(HouseController.java:43) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_151]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.boot.web.filter.ApplicationContextHeaderFilter.doFilterInternal(ApplicationContextHeaderFilter.java:55) ~[spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.zalando.logbook.servlet.NormalStrategy.doFilter(NormalStrategy.java:38) ~[logbook-servlet-1.3.0.jar:?]
+	at org.zalando.logbook.servlet.LogbookFilter.doFilter(LogbookFilter.java:33) ~[logbook-servlet-1.3.0.jar:?]
+	at org.zalando.logbook.servlet.HttpFilter.doFilter(HttpFilter.java:32) ~[logbook-servlet-1.3.0.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:110) ~[spring-boot-actuator-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.cloud.sleuth.instrument.web.TraceFilter.doFilter(TraceFilter.java:164) ~[spring-cloud-sleuth-core-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:106) ~[spring-boot-actuator-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_151]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_151]
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'house.house' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_151]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_151]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_151]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_151]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.Util.getInstance(Util.java:408) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2527) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2680) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2487) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1197) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3051) ~[druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440) ~[druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3049) ~[druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167) ~[druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498) ~[druid-1.1.6.jar:1.1.6]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_151]
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59) ~[mybatis-3.4.5.jar:3.4.5]
+	at com.sun.proxy.$Proxy158.execute(Unknown Source) ~[?:?]
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:63) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.executor.ReuseExecutor.doQuery(ReuseExecutor.java:60) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:136) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141) ~[mybatis-3.4.5.jar:3.4.5]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_151]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433) ~[mybatis-spring-1.3.1.jar:1.3.1]
+	... 87 more
+2018-03-01 10:54:12.498 [http-nio-8084-exec-1] ERROR [com.skilly.house.hsrv.common.GlobalExceptionHandler:28] http-nio-8084-exec-1cid - http://DESKTOP-9MBSSTD:8084/house/list encounter exception or error
+2018-03-01 10:54:12.535 [http-nio-8084-exec-1] INFO  [org.zalando.logbook.Logbook:79] http-nio-8084-exec-1cid - Outgoing Response: 8e2c6071-d101-41e5-8de2-85ec6f90b065
+HTTP/1.1 200 OK
+X-Application-Context: house:local:8084
+Content-Length: 37
+Date: Thu, 01 Mar 2018 02:54:12 GMT
+Content-Type: application/json
+
+{"code":1,"msg":"æ¿äº§æå¡å¼å¸¸"}
+2018-03-01 10:54:13.493 [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@386d41cb}] INFO  [org.springframework.context.annotation.AnnotationConfigApplicationContext:583] AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@386d41cb}cid - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@213e725f: startup date [Thu Mar 01 10:54:13 CST 2018]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@702b06fb
+2018-03-01 10:54:13.541 [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@386d41cb}] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor:155] AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@386d41cb}cid - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-03-01 10:54:13.732 [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@386d41cb}] INFO  [com.netflix.config.ChainedDynamicProperty:115] AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@386d41cb}cid - Flipping property: localhost.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2018-03-01 10:54:13.753 [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@386d41cb}] INFO  [com.netflix.util.concurrent.ShutdownEnabledTimer:58] AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@386d41cb}cid - Shutdown hook installed for: NFLoadBalancer-PingTimer-localhost
+2018-03-01 10:54:13.773 [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@386d41cb}] INFO  [com.netflix.loadbalancer.BaseLoadBalancer:192] AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@386d41cb}cid - Client: localhost instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=localhost,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2018-03-01 10:54:13.776 [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@386d41cb}] INFO  [com.netflix.loadbalancer.DynamicServerListLoadBalancer:222] AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@386d41cb}cid - Using serverListUpdater PollingServerListUpdater
+2018-03-01 10:54:13.781 [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@386d41cb}] INFO  [com.netflix.loadbalancer.DynamicServerListLoadBalancer:150] AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@386d41cb}cid - DynamicServerListLoadBalancer for client localhost initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=localhost,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@770d96b2
+2018-03-01 10:54:27.178 [http-nio-8084-exec-2] INFO  [org.zalando.logbook.Logbook:74] http-nio-8084-exec-2cid - Incoming Request: 22ad8bb7-105c-43d9-bdbc-5737f760077b
+POST http://DESKTOP-9MBSSTD:8084/house/list HTTP/1.1
+content-length: 137
+host: DESKTOP-9MBSSTD:8084
+content-type: application/json;charset=UTF-8
+connection: Keep-Alive
+accept-encoding: gzip,deflate
+user-agent: agent
+accept: application/json, application/json, application/*+json, application/*+json
+
+{"limit":2,"offset":0,"query":{"bookmarked":false,"featureList":[],"floorPlanList":[],"imageList":[],"roundRating":0,"sort":"time_desc"}}
+2018-03-01 10:54:27.187 [http-nio-8084-exec-2] ERROR [com.skilly.house.hsrv.common.GlobalExceptionHandler:27] http-nio-8084-exec-2cid - 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'house.house' doesn't exist
+### The error may exist in mapper/house.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select             a.id ,     a.type,     a.name,     a.price,     a.images ,     a.area  ,     a.beds  ,      a.baths ,     a.rating  ,     a.remarks ,     a.properties ,     a.floor_plan ,     a.tags ,     a.create_time ,     a.city_id ,     a.community_id ,     a.address,     a.state,     b.user_id             from   house a                  inner join ( select house_id,user_id from house_user                        WHERE  type   = 1                      ) b          on a.id = b.house_id        WHERE state = 1                             order by a.create_time desc                                     limit ?, ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'house.house' doesn't exist
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'house.house' doesn't exist
+org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'house.house' doesn't exist
+### The error may exist in mapper/house.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select             a.id ,     a.type,     a.name,     a.price,     a.images ,     a.area  ,     a.beds  ,      a.baths ,     a.rating  ,     a.remarks ,     a.properties ,     a.floor_plan ,     a.tags ,     a.create_time ,     a.city_id ,     a.community_id ,     a.address,     a.state,     b.user_id             from   house a                  inner join ( select house_id,user_id from house_user                        WHERE  type   = 1                      ) b          on a.id = b.house_id        WHERE state = 1                             order by a.create_time desc                                     limit ?, ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'house.house' doesn't exist
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'house.house' doesn't exist
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:231) ~[spring-jdbc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73) ~[spring-jdbc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:73) ~[mybatis-spring-1.3.1.jar:1.3.1]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:446) ~[mybatis-spring-1.3.1.jar:1.3.1]
+	at com.sun.proxy.$Proxy119.selectList(Unknown Source) ~[?:?]
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230) ~[mybatis-spring-1.3.1.jar:1.3.1]
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:137) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:75) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59) ~[mybatis-3.4.5.jar:3.4.5]
+	at com.sun.proxy.$Proxy120.selectHouse(Unknown Source) ~[?:?]
+	at com.skilly.house.hsrv.service.HouseService.queryAndSetImg(HouseService.java:52) ~[classes/:?]
+	at com.skilly.house.hsrv.service.HouseService.queryHouse(HouseService.java:149) ~[classes/:?]
+	at com.skilly.house.hsrv.service.HouseService$$FastClassBySpringCGLIB$$c0424846.invoke(<generated>) ~[classes/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204) ~[spring-core-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:669) ~[spring-aop-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at com.skilly.house.hsrv.service.HouseService$$EnhancerBySpringCGLIB$$4b3a152a.queryHouse(<generated>) ~[classes/:?]
+	at com.skilly.house.hsrv.controller.HouseController.houseList(HouseController.java:43) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_151]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.boot.web.filter.ApplicationContextHeaderFilter.doFilterInternal(ApplicationContextHeaderFilter.java:55) ~[spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.zalando.logbook.servlet.NormalStrategy.doFilter(NormalStrategy.java:38) ~[logbook-servlet-1.3.0.jar:?]
+	at org.zalando.logbook.servlet.LogbookFilter.doFilter(LogbookFilter.java:33) ~[logbook-servlet-1.3.0.jar:?]
+	at org.zalando.logbook.servlet.HttpFilter.doFilter(HttpFilter.java:32) ~[logbook-servlet-1.3.0.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:110) ~[spring-boot-actuator-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.cloud.sleuth.instrument.web.TraceFilter.doFilter(TraceFilter.java:164) ~[spring-cloud-sleuth-core-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:106) ~[spring-boot-actuator-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_151]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_151]
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'house.house' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_151]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_151]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_151]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_151]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.Util.getInstance(Util.java:408) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2527) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2680) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2487) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1197) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3051) ~[druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440) ~[druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3049) ~[druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167) ~[druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498) ~[druid-1.1.6.jar:1.1.6]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_151]
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59) ~[mybatis-3.4.5.jar:3.4.5]
+	at com.sun.proxy.$Proxy158.execute(Unknown Source) ~[?:?]
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:63) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.executor.ReuseExecutor.doQuery(ReuseExecutor.java:60) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:136) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141) ~[mybatis-3.4.5.jar:3.4.5]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_151]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433) ~[mybatis-spring-1.3.1.jar:1.3.1]
+	... 87 more
+2018-03-01 10:54:27.187 [http-nio-8084-exec-2] ERROR [com.skilly.house.hsrv.common.GlobalExceptionHandler:28] http-nio-8084-exec-2cid - http://DESKTOP-9MBSSTD:8084/house/list encounter exception or error
+2018-03-01 10:54:27.190 [http-nio-8084-exec-2] INFO  [org.zalando.logbook.Logbook:79] http-nio-8084-exec-2cid - Outgoing Response: 22ad8bb7-105c-43d9-bdbc-5737f760077b
+HTTP/1.1 200 OK
+X-Application-Context: house:local:8084
+Content-Length: 37
+Date: Thu, 01 Mar 2018 02:54:27 GMT
+Content-Type: application/json
+
+{"code":1,"msg":"æ¿äº§æå¡å¼å¸¸"}
+2018-03-01 10:54:34.422 [http-nio-8084-exec-3] INFO  [org.zalando.logbook.Logbook:74] http-nio-8084-exec-3cid - Incoming Request: 55d4104c-e487-45bc-bd37-f8dfffcab544
+POST http://DESKTOP-9MBSSTD:8084/house/list HTTP/1.1
+content-length: 137
+host: DESKTOP-9MBSSTD:8084
+content-type: application/json;charset=UTF-8
+connection: Keep-Alive
+accept-encoding: gzip,deflate
+user-agent: agent
+accept: application/json, application/json, application/*+json, application/*+json
+
+{"limit":2,"offset":0,"query":{"bookmarked":false,"featureList":[],"floorPlanList":[],"imageList":[],"roundRating":0,"sort":"time_desc"}}
+2018-03-01 10:56:35.560 [DiscoveryClient-1] ERROR [com.netflix.discovery.TimedSupervisorTask:67] DiscoveryClient-1cid - task supervisor timed out
+java.util.concurrent.TimeoutException: null
+	at java.util.concurrent.FutureTask.get(FutureTask.java:205) ~[?:1.8.0_151]
+	at com.netflix.discovery.TimedSupervisorTask.run(TimedSupervisorTask.java:63) ~[eureka-client-1.7.0.jar:1.7.0]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_151]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_151]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) ~[?:1.8.0_151]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) ~[?:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_151]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_151]
+2018-03-01 10:56:35.561 [http-nio-8084-exec-3] ERROR [com.skilly.house.hsrv.common.GlobalExceptionHandler:27] http-nio-8084-exec-3cid - 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'house.house' doesn't exist
+### The error may exist in mapper/house.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select             a.id ,     a.type,     a.name,     a.price,     a.images ,     a.area  ,     a.beds  ,      a.baths ,     a.rating  ,     a.remarks ,     a.properties ,     a.floor_plan ,     a.tags ,     a.create_time ,     a.city_id ,     a.community_id ,     a.address,     a.state,     b.user_id             from   house a                  inner join ( select house_id,user_id from house_user                        WHERE  type   = 1                      ) b          on a.id = b.house_id        WHERE state = 1                             order by a.create_time desc                                     limit ?, ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'house.house' doesn't exist
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'house.house' doesn't exist
+org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'house.house' doesn't exist
+### The error may exist in mapper/house.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select             a.id ,     a.type,     a.name,     a.price,     a.images ,     a.area  ,     a.beds  ,      a.baths ,     a.rating  ,     a.remarks ,     a.properties ,     a.floor_plan ,     a.tags ,     a.create_time ,     a.city_id ,     a.community_id ,     a.address,     a.state,     b.user_id             from   house a                  inner join ( select house_id,user_id from house_user                        WHERE  type   = 1                      ) b          on a.id = b.house_id        WHERE state = 1                             order by a.create_time desc                                     limit ?, ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'house.house' doesn't exist
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'house.house' doesn't exist
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:231) ~[spring-jdbc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73) ~[spring-jdbc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:73) ~[mybatis-spring-1.3.1.jar:1.3.1]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:446) ~[mybatis-spring-1.3.1.jar:1.3.1]
+	at com.sun.proxy.$Proxy119.selectList(Unknown Source) ~[?:?]
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230) ~[mybatis-spring-1.3.1.jar:1.3.1]
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:137) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:75) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59) ~[mybatis-3.4.5.jar:3.4.5]
+	at com.sun.proxy.$Proxy120.selectHouse(Unknown Source) ~[?:?]
+	at com.skilly.house.hsrv.service.HouseService.queryAndSetImg(HouseService.java:52) ~[classes/:?]
+	at com.skilly.house.hsrv.service.HouseService.queryHouse(HouseService.java:149) ~[classes/:?]
+	at com.skilly.house.hsrv.service.HouseService$$FastClassBySpringCGLIB$$c0424846.invoke(<generated>) ~[classes/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204) ~[spring-core-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:669) ~[spring-aop-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at com.skilly.house.hsrv.service.HouseService$$EnhancerBySpringCGLIB$$4b3a152a.queryHouse(<generated>) ~[classes/:?]
+	at com.skilly.house.hsrv.controller.HouseController.houseList(HouseController.java:43) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_151]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.boot.web.filter.ApplicationContextHeaderFilter.doFilterInternal(ApplicationContextHeaderFilter.java:55) ~[spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.zalando.logbook.servlet.NormalStrategy.doFilter(NormalStrategy.java:38) ~[logbook-servlet-1.3.0.jar:?]
+	at org.zalando.logbook.servlet.LogbookFilter.doFilter(LogbookFilter.java:33) ~[logbook-servlet-1.3.0.jar:?]
+	at org.zalando.logbook.servlet.HttpFilter.doFilter(HttpFilter.java:32) ~[logbook-servlet-1.3.0.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:110) ~[spring-boot-actuator-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.cloud.sleuth.instrument.web.TraceFilter.doFilter(TraceFilter.java:164) ~[spring-cloud-sleuth-core-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:106) ~[spring-boot-actuator-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_151]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_151]
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'house.house' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_151]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_151]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_151]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_151]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.Util.getInstance(Util.java:408) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2527) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2680) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2487) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1197) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3051) ~[druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440) ~[druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3049) ~[druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167) ~[druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498) ~[druid-1.1.6.jar:1.1.6]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_151]
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59) ~[mybatis-3.4.5.jar:3.4.5]
+	at com.sun.proxy.$Proxy158.execute(Unknown Source) ~[?:?]
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:63) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.executor.ReuseExecutor.doQuery(ReuseExecutor.java:60) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:136) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141) ~[mybatis-3.4.5.jar:3.4.5]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_151]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433) ~[mybatis-spring-1.3.1.jar:1.3.1]
+	... 87 more
+2018-03-01 10:56:35.561 [http-nio-8084-exec-3] ERROR [com.skilly.house.hsrv.common.GlobalExceptionHandler:28] http-nio-8084-exec-3cid - http://DESKTOP-9MBSSTD:8084/house/list encounter exception or error
+2018-03-01 10:56:35.564 [http-nio-8084-exec-3] INFO  [org.zalando.logbook.Logbook:79] http-nio-8084-exec-3cid - Outgoing Response: 55d4104c-e487-45bc-bd37-f8dfffcab544
+HTTP/1.1 200 OK
+X-Application-Context: house:local:8084
+Content-Length: 37
+Date: Thu, 01 Mar 2018 02:56:35 GMT
+Content-Type: application/json
+
+{"code":1,"msg":"æ¿äº§æå¡å¼å¸¸"}
+2018-03-01 10:56:35.565 [DiscoveryClient-HeartbeatExecutor-0] INFO  [com.netflix.discovery.DiscoveryClient:828] DiscoveryClient-HeartbeatExecutor-0cid - DiscoveryClient_HOUSE/DESKTOP-9MBSSTD:house:8084 - Re-registering apps/HOUSE
+2018-03-01 10:56:35.565 [DiscoveryClient-HeartbeatExecutor-0] INFO  [com.netflix.discovery.DiscoveryClient:804] DiscoveryClient-HeartbeatExecutor-0cid - DiscoveryClient_HOUSE/DESKTOP-9MBSSTD:house:8084: registering service...
+2018-03-01 10:56:35.571 [DiscoveryClient-HeartbeatExecutor-0] INFO  [com.netflix.discovery.DiscoveryClient:813] DiscoveryClient-HeartbeatExecutor-0cid - DiscoveryClient_HOUSE/DESKTOP-9MBSSTD:house:8084 - registration status: 204
+2018-03-01 10:57:30.501 [http-nio-8084-exec-5] INFO  [org.zalando.logbook.Logbook:74] http-nio-8084-exec-5cid - Incoming Request: a31a5735-e208-413a-97d4-b7da00a80fde
+POST http://DESKTOP-9MBSSTD:8084/house/list HTTP/1.1
+content-length: 137
+host: DESKTOP-9MBSSTD:8084
+content-type: application/json;charset=UTF-8
+connection: Keep-Alive
+accept-encoding: gzip,deflate
+user-agent: agent
+accept: application/json, application/json, application/*+json, application/*+json
+
+{"limit":2,"offset":0,"query":{"bookmarked":false,"featureList":[],"floorPlanList":[],"imageList":[],"roundRating":0,"sort":"time_desc"}}
+2018-03-01 10:57:35.872 [DiscoveryClient-1] ERROR [com.netflix.discovery.TimedSupervisorTask:67] DiscoveryClient-1cid - task supervisor timed out
+java.util.concurrent.TimeoutException: null
+	at java.util.concurrent.FutureTask.get(FutureTask.java:205) ~[?:1.8.0_151]
+	at com.netflix.discovery.TimedSupervisorTask.run(TimedSupervisorTask.java:63) ~[eureka-client-1.7.0.jar:1.7.0]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_151]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_151]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) ~[?:1.8.0_151]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) ~[?:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_151]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_151]
+2018-03-01 10:57:50.572 [http-nio-8084-exec-5] ERROR [com.skilly.house.hsrv.common.GlobalExceptionHandler:27] http-nio-8084-exec-5cid - 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'house.house' doesn't exist
+### The error may exist in mapper/house.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select             a.id ,     a.type,     a.name,     a.price,     a.images ,     a.area  ,     a.beds  ,      a.baths ,     a.rating  ,     a.remarks ,     a.properties ,     a.floor_plan ,     a.tags ,     a.create_time ,     a.city_id ,     a.community_id ,     a.address,     a.state,     b.user_id             from   house a                  inner join ( select house_id,user_id from house_user                        WHERE  type   = 1                      ) b          on a.id = b.house_id        WHERE state = 1                             order by a.create_time desc                                     limit ?, ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'house.house' doesn't exist
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'house.house' doesn't exist
+org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'house.house' doesn't exist
+### The error may exist in mapper/house.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select             a.id ,     a.type,     a.name,     a.price,     a.images ,     a.area  ,     a.beds  ,      a.baths ,     a.rating  ,     a.remarks ,     a.properties ,     a.floor_plan ,     a.tags ,     a.create_time ,     a.city_id ,     a.community_id ,     a.address,     a.state,     b.user_id             from   house a                  inner join ( select house_id,user_id from house_user                        WHERE  type   = 1                      ) b          on a.id = b.house_id        WHERE state = 1                             order by a.create_time desc                                     limit ?, ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'house.house' doesn't exist
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'house.house' doesn't exist
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:231) ~[spring-jdbc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73) ~[spring-jdbc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:73) ~[mybatis-spring-1.3.1.jar:1.3.1]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:446) ~[mybatis-spring-1.3.1.jar:1.3.1]
+	at com.sun.proxy.$Proxy119.selectList(Unknown Source) ~[?:?]
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230) ~[mybatis-spring-1.3.1.jar:1.3.1]
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:137) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:75) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59) ~[mybatis-3.4.5.jar:3.4.5]
+	at com.sun.proxy.$Proxy120.selectHouse(Unknown Source) ~[?:?]
+	at com.skilly.house.hsrv.service.HouseService.queryAndSetImg(HouseService.java:52) ~[classes/:?]
+	at com.skilly.house.hsrv.service.HouseService.queryHouse(HouseService.java:149) ~[classes/:?]
+	at com.skilly.house.hsrv.service.HouseService$$FastClassBySpringCGLIB$$c0424846.invoke(<generated>) ~[classes/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204) ~[spring-core-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:669) ~[spring-aop-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at com.skilly.house.hsrv.service.HouseService$$EnhancerBySpringCGLIB$$4b3a152a.queryHouse(<generated>) ~[classes/:?]
+	at com.skilly.house.hsrv.controller.HouseController.houseList(HouseController.java:43) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_151]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.boot.web.filter.ApplicationContextHeaderFilter.doFilterInternal(ApplicationContextHeaderFilter.java:55) ~[spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.zalando.logbook.servlet.NormalStrategy.doFilter(NormalStrategy.java:38) ~[logbook-servlet-1.3.0.jar:?]
+	at org.zalando.logbook.servlet.LogbookFilter.doFilter(LogbookFilter.java:33) ~[logbook-servlet-1.3.0.jar:?]
+	at org.zalando.logbook.servlet.HttpFilter.doFilter(HttpFilter.java:32) ~[logbook-servlet-1.3.0.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:110) ~[spring-boot-actuator-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.cloud.sleuth.instrument.web.TraceFilter.doFilter(TraceFilter.java:164) ~[spring-cloud-sleuth-core-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:106) ~[spring-boot-actuator-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_151]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_151]
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'house.house' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_151]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_151]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_151]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_151]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.Util.getInstance(Util.java:408) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2527) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2680) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2487) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1197) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3051) ~[druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440) ~[druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3049) ~[druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167) ~[druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498) ~[druid-1.1.6.jar:1.1.6]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_151]
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59) ~[mybatis-3.4.5.jar:3.4.5]
+	at com.sun.proxy.$Proxy158.execute(Unknown Source) ~[?:?]
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:63) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.executor.ReuseExecutor.doQuery(ReuseExecutor.java:60) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:136) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148) ~[mybatis-3.4.5.jar:3.4.5]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141) ~[mybatis-3.4.5.jar:3.4.5]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_151]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433) ~[mybatis-spring-1.3.1.jar:1.3.1]
+	... 87 more
+2018-03-01 10:57:50.573 [http-nio-8084-exec-5] ERROR [com.skilly.house.hsrv.common.GlobalExceptionHandler:28] http-nio-8084-exec-5cid - http://DESKTOP-9MBSSTD:8084/house/list encounter exception or error
+2018-03-01 10:57:50.575 [http-nio-8084-exec-5] INFO  [org.zalando.logbook.Logbook:79] http-nio-8084-exec-5cid - Outgoing Response: a31a5735-e208-413a-97d4-b7da00a80fde
+HTTP/1.1 200 OK
+X-Application-Context: house:local:8084
+Content-Length: 37
+Date: Thu, 01 Mar 2018 02:57:50 GMT
+Content-Type: application/json
+
+{"code":1,"msg":"æ¿äº§æå¡å¼å¸¸"}
+2018-03-01 10:59:12.488 [AsyncResolver-bootstrap-executor-0] INFO  [com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver:43] AsyncResolver-bootstrap-executor-0cid - Resolving eureka endpoints via configuration
+2018-03-01 10:59:38.726 [http-nio-8084-exec-6] INFO  [org.zalando.logbook.Logbook:74] http-nio-8084-exec-6cid - Incoming Request: 03568206-b779-4b5e-8936-e5a6abff3895
+POST http://DESKTOP-9MBSSTD:8084/house/list HTTP/1.1
+content-length: 137
+host: DESKTOP-9MBSSTD:8084
+content-type: application/json;charset=UTF-8
+connection: Keep-Alive
+accept-encoding: gzip,deflate
+user-agent: agent
+accept: application/json, application/json, application/*+json, application/*+json
+
+{"limit":2,"offset":0,"query":{"bookmarked":false,"featureList":[],"floorPlanList":[],"imageList":[],"roundRating":0,"sort":"time_desc"}}
+2018-03-01 10:59:38.804 [http-nio-8084-exec-6] INFO  [org.zalando.logbook.Logbook:79] http-nio-8084-exec-6cid - Outgoing Response: 03568206-b779-4b5e-8936-e5a6abff3895
+HTTP/1.1 200 OK
+X-Application-Context: house:local:8084
+Content-Length: 2116
+Date: Thu, 01 Mar 2018 02:59:38 GMT
+Content-Type: application/json
+
+{"code":0,"msg":"OK","result":{"count":6,"list":[{"address":"ä¸­ååæµ·é¢ä¸å·","area":400,"baths":3,"beds":3,"bookmarked":false,"cityId":1,"communityId":3,"createTime":1515168000000,"featureList":["æ»¡äºå¹´","æ»¡ä¸¤å¹´","éåå¥½","é«æ¥¼å±","ç¯å¢å¥½","ä»·æ ¼åç","æ¥¼é¾æ°","å¸¦é³å°","ç¨å°","å¾æ¿çé«","ä¸´å°é"],"firstImg":"http://127.0.0.1:8081/images/1500801115/property-09.jpg","floorPlan":"","floorPlanList":[],"id":26,"imageList":["http://127.0.0.1:8081/images/1500801115/property-09.jpg","http://127.0.0.1:8081/images/1500801115/property-10.jpg","http://127.0.0.1:8081/images/1500801115/property-11.jpg"],"images":"/1500801115/property-09.jpg,/1500801115/property-10.jpg,/1500801115/property-11.jpg","name":"ä¸­å¤®å¹¿åº3å±å¤§åå±","price":500,"priceStr":"500ä¸","properties":"æ»¡äºå¹´,æ»¡ä¸¤å¹´,éåå¥½,é«æ¥¼å±,ç¯å¢å¥½,ä»·æ ¼åç,æ¥¼é¾æ°,å¸¦é³å°,ç¨å°,å¾æ¿çé«,ä¸´å°é","rating":0.0,"remarks":"ä¸­å¤®å¹¿åº3å±å¤§åå±è±ªåè£ä¿®","roundRating":0,"sort":"time_desc","state":1,"tags":"","type":1,"userId":38},{"address":"\bæ¸æ²³ä¸­è¡","area":299,"baths":3,"beds":3,"bookmarked":false,"cityId":1,"communityId":7,"createTime":1515168000000,"featureList":["æ»¡ä¸¤å¹´","ååéé","é«æ¥¼å±","ç¯å¢å¥½","æ¥¼é¾æ°","å¸¦é³å°","å¾æ¿çé«","ä¸´å°é"],"firstImg":"http://127.0.0.1:8081/images/1515253220/property-13.jpg","floorPlan":"/1515253246/floor-plan-01.jpg","floorPlanList":["http://127.0.0.1:8081/images/1515253246/floor-plan-01.jpg"],"id":27,"imageList":["http://127.0.0.1:8081/images/1515253220/property-13.jpg","http://127.0.0.1:8081/images/1515253220/property-12.jpg","http://127.0.0.1:8081/images/1515253220/property-11.jpg"],"images":"/1515253220/property-13.jpg,/1515253220/property-12.jpg,/1515253220/property-11.jpg","name":"åè¡åå­ å¨åå ååéé","price":300,"priceStr":"300ä¸","properties":"æ»¡ä¸¤å¹´,ååéé,é«æ¥¼å±,ç¯å¢å¥½,æ¥¼é¾æ°,å¸¦é³å°,å¾æ¿çé«,ä¸´å°é","rating":0.0,"remarks":"åè¡åå­ å¨åå ååéé","roundRating":0,"sort":"time_desc","state":1,"tags":"","type":1,"userId":38}]}}
+2018-03-01 10:59:38.825 [http-nio-8084-exec-7] INFO  [org.zalando.logbook.Logbook:74] http-nio-8084-exec-7cid - Incoming Request: 1e55fda0-58d2-4863-b5ad-32e45098ba07
+GET http://DESKTOP-9MBSSTD:8084/house/hot?size=3 HTTP/1.1
+host: DESKTOP-9MBSSTD:8084
+connection: Keep-Alive
+accept-encoding: gzip,deflate
+user-agent: agent
+accept: application/json, application/json, application/*+json, application/*+json
+2018-03-01 10:59:38.973 [http-nio-8084-exec-7] INFO  [org.zalando.logbook.Logbook:79] http-nio-8084-exec-7cid - Outgoing Response: 1e55fda0-58d2-4863-b5ad-32e45098ba07
+HTTP/1.1 200 OK
+X-Application-Context: house:local:8084
+Content-Length: 3162
+Date: Thu, 01 Mar 2018 02:59:38 GMT
+Content-Type: application/json
+
+{"code":0,"msg":"OK","result":[{"address":"ä¸­ååæµ·é¢ä¸å·","area":400,"baths":3,"beds":3,"bookmarked":false,"cityId":1,"communityId":3,"createTime":1515168000000,"featureList":["æ»¡äºå¹´","æ»¡ä¸¤å¹´","éåå¥½","é«æ¥¼å±","ç¯å¢å¥½","ä»·æ ¼åç","æ¥¼é¾æ°","å¸¦é³å°","ç¨å°","å¾æ¿çé«","ä¸´å°é"],"firstImg":"http://127.0.0.1:8081/images/1500801115/property-09.jpg","floorPlan":"","floorPlanList":[],"id":26,"imageList":["http://127.0.0.1:8081/images/1500801115/property-09.jpg","http://127.0.0.1:8081/images/1500801115/property-10.jpg","http://127.0.0.1:8081/images/1500801115/property-11.jpg"],"images":"/1500801115/property-09.jpg,/1500801115/property-10.jpg,/1500801115/property-11.jpg","name":"ä¸­å¤®å¹¿åº3å±å¤§åå±","price":500,"priceStr":"500ä¸","properties":"æ»¡äºå¹´,æ»¡ä¸¤å¹´,éåå¥½,é«æ¥¼å±,ç¯å¢å¥½,ä»·æ ¼åç,æ¥¼é¾æ°,å¸¦é³å°,ç¨å°,å¾æ¿çé«,ä¸´å°é","rating":0.0,"remarks":"ä¸­å¤®å¹¿åº3å±å¤§åå±è±ªåè£ä¿®","roundRating":0,"sort":"time_desc","state":1,"tags":"","type":1,"userId":38},{"address":"\bæ¸æ²³ä¸­è¡","area":299,"baths":3,"beds":3,"bookmarked":false,"cityId":1,"communityId":7,"createTime":1515168000000,"featureList":["æ»¡ä¸¤å¹´","ååéé","é«æ¥¼å±","ç¯å¢å¥½","æ¥¼é¾æ°","å¸¦é³å°","å¾æ¿çé«","ä¸´å°é"],"firstImg":"http://127.0.0.1:8081/images/1515253220/property-13.jpg","floorPlan":"/1515253246/floor-plan-01.jpg","floorPlanList":["http://127.0.0.1:8081/images/1515253246/floor-plan-01.jpg"],"id":27,"imageList":["http://127.0.0.1:8081/images/1515253220/property-13.jpg","http://127.0.0.1:8081/images/1515253220/property-12.jpg","http://127.0.0.1:8081/images/1515253220/property-11.jpg"],"images":"/1515253220/property-13.jpg,/1515253220/property-12.jpg,/1515253220/property-11.jpg","name":"åè¡åå­ å¨åå ååéé","price":300,"priceStr":"300ä¸","properties":"æ»¡ä¸¤å¹´,ååéé,é«æ¥¼å±,ç¯å¢å¥½,æ¥¼é¾æ°,å¸¦é³å°,å¾æ¿çé«,ä¸´å°é","rating":0.0,"remarks":"åè¡åå­ å¨åå ååéé","roundRating":0,"sort":"time_desc","state":1,"tags":"","type":1,"userId":38},{"address":"æ¸æ²³ä¸­è¡","area":130,"baths":2,"beds":2,"bookmarked":false,"cityId":1,"communityId":4,"createTime":1494172800000,"featureList":["å¾æ¿çé«","ä¸´å°é","æ·åå¥½","æ²¡æé®æ¡","è½å°çª","ç²¾è£ä¿®"],"firstImg":"http://127.0.0.1:8081/images/1494256315/property-12.jpg","floorPlan":"/1494256315/floor-plan-01.jpg,/1494256315/floor-plan-02.jpg","floorPlanList":["http://127.0.0.1:8081/images/1494256315/floor-plan-01.jpg","http://127.0.0.1:8081/images/1494256315/floor-plan-02.jpg"],"id":25,"imageList":["http://127.0.0.1:8081/images/1494256315/property-12.jpg","http://127.0.0.1:8081/images/1494256315/property-13.jpg"],"images":"/1494256315/property-12.jpg,/1494256315/property-13.jpg","name":"\bæ©¡æ æ¹¾ ååéé ä¸å±å®¤","price":800,"priceStr":"800ä¸","properties":"å¾æ¿çé«,ä¸´å°é,æ·åå¥½,æ²¡æé®æ¡,è½å°çª,ç²¾è£ä¿®","rating":0.0,"remarks":"\bæ©¡æ æ¹¾ ååéé\bæ©¡æ æ¹¾ ååéé\bæ©¡æ æ¹¾ ååéé\bæ©¡æ æ¹¾ ååéé","roundRating":0,"sort":"time_desc","state":1,"tags":"","type":2,"userId":25}]}
+2018-03-01 10:59:41.757 [http-nio-8084-exec-8] INFO  [org.zalando.logbook.Logbook:74] http-nio-8084-exec-8cid - Incoming Request: da1a3175-5973-4d2e-afe0-d52c04d8793e
+GET http://DESKTOP-9MBSSTD:8084/house/detail?id=26 HTTP/1.1
+host: DESKTOP-9MBSSTD:8084
+connection: Keep-Alive
+accept-encoding: gzip,deflate
+user-agent: agent
+accept: application/json, application/json, application/*+json, application/*+json
+2018-03-01 10:59:41.822 [http-nio-8084-exec-8] INFO  [org.zalando.logbook.Logbook:79] http-nio-8084-exec-8cid - Outgoing Response: da1a3175-5973-4d2e-afe0-d52c04d8793e
+HTTP/1.1 200 OK
+X-Application-Context: house:local:8084
+Content-Length: 1048
+Date: Thu, 01 Mar 2018 02:59:41 GMT
+Content-Type: application/json
+
+{"code":0,"msg":"OK","result":{"address":"ä¸­ååæµ·é¢ä¸å·","area":400,"baths":3,"beds":3,"bookmarked":false,"cityId":1,"communityId":3,"createTime":1515168000000,"featureList":["æ»¡äºå¹´","æ»¡ä¸¤å¹´","éåå¥½","é«æ¥¼å±","ç¯å¢å¥½","ä»·æ ¼åç","æ¥¼é¾æ°","å¸¦é³å°","ç¨å°","å¾æ¿çé«","ä¸´å°é"],"firstImg":"http://127.0.0.1:8081/images/1500801115/property-09.jpg","floorPlan":"","floorPlanList":[],"id":26,"imageList":["http://127.0.0.1:8081/images/1500801115/property-09.jpg","http://127.0.0.1:8081/images/1500801115/property-10.jpg","http://127.0.0.1:8081/images/1500801115/property-11.jpg"],"images":"/1500801115/property-09.jpg,/1500801115/property-10.jpg,/1500801115/property-11.jpg","name":"ä¸­å¤®å¹¿åº3å±å¤§åå±","price":500,"priceStr":"500ä¸","properties":"æ»¡äºå¹´,æ»¡ä¸¤å¹´,éåå¥½,é«æ¥¼å±,ç¯å¢å¥½,ä»·æ ¼åç,æ¥¼é¾æ°,å¸¦é³å°,ç¨å°,å¾æ¿çé«,ä¸´å°é","rating":0.0,"remarks":"ä¸­å¤®å¹¿åº3å±å¤§åå±è±ªåè£ä¿®","roundRating":0,"sort":"time_desc","state":1,"tags":"","type":1,"userId":38}}
+2018-03-01 10:59:41.826 [http-nio-8084-exec-9] INFO  [org.zalando.logbook.Logbook:74] http-nio-8084-exec-9cid - Incoming Request: 5829e646-b38b-4533-9042-edbe8cecfb7c
+GET http://DESKTOP-9MBSSTD:8084/house/hot?size=3 HTTP/1.1
+host: DESKTOP-9MBSSTD:8084
+connection: Keep-Alive
+accept-encoding: gzip,deflate
+user-agent: agent
+accept: application/json, application/json, application/*+json, application/*+json
+2018-03-01 10:59:41.866 [http-nio-8084-exec-9] INFO  [org.zalando.logbook.Logbook:79] http-nio-8084-exec-9cid - Outgoing Response: 5829e646-b38b-4533-9042-edbe8cecfb7c
+HTTP/1.1 200 OK
+X-Application-Context: house:local:8084
+Content-Length: 1050
+Date: Thu, 01 Mar 2018 02:59:41 GMT
+Content-Type: application/json
+
+{"code":0,"msg":"OK","result":[{"address":"ä¸­ååæµ·é¢ä¸å·","area":400,"baths":3,"beds":3,"bookmarked":false,"cityId":1,"communityId":3,"createTime":1515168000000,"featureList":["æ»¡äºå¹´","æ»¡ä¸¤å¹´","éåå¥½","é«æ¥¼å±","ç¯å¢å¥½","ä»·æ ¼åç","æ¥¼é¾æ°","å¸¦é³å°","ç¨å°","å¾æ¿çé«","ä¸´å°é"],"firstImg":"http://127.0.0.1:8081/images/1500801115/property-09.jpg","floorPlan":"","floorPlanList":[],"id":26,"imageList":["http://127.0.0.1:8081/images/1500801115/property-09.jpg","http://127.0.0.1:8081/images/1500801115/property-10.jpg","http://127.0.0.1:8081/images/1500801115/property-11.jpg"],"images":"/1500801115/property-09.jpg,/1500801115/property-10.jpg,/1500801115/property-11.jpg","name":"ä¸­å¤®å¹¿åº3å±å¤§åå±","price":500,"priceStr":"500ä¸","properties":"æ»¡äºå¹´,æ»¡ä¸¤å¹´,éåå¥½,é«æ¥¼å±,ç¯å¢å¥½,ä»·æ ¼åç,æ¥¼é¾æ°,å¸¦é³å°,ç¨å°,å¾æ¿çé«,ä¸´å°é","rating":0.0,"remarks":"ä¸­å¤®å¹¿åº3å±å¤§åå±è±ªåè£ä¿®","roundRating":0,"sort":"time_desc","state":1,"tags":"","type":1,"userId":38}]}
+2018-03-01 10:59:55.191 [http-nio-8084-exec-10] INFO  [org.zalando.logbook.Logbook:74] http-nio-8084-exec-10cid - Incoming Request: fd7a1ddb-9c0f-4ed9-a20a-873c7499d12d
+GET http://DESKTOP-9MBSSTD:8084/house/detail?id=26 HTTP/1.1
+host: DESKTOP-9MBSSTD:8084
+connection: Keep-Alive
+accept-encoding: gzip,deflate
+user-agent: agent
+accept: application/json, application/json, application/*+json, application/*+json
+2018-03-01 10:59:55.678 [http-nio-8084-exec-10] INFO  [org.zalando.logbook.Logbook:79] http-nio-8084-exec-10cid - Outgoing Response: fd7a1ddb-9c0f-4ed9-a20a-873c7499d12d
+HTTP/1.1 200 OK
+X-Application-Context: house:local:8084
+Content-Length: 1048
+Date: Thu, 01 Mar 2018 02:59:55 GMT
+Content-Type: application/json
+
+{"code":0,"msg":"OK","result":{"address":"ä¸­ååæµ·é¢ä¸å·","area":400,"baths":3,"beds":3,"bookmarked":false,"cityId":1,"communityId":3,"createTime":1515168000000,"featureList":["æ»¡äºå¹´","æ»¡ä¸¤å¹´","éåå¥½","é«æ¥¼å±","ç¯å¢å¥½","ä»·æ ¼åç","æ¥¼é¾æ°","å¸¦é³å°","ç¨å°","å¾æ¿çé«","ä¸´å°é"],"firstImg":"http://127.0.0.1:8081/images/1500801115/property-09.jpg","floorPlan":"","floorPlanList":[],"id":26,"imageList":["http://127.0.0.1:8081/images/1500801115/property-09.jpg","http://127.0.0.1:8081/images/1500801115/property-10.jpg","http://127.0.0.1:8081/images/1500801115/property-11.jpg"],"images":"/1500801115/property-09.jpg,/1500801115/property-10.jpg,/1500801115/property-11.jpg","name":"ä¸­å¤®å¹¿åº3å±å¤§åå±","price":500,"priceStr":"500ä¸","properties":"æ»¡äºå¹´,æ»¡ä¸¤å¹´,éåå¥½,é«æ¥¼å±,ç¯å¢å¥½,ä»·æ ¼åç,æ¥¼é¾æ°,å¸¦é³å°,ç¨å°,å¾æ¿çé«,ä¸´å°é","rating":0.0,"remarks":"ä¸­å¤®å¹¿åº3å±å¤§åå±è±ªåè£ä¿®","roundRating":0,"sort":"time_desc","state":1,"tags":"","type":1,"userId":38}}
+2018-03-01 10:59:55.713 [http-nio-8084-exec-1] INFO  [org.zalando.logbook.Logbook:74] http-nio-8084-exec-1cid - Incoming Request: b8e1ef65-74df-4eea-8f35-3ee86e503ce6
+GET http://DESKTOP-9MBSSTD:8084/house/hot?size=3 HTTP/1.1
+host: DESKTOP-9MBSSTD:8084
+connection: Keep-Alive
+accept-encoding: gzip,deflate
+user-agent: agent
+accept: application/json, application/json, application/*+json, application/*+json
+2018-03-01 10:59:55.747 [http-nio-8084-exec-1] INFO  [org.zalando.logbook.Logbook:79] http-nio-8084-exec-1cid - Outgoing Response: b8e1ef65-74df-4eea-8f35-3ee86e503ce6
+HTTP/1.1 200 OK
+X-Application-Context: house:local:8084
+Content-Length: 1050
+Date: Thu, 01 Mar 2018 02:59:55 GMT
+Content-Type: application/json
+
+{"code":0,"msg":"OK","result":[{"address":"ä¸­ååæµ·é¢ä¸å·","area":400,"baths":3,"beds":3,"bookmarked":false,"cityId":1,"communityId":3,"createTime":1515168000000,"featureList":["æ»¡äºå¹´","æ»¡ä¸¤å¹´","éåå¥½","é«æ¥¼å±","ç¯å¢å¥½","ä»·æ ¼åç","æ¥¼é¾æ°","å¸¦é³å°","ç¨å°","å¾æ¿çé«","ä¸´å°é"],"firstImg":"http://127.0.0.1:8081/images/1500801115/property-09.jpg","floorPlan":"","floorPlanList":[],"id":26,"imageList":["http://127.0.0.1:8081/images/1500801115/property-09.jpg","http://127.0.0.1:8081/images/1500801115/property-10.jpg","http://127.0.0.1:8081/images/1500801115/property-11.jpg"],"images":"/1500801115/property-09.jpg,/1500801115/property-10.jpg,/1500801115/property-11.jpg","name":"ä¸­å¤®å¹¿åº3å±å¤§åå±","price":500,"priceStr":"500ä¸","properties":"æ»¡äºå¹´,æ»¡ä¸¤å¹´,éåå¥½,é«æ¥¼å±,ç¯å¢å¥½,ä»·æ ¼åç,æ¥¼é¾æ°,å¸¦é³å°,ç¨å°,å¾æ¿çé«,ä¸´å°é","rating":0.0,"remarks":"ä¸­å¤®å¹¿åº3å±å¤§åå±è±ªåè£ä¿®","roundRating":0,"sort":"time_desc","state":1,"tags":"","type":1,"userId":38}]}
