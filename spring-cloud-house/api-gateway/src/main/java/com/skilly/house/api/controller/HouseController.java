@@ -11,6 +11,7 @@ import com.skilly.house.api.service.HouseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -103,6 +104,8 @@ public class HouseController {
 
 
     @RequestMapping(value = "house/bookmarked", method = {RequestMethod.POST, RequestMethod.GET})
+    @ResponseBody
+    @CrossOrigin()
     public String bookmarked(House house, PageParams pageParams, ModelMap modelMap) {
         User user = UserContext.getUser();
         house.setBookmarked(true);

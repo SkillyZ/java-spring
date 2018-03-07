@@ -328,7 +328,44 @@
     
     bookmarkButton.on("click", function() {
         if (bookmarkButton.data('bookmark-state') == 'empty') {
-            commonAjax('/house/bookmark?id=${house.id}');
+            <#--commonAjax('/house/bookmark?id=${house.id}');-->
+            $.ajax({
+                url: "http://whf1:8080/house/bookmark",
+                type: 'POST',
+                data: 'id=${house.id}',
+                xhrFiels:{withCredentials:true} //代表可以在cors请求带上cookie
+                cache: false,
+                timeout: 60000,
+                headers: {
+                    "Cookie1":document.cookie
+                }
+            })
+            .done(function (ret) {
+                jsonObj = ret;
+                var msg;
+                if (jsonObj.errorMsg) {
+                    msg = jsonObj.errorMsg;
+                    errormsg("error!", msg ? msg : "Operation Failed");
+                } else {
+                    msg = jsonObj.successMsg;
+                    if (msg) {
+                        successmsg("success!", msg);
+                    }
+
+                }
+            })
+            .fail(function (jqXHR, textStatus, errorThrown) {
+                if (textStatus && textStatus == 'error') {
+                    errormsg("error!", 'System Error')
+                }
+                ;
+                if (textStatus && textStatus == 'timeout') {
+                    successmsg("error!", 'Response Timeout')
+                }
+                ;
+            })
+
+
         } else if (bookmarkButton.data('bookmark-state') == 'added') {
             commonAjax('/house/unbookmark?id=${house.id}');
         }
