@@ -17,7 +17,14 @@ import java.util.regex.Pattern;
 public class Main {
 
     public static void main(String[] args) {
- 
+        testInteger();
+    }
+
+    public static void testInteger()
+    {
+        System.out.println(Integer.MAX_VALUE);
+        System.out.println(Integer.MAX_VALUE+1);
+        System.out.println((Math.pow(2, 32)));
     }
 
     public static void testOptional()
