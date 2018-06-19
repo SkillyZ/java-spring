@@ -17,30 +17,48 @@ import java.util.regex.Pattern;
 public class Main {
 
     public static void main(String[] args) {
-        testInteger();
+
+        System.out.println(Instant.now());
+
+//        Pattern p = Pattern.compile(pattern);
+//        Matcher m = p.matcher("1233");
+//        if (!m.matches()) {
+//            throw new MessageSmsException(String.format("(%s)手机号格式验证失败", telephone), HttpStatus.BAD_REQUEST.value());
+//        }
+
+//        testRegx();
+//        int a = 10 == new Integer(10); // false
+
+//        System.out.println(new Integer(10).equals(10));
+//
+//        System.out.println(new Integer(10).equals(new Integer(10)));
+
+//        new Integer(10) == new Integer(10);
+//
+//        new Boolean(true) == new Boolean(true);
+//
+//        new String("abc") == new String("abc");
+
     }
 
-    public static void testInteger()
-    {
+    public static void testInteger() {
         System.out.println(Integer.MAX_VALUE);
-        System.out.println(Integer.MAX_VALUE+1);
+        System.out.println(Integer.MAX_VALUE + 1);
         System.out.println((Math.pow(2, 32)));
     }
 
-    public static void testOptional()
-    {
+    public static void testOptional() {
 
         BigDecimal total = new BigDecimal(21);
         BigDecimal totalProcess = new BigDecimal(2);
-        int rate = (int)(Math.pow(10, 4) * totalProcess.divide(total, 4, RoundingMode.HALF_EVEN).doubleValue());
+        int rate = (int) (Math.pow(10, 4) * totalProcess.divide(total, 4, RoundingMode.HALF_EVEN).doubleValue());
         System.out.println(rate);
 
 //        rate = (int)(totalProcess.divide(total, 4, RoundingMode.HALF_EVEN).doubleValue() * Math.pow(10, coinOrder.getAwaitingCurrencyPrecision()));
 
     }
 
-    public static void testNum()
-    {
+    public static void testNum() {
         Long ll = 1L;
         Long lll = 1213123L;
         double tt = (ll.doubleValue() / lll);
@@ -51,28 +69,26 @@ public class Main {
         System.out.println(ttt);
     }
 
-    public static void testInstant(){
+    public static void testInstant() {
 
         DateTimeFormatter formatter =
-                DateTimeFormatter.ofLocalizedDateTime( FormatStyle.SHORT )
-                        .withLocale( Locale.UK )
-                        .withZone( ZoneId.systemDefault() );
+                DateTimeFormatter.ofLocalizedDateTime(FormatStyle.SHORT)
+                        .withLocale(Locale.UK)
+                        .withZone(ZoneId.systemDefault());
 
         Instant instant = Instant.now();
-        String output = formatter.format( instant );
-        System.out.println("formatter: " + formatter + " with zone: " + formatter.getZone() + " and Locale: " + formatter.getLocale() );
-        System.out.println("instant: " + instant );
-        System.out.println("output: " + output );
+        String output = formatter.format(instant);
+        System.out.println("formatter: " + formatter + " with zone: " + formatter.getZone() + " and Locale: " + formatter.getLocale());
+        System.out.println("instant: " + instant);
+        System.out.println("output: " + output);
     }
 
-    public static void testRegx()
-    {
+    public static void testRegx() {
         List<String> key = new ArrayList<>();
 
-        Pattern pattern = Pattern.compile("\\$\\{(.*?)\\}");
-        Matcher matcher = pattern.matcher("您的验证码是${code}，有效期为${hour}小时，请尽快验证");
-        while (matcher.find())
-        {
+        Pattern pattern = Pattern.compile("\\{\\$(.*?)\\}");
+        Matcher matcher = pattern.matcher("运维告警内容：{$content}，有效期为{$hour}小时，请尽快验证");
+        while (matcher.find()) {
             System.out.println(matcher.group(1));
             key.add(matcher.group(1));
         }
