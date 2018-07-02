@@ -1,5 +1,9 @@
 package KMeans;
 
+import Common.ImgUtil;
+import Common.JsonUtil;
+
+import java.io.IOException;
 import java.util.List;
 
 public class KMeans extends KMeansClustering<XYbean> {
@@ -19,10 +23,14 @@ public class KMeans extends KMeansClustering<XYbean> {
         long a = System.currentTimeMillis();
         List<List<XYbean>> cresult = xyCluster.clustering();
         List<XYbean> center = xyCluster.getClusteringCenterT();
-        System.out.println(center);
+        System.out.println(JsonUtil.objectConvertJson(center));
         long b = System.currentTimeMillis();
         System.out.println("耗时：" + (b - a) + "ms");
-//        new ImgUtil().drawXYbeans(width, height, cresult, "d:/2.png", 0, 0);
+        try {
+            new ImgUtil().drawXYbeans(width, height, cresult, "/Users/skilly/Project/Zhou/java-spring/big-data/1.png"); //, 0, 0
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
         @Override

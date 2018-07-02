@@ -38,7 +38,7 @@ import java.util.*;
 public class Apriori {
 
     private static double SUPPORT_PERCENT = 0.05;
-    private static List<String> data2DList = new ArrayList<>();
+    private static List<String> data2DList = new ArrayList();
 
 
     public static void main(String[] args) {
@@ -65,7 +65,7 @@ public class Apriori {
 
 
         //扫描整个数据库D，对每一项进行计数，获得一项的{候选项集合}
-        Map<String, Integer> stepFrequentSetMap = new HashMap<>();
+        Map<String, Integer> stepFrequentSetMap = new HashMap();
         System.out.println("\n=====================第" + 1 + "次扫描的频繁项集列表======================" + "\n");
 
 
@@ -106,7 +106,7 @@ public class Apriori {
      */
     private static void importData() {
 
-        File file = new File("src/Apriori/test.dat");
+        File file = new File("src/main/java/Apriori/test.dat");
 
         try {
             //文件存在且为文件类型执行接下来的操作
@@ -140,7 +140,7 @@ public class Apriori {
      * value：相应候选项/频繁项的重复次数
      */
     private static HashMap<String, Integer> findCandidateOneSets() {
-        HashMap<String, Integer> resultSetMap = new HashMap<>();
+        HashMap<String, Integer> resultSetMap = new HashMap();
 
         for (String dataList : data2DList) {
             String[] dataString = dataList.split(" ");
@@ -175,7 +175,7 @@ public class Apriori {
     private static Map<String, Integer> getMinCandidate(Map<String, Integer> frequentMapSet) {
 
         //需要返回的精简过后的候选项集
-        Map<String, Integer> minCandidateMapSet = new HashMap<>();
+        Map<String, Integer> minCandidateMapSet = new HashMap();
 
         //导入频繁项集的KEY
         Set<String> frequentSet = frequentMapSet.keySet();
@@ -301,7 +301,7 @@ public class Apriori {
             System.err.println("候选项集为空");
             return null;
         } else {
-            Map<String, Integer> frequentMapSet = new HashMap<>();//需要返回的频繁项集
+            Map<String, Integer> frequentMapSet = new HashMap();//需要返回的频繁项集
 
             Set<String> minCandidateSet = minCandidateMapSet.keySet();//获取候选项集的KEY，也就是所有的项集的具体数据
 
