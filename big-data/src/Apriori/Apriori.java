@@ -1,3 +1,5 @@
+package Apriori;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
@@ -104,7 +106,7 @@ public class Apriori {
      */
     private static void importData() {
 
-        File file = new File("test.dat");
+        File file = new File("src/Apriori/test.dat");
 
         try {
             //文件存在且为文件类型执行接下来的操作
