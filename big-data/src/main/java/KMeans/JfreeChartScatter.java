@@ -14,7 +14,7 @@ import org.jfree.chart.renderer.xy.XYItemRenderer;
 public class JfreeChartScatter {
 
 	/** The data. */
-	private double[][] data = new double[2][100];
+	private double[][] data = new double[2][21000];
 
 	/*
      * 默认构造函数
@@ -42,7 +42,7 @@ public class JfreeChartScatter {
 			xyDataset.addSeries("Cluster" + (i + 1), this.data);
 
 			///// 让指针指向另一个内纯区域   数组 添加到链表或集合  引用类型  所以加入了3个数组都是最后一个数组的值
-			this.data = new double[2][100];;
+			this.data = new double[2][21000];;
 		}
 		JFreeChart jfree = ChartFactory.createScatterPlot("KMeans", "X", "Y", xyDataset, PlotOrientation.HORIZONTAL, false, false, false);
 		XYPlot xyPlot = (XYPlot)jfree.getPlot();

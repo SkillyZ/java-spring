@@ -39,7 +39,6 @@ public abstract class KMeansClustering<T> {
 
     /**
      * @return
-     * @Author:lulei
      * @Description: 对数据进行聚类
      */
     public List<List<T>> clustering() {
@@ -61,7 +60,6 @@ public abstract class KMeansClustering<T> {
     /**
      * @param preCenter
      * @param times
-     * @Author:lulei
      * @Description: 一轮聚类
      */
     private void clustering(List<T> preCenter, int times) {
@@ -106,7 +104,6 @@ public abstract class KMeansClustering<T> {
     /**
      * @param size
      * @return
-     * @Author:lulei
      * @Description: 初始化一个聚类结果
      */
     private List<List<T>> getListT(int size) {
@@ -119,7 +116,6 @@ public abstract class KMeansClustering<T> {
 
     /**
      * @param lists
-     * @Author:lulei
      * @Description: 清空无用数组
      */
     private void clear(List<List<T>> lists) {
@@ -131,7 +127,6 @@ public abstract class KMeansClustering<T> {
 
     /**
      * @param value
-     * @Author:lulei
      * @Description: 向模型中添加记录
      */
     public void addRecord(T value) {
@@ -145,7 +140,6 @@ public abstract class KMeansClustering<T> {
      * @param preT
      * @param nowT
      * @return
-     * @Author:lulei
      * @Description: 判断质心是否发生移动
      */
     private boolean isCenterChange(List<T> preT, List<T> nowT) {
@@ -172,7 +166,6 @@ public abstract class KMeansClustering<T> {
      * @param o1
      * @param o2
      * @return
-     * @Author:lulei
      * @Description: o1 o2之间的相似度
      */
     public abstract double similarScore(T o1, T o2);
@@ -181,7 +174,7 @@ public abstract class KMeansClustering<T> {
      * @param o1
      * @param o2
      * @return
-     * @Author:lulei
+     *
      * @Description: 判断o1 o2是否相等
      */
     public abstract boolean equals(T o1, T o2);
@@ -189,7 +182,6 @@ public abstract class KMeansClustering<T> {
     /**
      * @param list
      * @return
-     * @Author:lulei
      * @Description: 求一组数据的质心
      */
     public abstract T getCenterT(List<T> list);

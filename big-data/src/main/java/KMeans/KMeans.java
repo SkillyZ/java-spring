@@ -33,7 +33,7 @@ public class KMeans extends KMeansClustering<XYbean> {
         }
     }
 
-        @Override
+    @Override
     public double similarScore(XYbean o1, XYbean o2) {
         double distance = Math.sqrt((o1.getX() - o2.getX()) * (o1.getX() - o2.getX()) + (o1.getY() - o2.getY()) * (o1.getY() - o2.getY()));
         return distance * -1;
