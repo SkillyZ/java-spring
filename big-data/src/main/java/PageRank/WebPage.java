@@ -20,6 +20,10 @@ public class WebPage {
 	public WebPage getLink(int index){
 		return linkList.get(index);
 	}
+
+	public LinkedList getLinkList(){
+		return linkList;
+	}
 	
 	public int linkListSize(){
 		return linkList.size();
