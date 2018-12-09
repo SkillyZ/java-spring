@@ -21,6 +21,7 @@ import java.util.StringTokenizer;
  */
 public class WordCount {
     public static void main(String[] args) throws Exception {
+//        File file = new File("src/main/java/Apriori/test.dat");
         Configuration conf = new Configuration();
         Job job = new Job(conf);
         job.setJarByClass(WordCount.class);
@@ -33,6 +34,8 @@ public class WordCount {
         job.setOutputFormatClass(TextOutputFormat.class);
         FileInputFormat.addInputPath(job, new Path(args[0]));
         FileOutputFormat.setOutputPath(job, new Path(args[1]));
+//        FileInputFormat.addInputPath(job, new Path("src/main/java/Apriori/test.dat"));
+//        FileOutputFormat.setOutputPath(job, new Path("src/main/java/Apriori/test.dat"));
         job.waitForCompletion(true);
     }
 
@@ -65,3 +68,15 @@ public class WordCount {
     }
 
 }
+
+//其实呢很浅显的道理，你只需要为windows下的hadoop配置环境变量告诉系统你的hadoop在那就行了。
+//
+//        为HADOOP_HOME指定你的hadoop目录所在位置，为你的path添加hadoop的bin目录即可
+//
+//        此外，你也可以实例化conf以后设定该路径，例如：
+//
+//        Configuration conf = new Configuration();  // 构造一个用于封装配置参数的对象
+//                conf.set("fs.defaultFS", "hdfs://hdp21:9000");
+//                conf.set("hadoop.home.dir", "D:/Developer/hadoop-2.8.4");
+//
+//        即：conf.set("hadoop.home.dir", "D:/Developer/hadoop-2.8.4");设定你的hadoop的目录

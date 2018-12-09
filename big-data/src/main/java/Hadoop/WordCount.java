@@ -24,6 +24,7 @@ public class WordCount {
         /*
          * 重写map方法，读取初试划分的每一个键值对，即行偏移量和一行字符串，key为偏移量，value为该行字符串
          */
+        @Override
         public void map(Object key, Text value, Context context) throws IOException, InterruptedException {
             /*
              * 因为每一行就是一个spilt，并会为之生成一个mapper，所以我们的参数，key就是偏移量，value就是一行字符串
@@ -45,6 +46,7 @@ public class WordCount {
          * 合成<key.list<V>>中的list<V>，也就是说明排序这些工作都是mapper和reducer自己去做的，
          * 我们只需要专注与在map和reduce函数中处理排序处理后的结果
          */
+        @Override
         public void reduce(Text key, Iterable<IntWritable> values, Context context)
                 throws IOException, InterruptedException {
             /*
