@@ -4,10 +4,7 @@ import java.time.Instant;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Locale;
-import java.util.Optional;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -18,6 +15,10 @@ public class Main {
 
     public static void main(String[] args) {
 
+
+
+        List<String> paramList = Arrays.asList(Optional.ofNullable("222,22").orElse("").split(","));
+        System.out.println(paramList);
 //        System.out.println(Instant.now());
 
 //        Pattern p = Pattern.compile(pattern);
@@ -26,7 +27,7 @@ public class Main {
 //            throw new MessageSmsException(String.format("(%s)手机号格式验证失败", telephone), HttpStatus.BAD_REQUEST.value());
 //        }
 
-        testRegx();
+//        testRegx();
 //        int a = 10 == new Integer(10); // false
 
 //        System.out.println(new Integer(10).equals(10));
