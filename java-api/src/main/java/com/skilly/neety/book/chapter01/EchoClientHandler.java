@@ -11,12 +11,12 @@ import io.netty.util.CharsetUtil;
  * Created by 1254109699@qq.com on 2018/1/15.
  * document
  * 1.@Sharable标记这个类的实例可以在 channel 里共享
-
-     2.当被通知该 channel 是活动的时候就发送信息
-
-     3.记录接收到的消息
-
-     4.记录日志错误并关闭 channel
+ * <p>
+ * 2.当被通知该 channel 是活动的时候就发送信息
+ * <p>
+ * 3.记录接收到的消息
+ * <p>
+ * 4.记录日志错误并关闭 channel
  */
 @ChannelHandler.Sharable                                //1
 public class EchoClientHandler extends

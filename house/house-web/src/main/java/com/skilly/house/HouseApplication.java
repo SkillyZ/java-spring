@@ -15,7 +15,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 //@MapperScan(value = "com.skilly.house.biz.mapper")
 public class HouseApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(HouseApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(HouseApplication.class, args);
+    }
 }

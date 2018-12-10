@@ -15,16 +15,16 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @ControllerAdvice
 public class ExceptionHandle {
 
-    private final static Logger logger= LoggerFactory.getLogger(ExceptionHandle.class);
+    private final static Logger logger = LoggerFactory.getLogger(ExceptionHandle.class);
 
-    @ExceptionHandler(value =Exception.class)
+    @ExceptionHandler(value = Exception.class)
     @ResponseBody
     public Result handleGirlAge(Exception e) {
-        if(e instanceof GirlException) {
-            GirlException girlException= (GirlException)e;
+        if (e instanceof GirlException) {
+            GirlException girlException = (GirlException) e;
             return ResultUtil.error(girlException.getCode(), girlException.getMessage());
         } else {
-            logger.error("<系统异常> {}" ,e);
+            logger.error("<系统异常> {}", e);
             return ResultUtil.error(-1, "未知错误");
         }
 

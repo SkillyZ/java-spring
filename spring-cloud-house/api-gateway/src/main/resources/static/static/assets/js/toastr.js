@@ -54,7 +54,9 @@
             }
 
             function getContainer(options, create) {
-                if (!options) { options = getOptions(); }
+                if (!options) {
+                    options = getOptions();
+                }
                 $container = $('#' + options.containerId);
                 if ($container.length) {
                     return $container;
@@ -101,7 +103,9 @@
 
             function clear($toastElement, clearOptions) {
                 var options = getOptions();
-                if (!$container) { getContainer(options); }
+                if (!$container) {
+                    getContainer(options);
+                }
                 if (!clearToast($toastElement, options, clearOptions)) {
                     clearContainer(options);
                 }
@@ -109,7 +113,9 @@
 
             function remove($toastElement) {
                 var options = getOptions();
-                if (!$container) { getContainer(options); }
+                if (!$container) {
+                    getContainer(options);
+                }
                 if ($toastElement && $(':focus', $toastElement).length === 0) {
                     removeToast($toastElement);
                     return;
@@ -121,20 +127,22 @@
 
             // internal functions
 
-            function clearContainer (options) {
+            function clearContainer(options) {
                 var toastsToClear = $container.children();
                 for (var i = toastsToClear.length - 1; i >= 0; i--) {
                     clearToast($(toastsToClear[i]), options);
                 }
             }
 
-            function clearToast ($toastElement, options, clearOptions) {
+            function clearToast($toastElement, options, clearOptions) {
                 var force = clearOptions && clearOptions.force ? clearOptions.force : false;
                 if ($toastElement && (force || $(':focus', $toastElement).length === 0)) {
                     $toastElement[options.hideMethod]({
                         duration: options.hideDuration,
                         easing: options.hideEasing,
-                        complete: function () { removeToast($toastElement); }
+                        complete: function () {
+                            removeToast($toastElement);
+                        }
                     });
                     return true;
                 }
@@ -193,7 +201,9 @@
             }
 
             function publish(args) {
-                if (!listener) { return; }
+                if (!listener) {
+                    return;
+                }
                 listener(args);
             }
 
@@ -206,7 +216,9 @@
                     iconClass = map.optionsOverride.iconClass || iconClass;
                 }
 
-                if (shouldExit(options, map)) { return; }
+                if (shouldExit(options, map)) {
+                    return;
+                }
 
                 toastId++;
 
@@ -412,7 +424,9 @@
             }
 
             function removeToast($toastElement) {
-                if (!$container) { $container = getContainer(); }
+                if (!$container) {
+                    $container = getContainer();
+                }
                 if ($toastElement.is(':visible')) {
                     return;
                 }

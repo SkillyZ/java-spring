@@ -34,8 +34,7 @@ $browsers-supporting-svg-but-not-gradients: (ie: "9", opera: "9.5-9.6");
 @mixin each-gradient-prefix($values) {
   @if prefixed(-svg, $values) {
     @include for-legacy-browsers($browsers-supporting-svg-but-not-gradients,
-                                 $svg-gradient-shim-threshold)
-    {
+            $svg-gradient-shim-threshold) {
       @include with-prefix(-svg) {
         @content;
       }
@@ -79,7 +78,6 @@ $browsers-supporting-svg-but-not-gradients: (ie: "9", opera: "9.5-9.6");
   @include background($backgrounds...);
 }
 
-
 // Background image property support for vendor prefixing within values.
 @mixin background-image($images...) {
   @include image-property(background-image, $images...) {
@@ -106,7 +104,6 @@ $browsers-supporting-svg-but-not-gradients: (ie: "9", opera: "9.5-9.6");
     filter: progid:DXImageTransform.Microsoft.gradient(gradientType=#{$gradient-type}, startColorstr='#{ie-hex-str($start-color)}', endColorstr='#{ie-hex-str($end-color)}');
   }
 }
-
 
 // Border image property support for vendor prefixing properties and values.
 @mixin border-image($value) {

@@ -21,31 +21,33 @@
         <!-- end Breadcrumb -->
 
         <div class="container">
-             <header><h1>为${email!}重设密码</h1></header>
+            <header><h1>为${email!}重设密码</h1></header>
             <div class="row">
                 <div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3">
-                    <form role="form" id="form-create-account" method="post" action="/accounts/resetSubmit" >
-                       
+                    <form role="form" id="form-create-account" method="post" action="/accounts/resetSubmit">
+
                         <div class="form-group">
                             <label for="form-create-account-password">密码:</label>
-                            <input type="password" name="passwd" class="form-control" id="form-create-account-password" required>
+                            <input type="password" name="passwd" class="form-control" id="form-create-account-password"
+                                   required>
                         </div><!-- /.form-group -->
 
-                         <div class="form-group">
+                        <div class="form-group">
                             <label for="form-create-account-confirm-password">确认密码:</label>
-                            <input type="password" name="confirmPasswd" class="form-control" id="form-create-account-confirm-password" required>
+                            <input type="password" name="confirmPasswd" class="form-control"
+                                   id="form-create-account-confirm-password" required>
                         </div>
-                        <input type="hidden"  name="email" value="${email!}">
-                        <input type="hidden"  name="key" value="${sucess_key!}">
+                        <input type="hidden" name="email" value="${email!}">
+                        <input type="hidden" name="key" value="${sucess_key!}">
                         <div class="form-group clearfix">
                             <button type="submit" class="btn pull-right btn-default" id="account-submit">确认</button>
                         </div><!-- /.form-group -->
                     </form>
                     <hr>
-                    
+
                 </div>
             </div>
-           
+
         </div><!-- /.container -->
     </div>
     <!-- end Page Content -->
@@ -58,18 +60,18 @@
 <!--[if gt IE 8]>
 <script type="text/javascript" src="/assets/js/ie.js"></script>
 <![endif]-->
- <script  type="text/javascript" >
-    $(document).ready(function() {
-          var errorMsg   = "${errorMsg!""}";
-          var successMsg = "${successMsg!""}";
-          if(errorMsg){ 
-              errormsg("error",errorMsg);
-          }
-          if(successMsg) {
-              successmsg("success",successMsg);
-          }
-        })
-        
- </script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var errorMsg = "${errorMsg!""}";
+        var successMsg = "${successMsg!""}";
+        if (errorMsg) {
+            errormsg("error", errorMsg);
+        }
+        if (successMsg) {
+            successmsg("success", successMsg);
+        }
+    })
+
+</script>
 </body>
 </html>

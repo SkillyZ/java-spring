@@ -33,20 +33,21 @@
                             <span class="actions">
                                 <!--<a href="#" class="fa fa-print"></a>-->
                                 <a href="#" class="bookmark" data-bookmark-state="empty"
- 
-                                ><span class="title-add">Add to bookmark</span><span class="title-added">Added</span></a>
+
+                                ><span class="title-add">Add to bookmark</span><span
+                                        class="title-added">Added</span></a>
                             </span>
-                       </#if>
+                        </#if>
                         </header>
                         <section id="property-gallery">
                             <div class="owl-carousel property-carousel">
-                                <#list house.imageList as image> 
-                                   <div class="property-slide">
-                                      <a href="${image}" class="image-popup">
-                                         <div class="overlay"><h3>Front View</h3></div>
-                                         <img alt="" src="${image}">
-                                     </a>
-                                   </div><!-- /.property-slide -->
+                                <#list house.imageList as image>
+                                    <div class="property-slide">
+                                        <a href="${image}" class="image-popup">
+                                            <div class="overlay"><h3>Front View</h3></div>
+                                            <img alt="" src="${image}">
+                                        </a>
+                                    </div><!-- /.property-slide -->
                                 </#list>
                             </div><!-- /.property-carousel -->
                         </section>
@@ -56,31 +57,33 @@
                                     <header><h2>总体</h2></header>
                                     <dl>
                                         <dt>地址</dt>
-                                            <dd>${house.address}</dd>
+                                        <dd>${house.address}</dd>
                                         <dt>价格</dt>
-                                            <dd><span class="tag price">${house.priceStr}</span></dd>
+                                        <dd><span class="tag price">${house.priceStr}</span></dd>
                                         <dt>类型:</dt>
-                                            <dd>销售</dd>
+                                        <dd>销售</dd>
                                         <dt>面积:</dt>
-                                            <dd>${house.area} m<sup>2</sup></dd>
+                                        <dd>${house.area} m<sup>2</sup></dd>
                                         <dt>卧室:</dt>
-                                            <dd>${house.beds}</dd>
+                                        <dd>${house.beds}</dd>
                                         <dt>卫生间:</dt>
-                                            <dd>${house.baths}</dd>
+                                        <dd>${house.baths}</dd>
                                         <dt>评分:</dt>
-                                            <dd><div class="rating rating-overall" data-score="${house.rating}"></div></dd>
+                                        <dd>
+                                            <div class="rating rating-overall" data-score="${house.rating}"></div>
+                                        </dd>
                                     </dl>
                                 </section><!-- /#quick-summary -->
                             </div><!-- /.col-md-4 -->
                             <div class="col-md-8 col-sm-12">
                                 <section id="description">
                                     <header><h2>房屋描述</h2></header>
-                                    ${house.remarks}
+                                ${house.remarks}
                                 </section><!-- /#description -->
                                 <section id="property-features">
                                     <header><h2>房屋特点</h2></header>
                                     <ul class="list-unstyled property-features-list">
-                                    <#list house.featureList as feature> 
+                                    <#list house.featureList as feature>
                                         <li>${feature}</li>
                                     </#list>
                                     </ul>
@@ -89,16 +92,17 @@
                                     <div class="floor-plans">
                                         <header><h2>户型图</h2></header>
                                          <#list house.floorPlanList as floorPlan> 
-                                            <a href="${floorPlan}" class="image-popup"><img alt="" src="${floorPlan}"></a>
+                                            <a href="${floorPlan}" class="image-popup"><img alt=""
+                                                                                            src="${floorPlan}"></a>
                                          </#list>
                                     </div>
                                 </section><!-- /#floor-plans -->
-                               <!--   <section id="property-map">
-                                    <header><h2>Map</h2></header>
-                                    <div class="property-detail-map-wrapper">
-                                        <div class="property-detail-map" id="property-detail-map"></div>
-                                    </div>
-                                </section> -->
+                                <!--   <section id="property-map">
+                                     <header><h2>Map</h2></header>
+                                     <div class="property-detail-map-wrapper">
+                                         <div class="property-detail-map" id="property-detail-map"></div>
+                                     </div>
+                                 </section> -->
                                 <section id="property-rating">
                                     <header><h2>评价</h2></header>
                                     <div class="clearfix">
@@ -116,103 +120,117 @@
                                     <div class="rating-form">
                                     </div><!-- /.rating-form -->
                                 </section><!-- /#property-rating -->
-                                
 
-                                
+
                             </div><!-- /.col-md-8 -->
-                           
+
                             <div class="col-md-12 col-sm-12">
                                 <#if (agent)?? >
                                    <section id="contact-agent">
-                                    <header><h2>联系经纪人</h2></header>
-                                    <div class="row">
-                                        <section class="agent-form">
-                                            <div class="col-md-7 col-sm-12">
-                                                <aside class="agent-info clearfix">
-                                                    <figure><a href="/agency/agentDetail?id=${(agent.id)!}"><img alt="" src="${(agent.avatar)!}"></a></figure>
-                                                    <div class="agent-contact-info">
-                                                        <h3>${(agent.name)!}</h3>
-                                                        <p>
-                                                            ${(agent.aboutme)!}
-                                                        </p>
-                                                        <dl>
-                                                            <dt>手机:</dt>
-                                                            <dd>${(agent.phone)!}</dd>
-                                                            <dt>Email:</dt>
-                                                            <dd><a href="mailto:#">${(agent.email)!}</a></dd>
-                                                            <dt>&nbsp;&nbsp;&nbsp;</dt>
-                                                            <dd>&nbsp;&nbsp;&nbsp;</dd>
-                                                        </dl>
-                                                        <hr>
-                                                    </div>
-                                                </aside><!-- /.agent-info -->
-                                            </div><!-- /.col-md-7 -->
-                                            <div class="col-md-5 col-sm-12">
-                                                <div class="agent-form">
-                                                    <form role="form" id="form-contact-agent" method="post" action="/house/leaveMsg" class="clearfix">
-                                                        <div class="form-group">
-                                                            <label for="form-contact-agent-name">你的名字<em>*</em></label>
-                                                            <input type="hidden" name="agentId" value="${(agent.id)!}">
-                                                            <input type="hidden" name="houseId" value="${house.id}">
-                                                            <input type="text" class="form-control" id="name" name="userName" required>
-                                                        </div><!-- /.form-group -->
-                                                        <div class="form-group">
-                                                            <label for="form-contact-agent-email">你的邮箱<em>*</em></label>
-                                                            <input type="email" class="form-control" id="form-contact-agent-email" name="email" required>
-                                                        </div><!-- /.form-group -->
-                                                        <div class="form-group">
-                                                            <label for="form-contact-agent-message">你的留言<em>*</em></label>
-                                                            <textarea class="form-control" id="form-contact-agent-message" rows="2" name="msg" required></textarea>
-                                                        </div><!-- /.form-group -->
-                                                        <div class="form-group">
-                                                            <button type="submit" class="btn pull-right btn-default" id="form-contact-agent-submit">Send a Message</button>
-                                                        </div><!-- /.form-group -->
-                                                        <div id="form-contact-agent-status"></div>
-                                                    </form><!-- /#form-contact -->
-                                                </div><!-- /.agent-form -->
-                                            </div><!-- /.col-md-5 -->
-                                        </section><!-- /.agent-form -->
-                                    </div><!-- /.row -->
+                                       <header><h2>联系经纪人</h2></header>
+                                       <div class="row">
+                                           <section class="agent-form">
+                                               <div class="col-md-7 col-sm-12">
+                                                   <aside class="agent-info clearfix">
+                                                       <figure><a href="/agency/agentDetail?id=${(agent.id)!}"><img
+                                                               alt="" src="${(agent.avatar)!}"></a></figure>
+                                                       <div class="agent-contact-info">
+                                                           <h3>${(agent.name)!}</h3>
+                                                           <p>
+                                                               ${(agent.aboutme)!}
+                                                           </p>
+                                                           <dl>
+                                                               <dt>手机:</dt>
+                                                               <dd>${(agent.phone)!}</dd>
+                                                               <dt>Email:</dt>
+                                                               <dd><a href="mailto:#">${(agent.email)!}</a></dd>
+                                                               <dt>&nbsp;&nbsp;&nbsp;</dt>
+                                                               <dd>&nbsp;&nbsp;&nbsp;</dd>
+                                                           </dl>
+                                                           <hr>
+                                                       </div>
+                                                   </aside><!-- /.agent-info -->
+                                               </div><!-- /.col-md-7 -->
+                                               <div class="col-md-5 col-sm-12">
+                                                   <div class="agent-form">
+                                                       <form role="form" id="form-contact-agent" method="post"
+                                                             action="/house/leaveMsg" class="clearfix">
+                                                           <div class="form-group">
+                                                               <label for="form-contact-agent-name">你的名字<em>*</em></label>
+                                                               <input type="hidden" name="agentId"
+                                                                      value="${(agent.id)!}">
+                                                               <input type="hidden" name="houseId" value="${house.id}">
+                                                               <input type="text" class="form-control" id="name"
+                                                                      name="userName" required>
+                                                           </div><!-- /.form-group -->
+                                                           <div class="form-group">
+                                                               <label for="form-contact-agent-email">你的邮箱<em>*</em></label>
+                                                               <input type="email" class="form-control"
+                                                                      id="form-contact-agent-email" name="email"
+                                                                      required>
+                                                           </div><!-- /.form-group -->
+                                                           <div class="form-group">
+                                                               <label for="form-contact-agent-message">你的留言<em>*</em></label>
+                                                               <textarea class="form-control"
+                                                                         id="form-contact-agent-message" rows="2"
+                                                                         name="msg" required></textarea>
+                                                           </div><!-- /.form-group -->
+                                                           <div class="form-group">
+                                                               <button type="submit" class="btn pull-right btn-default"
+                                                                       id="form-contact-agent-submit">Send a Message
+                                                               </button>
+                                                           </div><!-- /.form-group -->
+                                                           <div id="form-contact-agent-status"></div>
+                                                       </form><!-- /#form-contact -->
+                                                   </div><!-- /.agent-form -->
+                                               </div><!-- /.col-md-5 -->
+                                           </section><!-- /.agent-form -->
+                                       </div><!-- /.row -->
                                    </section><!-- /#contact-agent -->
                                 </#if>
-                               
+
                                 <hr class="thick">
                                 <section id="comments">
                                     <div class="agent-form">
-                                                    <form role="form" id="form-contact-agent" method="post" action="/comment/leaveComment" class="clearfix">
-                                                        <input type="hidden" name="houseId" value="${house.id}">
-                                                        <div class="form-group">
-                                                            <label for="form-contact-agent-message">评论</label>
-                                                            <textarea class="form-control" id="form-contact-agent-message" rows="2" name="content" required></textarea>
-                                                        </div><!-- /.form-group -->
-                                                        <div class="form-group">
-                                                            <button type="submit" class="btn pull-right btn-default" id="form-contact-agent-submit">评论</button>
-                                                        </div><!-- /.form-group -->
-                                                        <div id="form-contact-agent-status"></div>
-                                                    </form><!-- /#form-contact -->
-                                                </div>
+                                        <form role="form" id="form-contact-agent" method="post"
+                                              action="/comment/leaveComment" class="clearfix">
+                                            <input type="hidden" name="houseId" value="${house.id}">
+                                            <div class="form-group">
+                                                <label for="form-contact-agent-message">评论</label>
+                                                <textarea class="form-control" id="form-contact-agent-message" rows="2"
+                                                          name="content" required></textarea>
+                                            </div><!-- /.form-group -->
+                                            <div class="form-group">
+                                                <button type="submit" class="btn pull-right btn-default"
+                                                        id="form-contact-agent-submit">评论
+                                                </button>
+                                            </div><!-- /.form-group -->
+                                            <div id="form-contact-agent-status"></div>
+                                        </form><!-- /#form-contact -->
+                                    </div>
                                     <header><h2 class="no-border">Comments</h2></header>
                                     <ul class="comments">
-                                      <#list commentList as comment> 
-                                        <li class="comment" style="width: 830px;">
-                                            <figure>
-                                                <div class="image">
-                                                    <img alt="" src="${comment.avatar}">
-                                                </div>
-                                            </figure>
-                                            <div class="comment-wrapper">
-                                                <div class="name pull-left">${comment.userName}</div>
-                                                <span class="date pull-right"><span class="fa fa-calendar"></span>${(comment.createTime)?datetime}</span>
-                                                <p>${comment.content}
-                                                </p>
-                                                <hr>
-                                            </div>
-                                        </li>
+                                      <#list commentList as comment>
+                                          <li class="comment" style="width: 830px;">
+                                              <figure>
+                                                  <div class="image">
+                                                      <img alt="" src="${comment.avatar}">
+                                                  </div>
+                                              </figure>
+                                              <div class="comment-wrapper">
+                                                  <div class="name pull-left">${comment.userName}</div>
+                                                  <span class="date pull-right"><span
+                                                          class="fa fa-calendar"></span>${(comment.createTime)?datetime}</span>
+                                                  <p>${comment.content}
+                                                  </p>
+                                                  <hr>
+                                              </div>
+                                          </li>
                                       </#list>
                                     </ul>
                                 </section>
                             </div><!-- /.col-md-12 -->
-                            
+
                         </div><!-- /.row -->
                     </section><!-- /#property-detail -->
                 </div><!-- /.col-md-9 -->
@@ -226,17 +244,18 @@
                             <form role="form" id="searchForm" class="form-search" method="post" action="/house/list">
 
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="search-box-property-id" value="${(vo.name)!}" name="name" placeholder="尝试输入小区名">
+                                    <input type="text" class="form-control" id="search-box-property-id"
+                                           value="${(vo.name)!}" name="name" placeholder="尝试输入小区名">
                                 </div>
                                 <div class="form-group">
                                     <select name="type">
-                                        <option value="1" >类型</option>
+                                        <option value="1">类型</option>
                                         <option value="1" <#if (vo.type)?? && (vo.type)==1> selected </#if> >售卖</option>
                                         <option value="2" <#if (vo.type)?? && (vo.type)==2> selected </#if> >出租</option>
                                     </select>
                                 </div><!-- /.form-group -->
                                 <input type="text" value="${(vo.sort)!}" name=sort hidden="true">
-                               
+
                                 <div class="form-group">
                                     <button type="submit" class="btn btn-default">搜索</button>
                                 </div><!-- /.form-group -->
@@ -259,7 +278,7 @@
                             </div><!-- /.property -->
                             </#list>
                         </aside><!-- /#featured-properties -->
-                       
+
                     </section><!-- /#sidebar -->
                 </div><!-- /.col-md-3 -->
                 <!-- end Sidebar -->
@@ -278,103 +297,100 @@
 <!--[if gt IE 8]>
 <script type="text/javascript" src="/static//js/ie.js"></script>
 <![endif]-->
- <script  type="text/javascript" >
-     
-    
-    
-    $(window).load(function(){
+<script type="text/javascript">
+
+
+    $(window).load(function () {
         initializeOwl(false);
     });
 
 
-     $(document).ready(function() {
-          var errorMsg   = "${errorMsg!""}";
-          var successMsg = "${successMsg!""}";
-          if(errorMsg){ 
-              errormsg("error",errorMsg);
-          }
-          if(successMsg) {
-              successmsg("success",successMsg);
-          }
+    $(document).ready(function () {
+        var errorMsg = "${errorMsg!""}";
+        var successMsg = "${successMsg!""}";
+        if (errorMsg) {
+            errormsg("error", errorMsg);
+        }
+        if (successMsg) {
+            successmsg("success", successMsg);
+        }
 
-           var ratingUser = $('.rating-user');
-            if (ratingUser.length > 0) {
-                $('.rating-user .inner').raty({
-                    path: '/static/assets/img',
-                    starOff : 'big-star-off.png',
-                    starOn  : 'big-star-on.png',
-                    width: 150,
-                    //target : '#hint',
-                    targetType : 'number',
-                    targetFormat : 'Rating: {score}',
-                    click: function(score, evt) {
-                        showRatingForm();
-                        $.ajax({
-                               url: "/house/rating?id=${house.id}&rating="+score,
-                               type: 'GET',
-                               cache:false,
-                               timeout:60000
-                              })
-                              .done(function(ret) {
-                                   
-                              })
-                    }
-                });
-            }
-        })
+        var ratingUser = $('.rating-user');
+        if (ratingUser.length > 0) {
+            $('.rating-user .inner').raty({
+                path: '/static/assets/img',
+                starOff: 'big-star-off.png',
+                starOn: 'big-star-on.png',
+                width: 150,
+                //target : '#hint',
+                targetType: 'number',
+                targetFormat: 'Rating: {score}',
+                click: function (score, evt) {
+                    showRatingForm();
+                    $.ajax({
+                        url: "/house/rating?id=${house.id}&rating=" + score,
+                        type: 'GET',
+                        cache: false,
+                        timeout: 60000
+                    })
+                            .done(function (ret) {
+
+                            })
+                }
+            });
+        }
+    })
 
     var bookmarkButton = $(".bookmark");
 
-    
-    bookmarkButton.on("click", function() {
+
+    bookmarkButton.on("click", function () {
         if (bookmarkButton.data('bookmark-state') == 'empty') {
-            <#--commonAjax('/house/bookmark?id=${house.id}');-->
+        <#--commonAjax('/house/bookmark?id=${house.id}');-->
             $.ajax({
                 url: "http://whf1:8080/house/bookmark",
                 type: 'POST',
                 data: 'id=${house.id}',
-                xhrFiels:{withCredentials:true} //代表可以在cors请求带上cookie
+                xhrFiels: {withCredentials: true} //代表可以在cors请求带上cookie
                 cache: false,
                 timeout: 60000,
                 headers: {
-                    "Cookie1":document.cookie
+                    "Cookie1": document.cookie
                 }
             })
-            .done(function (ret) {
-                jsonObj = ret;
-                var msg;
-                if (jsonObj.errorMsg) {
-                    msg = jsonObj.errorMsg;
-                    errormsg("error!", msg ? msg : "Operation Failed");
-                } else {
-                    msg = jsonObj.successMsg;
-                    if (msg) {
-                        successmsg("success!", msg);
-                    }
+                    .done(function (ret) {
+                        jsonObj = ret;
+                        var msg;
+                        if (jsonObj.errorMsg) {
+                            msg = jsonObj.errorMsg;
+                            errormsg("error!", msg ? msg : "Operation Failed");
+                        } else {
+                            msg = jsonObj.successMsg;
+                            if (msg) {
+                                successmsg("success!", msg);
+                            }
 
-                }
-            })
-            .fail(function (jqXHR, textStatus, errorThrown) {
-                if (textStatus && textStatus == 'error') {
-                    errormsg("error!", 'System Error')
-                }
-                ;
-                if (textStatus && textStatus == 'timeout') {
-                    successmsg("error!", 'Response Timeout')
-                }
-                ;
-            })
+                        }
+                    })
+                    .fail(function (jqXHR, textStatus, errorThrown) {
+                        if (textStatus && textStatus == 'error') {
+                            errormsg("error!", 'System Error')
+                        }
+                        ;
+                        if (textStatus && textStatus == 'timeout') {
+                            successmsg("error!", 'Response Timeout')
+                        }
+                        ;
+                    })
 
 
         } else if (bookmarkButton.data('bookmark-state') == 'added') {
             commonAjax('/house/unbookmark?id=${house.id}');
         }
     });
-    
-   
 
-        
- </script>
+
+</script>
 
 </body>
 </html>

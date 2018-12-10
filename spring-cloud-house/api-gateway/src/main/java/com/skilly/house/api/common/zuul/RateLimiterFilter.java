@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
  * Created by ${skilly} on 2018/3/7.
  * 限流令牌桶算法
  */
-public class RateLimiterFilter extends ZuulFilter{
+public class RateLimiterFilter extends ZuulFilter {
 
     private static final RateLimiter RATE_LIMTER = RateLimiter.create(100, 1, TimeUnit.DAYS);
 

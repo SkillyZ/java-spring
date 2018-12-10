@@ -9,11 +9,11 @@ import org.junit.Test;
 /**
  * Created by ${1254109699@qq.com} on 2018/1/17.
  * 1 测试增加 @Test 注解
-     2 新建 ByteBuf 并用字节填充它
-     3 新增 EmbeddedChannel 并添加 FixedLengthFrameDecoder 用于测试
-     4 写数据到 EmbeddedChannel
-     5 标记 channel 已经完成
-     6 读产生的消息并且校验
+ * 2 新建 ByteBuf 并用字节填充它
+ * 3 新增 EmbeddedChannel 并添加 FixedLengthFrameDecoder 用于测试
+ * 4 写数据到 EmbeddedChannel
+ * 5 标记 channel 已经完成
+ * 6 读产生的消息并且校验
  */
 public class FixedLengthFrameDecoderTest {
 

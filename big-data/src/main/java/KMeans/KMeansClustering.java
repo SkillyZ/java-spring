@@ -174,7 +174,6 @@ public abstract class KMeansClustering<T> {
      * @param o1
      * @param o2
      * @return
-     *
      * @Description: 判断o1 o2是否相等
      */
     public abstract boolean equals(T o1, T o2);

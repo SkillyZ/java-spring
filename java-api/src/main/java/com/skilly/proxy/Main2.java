@@ -5,9 +5,10 @@ package com.skilly.proxy;
  */
 public class Main2 {
     //这里传入的是接口类型的对象，方便向上转型，实现多态
-    public static void consumer(ProxyInterface pi){
+    public static void consumer(ProxyInterface pi) {
         pi.say();
     }
+
     public static void main(String[] args) {
         // TODO Auto-generated method stub
         consumer(new ProxyObject());
@@ -15,13 +16,13 @@ public class Main2 {
 }
 
 //代理接口
-interface ProxyInterface{
+interface ProxyInterface {
     public void say();
 }
 
 
 //被代理者
-class RealObject implements ProxyInterface{
+class RealObject implements ProxyInterface {
     //实现接口方法
     @Override
     public void say() {
@@ -33,7 +34,7 @@ class RealObject implements ProxyInterface{
 
 
 //代理者
-class ProxyObject implements ProxyInterface{
+class ProxyObject implements ProxyInterface {
 
     @Override
     public void say() {

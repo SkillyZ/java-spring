@@ -4,8 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class JsonUtil {
 
-    public static String objectConvertJson(Object object)
-    {
+    public static String objectConvertJson(Object object) {
         ObjectMapper mapper = new ObjectMapper();
         String rs;
         try {

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 
 <html lang="en-US">
@@ -33,19 +32,21 @@
                             <header><a href="/blog/detail?id=${blog.id}"><h2>${blog.title}</h2></a></header>
                             <figure class="meta">
                                 <a href="#" class="link-icon"><i class="fa fa-user"></i>Admin</a>
-                                <a href="#" class="link-icon"><i class="fa fa-calendar"></i><td>${(blog.createTime?datetime)}</td></a>
+                                <a href="#" class="link-icon"><i class="fa fa-calendar"></i>
+                                    <td>${(blog.createTime?datetime)}</td>
+                                </a>
                                 <div class="tags">
-                                   <#list blog.tagList as tag> 
-                                    <a href="#" class="tag article">${tag}</a>
-                                  </#list>
+                                   <#list blog.tagList as tag>
+                                       <a href="#" class="tag article">${tag}</a>
+                                   </#list>
                                 </div>
                             </figure>
                             <p>
-                               ${blog.digest}
+                                ${blog.digest}
                             </p>
                             <a href="/blog/detail?id=${blog.id}" class="link-arrow">Read More</a>
                         </article><!-- /.blog-post -->
-                    </#list>
+                     </#list>
 
                         <!-- Pagination -->
                         <div class="center">
@@ -76,21 +77,21 @@
 <!--[if gt IE 8]>
 <script type="text/javascript" src="assets/js/ie.js"></script>
 <![endif]-->
- <script  type="text/javascript" >
-     
+<script type="text/javascript">
 
-     $(document).ready(function() {
-          var errorMsg   = "${errorMsg!""}";
-          var successMsg = "${successMsg!""}";
-          if(errorMsg){ 
-              errormsg("error",errorMsg);
-          }
-          if(successMsg) {
-              successmsg("success",successMsg);
-          }
-        })
-        
- </script>
+
+    $(document).ready(function () {
+        var errorMsg = "${errorMsg!""}";
+        var successMsg = "${successMsg!""}";
+        if (errorMsg) {
+            errormsg("error", errorMsg);
+        }
+        if (successMsg) {
+            successmsg("success", successMsg);
+        }
+    })
+
+</script>
 
 </body>
 </html>

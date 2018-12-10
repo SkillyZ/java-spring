@@ -9,11 +9,11 @@ import java.util.TimerTask;
  * 需定时调度的业务逻辑类
  * Created by ChangComputer on 2017/5/24.
  */
-public class MyTimerTask extends TimerTask{
+public class MyTimerTask extends TimerTask {
     private String name;
     private int count = 3;
 
-    public MyTimerTask(String name){
+    public MyTimerTask(String name) {
         this.name = name;
     }
 

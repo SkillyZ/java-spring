@@ -16,18 +16,18 @@ public class GlobalExceptionHanlder {
 //    @Autowired
 //    private Tracer tracer;
 
-	private static final Logger LOGGER = LoggerFactory.getLogger(GlobalExceptionHanlder.class);
-	
-	@ResponseStatus(HttpStatus.OK)
-	@ExceptionHandler(value = Throwable.class)
-	@ResponseBody
-	public RestResponse<Object> handler(HttpServletRequest req, Throwable throwable){
-		LOGGER.error(throwable.getMessage(),throwable);
+    private static final Logger LOGGER = LoggerFactory.getLogger(GlobalExceptionHanlder.class);
+
+    @ResponseStatus(HttpStatus.OK)
+    @ExceptionHandler(value = Throwable.class)
+    @ResponseBody
+    public RestResponse<Object> handler(HttpServletRequest req, Throwable throwable) {
+        LOGGER.error(throwable.getMessage(), throwable);
 //	    tracer.addTag(Span.SPAN_ERROR_TAG_NAME, ExceptionUtils.getExceptionMessage(throwable));
 //	    System.out.println(tracer.getCurrentSpan().getTraceId());
-		RestCode restCode = Exception2CodeRepo.getCode(throwable);
-		RestResponse<Object> response = new RestResponse<Object>(restCode.code,restCode.msg);
-		return response;
-	}
-	
+        RestCode restCode = Exception2CodeRepo.getCode(throwable);
+        RestResponse<Object> response = new RestResponse<Object>(restCode.code, restCode.msg);
+        return response;
+    }
+
 }

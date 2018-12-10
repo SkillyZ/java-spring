@@ -20,7 +20,6 @@
         </div>
         <!-- end Breadcrumb -->
 
-                      
 
         <div class="container">
             <div class="row">
@@ -31,62 +30,68 @@
                         <section id="search-filter">
                             <figure><h3><i class="fa fa-search"></i>搜索结果:</h3>
                                 <span class="search-count"></span>
-                                 <div class="sorting">
+                                <div class="sorting">
                                     <div class="form-group">
                                         <select name="sorting" id="sorting">
-                                        <option value="">排序</option>
-                                        <option value="price_asc"   <#if (vo.sort) == "price_asc">   selected </#if>  >价格由低到高</option>
-                                        <option value="price_desc"  <#if (vo.sort) == "price_desc">  selected </#if> >价格由高到低</option>
-                                            <option value="time_desc"   <#if (vo.sort) == "time_desc">   selected </#if> >加入时间</option>
+                                            <option value="">排序</option>
+                                            <option value="price_asc"   <#if (vo.sort) == "price_asc">
+                                                    selected </#if> >价格由低到高
+                                            </option>
+                                            <option value="price_desc"  <#if (vo.sort) == "price_desc">
+                                                    selected </#if> >价格由高到低
+                                            </option>
+                                            <option value="time_desc"   <#if (vo.sort) == "time_desc">
+                                                    selected </#if> >加入时间
+                                            </option>
                                         </select>
                                     </div><!-- /.form-group -->
                                 </div>
                             </figure>
                         </section>
-                    <section id="properties" class="display-lines">
-                      <#list ps.list as house> 
-                       
-                            <div class="property">
-                                <figure class="tag status">${house.typeStr}</figure>
-                                <div class="property-image">
-                                    <figure class="ribbon">In Hold</figure>
-                                    <a href="/house/detail?id=${house.id}">
-                                        <img alt="" src="${house.firstImg}" style="width: 260px;height: 195px" >
-                                    </a>
-                                </div>
+                        <section id="properties" class="display-lines">
+                      <#list ps.list as house>
 
-                                <div class="info">
-                                    <header>
-                                        <a href="/house/detail?id=${house.id}"><h3>${house.name}</h3></a>
-                                        <figure>${house.address}</figure>
+                          <div class="property">
+                              <figure class="tag status">${house.typeStr}</figure>
+                              <div class="property-image">
+                                  <figure class="ribbon">In Hold</figure>
+                                  <a href="/house/detail?id=${house.id}">
+                                      <img alt="" src="${house.firstImg}" style="width: 260px;height: 195px">
+                                  </a>
+                              </div>
 
-                                    </header>
-                                    <div class="tag price">￥ ${house.price}万</div>
-                                    <aside>
-                                         <p>${house.remarks}
-                                        </p>
+                              <div class="info">
+                                  <header>
+                                      <a href="/house/detail?id=${house.id}"><h3>${house.name}</h3></a>
+                                      <figure>${house.address}</figure>
 
-                                        <dl>
-                                            <dt>Status:</dt>
-                                                <dd>Sale</dd>
-                                            <dt>Area:</dt>
-                                                <dd>${house.area} m<sup>2</sup></dd>
-                                            <dt>Beds:</dt>
-                                                <dd>${house.beds}</dd>
-                                            <dt>Baths:</dt>
-                                                <dd>${house.baths}</dd>
-                                        </dl>
-                                    </aside>
-                                    <a href="/house/detail?id=${house.id}" class="link-arrow">Read More</a>
-                                </div>
-                            </div>
-                        </#list>
-                       </section>
-                            <!-- Pagination -->
-                            <div class="center">
+                                  </header>
+                                  <div class="tag price">￥ ${house.price}万</div>
+                                  <aside>
+                                      <p>${house.remarks}
+                                      </p>
+
+                                      <dl>
+                                          <dt>Status:</dt>
+                                          <dd>Sale</dd>
+                                          <dt>Area:</dt>
+                                          <dd>${house.area} m<sup>2</sup></dd>
+                                          <dt>Beds:</dt>
+                                          <dd>${house.beds}</dd>
+                                          <dt>Baths:</dt>
+                                          <dd>${house.baths}</dd>
+                                      </dl>
+                                  </aside>
+                                  <a href="/house/detail?id=${house.id}" class="link-arrow">Read More</a>
+                              </div>
+                          </div>
+                      </#list>
+                        </section>
+                        <!-- Pagination -->
+                        <div class="center">
                                  <@common.paging ps.pagination/>
-                            </div><!-- /.center-->
-                        </section><!-- /#properties-->
+                        </div><!-- /.center-->
+                    </section><!-- /#properties-->
                     </section><!-- /#results -->
                 </div><!-- /.col-md-9 -->
                 <!-- end Results -->
@@ -99,17 +104,18 @@
                             <form role="form" id="searchForm" class="form-search" method="post" action="/house/list">
 
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="search-box-property-id" value="${(vo.name)!}" name="name" placeholder="尝试输入小区名">
+                                    <input type="text" class="form-control" id="search-box-property-id"
+                                           value="${(vo.name)!}" name="name" placeholder="尝试输入小区名">
                                 </div>
                                 <div class="form-group">
                                     <select name="type">
-                                        <option value="1" >类型</option>
+                                        <option value="1">类型</option>
                                         <option value="1" <#if (vo.type)?? && (vo.type)==1> selected </#if> >售卖</option>
                                         <option value="2" <#if (vo.type)?? && (vo.type)==2> selected </#if> >出租</option>
                                     </select>
                                 </div><!-- /.form-group -->
                                 <input type="text" value="${(vo.sort)!}" name=sort hidden="true">
-                               
+
                                 <div class="form-group">
                                     <button type="submit" class="btn btn-default">搜索</button>
                                 </div><!-- /.form-group -->
@@ -131,9 +137,9 @@
                                 </div>
                             </div><!-- /.property -->
                             </#list>
-                            
+
                         </aside><!-- /#featured-properties -->
-                        
+
                     </section><!-- /#sidebar -->
                 </div><!-- /.col-md-3 -->
                 <!-- end Sidebar -->
@@ -150,33 +156,31 @@
 <!--[if gt IE 8]>
 <script type="text/javascript" src="assets/js/ie.js"></script>
 <![endif]-->
- <script  type="text/javascript" >
-     
+<script type="text/javascript">
 
-     $(document).ready(function() {
-          var errorMsg   = "${errorMsg!""}";
-          var successMsg = "${successMsg!""}";
-          if(errorMsg){ 
-              errormsg("error",errorMsg);
-          }
-          if(successMsg) {
-              successmsg("success",successMsg);
-          }
-        })
-      
-      
-  
-     
-      $('#sorting').change(function() {
-           var type =  $(this).val();
-           if (!type) {
-               return;
-           }
-           window.location.href=  "/house/list?sort="+type+"&name=" + "${(vo.name)!}" + "&type=" + "${(vo.type)!0}" ;
-       });
 
-        
- </script>
+    $(document).ready(function () {
+        var errorMsg = "${errorMsg!""}";
+        var successMsg = "${successMsg!""}";
+        if (errorMsg) {
+            errormsg("error", errorMsg);
+        }
+        if (successMsg) {
+            successmsg("success", successMsg);
+        }
+    })
+
+
+    $('#sorting').change(function () {
+        var type = $(this).val();
+        if (!type) {
+            return;
+        }
+        window.location.href = "/house/list?sort=" + type + "&name=" + "${(vo.name)!}" + "&type=" + "${(vo.type)!0}";
+    });
+
+
+</script>
 
 </body>
 </html>

@@ -22,6 +22,7 @@ public class SampleController {
 
     /**
      * ResponseBody 按照数值原本返回， 不进行渲染
+     *
      * @return
      */
     @RequestMapping("/test")
@@ -43,7 +44,7 @@ public class SampleController {
 
     //传统获取url参数and url美化获取参数
     @RequestMapping("/say")
-    public String say(@RequestParam(value ="id", required = false, defaultValue = "0") int id) {
+    public String say(@RequestParam(value = "id", required = false, defaultValue = "0") int id) {
         return String.format("id: %d", id);
     }
 
@@ -59,8 +60,7 @@ public class SampleController {
     }
 
     @GetMapping("login2")
-    public String loginGet2()
-    {
+    public String loginGet2() {
         return "Login Page2";
     }
 

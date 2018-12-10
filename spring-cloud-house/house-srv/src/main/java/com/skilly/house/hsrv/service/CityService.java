@@ -10,13 +10,13 @@ import com.skilly.house.hsrv.model.City;
 
 @Service
 public class CityService {
-  
-  @Autowired
-  private CityMapper cityMapper;
-  
-  public List<City> getAllCitys(){
-    City query = new City();
-    return cityMapper.selectCitys(query);
-  }
+
+    @Autowired
+    private CityMapper cityMapper;
+
+    public List<City> getAllCitys() {
+        City query = new City();
+        return cityMapper.selectCitys(query);
+    }
 
 }

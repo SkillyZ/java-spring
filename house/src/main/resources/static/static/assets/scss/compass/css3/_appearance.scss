@@ -12,6 +12,10 @@
 @mixin appearance($appearance) {
   // There is no caniuse tracking for appearance.
   $appearance: unquote($appearance);
-  @include with-prefix(-moz)    {    -moz-appearance: $appearance; }
-  @include with-prefix(-webkit) { -webkit-appearance: $appearance; }
+  @include with-prefix(-moz) {
+    -moz-appearance: $appearance;
+  }
+  @include with-prefix(-webkit) {
+    -webkit-appearance: $appearance;
+  }
 }

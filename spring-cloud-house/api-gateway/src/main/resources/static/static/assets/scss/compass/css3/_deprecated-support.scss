@@ -25,12 +25,24 @@ $legacy-support-for-webkit: true !default;
   $khtml    : $experimental-support-for-khtml,
   $official : true
 ) {
-  @if $webkit  and $experimental-support-for-webkit    { -webkit-#{$property} : $value; }
-  @if $khtml   and $experimental-support-for-khtml     {  -khtml-#{$property} : $value; }
-  @if $moz     and $experimental-support-for-mozilla   {    -moz-#{$property} : $value; }
-  @if $ms      and $experimental-support-for-microsoft {     -ms-#{$property} : $value; }
-  @if $o       and $experimental-support-for-opera     {      -o-#{$property} : $value; }
-  @if $official                                        {         #{$property} : $value; }
+  @if $webkit  and $experimental-support-for-webkit {
+    -webkit-#{$property} : $value;
+  }
+  @if $khtml   and $experimental-support-for-khtml {
+    -khtml-#{$property} : $value;
+  }
+  @if $moz     and $experimental-support-for-mozilla {
+    -moz-#{$property} : $value;
+  }
+  @if $ms      and $experimental-support-for-microsoft {
+    -ms-#{$property} : $value;
+  }
+  @if $o       and $experimental-support-for-opera {
+    -o-#{$property} : $value;
+  }
+  @if $official {
+    #{$property} : $value;
+  }
 }
 
 // This mixin is a shortcut for applying only a single experimental value
@@ -54,12 +66,24 @@ $legacy-support-for-webkit: true !default;
   $khtml    : $experimental-support-for-khtml,
   $official : true
 ) {
-  @if $webkit  and $experimental-support-for-webkit    { #{$property} : -webkit-#{$value}; }
-  @if $khtml   and $experimental-support-for-khtml     { #{$property} :  -khtml-#{$value}; }
-  @if $moz     and $experimental-support-for-mozilla   { #{$property} :    -moz-#{$value}; }
-  @if $ms      and $experimental-support-for-microsoft { #{$property} :     -ms-#{$value}; }
-  @if $o       and $experimental-support-for-opera     { #{$property} :      -o-#{$value}; }
-  @if $official                                        { #{$property} :         #{$value}; }
+  @if $webkit  and $experimental-support-for-webkit {
+    #{$property} : -webkit-#{$value};
+  }
+  @if $khtml   and $experimental-support-for-khtml {
+    #{$property} : -khtml-#{$value};
+  }
+  @if $moz     and $experimental-support-for-mozilla {
+    #{$property} : -moz-#{$value};
+  }
+  @if $ms      and $experimental-support-for-microsoft {
+    #{$property} : -ms-#{$value};
+  }
+  @if $o       and $experimental-support-for-opera {
+    #{$property} : -o-#{$value};
+  }
+  @if $official {
+    #{$property} : #{$value};
+  }
 }
 
 // @private
@@ -84,30 +108,18 @@ $legacy-support-for-webkit: true !default;
 
 // A debug tool for checking browser support
 @mixin debug-support-matrix($experimental: true, $ie: true) {
-  @debug  #{'$moz-'}$experimental-support-for-mozilla
-          #{'$webkit-'}$experimental-support-for-webkit
-          #{'$opera-'}$experimental-support-for-opera
-          #{'$microsoft-'}$experimental-support-for-microsoft
-          #{'$khtml-'}$experimental-support-for-khtml;
-  @debug  #{'$ie6-'}$legacy-support-for-ie6
-          #{'$ie7-'}$legacy-support-for-ie7
-          #{'$ie8-'}$legacy-support-for-ie8;
+  @debug #{'$moz-'}$experimental-support-for-mozilla #{'$webkit-'}$experimental-support-for-webkit #{'$opera-'}$experimental-support-for-opera #{'$microsoft-'}$experimental-support-for-microsoft #{'$khtml-'}$experimental-support-for-khtml;
+  @debug #{'$ie6-'}$legacy-support-for-ie6 #{'$ie7-'}$legacy-support-for-ie7 #{'$ie8-'}$legacy-support-for-ie8;
 }
 
 // Capture the current exerimental support settings
 @function capture-experimental-matrix() {
-  @return $experimental-support-for-mozilla
-          $experimental-support-for-webkit
-          $experimental-support-for-opera
-          $experimental-support-for-microsoft
-          $experimental-support-for-khtml;
+  @return $experimental-support-for-mozilla $experimental-support-for-webkit $experimental-support-for-opera $experimental-support-for-microsoft $experimental-support-for-khtml;
 }
 
 // Capture the current legacy-ie support settings
 @function capture-legacy-ie-matrix() {
-  @return $legacy-support-for-ie6
-          $legacy-support-for-ie7
-          $legacy-support-for-ie8;
+  @return $legacy-support-for-ie6 $legacy-support-for-ie7 $legacy-support-for-ie8;
 }
 
 // Capture and store support
@@ -135,11 +147,11 @@ $legacy-ie-matrix: capture-legacy-ie-matrix();
   $ms     : false,
   $khtml  : false
 ) {
-  $experimental-support-for-mozilla   : $moz;
-  $experimental-support-for-webkit    : $webkit;
-  $experimental-support-for-opera     : $o;
-  $experimental-support-for-microsoft : $ms;
-  $experimental-support-for-khtml     : $khtml;
+  $experimental-support-for-mozilla: $moz;
+  $experimental-support-for-webkit: $webkit;
+  $experimental-support-for-opera: $o;
+  $experimental-support-for-microsoft: $ms;
+  $experimental-support-for-khtml: $khtml;
 }
 
 @mixin capture-and-set-experimental(
@@ -225,7 +237,6 @@ $legacy-ie-matrix: capture-legacy-ie-matrix();
   @include capture-and-set-support($moz, $webkit, $o, $ms, $khtml, $ie6, $ie7, $ie8);
 }
 
-
 // This mixin allows you to change the experimental support settings for
 // child (@content) styles.
 @mixin with-only-support-for(
@@ -239,8 +250,8 @@ $legacy-ie-matrix: capture-legacy-ie-matrix();
   $ie8    : false
 ) {
   // Capture current state
-  $wo-experimental-matrix : capture-experimental-matrix();
-  $wo-legacy-ie-matrix    : capture-legacy-ie-matrix();
+  $wo-experimental-matrix: capture-experimental-matrix();
+  $wo-legacy-ie-matrix: capture-legacy-ie-matrix();
 
   // Set new states
   @include set-experimental-support($moz, $webkit, $o, $ms, $khtml);
@@ -257,14 +268,14 @@ $legacy-ie-matrix: capture-legacy-ie-matrix();
 // This mixin is a shortcut for making slight adjustments to browser support
 // for child (@content) styles
 @mixin adjust-support-for(
-    $moz        : $experimental-support-for-mozilla,
-    $webkit     : $experimental-support-for-webkit,
-    $o          : $experimental-support-for-opera,
-    $ms         : $experimental-support-for-microsoft,
-    $khtml      : $experimental-support-for-khtml,
-    $ie6        : $legacy-support-for-ie6,
-    $ie7        : $legacy-support-for-ie7,
-    $ie8        : $legacy-support-for-ie8
+  $moz        : $experimental-support-for-mozilla,
+  $webkit     : $experimental-support-for-webkit,
+  $o          : $experimental-support-for-opera,
+  $ms         : $experimental-support-for-microsoft,
+  $khtml      : $experimental-support-for-khtml,
+  $ie6        : $legacy-support-for-ie6,
+  $ie7        : $legacy-support-for-ie7,
+  $ie8        : $legacy-support-for-ie8
 ) {
   @include with-only-support-for($moz, $webkit, $o, $ms, $khtml, $ie6, $ie7, $ie8) {
     @content;

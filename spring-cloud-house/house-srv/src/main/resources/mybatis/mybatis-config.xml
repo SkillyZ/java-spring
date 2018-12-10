@@ -17,21 +17,21 @@
 
 
     <typeAliases>
-      <typeAlias type="com.skilly.house.hsrv.model.House"       alias="house"/>
-      <typeAlias type="com.skilly.house.hsrv.model.City"        alias="city"/>
-      <typeAlias type="com.skilly.house.hsrv.model.Community"   alias="community"/>
-      <typeAlias type="com.skilly.house.hsrv.model.HouseUser"   alias="houseUser"/>
-      <typeAlias type="com.skilly.house.hsrv.model.User"        alias="user"/>
-      <typeAlias type="com.skilly.house.hsrv.model.UserMsg"     alias="userMsg"/>
-      <typeAlias type="com.skilly.house.hsrv.model.HouseUser"     alias="houseUser"/>
+        <typeAlias type="com.skilly.house.hsrv.model.House" alias="house"/>
+        <typeAlias type="com.skilly.house.hsrv.model.City" alias="city"/>
+        <typeAlias type="com.skilly.house.hsrv.model.Community" alias="community"/>
+        <typeAlias type="com.skilly.house.hsrv.model.HouseUser" alias="houseUser"/>
+        <typeAlias type="com.skilly.house.hsrv.model.User" alias="user"/>
+        <typeAlias type="com.skilly.house.hsrv.model.UserMsg" alias="userMsg"/>
+        <typeAlias type="com.skilly.house.hsrv.model.HouseUser" alias="houseUser"/>
     </typeAliases>
 
     <typeHandlers>
     </typeHandlers>
 
-    <mappers> 
-      <mapper resource="mapper/house.xml"/> 
-      <mapper resource="mapper/city.xml"/> 
+    <mappers>
+        <mapper resource="mapper/house.xml"/>
+        <mapper resource="mapper/city.xml"/>
     </mappers>
 
 

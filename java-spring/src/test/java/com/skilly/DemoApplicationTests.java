@@ -16,9 +16,9 @@ public class DemoApplicationTests {
 //	有问题请留言，一起讨论。
 //	5、springboot默认缓存templates下的文件，如果html页面修改后，看不到修改的效果，设置spring.thymeleaf.cache = false即可
 
-	@Test
-	public void contextLoads() {
+    @Test
+    public void contextLoads() {
 
-	}
+    }
 
 }

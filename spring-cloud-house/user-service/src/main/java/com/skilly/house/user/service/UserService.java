@@ -175,7 +175,7 @@ public class UserService {
         if (!list.isEmpty()) {
             return list.get(0);
         }
-        throw new UserException(UserException.Type.USER_NOT_FOUND,"User not found for " + email);
+        throw new UserException(UserException.Type.USER_NOT_FOUND, "User not found for " + email);
     }
 
     public void invalidate(String token) {

@@ -25,11 +25,11 @@ public class GirlController {
     private GirlService girlService;
 
     @GetMapping("/girls")
-    public List<Girl> girlList () {
+    public List<Girl> girlList() {
         return girlRepository.findAll();
     }
 
-    @GetMapping(value ="/girls/{id}")
+    @GetMapping(value = "/girls/{id}")
     public Girl girlFindOne(@PathVariable("id") Integer id) {
         return girlRepository.findOne(id);
     }
@@ -37,7 +37,7 @@ public class GirlController {
     @PostMapping("/girls")
     public Result<Girl> add(@Valid Girl girl, BindingResult bindingResult) {
 
-        if(bindingResult.hasErrors()) {//错误情况
+        if (bindingResult.hasErrors()) {//错误情况
 
             //return null;
             return ResultUtil.error(1, bindingResult.getFieldError().getDefaultMessage());
@@ -58,8 +58,8 @@ public class GirlController {
 //        return girlRepository.save(girl);
 //    }
 
-    @PutMapping(value ="/girls/{id}")
-    public Girl girlUpdate (@PathVariable("id") Integer id,
+    @PutMapping(value = "/girls/{id}")
+    public Girl girlUpdate(@PathVariable("id") Integer id,
                            @RequestParam("cupSize") String cupSize,
                            @RequestParam("age") Integer age) {
 
@@ -71,14 +71,14 @@ public class GirlController {
         return girlRepository.save(girl);
     }
 
-    @DeleteMapping(value ="/girls/{id}")
-    public void girlDelete (@PathVariable("id") Integer id) {
+    @DeleteMapping(value = "/girls/{id}")
+    public void girlDelete(@PathVariable("id") Integer id) {
         girlRepository.delete(id);
     }
 
     //判断妹纸年级
 
-    @GetMapping(value="girls/getAge/{id}")
+    @GetMapping(value = "girls/getAge/{id}")
     public void getAge(@PathVariable("id") Integer id) throws Exception {
         girlService.getAge(id);
     }

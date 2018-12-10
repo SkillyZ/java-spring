@@ -1,22 +1,22 @@
 package com.skilly.house.hsrv.exception;
 
-public class IllegalParamsException extends RuntimeException implements WithTypeException{
+public class IllegalParamsException extends RuntimeException implements WithTypeException {
 
-  private static final long serialVersionUID = 936915964862903634L;
+    private static final long serialVersionUID = 936915964862903634L;
 
-  private Type type;
+    private Type type;
 
-  public IllegalParamsException(Type type, String message) {
-    super(message);
-    this.type = type;
-  }
-  
-  public  Type type(){
-    return type;
-  }
+    public IllegalParamsException(Type type, String message) {
+        super(message);
+        this.type = type;
+    }
 
-  
-  public enum Type{
-    WRONG_PAGE_NUM;
-  }
+    public Type type() {
+        return type;
+    }
+
+
+    public enum Type {
+        WRONG_PAGE_NUM;
+    }
 }

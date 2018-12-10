@@ -12,24 +12,24 @@ import java.net.InetSocketAddress;
 /**
  * Created by 1254109699@qq.com on 2018/1/15.
  * document 1.设置端口值（抛出一个 NumberFormatException 如果该端口参数的格式不正确）
-
-             2.呼叫服务器的 start() 方法
-
-             3.创建 EventLoopGroup
-
-             4.创建 ServerBootstrap
-
-             5.指定使用 NIO 的传输 Channel
-
-             6.设置 socket 地址使用所选的端口
-
-             7.添加 EchoServerHandler 到 Channel 的 ChannelPipeline
-
-             8.绑定的服务器;sync 等待服务器关闭
-
-             9.关闭 channel 和 块，直到它被关闭
-
-             10.关机的 EventLoopGroup，释放所有资源。
+ * <p>
+ * 2.呼叫服务器的 start() 方法
+ * <p>
+ * 3.创建 EventLoopGroup
+ * <p>
+ * 4.创建 ServerBootstrap
+ * <p>
+ * 5.指定使用 NIO 的传输 Channel
+ * <p>
+ * 6.设置 socket 地址使用所选的端口
+ * <p>
+ * 7.添加 EchoServerHandler 到 Channel 的 ChannelPipeline
+ * <p>
+ * 8.绑定的服务器;sync 等待服务器关闭
+ * <p>
+ * 9.关闭 channel 和 块，直到它被关闭
+ * <p>
+ * 10.关机的 EventLoopGroup，释放所有资源。
  */
 public class EchoServer {
 
@@ -38,6 +38,7 @@ public class EchoServer {
     public EchoServer(int port) {
         this.port = port;
     }
+
     public static void main(String[] args) throws Exception {
         int port = 9327;
         if (args.length > 0) {

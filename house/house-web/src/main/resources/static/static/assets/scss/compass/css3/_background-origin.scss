@@ -4,10 +4,8 @@
 // The the user threshold for background-origin support. Defaults to `$critical-usage-threshold`
 $background-origin-threshold: $critical-usage-threshold !default;
 
-
 // The default background-origin: [border-box | padding-box | content-box]
 $default-background-origin: content-box !default;
-
 
 // Set the origin of the background (image and color) at the edge of the padding, border, or content.
 //

@@ -42,7 +42,7 @@ public class UserController {
         }
         redisTemplate.opsForValue().set("key1", "val1");
         logger.info(redisTemplate.opsForValue().get("key1"));
-        return RestResponse.success("test-username" );
+        return RestResponse.success("test-username");
     }
 
     //------------------------------ 查询----------------------
@@ -79,26 +79,23 @@ public class UserController {
     //------------------------登录/鉴权--------------------------
 
     @RequestMapping("auth")
-    public RestResponse<User> auth(@RequestBody User user){
-        User finalUser = userService.auth(user.getEmail(),user.getPasswd());
+    public RestResponse<User> auth(@RequestBody User user) {
+        User finalUser = userService.auth(user.getEmail(), user.getPasswd());
         return RestResponse.success(finalUser);
     }
 
 
     @RequestMapping("get")
-    public RestResponse<User> getUser(String token){
+    public RestResponse<User> getUser(String token) {
         User finalUser = userService.getLoginedUserByToken(token);
         return RestResponse.success(finalUser);
     }
 
     @RequestMapping("logout")
-    public RestResponse<Object> logout(String token){
+    public RestResponse<Object> logout(String token) {
         userService.invalidate(token);
         return RestResponse.success();
     }
-
-
-
 
 
 }

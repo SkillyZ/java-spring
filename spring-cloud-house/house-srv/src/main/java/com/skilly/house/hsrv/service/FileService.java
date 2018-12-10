@@ -14,27 +14,27 @@ import com.skilly.house.hsrv.common.FileUtil;
 
 @Service
 public class FileService {
-  
-  
-  @Value("${file.path}")
-  private String filePath;
-  
-  public List<String> getImgPaths(List<MultipartFile> files) {
-    List<String> paths = Lists.newArrayList();
-    files.forEach(file -> {
-      File localFile = null;
-      try {
-        if (!file.isEmpty()) {
-          localFile = FileUtil.saveToLocal(file, filePath);
-          String path =  StringUtils.substringAfterLast(localFile.getAbsolutePath(), filePath);
-          paths.add(path);
-        }
-      } catch (IOException e) {
-        throw new RuntimeException(e.getMessage());
-      }
-    });
-    return paths;
-    
-  }
+
+
+    @Value("${file.path}")
+    private String filePath;
+
+    public List<String> getImgPaths(List<MultipartFile> files) {
+        List<String> paths = Lists.newArrayList();
+        files.forEach(file -> {
+            File localFile = null;
+            try {
+                if (!file.isEmpty()) {
+                    localFile = FileUtil.saveToLocal(file, filePath);
+                    String path = StringUtils.substringAfterLast(localFile.getAbsolutePath(), filePath);
+                    paths.add(path);
+                }
+            } catch (IOException e) {
+                throw new RuntimeException(e.getMessage());
+            }
+        });
+        return paths;
+
+    }
 
 }

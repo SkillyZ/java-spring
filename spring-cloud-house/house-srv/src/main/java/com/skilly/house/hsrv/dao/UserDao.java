@@ -14,22 +14,21 @@ import com.skilly.house.hsrv.utils.Rests;
 @Repository
 public class UserDao {
 
-  @Autowired
-  private GenericRest rest;
-  
-  @Value("${user.service.name}")
-  private String userServiceName;
+    @Autowired
+    private GenericRest rest;
 
-  public User getAgentDetail(Long agentId) {
-   RestResponse<User> response = Rests.exc(() -> {
-      String url = Rests.toUrl(userServiceName, "/agency/agentDetail" + "?id=" + agentId);
-      ResponseEntity<RestResponse<User>> responseEntity = rest.get(url, new ParameterizedTypeReference<RestResponse<User>>() {});
-      return responseEntity.getBody();
-    });
-   return response.getResult();
-  }
+    @Value("${user.service.name}")
+    private String userServiceName;
+
+    public User getAgentDetail(Long agentId) {
+        RestResponse<User> response = Rests.exc(() -> {
+            String url = Rests.toUrl(userServiceName, "/agency/agentDetail" + "?id=" + agentId);
+            ResponseEntity<RestResponse<User>> responseEntity = rest.get(url, new ParameterizedTypeReference<RestResponse<User>>() {
+            });
+            return responseEntity.getBody();
+        });
+        return response.getResult();
+    }
 
 
-  
-  
 }

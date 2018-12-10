@@ -2,51 +2,50 @@ package com.skilly.house.api.model;
 
 public class HouseUserReq {
 
-  private Long houseId;
-  
-  private Long userId;
-  
-  private Integer bindType;
-  
-  private boolean unBind;
+    private Long houseId;
 
-  public Long getHouseId() {
-    return houseId;
-  }
+    private Long userId;
 
-  public void setHouseId(Long houseId) {
-    this.houseId = houseId;
-  }
+    private Integer bindType;
 
-  public Long getUserId() {
-    return userId;
-  }
+    private boolean unBind;
 
-  public void setUserId(Long userId) {
-    this.userId = userId;
-  }
+    public Long getHouseId() {
+        return houseId;
+    }
 
-  public Integer getBindType() {
-    return bindType;
-  }
+    public void setHouseId(Long houseId) {
+        this.houseId = houseId;
+    }
 
-  public void setBindType(Integer bindType) {
-    this.bindType = bindType;
-  }
+    public Long getUserId() {
+        return userId;
+    }
 
-  public boolean isUnBind() {
-    return unBind;
-  }
+    public void setUserId(Long userId) {
+        this.userId = userId;
+    }
 
-  public void setUnBind(boolean unBind) {
-    this.unBind = unBind;
-  }
+    public Integer getBindType() {
+        return bindType;
+    }
 
-  @Override
-  public String toString() {
-    return "HouseUserReq [houseId=" + houseId + ", userId=" + userId + "]";
-  }
-  
-  
-  
+    public void setBindType(Integer bindType) {
+        this.bindType = bindType;
+    }
+
+    public boolean isUnBind() {
+        return unBind;
+    }
+
+    public void setUnBind(boolean unBind) {
+        this.unBind = unBind;
+    }
+
+    @Override
+    public String toString() {
+        return "HouseUserReq [houseId=" + houseId + ", userId=" + userId + "]";
+    }
+
+
 }

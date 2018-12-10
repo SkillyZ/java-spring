@@ -10,17 +10,17 @@ import javax.annotation.Resource;
 
 @Mapper
 public interface UserMapper {
-  
-  User selectById(Long id);
-  
-  List<User> select(User user);
-  
-  int update(User user);
-  
-  int insert(User account);
-  
-  int delete(String email);
-  
-  User selectByEmail(String email);
+
+    User selectById(Long id);
+
+    List<User> select(User user);
+
+    int update(User user);
+
+    int insert(User account);
+
+    int delete(String email);
+
+    User selectByEmail(String email);
 
 }

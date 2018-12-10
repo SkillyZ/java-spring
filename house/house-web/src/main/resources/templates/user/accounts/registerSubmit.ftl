@@ -27,14 +27,14 @@
                     <section id="about-us">
                         <header><h1>注册成功</h1></header>
                         <section id="ceo-section" class="center">
-                           
+
                             <div class="cite no-bottom-margin">已经向邮箱${email}发送确认邮件，请及时激活，激活后方可开通账号
                             </div>
                         </section>
                     </section>
                 </div>
             </div>
-           
+
         </div><!-- /.container -->
     </div>
     <!-- end Page Content -->
@@ -47,18 +47,18 @@
 <!--[if gt IE 8]>
 <script type="text/javascript" src="/assets/js/ie.js"></script>
 <![endif]-->
- <script  type="text/javascript" >
-       $(document).ready(function() {
-          var errorMsg   = "${errorMsg!""}";
-          var successMsg = "${successMsg!""}";
-          if(errorMsg){ 
-              errormsg("error",errorMsg);
-          }
-          if(successMsg) {
-              successmsg("success",successMsg);
-          }
-        })
-        
- </script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var errorMsg = "${errorMsg!""}";
+        var successMsg = "${successMsg!""}";
+        if (errorMsg) {
+            errormsg("error", errorMsg);
+        }
+        if (successMsg) {
+            successmsg("success", successMsg);
+        }
+    })
+
+</script>
 </body>
 </html>

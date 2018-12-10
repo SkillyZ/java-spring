@@ -9,7 +9,7 @@
     <select id="selectUsersByQuery" resultType="user">
         select * from user
         <where>
-            <if test="id !=null" >
+            <if test="id !=null">
                 and id = #{id}
             </if>
             <if test="email != null">
@@ -21,7 +21,7 @@
             <if test="enable != null">
                 and enable = #{enable}
             </if>
-            <if test = "type != null and type!=0">
+            <if test="type != null and type!=0">
                 and type = #{type}
             </if>
         </where>
@@ -55,7 +55,7 @@
 
     <delete id="delete">
         delete from user
-        where  email=#{email}
+        where email=#{email}
     </delete>
 
     <update id="update">

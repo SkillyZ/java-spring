@@ -11,16 +11,16 @@ import io.netty.util.CharsetUtil;
 /**
  * Created by 1254109699@qq.com on 2018/1/15.
  * document 1.@Sharable 标识这类的实例之间可以在 channel 里面共享
-
-             2.日志消息输出到控制台
-
-             3.将所接收的消息返回给发送者。注意，这还没有冲刷数据
-
-             4.冲刷所有待审消息到远程节点。关闭通道后，操作完成
-
-             5.打印异常堆栈跟踪
-
-             6.关闭通道
+ * <p>
+ * 2.日志消息输出到控制台
+ * <p>
+ * 3.将所接收的消息返回给发送者。注意，这还没有冲刷数据
+ * <p>
+ * 4.冲刷所有待审消息到远程节点。关闭通道后，操作完成
+ * <p>
+ * 5.打印异常堆栈跟踪
+ * <p>
+ * 6.关闭通道
  */
 @ChannelHandler.Sharable //1
 public class EchoServerHandler extends ChannelInboundHandlerAdapter {

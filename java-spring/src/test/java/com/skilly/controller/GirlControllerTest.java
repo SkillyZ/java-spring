@@ -19,8 +19,9 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 public class GirlControllerTest {
     @Autowired
     private MockMvc mvc;
+
     @Test
-    public void girlList() throws Exception{
+    public void girlList() throws Exception {
         mvc.perform(MockMvcRequestBuilders.get("/girls")).andExpect(MockMvcResultMatchers.status().isOk());
 //                .andExpect(MockMvcResultMatchers.content().string("abc 这里填写期望值"));
     }

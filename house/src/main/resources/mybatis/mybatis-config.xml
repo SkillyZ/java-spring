@@ -17,11 +17,11 @@
 
 
     <typeAliases>
-        <typeAlias type="com.skilly.house.common.model.User" alias="user" />
+        <typeAlias type="com.skilly.house.common.model.User" alias="user"/>
     </typeAliases>
 
     <mappers>
-        <mapper resource="mapper/user.xml" />
+        <mapper resource="mapper/user.xml"/>
     </mappers>
 
 </configuration>

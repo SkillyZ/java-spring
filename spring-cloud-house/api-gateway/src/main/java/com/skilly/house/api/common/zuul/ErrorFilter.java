@@ -16,7 +16,7 @@ import java.io.IOException;
  * Created by ${skilly} on 2018/3/7.
  */
 @Component
-public class ErrorFilter extends ZuulFilter{
+public class ErrorFilter extends ZuulFilter {
 
     private static final Logger logger = LoggerFactory.getLogger(ErrorFilter.class);
 

@@ -14,20 +14,20 @@ import java.net.InetSocketAddress;
  * Created by 1254109699@qq.com on 2018/1/15.
  * document
  * 1.创建 Bootstrap
-
-     2.指定 EventLoopGroup 来处理客户端事件。由于我们使用 NIO 传输，所以用到了 NioEventLoopGroup 的实现
-
-     3.使用的 channel 类型是一个用于 NIO 传输
-
-     4.设置服务器的 InetSocketAddress
-
-     5.当建立一个连接和一个新的通道时，创建添加到 EchoClientHandler 实例 到 channel pipeline
-
-     6.连接到远程;等待连接完成
-
-     7.阻塞直到 Channel 关闭
-
-     8.调用 shutdownGracefully() 来关闭线程池和释放所有资源
+ * <p>
+ * 2.指定 EventLoopGroup 来处理客户端事件。由于我们使用 NIO 传输，所以用到了 NioEventLoopGroup 的实现
+ * <p>
+ * 3.使用的 channel 类型是一个用于 NIO 传输
+ * <p>
+ * 4.设置服务器的 InetSocketAddress
+ * <p>
+ * 5.当建立一个连接和一个新的通道时，创建添加到 EchoClientHandler 实例 到 channel pipeline
+ * <p>
+ * 6.连接到远程;等待连接完成
+ * <p>
+ * 7.阻塞直到 Channel 关闭
+ * <p>
+ * 8.调用 shutdownGracefully() 来关闭线程池和释放所有资源
  */
 public class EchoClient {
 

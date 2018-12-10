@@ -5,12 +5,12 @@ import com.skilly.enums.ResultEnum;
 /**
  * Created by 1254109699@qq.com on 2018/1/1.
  */
-public class GirlException extends RuntimeException{
+public class GirlException extends RuntimeException {
     private Integer code;
 
     public GirlException(ResultEnum resultEnum) {
         super(resultEnum.getMsg());
-        this.code=resultEnum.getCode();
+        this.code = resultEnum.getCode();
     }
 
     public Integer getCode() {

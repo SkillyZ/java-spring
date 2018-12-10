@@ -16,36 +16,36 @@ import com.skilly.house.hsrv.exception.WithTypeException;
 
 @ControllerAdvice
 public class GlobalExceptionHandler {
-  
-  private static final Logger LOGGER  = LoggerFactory.getLogger(GlobalExceptionHandler.class);
-  
-  
-  @ResponseStatus(HttpStatus.OK)
-  @ExceptionHandler(value = Throwable.class)
-  @ResponseBody
-  public RestResponse<Object> handler(HttpServletRequest req, Throwable throwable) throws Exception {
-      LOGGER.error(throwable.getMessage(), throwable);
-      LOGGER.error(req.getRequestURL().toString() + " encounter exception or error");
-      Object target = throwable;
-      if (throwable instanceof WithTypeException) {
-        Object type = getType(throwable); 
-        if (type != null) {
-          target = type;
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(GlobalExceptionHandler.class);
+
+
+    @ResponseStatus(HttpStatus.OK)
+    @ExceptionHandler(value = Throwable.class)
+    @ResponseBody
+    public RestResponse<Object> handler(HttpServletRequest req, Throwable throwable) throws Exception {
+        LOGGER.error(throwable.getMessage(), throwable);
+        LOGGER.error(req.getRequestURL().toString() + " encounter exception or error");
+        Object target = throwable;
+        if (throwable instanceof WithTypeException) {
+            Object type = getType(throwable);
+            if (type != null) {
+                target = type;
+            }
         }
-      }
-      RestCode code =  Exception2CodeMap.getCode(target);
-      RestResponse<Object> response = new RestResponse<>(code.code,code.msg);
-      return response;
-  }
-  
-  private Object getType(Throwable throwable){
-    try {
-       return FieldUtils.readDeclaredField(throwable, "type", true);
-    } catch (Exception e) {
-       //ignore
-       return null;
+        RestCode code = Exception2CodeMap.getCode(target);
+        RestResponse<Object> response = new RestResponse<>(code.code, code.msg);
+        return response;
     }
-  }
-  
+
+    private Object getType(Throwable throwable) {
+        try {
+            return FieldUtils.readDeclaredField(throwable, "type", true);
+        } catch (Exception e) {
+            //ignore
+            return null;
+        }
+    }
+
 
 }

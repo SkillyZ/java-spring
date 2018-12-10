@@ -49,29 +49,29 @@ function commonAjax(url, data) {
         cache: false,
         timeout: 60000
     })
-    .done(function (ret) {
-        jsonObj = ret;
-        var msg;
-        if (jsonObj.errorMsg) {
-            msg = jsonObj.errorMsg;
-            errormsg("error!", msg ? msg : "Operation Failed");
-        } else {
-            msg = jsonObj.successMsg;
-            if (msg) {
-                successmsg("success!", msg);
-            }
+        .done(function (ret) {
+            jsonObj = ret;
+            var msg;
+            if (jsonObj.errorMsg) {
+                msg = jsonObj.errorMsg;
+                errormsg("error!", msg ? msg : "Operation Failed");
+            } else {
+                msg = jsonObj.successMsg;
+                if (msg) {
+                    successmsg("success!", msg);
+                }
 
-        }
-    })
-    .fail(function (jqXHR, textStatus, errorThrown) {
-        if (textStatus && textStatus == 'error') {
-            errormsg("error!", 'System Error')
-        }
-        ;
-        if (textStatus && textStatus == 'timeout') {
-            successmsg("error!", 'Response Timeout')
-        }
-        ;
-    })
+            }
+        })
+        .fail(function (jqXHR, textStatus, errorThrown) {
+            if (textStatus && textStatus == 'error') {
+                errormsg("error!", 'System Error')
+            }
+            ;
+            if (textStatus && textStatus == 'timeout') {
+                successmsg("error!", 'Response Timeout')
+            }
+            ;
+        })
 }
 

@@ -3,18 +3,18 @@
 <mapper namespace="com.skilly.house.user.mapper.UserMapper">
 
     <sql id="userField">
-      id,
-      name,
-      phone,
-      email,
-      aboutme,
-      passwd,
-      avatar,
-      type,
-      create_time,
-      enable,
-      agency_id
-   </sql>
+        id,
+        name,
+        phone,
+        email,
+        aboutme,
+        passwd,
+        avatar,
+        type,
+        create_time,
+        enable,
+        agency_id
+    </sql>
 
     <select id="select" resultType="user">
         select
@@ -55,30 +55,30 @@
     </select>
 
     <insert id="insert">
-    insert into  user (
-	                 name,
-                     phone,
-                     email,
-                     aboutme,
-                     passwd,
-                     avatar,
-                     type,
-                     create_time, 
-                     enable
-                     )
-                     
-                   values(
-                     #{name},
-                     #{phone},
-                     #{email},
-                     #{aboutme},
-                     #{passwd},
-                     #{avatar},
-                     #{type},
-                     #{createTime}, 
-                     #{enable}
-                   )
-   </insert>
+        insert into user (
+        name,
+        phone,
+        email,
+        aboutme,
+        passwd,
+        avatar,
+        type,
+        create_time,
+        enable
+        )
+
+        values(
+        #{name},
+        #{phone},
+        #{email},
+        #{aboutme},
+        #{passwd},
+        #{avatar},
+        #{type},
+        #{createTime},
+        #{enable}
+        )
+    </insert>
 
     <update id="update">
         update user
@@ -103,9 +103,9 @@
     </update>
 
     <delete id="delete">
-     delete from user 
-     where email = #{email}
-   </delete>
+        delete from user
+        where email = #{email}
+    </delete>
 
 
 </mapper>

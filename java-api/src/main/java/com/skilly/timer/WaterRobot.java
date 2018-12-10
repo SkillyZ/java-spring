@@ -15,7 +15,7 @@ public class WaterRobot extends TimerTask {
     // 桶容量，最大容量为5
     private Integer bucketCapacity = 0;
 
-    public WaterRobot(Timer timer){
+    public WaterRobot(Timer timer) {
         this.timer = timer;
     }
 
@@ -25,7 +25,7 @@ public class WaterRobot extends TimerTask {
         if (this.bucketCapacity < 5) {
             System.out.println("Add 1L water into the bucket!");
             bucketCapacity++;
-        }else{
+        } else {
             System.out.println("The number of canceled task in timer is : " + timer.purge());
             // 水满之后就停止执行
             cancel();

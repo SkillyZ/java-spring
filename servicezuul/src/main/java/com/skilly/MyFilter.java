@@ -24,6 +24,7 @@ public class MyFilter extends ZuulFilter {
 //    run：过滤器的具体逻辑。可用很复杂，包括查sql，nosql去判断该请求到底有没有权限访问。
 
     private static Logger log = LoggerFactory.getLogger(MyFilter.class);
+
     @Override
     public String filterType() {
         return "pre";
@@ -45,13 +46,13 @@ public class MyFilter extends ZuulFilter {
         HttpServletRequest request = ctx.getRequest();
         log.info(String.format("%s >>> %s", request.getMethod(), request.getRequestURL().toString()));
         Object accessToken = request.getParameter("token");
-        if(accessToken == null) {
+        if (accessToken == null) {
             log.warn("token is empty");
             ctx.setSendZuulResponse(false);
             ctx.setResponseStatusCode(401);
             try {
                 ctx.getResponse().getWriter().write("token is empty");
-            }catch (Exception e) {
+            } catch (Exception e) {
 
             }
 

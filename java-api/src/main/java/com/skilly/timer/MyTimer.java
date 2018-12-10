@@ -3,6 +3,7 @@ package com.skilly.timer;
 /**
  * Created by ${1254109699@qq.com} on 2018/1/15.
  */
+
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Timer;
@@ -13,7 +14,7 @@ import java.util.Timer;
  */
 public class MyTimer {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         // 创建一个 Timer 实例
         Timer timer = new Timer();
@@ -35,7 +36,7 @@ public class MyTimer {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         System.out.println("Current exec time is : " + simpleDateFormat.format(calendar.getTime()));
 
-        calendar.add(Calendar.SECOND,3);
+        calendar.add(Calendar.SECOND, 3);
 
         // schedule的四种用法
         /**
@@ -90,6 +91,6 @@ public class MyTimer {
          *   之后每隔两秒执行一次task
          */
         myTimerTask.setName("scheduleAtFixedRate2");
-        timer.scheduleAtFixedRate(myTimerTask,1000L,2000L);
+        timer.scheduleAtFixedRate(myTimerTask, 1000L, 2000L);
     }
 }

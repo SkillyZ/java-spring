@@ -3,7 +3,8 @@
 <html lang="en-US">
 <@common.header/>
 
-<body class="page-homepage navigation-fixed-top page-slider page-slider-search-box" id="page-top" data-spy="scroll" data-target=".navigation" data-offset="90">
+<body class="page-homepage navigation-fixed-top page-slider page-slider-search-box" id="page-top" data-spy="scroll"
+      data-target=".navigation" data-offset="90">
 <!-- Wrapper -->
 <div class="wrapper">
 
@@ -66,10 +67,12 @@
                 <div class="row">
                     <div class="col-md-3 col-md-offset-9 col-sm-4 col-sm-offset-8">
                         <div class="search-box map">
-                            <form role="form" id="form-map" class="form-map form-search" method="POST" action="/house/list">
+                            <form role="form" id="form-map" class="form-map form-search" method="POST"
+                                  action="/house/list">
                                 <h2>搜索</h2>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="search-box-property-id" name="name" placeholder="尝试输入小区名">
+                                    <input type="text" class="form-control" id="search-box-property-id" name="name"
+                                           placeholder="尝试输入小区名">
                                 </div>
                                 <div class="form-group">
                                     <select name="type">
@@ -92,10 +95,10 @@
 
     <!-- Page Content -->
     <div id="page-content">
-       
-      
+
+
         <aside id="advertising" class="block">
-            
+
         </aside>
         <section id="new-properties" class="block">
             <div class="container">
@@ -104,8 +107,8 @@
                     <a href="/house/list" class="link-arrow">所有房源</a>
                 </header>
                 <div class="row">
-                 
-                 
+
+
                 </div><!-- /.row-->
             </div><!-- /.container-->
         </section><!-- /#new-properties-->
@@ -120,7 +123,8 @@
                             </div>
                         </figure>
                         <aside class="cite">
-                            <p>Fusce risus metus, placerat in consectetur eu, porttitor a est sed sed dolor lorem cras adipiscing</p>
+                            <p>Fusce risus metus, placerat in consectetur eu, porttitor a est sed sed dolor lorem cras
+                                adipiscing</p>
                             <footer>Natalie Jenkins</footer>
                         </aside>
                     </blockquote>
@@ -131,7 +135,8 @@
                             </div>
                         </figure>
                         <aside class="cite">
-                            <p>Fusce risus metus, placerat in consectetur eu, porttitor a est sed sed dolor lorem cras adipiscing</p>
+                            <p>Fusce risus metus, placerat in consectetur eu, porttitor a est sed sed dolor lorem cras
+                                adipiscing</p>
                             <footer>Natalie Jenkins</footer>
                         </aside>
                     </blockquote>
@@ -162,19 +167,19 @@
  <@common.js/>
 
 <script>
-    $(window).load(function(){
+    $(window).load(function () {
         initializeOwl(false);
     });
-    $(document).ready(function() {
-          var errorMsg   = "${errorMsg!""}";
-          var successMsg = "${successMsg!""}";
-          if(errorMsg){ 
-              errormsg("error",errorMsg);
-          }
-          if(successMsg) {
-              successmsg("success",successMsg);
-          }
-        })
+    $(document).ready(function () {
+        var errorMsg = "${errorMsg!""}";
+        var successMsg = "${successMsg!""}";
+        if (errorMsg) {
+            errormsg("error", errorMsg);
+        }
+        if (successMsg) {
+            successmsg("success", successMsg);
+        }
+    })
 </script>
 </body>
 </html>

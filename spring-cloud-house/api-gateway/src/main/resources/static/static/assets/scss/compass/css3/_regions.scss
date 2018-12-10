@@ -1,11 +1,9 @@
 // Regions
-
 @import "compass/support";
 
 // The prefixed support threshold for css regions.
 // Defaults to the $graceful-usage-threshold.
 $regions-support-threshold: $graceful-usage-threshold !default;
-
 
 // Webkit, IE10 and future support for [CSS Regions](http://dev.w3.org/csswg/css3-regions/)
 //

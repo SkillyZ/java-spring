@@ -47,16 +47,16 @@
             <if test="house.type != null">
                 and a.type = #{house.type}
             </if>
-            <if test="house.communityId != null" >
+            <if test="house.communityId != null">
                 and a.community_id = #{house.communityId}
             </if>
-            <if test="house.name != null and house.name != '' " >
-                <bind name="pattern1" value = "'%' + house.name + '%'" />
+            <if test="house.name != null and house.name != '' ">
+                <bind name="pattern1" value="'%' + house.name + '%'"/>
                 and a.name like #{pattern1}
             </if>
             <if test="house.ids != null and house.ids.size() > 0">
                 and a.id in
-                <foreach collection="house.ids" item="item" index="index" open="(" close=")" separator="," >
+                <foreach collection="house.ids" item="item" index="index" open="(" close=")" separator=",">
                     #{item}
                 </foreach>
             </if>
@@ -64,7 +64,8 @@
     </sql>
 
     <select id="selectPageHouses" resultType="house">
-        select <include refid="houseField" />
+        select
+        <include refid="houseField"/>
         from house a
         <include refid="houseCondition"></include>
         <choose>
@@ -78,7 +79,7 @@
                 order by a.create_time desc
             </otherwise>
         </choose>
-        <if test ="pageParams.offset !=null and pageParams.limit != null">
+        <if test="pageParams.offset !=null and pageParams.limit != null">
             limit #{pageParams.offset},#{pageParams.limit}
         </if>
         <if test="pageParams.offset == null and pageParams.limit != null">
@@ -107,18 +108,18 @@
 
     <update id="updateHouse">
         update house
-        set  rating = #{rating}
+        set rating = #{rating}
         where id = #{id}
     </update>
 
     <update id="downHouse">
         update house
-        set    state = 2
-        where  id = #{id}
+        set state = 2
+        where id = #{id}
     </update>
 
     <!--把我们刚插入到数据库记录里的id设置到我们的pojo对象上-->
-    <insert id="insert"  useGeneratedKeys="true" keyProperty="id">
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id">
         insert into house(
         type,
         name,
@@ -180,7 +181,7 @@
     <select id="selectSaleHouseUser" resultType="houseUser">
         select id,house_id,user_id,create_time,type
         from house_user
-        where house_id = #{id} and  type = 1
+        where house_id = #{id} and type = 1
         limit 1
     </select>
 
@@ -207,7 +208,7 @@
 
     <delete id="deleteHouseUser">
         delete from house_user
-        where  house_id = #{id} and user_id = #{userId} and type=#{type}
+        where house_id = #{id} and user_id = #{userId} and type=#{type}
 
     </delete>
 

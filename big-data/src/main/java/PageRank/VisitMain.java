@@ -4,7 +4,6 @@ import java.util.Random;
 
 /**
  * 随机访问者模型实现
- *
  */
 public class VisitMain {
 

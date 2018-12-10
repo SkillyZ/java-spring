@@ -13,14 +13,14 @@ import java.util.*;
 public class ReadFile {
     private static ArrayList<String> result;
 
-    public static ArrayList read(File file, String search, boolean isSort, boolean uniq){
+    public static ArrayList read(File file, String search, boolean isSort, boolean uniq) {
         result = new ArrayList<String>();
-        try{
+        try {
             BufferedReader br = new BufferedReader(new FileReader(file));
             String s = null;
-            while((s = br.readLine()) != null){
+            while ((s = br.readLine()) != null) {
                 if (s.indexOf(search) != -1) {
-                    result.add(System.lineSeparator()+s);
+                    result.add(System.lineSeparator() + s);
                 }
             }
             br.close();
@@ -31,7 +31,7 @@ public class ReadFile {
 
             if (uniq) {
 
-                HashSet<String> hashSet=new HashSet<String>();
+                HashSet<String> hashSet = new HashSet<String>();
                 hashSet.addAll(result); //set无序
                 ArrayList<String> res = new ArrayList<String>();
                 res.addAll(hashSet);
@@ -49,7 +49,7 @@ public class ReadFile {
                 return res;
             }
 
-        } catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
 

@@ -22,8 +22,8 @@ public class AgencyController {
     @Autowired
     private AgencyService agencyService;
 
-  @Autowired
-  private HouseService houseService;
+    @Autowired
+    private HouseService houseService;
 
     @Autowired
     private MailService mailService;

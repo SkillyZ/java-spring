@@ -24,7 +24,6 @@ import javax.imageio.ImageIO;
  * 图片处理工具类
  *
  * @author Daven
- *
  */
 public class ImgUtil {
 
@@ -35,11 +34,12 @@ public class ImgUtil {
 
     /**
      * 合成图片(类似图片水印)
-     * @param backImage 背景图片对象
-     * @param headImage 用户头像对象
+     *
+     * @param backImage  背景图片对象
+     * @param headImage  用户头像对象
      * @param outPutPath 输出路径（D：/img/out.png）
-     * @param leftX 距离目标图片左侧的偏移量
-     * @param leftY 距离目标图片左侧的偏移量
+     * @param leftX      距离目标图片左侧的偏移量
+     * @param leftY      距离目标图片左侧的偏移量
      * @throws InterruptedException
      * @throws IOException
      */
@@ -77,8 +77,8 @@ public class ImgUtil {
         BufferedImage backgroundImage = new BufferedImage(width, height, alphaType);
         Graphics2D graphics2D = backgroundImage.createGraphics();
 
-        for (List<XYbean> beanList: data) {
-            for (XYbean bean: beanList) {
+        for (List<XYbean> beanList : data) {
+            for (XYbean bean : beanList) {
                 graphics2D.drawString("0", bean.getX(), bean.getY());
             }
         }
@@ -89,11 +89,12 @@ public class ImgUtil {
 
     /**
      * 合成图片
+     *
      * @param backPicPath 背景图片本地路径
-     * @param headPicUrl 用户头像网络url
-     * @param outPutPath 输出路径（D：/img/out.png）
-     * @param leftX 距离目标图片左侧的偏移量
-     * @param leftY 距离目标图片左侧的偏移量
+     * @param headPicUrl  用户头像网络url
+     * @param outPutPath  输出路径（D：/img/out.png）
+     * @param leftX       距离目标图片左侧的偏移量
+     * @param leftY       距离目标图片左侧的偏移量
      */
     public static void composePic(String backPicPath, String headPicUrl,
                                   String outPutPath, int leftX, int leftY) {
@@ -104,17 +105,17 @@ public class ImgUtil {
             // 加昵称
             int ln = ImgUtil.getLength("深水鱼的马甲") * 24;
             backImage = ImgUtil.pressText("深水鱼的马甲", backImage, "微软雅黑", Font.BOLD,
-                    ImgUtil.String2Color("#FFFFFF"), 24, 175+(266-ln)/2, 188, 1);
+                    ImgUtil.String2Color("#FFFFFF"), 24, 175 + (266 - ln) / 2, 188, 1);
             // 得分
-            backImage = ImgUtil.pressText("100分", backImage, "华康海报体W12(P)",  Font.LAYOUT_NO_LIMIT_CONTEXT,
+            backImage = ImgUtil.pressText("100分", backImage, "华康海报体W12(P)", Font.LAYOUT_NO_LIMIT_CONTEXT,
                     ImgUtil.String2Color("#FD6E10"), 22, 280, 233, 1);
             // 收益
-            backImage = ImgUtil.pressText("85%", backImage, "迷你简凌波",  Font.LAYOUT_NO_LIMIT_CONTEXT,
+            backImage = ImgUtil.pressText("85%", backImage, "迷你简凌波", Font.LAYOUT_NO_LIMIT_CONTEXT,
                     ImgUtil.String2Color("#E60000"), 24, 368, 264, 1);
             // 称号
             int lc = ImgUtil.getLength("有股神潜力，万众膜拜！") * 32;
             backImage = ImgUtil.pressText("有股神潜力，万众膜拜！", backImage, "华康海报体W12(P)", Font.LAYOUT_NO_LIMIT_CONTEXT,
-                    ImgUtil.String2Color("#880000"), 32, (488-lc)/2, 310, 1);
+                    ImgUtil.String2Color("#880000"), 32, (488 - lc) / 2, 310, 1);
             // 读取头像图片
             Image headImage = ImgUtil.loadImageUrl(headPicUrl);
             // 图像
@@ -129,15 +130,16 @@ public class ImgUtil {
 
     /**
      * 图片上加文字（文字水印）
+     *
      * @param pressText 水印文字
      * @param targetImg 目标图片
-     * @param fontName 字体名称
+     * @param fontName  字体名称
      * @param fontStyle 字体样式，如：粗体和斜体(Font.BOLD|Font.ITALIC)
-     * @param color 字体颜色
-     * @param fontSize 字体大小
-     * @param x 水印文字距离目标图片左侧的偏移量
-     * @param y 水印文字距离目标图片上侧的偏移量
-     * @param alpha 透明度(0.0 -- 1.0, 0.0为完全透明，1.0为完全不透明)
+     * @param color     字体颜色
+     * @param fontSize  字体大小
+     * @param x         水印文字距离目标图片左侧的偏移量
+     * @param y         水印文字距离目标图片上侧的偏移量
+     * @param alpha     透明度(0.0 -- 1.0, 0.0为完全透明，1.0为完全不透明)
      * @throws IOException
      */
     public static BufferedImage pressText(String pressText, Image targetImg, String fontName, int fontStyle,
@@ -185,6 +187,7 @@ public class ImgUtil {
 
     /**
      * 导入本地图片到缓冲区
+     *
      * @param imgPath 本地的图片地址
      * @return
      * @throws IOException
@@ -196,6 +199,7 @@ public class ImgUtil {
 
     /**
      * 导入网络图片到缓冲区
+     *
      * @param imgUrl 网络图片url
      * @return
      * @throws IOException
@@ -208,35 +212,38 @@ public class ImgUtil {
 
     /**
      * 16进制转Color对象
+     *
      * @param str
      * @return
      */
     public static Color String2Color(String str) {
-        int i =   Integer.parseInt(str.substring(1), 16);
+        int i = Integer.parseInt(str.substring(1), 16);
         return new Color(i);
     }
 
     /**
      * Color对象转16进制
+     *
      * @param color
      * @return
      */
     public static String Color2String(Color color) {
         String R = Integer.toHexString(color.getRed());
-        R = R.length()<2?('0'+R):R;
+        R = R.length() < 2 ? ('0' + R) : R;
         String B = Integer.toHexString(color.getBlue());
-        B = B.length()<2?('0'+B):B;
+        B = B.length() < 2 ? ('0' + B) : B;
         String G = Integer.toHexString(color.getGreen());
-        G = G.length()<2?('0'+G):G;
-        return '#'+R+B+G;
+        G = G.length() < 2 ? ('0' + G) : G;
+        return '#' + R + B + G;
     }
 
     /**
      * 获取字符长度，一个汉字作为 1 个字符, 一个英文字母作为 0.5 个字符
+     *
      * @param text
      * @return 字符长度，如：text="中国",返回 2
-     * 		text="test",返回 2
-     * 		text="中国ABC",返回 4
+     * text="test",返回 2
+     * text="中国ABC",返回 4
      */
     public static int getLength(String text) {
         int textLength = text.length();

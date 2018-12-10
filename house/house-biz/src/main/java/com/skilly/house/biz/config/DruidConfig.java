@@ -16,7 +16,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class DruidConfig {
 
-    @ConfigurationProperties(prefix="spring.druid")
+    @ConfigurationProperties(prefix = "spring.druid")
     @Bean(initMethod = "init", destroyMethod = "close")
     public DruidDataSource dataSource() {
         DruidDataSource dataSource = new DruidDataSource();
@@ -34,8 +34,7 @@ public class DruidConfig {
     }
 
     @Bean
-    public ServletRegistrationBean servletRegistrationBean()
-    {
+    public ServletRegistrationBean servletRegistrationBean() {
         return new ServletRegistrationBean(new StatViewServlet(), "/druid/*");
     }
 

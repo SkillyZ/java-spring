@@ -24,7 +24,7 @@ public class PlainNioServer {
         Selector selector = Selector.open();                        //2
         serverChannel.register(selector, SelectionKey.OP_ACCEPT);    //3
         final ByteBuffer msg = ByteBuffer.wrap("Hi!\r\n".getBytes());
-        for (;;) {
+        for (; ; ) {
             try {
                 selector.select();                                    //4
             } catch (IOException ex) {
@@ -40,7 +40,7 @@ public class PlainNioServer {
                 try {
                     if (key.isAcceptable()) {                //6
                         ServerSocketChannel server =
-                                (ServerSocketChannel)key.channel();
+                                (ServerSocketChannel) key.channel();
                         SocketChannel client = server.accept();
                         client.configureBlocking(false);
                         client.register(selector, SelectionKey.OP_WRITE |
@@ -50,9 +50,9 @@ public class PlainNioServer {
                     }
                     if (key.isWritable()) {                //8
                         SocketChannel client =
-                                (SocketChannel)key.channel();
+                                (SocketChannel) key.channel();
                         ByteBuffer buffer =
-                                (ByteBuffer)key.attachment();
+                                (ByteBuffer) key.attachment();
                         while (buffer.hasRemaining()) {
                             if (client.write(buffer) == 0) {        //9
                                 break;

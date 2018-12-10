@@ -17,12 +17,12 @@ public class NewRuleConfig {
     private IClientConfig ribbonClientConfig;
 
     @Bean
-    public IPing ribbonPing(IClientConfig config){
-        return new PingUrl(false,"/health");
+    public IPing ribbonPing(IClientConfig config) {
+        return new PingUrl(false, "/health");
     }
 
     @Bean
-    public IRule ribbonRule(IClientConfig config){
+    public IRule ribbonRule(IClientConfig config) {
 //		return new RandomRule();
         return new AvailabilityFilteringRule();
     }

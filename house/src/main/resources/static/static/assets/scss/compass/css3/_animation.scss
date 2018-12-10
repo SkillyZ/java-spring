@@ -4,31 +4,29 @@
 // Defaults to the $graceful-usage-threshold.
 $animation-support-threshold: $graceful-usage-threshold !default;
 
-
 // Name of any animation as a string.
-$default-animation-name             : null !default;
+$default-animation-name: null !default;
 
 // Duration of the entire animation in seconds.
-$default-animation-duration         : null !default;
+$default-animation-duration: null !default;
 
 // Delay for start of animation in seconds.
-$default-animation-delay            : null !default;
+$default-animation-delay: null !default;
 
 // The timing function(s) to be used between keyframes. [ease | linear | ease-in | ease-out | ease-in-out | cubic-bezier($number, $number, $number, $number)]
-$default-animation-timing-function  : null !default;
+$default-animation-timing-function: null !default;
 
 // The number of times an animation cycle is played. [infinite | $number]
-$default-animation-iteration-count  : null !default;
+$default-animation-iteration-count: null !default;
 
 // Whether or not the animation should play in reverse on alternate cycles. [normal | alternate]
-$default-animation-direction        : null !default;
+$default-animation-direction: null !default;
 
 // What values are applied by the animation outside the time it is executing. [none | forwards | backwards | both]
-$default-animation-fill-mode        : null !default;
+$default-animation-fill-mode: null !default;
 
 // Whether the animation is running or paused. [running | paused]
-$default-animation-play-state       : null !default;
-
+$default-animation-play-state: null !default;
 
 // Create a named animation sequence that can be applied to elements later.
 //
@@ -39,11 +37,31 @@ $default-animation-play-state       : null !default;
 
   @include with-each-prefix(css-animation, $animation-support-threshold) {
     // It would be nice if we could dynamically construct directive names.
-    @if $current-prefix == -moz    { @-moz-keyframes    #{$name} { @content; } }
-    @if $current-prefix == -webkit { @-webkit-keyframes #{$name} { @content; } }
-    @if $current-prefix == -o      { @-o-keyframes      #{$name} { @content; } }
-    @if $current-prefix == -ms     { @-ms-keyframes     #{$name} { @content; } }
-    @if $current-prefix == null    { @keyframes         #{$name} { @content; } }
+    @if $current-prefix == -moz {
+      @-moz-keyframes    #{$name} {
+        @content;
+      }
+    }
+    @if $current-prefix == -webkit {
+      @-webkit-keyframes #{$name} {
+        @content;
+      }
+    }
+    @if $current-prefix == -o {
+      @-o-keyframes      #{$name} {
+        @content;
+      }
+    }
+    @if $current-prefix == -ms {
+      @-ms-keyframes     #{$name} {
+        @content;
+      }
+    }
+    @if $current-prefix == null {
+      @keyframes         #{$name} {
+        @content;
+      }
+    }
   }
 }
 
@@ -51,7 +69,6 @@ $default-animation-play-state       : null !default;
 @mixin animation-properties($properties) {
   @include prefixed-properties(css-animation, $animation-support-threshold, $properties);
 }
-
 
 // Apply any number of animation names.
 @mixin animation-name($name...) {
@@ -103,14 +120,7 @@ $default-animation-play-state       : null !default;
 
 // @private
 @function default-animation() {
-  @return compact($default-animation-name
-                  $default-animation-duration
-                  $default-animation-timing-function
-                  $default-animation-delay
-                  $default-animation-iteration-count
-                  $default-animation-direction
-                  $default-animation-fill-mode
-                  $default-animation-play-state);
+  @return compact($default-animation-name $default-animation-duration $default-animation-timing-function $default-animation-delay $default-animation-iteration-count $default-animation-direction $default-animation-fill-mode $default-animation-play-state);
 }
 
 // Shortcut to apply any number of animations to an element, with all the settings.

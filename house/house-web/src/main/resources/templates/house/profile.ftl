@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 
 <html lang="en-US">
@@ -32,7 +31,8 @@
         <div class="container">
             <header class="navbar" id="top" role="banner">
                 <div class="navbar-header">
-                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse"
+                            data-target=".bs-navbar-collapse">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -48,7 +48,8 @@
                             <ul class="child-navigation">
                                 <li><a href="index-google-map-fullscreen.html">Google Map Full Screen</a></li>
                                 <li><a href="index-google-map-fixed-height.html">Google Map Fixed Height</a></li>
-                                <li><a href="index-google-map-fixed-navigation.html">Google Map Fixed Navigation</a></li>
+                                <li><a href="index-google-map-fixed-navigation.html">Google Map Fixed Navigation</a>
+                                </li>
                                 <li><a href="index-osm.html">OpenStreetMap Full Screen</a></li>
                                 <li><a href="index-osm-fixed-height.html">OpenStreetMap Fixed Height</a></li>
                                 <li><a href="index-osm-fixed-navigation.html">OpenStreetMap Fixed Navigation</a></li>
@@ -57,7 +58,8 @@
                                 <li><a href="index-horizontal-search-floated.html">Horizontal Search Floated</a></li>
                                 <li><a href="index-advanced-horizontal-search.html">Horizontal Advanced Search</a></li>
                                 <li><a href="index-slider-horizontal-search-box.html">Horizontal Slider Search</a></li>
-                                <li><a href="index-slider-horizontal-search-box-floated.html">Horizontal Slider Floated Search</a></li>
+                                <li><a href="index-slider-horizontal-search-box-floated.html">Horizontal Slider Floated
+                                    Search</a></li>
                             </ul>
                         </li>
                         <li class="has-child"><a href="#">Properties</a>
@@ -136,20 +138,22 @@
 
         <div class="container">
             <div class="row">
-            <!-- sidebar -->
-            <div class="col-md-3 col-sm-2">
-                <section id="sidebar">
-                    <header><h3>Account</h3></header>
-                    <aside>
-                        <ul class="sidebar-navigation">
-                            <li><a href="profile.html"><i class="fa fa-user"></i><span>Profile</span></a></li>
-                            <li class="active"><a href="my-properties.html"><i class="fa fa-home"></i><span>My Properties</span></a></li>
-                            <li><a href="bookmarked.html"><i class="fa fa-heart"></i><span>Bookmarked Properties</span></a></li>
-                        </ul>
-                    </aside>
-                </section><!-- /#sidebar -->
-            </div><!-- /.col-md-3 -->
-            <!-- end Sidebar -->
+                <!-- sidebar -->
+                <div class="col-md-3 col-sm-2">
+                    <section id="sidebar">
+                        <header><h3>Account</h3></header>
+                        <aside>
+                            <ul class="sidebar-navigation">
+                                <li><a href="profile.html"><i class="fa fa-user"></i><span>Profile</span></a></li>
+                                <li class="active"><a href="my-properties.html"><i class="fa fa-home"></i><span>My Properties</span></a>
+                                </li>
+                                <li><a href="bookmarked.html"><i
+                                        class="fa fa-heart"></i><span>Bookmarked Properties</span></a></li>
+                            </ul>
+                        </aside>
+                    </section><!-- /#sidebar -->
+                </div><!-- /.col-md-3 -->
+                <!-- end Sidebar -->
                 <!-- My Properties -->
                 <div class="col-md-9 col-sm-10">
                     <section id="my-properties">
@@ -169,13 +173,15 @@
                                     <tbody>
                                     <tr>
                                         <td class="image">
-                                            <a href="property-detail.html"><img alt="" src="assets/img/properties/property-04.jpg"></a>
+                                            <a href="property-detail.html"><img alt=""
+                                                                                src="assets/img/properties/property-04.jpg"></a>
                                         </td>
-                                        <td><div class="inner">
-                                            <a href="property-detail.html"><h2>987 Cantebury Drive</h2></a>
-                                            <figure>Golden Valley, MN 55427</figure>
-                                            <div class="tag price">$ 38,000</div>
-                                        </div>
+                                        <td>
+                                            <div class="inner">
+                                                <a href="property-detail.html"><h2>987 Cantebury Drive</h2></a>
+                                                <figure>Golden Valley, MN 55427</figure>
+                                                <div class="tag price">$ 38,000</div>
+                                            </div>
                                         </td>
                                         <td>20.05.2014</td>
                                         <td>236</td>
@@ -186,13 +192,15 @@
                                     </tr>
                                     <tr>
                                         <td class="image">
-                                            <a href="property-detail.html"><img alt="" src="assets/img/properties/property-02.jpg"></a>
+                                            <a href="property-detail.html"><img alt=""
+                                                                                src="assets/img/properties/property-02.jpg"></a>
                                         </td>
-                                        <td><div class="inner">
-                                            <a href="property-detail.html"><h2>3398 Lodgeville Road</h2></a>
-                                            <figure>Golden Valley, MN 55427</figure>
-                                            <div class="tag price">$ 135,000</div>
-                                        </div>
+                                        <td>
+                                            <div class="inner">
+                                                <a href="property-detail.html"><h2>3398 Lodgeville Road</h2></a>
+                                                <figure>Golden Valley, MN 55427</figure>
+                                                <div class="tag price">$ 135,000</div>
+                                            </div>
                                         </td>
                                         <td>06.05.2014</td>
                                         <td>662</td>
@@ -203,13 +211,15 @@
                                     </tr>
                                     <tr>
                                         <td class="image">
-                                            <a href="property-detail.html"><img alt="" src="assets/img/properties/property-01.jpg"></a>
+                                            <a href="property-detail.html"><img alt=""
+                                                                                src="assets/img/properties/property-01.jpg"></a>
                                         </td>
-                                        <td><div class="inner">
-                                            <a href="property-detail.html"><h2>1179 Stroop Hill Road</h2></a>
-                                            <figure>Atlanta, GA 30309</figure>
-                                            <div class="tag price">$ 26,000</div>
-                                        </div>
+                                        <td>
+                                            <div class="inner">
+                                                <a href="property-detail.html"><h2>1179 Stroop Hill Road</h2></a>
+                                                <figure>Atlanta, GA 30309</figure>
+                                                <div class="tag price">$ 26,000</div>
+                                            </div>
                                         </td>
                                         <td>29.04.2014</td>
                                         <td>85</td>
@@ -220,13 +230,15 @@
                                     </tr>
                                     <tr>
                                         <td class="image">
-                                            <a href="property-detail.html"><img alt="" src="assets/img/properties/property-06.jpg"></a>
+                                            <a href="property-detail.html"><img alt=""
+                                                                                src="assets/img/properties/property-06.jpg"></a>
                                         </td>
-                                        <td><div class="inner">
-                                            <a href="property-detail.html"><h2>1028 Henery Street</h2></a>
-                                            <figure>Wichita, KS 67202</figure>
-                                            <div class="tag price">$ 47,000</div>
-                                        </div>
+                                        <td>
+                                            <div class="inner">
+                                                <a href="property-detail.html"><h2>1028 Henery Street</h2></a>
+                                                <figure>Wichita, KS 67202</figure>
+                                                <div class="tag price">$ 47,000</div>
+                                            </div>
                                         </td>
                                         <td>22.04.2014</td>
                                         <td>357</td>
@@ -237,13 +249,15 @@
                                     </tr>
                                     <tr>
                                         <td class="image">
-                                            <a href="property-detail.html"><img alt="" src="assets/img/properties/property-07.jpg"></a>
+                                            <a href="property-detail.html"><img alt=""
+                                                                                src="assets/img/properties/property-07.jpg"></a>
                                         </td>
-                                        <td><div class="inner">
-                                            <a href="property-detail.html"><h2>4068 Diamond Street</h2></a>
-                                            <figure>Charlotte, NC 28217 </figure>
-                                            <div class="tag price">$ 980,000</div>
-                                        </div>
+                                        <td>
+                                            <div class="inner">
+                                                <a href="property-detail.html"><h2>4068 Diamond Street</h2></a>
+                                                <figure>Charlotte, NC 28217</figure>
+                                                <div class="tag price">$ 980,000</div>
+                                            </div>
                                         </td>
                                         <td>16.03.2014</td>
                                         <td>456</td>
@@ -254,13 +268,15 @@
                                     </tr>
                                     <tr>
                                         <td class="image">
-                                            <a href="property-detail.html"><img alt="" src="assets/img/properties/property-08.jpg"></a>
+                                            <a href="property-detail.html"><img alt=""
+                                                                                src="assets/img/properties/property-08.jpg"></a>
                                         </td>
-                                        <td><div class="inner">
-                                            <a href="property-detail.html"><h2>2088 May Street</h2></a>
-                                            <figure>Somerset, KY 42503 </figure>
-                                            <div class="tag price">$ 11,000</div>
-                                        </div>
+                                        <td>
+                                            <div class="inner">
+                                                <a href="property-detail.html"><h2>2088 May Street</h2></a>
+                                                <figure>Somerset, KY 42503</figure>
+                                                <div class="tag price">$ 11,000</div>
+                                            </div>
                                         </td>
                                         <td>18.02.2014</td>
                                         <td>267</td>
@@ -299,8 +315,10 @@
                         <div class="col-md-3 col-sm-3">
                             <article>
                                 <h3>About Us</h3>
-                                <p>Vel fermentum ipsum. Suspendisse quis molestie odio. Interdum et malesuada fames ac ante ipsum
-                                    primis in faucibus. Quisque aliquet a metus in aliquet. Praesent ut turpis posuere, commodo odio
+                                <p>Vel fermentum ipsum. Suspendisse quis molestie odio. Interdum et malesuada fames ac
+                                    ante ipsum
+                                    primis in faucibus. Quisque aliquet a metus in aliquet. Praesent ut turpis posuere,
+                                    commodo odio
                                     id, ornare tortor
                                 </p>
                                 <hr>
@@ -318,7 +336,7 @@
                                     </a>
                                     <div class="info">
                                         <a href="property-detail.html"><h4>2186 Rinehart Road</h4></a>
-                                        <figure>Doral, FL 33178 </figure>
+                                        <figure>Doral, FL 33178</figure>
                                         <div class="tag price">$ 72,000</div>
                                     </div>
                                 </div><!-- /.property -->

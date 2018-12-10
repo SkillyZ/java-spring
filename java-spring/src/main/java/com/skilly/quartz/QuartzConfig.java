@@ -29,10 +29,11 @@ public class QuartzConfig {
 
     /**
      * 方式一：使用MethodInvokingJobDetailFactoryBean
+     *
      * @return
      */
     @Bean
-    public MethodInvokingJobDetailFactoryBean methodInvokingJobDetailFactoryBean(){
+    public MethodInvokingJobDetailFactoryBean methodInvokingJobDetailFactoryBean() {
         MethodInvokingJobDetailFactoryBean mb = new MethodInvokingJobDetailFactoryBean();
         mb.setTargetObject(myBean);// 指定要运行的类
         mb.setTargetMethod("printMessage");// 指定要允许类中的那个方法
@@ -41,11 +42,12 @@ public class QuartzConfig {
 
     /**
      * 方式二：使用JobDetailFactoryBean
+     *
      * @return
      */
     @Bean
-    public JobDetailFactoryBean jobDetailFactoryBean(){
-        JobDetailFactoryBean  jb= new JobDetailFactoryBean();
+    public JobDetailFactoryBean jobDetailFactoryBean() {
+        JobDetailFactoryBean jb = new JobDetailFactoryBean();
         jb.setJobClass(FirstScheduledJob.class);// 指定要运行的类
         JobDataMap jobDataMap = new JobDataMap();
         jobDataMap.put("anotherBean", anotherBean);
@@ -57,10 +59,11 @@ public class QuartzConfig {
 
     /**
      * 配置 SimpleTriggerFactoryBean
+     *
      * @return
      */
     @Bean
-    public SimpleTriggerFactoryBean simpleTriggerFactoryBean(){
+    public SimpleTriggerFactoryBean simpleTriggerFactoryBean() {
         SimpleTriggerFactoryBean sb = new SimpleTriggerFactoryBean();
         sb.setJobDetail(methodInvokingJobDetailFactoryBean().getObject());// 设置需要绑定的 jobDetail
         sb.setStartDelay(1000L);// 距离当前时间1秒后执行
@@ -70,10 +73,11 @@ public class QuartzConfig {
 
     /**
      * 配置 SimpleTriggerFactoryBean
+     *
      * @return
      */
     @Bean
-    public CronTriggerFactoryBean cronTriggerFactoryBean(){
+    public CronTriggerFactoryBean cronTriggerFactoryBean() {
         CronTriggerFactoryBean cb = new CronTriggerFactoryBean();
         cb.setJobDetail(jobDetailFactoryBean().getObject());// 设置需要绑定的 jobDetail
         cb.setStartDelay(1000L);// 距离当前时间1秒后执行
@@ -83,11 +87,12 @@ public class QuartzConfig {
 
     /**
      * 配置 SchedulerFactoryBean
+     *
      * @return
      */
     @Bean
-    public SchedulerFactoryBean schedulerFactoryBean(){
-        SchedulerFactoryBean sb= new SchedulerFactoryBean();
+    public SchedulerFactoryBean schedulerFactoryBean() {
+        SchedulerFactoryBean sb = new SchedulerFactoryBean();
         // 配置 JobDetails
         JobDetail[] jobDetails = new JobDetail[2];
         jobDetails[0] = methodInvokingJobDetailFactoryBean().getObject();

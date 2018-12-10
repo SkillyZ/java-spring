@@ -15,8 +15,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class templateController {
 
     @RequestMapping("temp/{name}")
-    public String hello (@PathVariable("name") String name, Model model)
-    {
+    public String hello(@PathVariable("name") String name, Model model) {
         model.addAttribute(model);
         return "hello";
     }

@@ -7,29 +7,28 @@
 $legacy-box-support: -moz, -webkit, not -o, -ms, not -khtml;
 
 // Default box orientation, assuming that the user wants something less block-like
-$default-box-orient         : horizontal      !default;
+$default-box-orient: horizontal !default;
 
 // Default box-align
-$default-box-align          : stretch         !default;
+$default-box-align: stretch !default;
 
 // Default box flex
-$default-box-flex           : 0               !default;
+$default-box-flex: 0 !default;
 
 // Default flex group
-$default-box-flex-group     : 1               !default;
+$default-box-flex-group: 1 !default;
 
 // Box direction default value
-$default-box-direction      : normal          !default;
+$default-box-direction: normal !default;
 
 // Default ordinal group
-$default-box-ordinal-group  : 1               !default;
+$default-box-ordinal-group: 1 !default;
 
 // Default box lines
-$default-box-lines          : single          !default;
+$default-box-lines: single !default;
 
 // Default box pack
-$default-box-pack           : start           !default;
-
+$default-box-pack: start !default;
 
 // Apply 'display:box;' to an element.
 // - must be used for any of the other flexbox mixins to work properly
@@ -39,13 +38,13 @@ $default-box-pack           : start           !default;
 
 // Box orientation [ horizontal | vertical | inline-axis | block-axis | inherit ]
 @mixin box-orient($orientation: $default-box-orient) {
-  $orientation : unquote($orientation);
+  $orientation: unquote($orientation);
   @include experimental(box-orient, $orientation, $legacy-box-support...);
 }
 
 // Box align [ start | end | center | baseline | stretch ]
 @mixin box-align($alignment: $default-box-align) {
-  $alignment : unquote($alignment);
+  $alignment: unquote($alignment);
   @include experimental(box-align, $alignment, $legacy-box-support...);
 }
 

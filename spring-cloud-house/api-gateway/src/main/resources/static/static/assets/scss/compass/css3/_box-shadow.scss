@@ -1,11 +1,9 @@
 // Box Shadow
-
 @import "compass/support";
 
 // The prefixed support threshold for box-shadow.
 // Defaults to the $graceful-usage-threshold.
 $box-shadow-support-threshold: $graceful-usage-threshold !default;
-
 
 // The default color for box shadows
 $default-box-shadow-color: #333333 !default;
@@ -26,12 +24,7 @@ $default-box-shadow-spread: null !default;
 $default-box-shadow-inset: null !default;
 
 @function default-box-shadow() {
-  @return compact(if($default-box-shadow-inset, inset, null)
-                  $default-box-shadow-h-offset
-                  $default-box-shadow-v-offset
-                  $default-box-shadow-blur
-                  $default-box-shadow-spread
-                  $default-box-shadow-color);
+  @return compact(if($default-box-shadow-inset, inset, null) $default-box-shadow-h-offset $default-box-shadow-v-offset $default-box-shadow-blur $default-box-shadow-spread $default-box-shadow-color);
 }
 
 // Provides cross-browser for Webkit, Gecko, and CSS3 box shadows
@@ -65,11 +58,21 @@ $default-box-shadow-inset: null !default;
   }
 
   // Need to set these defaults here instead of the arglist to support the above backwards compat handling
-  @if $hoff   == null { $hoff:   $default-box-shadow-h-offset; }
-  @if $voff   == null { $hoff:   $default-box-shadow-v-offset; }
-  @if $blur   == null { $blur:   $default-box-shadow-blur;     }
-  @if $spread == null { $spread: $default-box-shadow-spread;   }
-  @if $color  == null { $color:  $default-box-shadow-color;    }
+  @if $hoff   == null {
+    $hoff: $default-box-shadow-h-offset;
+  }
+  @if $voff   == null {
+    $hoff: $default-box-shadow-v-offset;
+  }
+  @if $blur   == null {
+    $blur: $default-box-shadow-blur;
+  }
+  @if $spread == null {
+    $spread: $default-box-shadow-spread;
+  }
+  @if $color  == null {
+    $color: $default-box-shadow-color;
+  }
 
   @if not ($inset == true or $inset == false or $inset == null or $inset == inset) {
     @warn "$inset expected to be true or the inset keyword. Got #{$inset} instead. Using: inset";
@@ -78,11 +81,19 @@ $default-box-shadow-inset: null !default;
   @if $hoff == none {
     @include box-shadow(none);
   } @else {
-    $full   : $hoff $voff;
-    @if $blur   { $full: $full $blur;   }
-    @if $spread { $full: $full $spread; }
-    @if $color  { $full: $full $color;  }
-    @if $inset  { $full: inset $full;   }
+    $full: $hoff $voff;
+    @if $blur {
+      $full: $full $blur;
+    }
+    @if $spread {
+      $full: $full $spread;
+    }
+    @if $color {
+      $full: $full $color;
+    }
+    @if $inset {
+      $full: inset $full;
+    }
     @include box-shadow($full);
   }
 }

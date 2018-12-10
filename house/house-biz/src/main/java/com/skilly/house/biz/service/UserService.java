@@ -30,8 +30,7 @@ public class UserService {
     @Value("${file.prefix}")
     private String imgPrefix;
 
-    public List<User> getUsers()
-    {
+    public List<User> getUsers() {
         return userMapper.selectUsers();
     }
 

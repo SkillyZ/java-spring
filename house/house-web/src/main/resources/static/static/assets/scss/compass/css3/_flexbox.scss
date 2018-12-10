@@ -49,16 +49,14 @@
 //       display: flex;
 //       flex-direction: column;
 //     }
-
 @import "compass/support";
 
 $flexbox-support-threshold: $critical-usage-threshold !default;
 
-
 // @private
 $flexbox-capability-options: (
-  (full-support: true),
-  (partial-support: true, spec-versions: 3)
+        (full-support: true),
+        (partial-support: true, spec-versions: 3)
 );
 
 // This is the underlying implementation for all the other mixins in this module.

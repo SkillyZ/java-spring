@@ -10,7 +10,7 @@ import java.util.Timer;
  */
 public class RobotExecutor {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         Timer timer = new Timer();
 
@@ -22,8 +22,8 @@ public class RobotExecutor {
         DancingRobot dancingRobot = new DancingRobot();
         WaterRobot waterRobot = new WaterRobot(timer);
 
-        timer.schedule(dancingRobot,calendar.getTime(),2000L);
-        timer.scheduleAtFixedRate(waterRobot,calendar.getTime(),1000L);
+        timer.schedule(dancingRobot, calendar.getTime(), 2000L);
+        timer.scheduleAtFixedRate(waterRobot, calendar.getTime(), 1000L);
 
     }
 

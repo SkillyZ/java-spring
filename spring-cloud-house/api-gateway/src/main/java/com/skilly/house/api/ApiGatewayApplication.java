@@ -19,20 +19,20 @@ import java.util.List;
 @SpringBootApplication
 //@EnableDiscoveryClient
 @Controller
-@RibbonClient(name="user",configuration=NewRuleConfig.class)
+@RibbonClient(name = "user", configuration = NewRuleConfig.class)
 @EnableZuulProxy
 public class ApiGatewayApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(ApiGatewayApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(ApiGatewayApplication.class, args);
+    }
 
-	@Autowired
-	private DiscoveryClient discoveryClient;
+    @Autowired
+    private DiscoveryClient discoveryClient;
 
-	@RequestMapping("index1")
-	@ResponseBody
-	public List<ServiceInstance> getRegister() {
-		return discoveryClient.getInstances("user");
-	}
+    @RequestMapping("index1")
+    @ResponseBody
+    public List<ServiceInstance> getRegister() {
+        return discoveryClient.getInstances("user");
+    }
 }

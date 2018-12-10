@@ -21,7 +21,7 @@ public class AuthTests {
 
     @Test
     public void testAuth() {
-        User user =	userService.auth("1254109699@qq.com", "123456");
+        User user = userService.auth("1254109699@qq.com", "123456");
         assert user != null;
         System.out.println(user.getAboutme());
     }

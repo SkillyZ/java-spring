@@ -55,8 +55,7 @@ public class PageRank {
     /**
      * 获得一个初始的随机向量q
      *
-     * @param n
-     *            向量q的维数
+     * @param n 向量q的维数
      * @return 一个随机的向量q，每一维是0-5之间的随机数
      */
     public static List<Double> getInitQ(int n) {
@@ -71,10 +70,8 @@ public class PageRank {
     /**
      * 计算两个向量的距离
      *
-     * @param q1
-     *            第一个向量
-     * @param q2
-     *            第二个向量
+     * @param q1 第一个向量
+     * @param q2 第二个向量
      * @return 它们的距离
      */
     public static double calDistance(List<Double> q1, List<Double> q2) {
@@ -94,10 +91,8 @@ public class PageRank {
     /**
      * 计算pagerank
      *
-     * @param q1
-     *            初始向量
-     * @param a
-     *            alpha的值
+     * @param q1 初始向量
+     * @param a  alpha的值
      * @return pagerank的结果
      */
     public static List<Double> calPageRank(List<Double> q1, double a) {
@@ -123,8 +118,7 @@ public class PageRank {
     /**
      * 计算获得初始的G矩阵
      *
-     * @param a
-     *            为alpha的值，0.85
+     * @param a 为alpha的值，0.85
      * @return 初始矩阵G
      */
     public static List<List<Double>> getG(double a) {
@@ -139,10 +133,8 @@ public class PageRank {
     /**
      * 计算一个矩阵乘以一个向量
      *
-     * @param m
-     *            一个矩阵
-     * @param v
-     *            一个向量
+     * @param m 一个矩阵
+     * @param v 一个向量
      * @return 返回一个新的向量
      */
     public static List<Double> vectorMulMatrix(List<List<Double>> m,
@@ -169,10 +161,8 @@ public class PageRank {
     /**
      * 计算两个矩阵的和
      *
-     * @param list1
-     *            第一个矩阵
-     * @param list2
-     *            第二个矩阵
+     * @param list1 第一个矩阵
+     * @param list2 第二个矩阵
      * @return 两个矩阵的和
      */
     public static List<List<Double>> addMatrix(List<List<Double>> list1,
@@ -196,10 +186,8 @@ public class PageRank {
     /**
      * 计算一个数乘以矩阵
      *
-     * @param s
-     *            矩阵s
-     * @param a
-     *            double类型的数
+     * @param s 矩阵s
+     * @param a double类型的数
      * @return 一个新的矩阵
      */
     public static List<List<Double>> numberMulMatrix(List<List<Double>> s,

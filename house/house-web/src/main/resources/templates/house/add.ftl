@@ -22,7 +22,8 @@
 
         <div class="container">
             <header><h1>添加你的房产</h1></header>
-            <form role="form" id="form-submit" class="form-submit" method="post" enctype="multipart/form-data"  action="/house/add">
+            <form role="form" id="form-submit" class="form-submit" method="post" enctype="multipart/form-data"
+                  action="/house/add">
                 <div class="row">
                     <div class="block">
                         <div class="col-md-9 col-sm-9">
@@ -33,14 +34,16 @@
                                         <div class="col-md-8">
                                             <div class="form-group">
                                                 <label for="submit-title">标题</label>
-                                                <input type="text" class="form-control" id="submit-title" name="name" required>
+                                                <input type="text" class="form-control" id="submit-title" name="name"
+                                                       required>
                                             </div><!-- /.form-group -->
                                         </div>
                                         <div class="col-md-4">
                                             <div class="form-group">
                                                 <label for="submit-price">价格</label>
                                                 <div class="input-group">
-                                                    <input type="text" class="form-control" id="submit-price" name="price" pattern="\d*" required>
+                                                    <input type="text" class="form-control" id="submit-price"
+                                                           name="price" pattern="\d*" required>
                                                     <span class="input-group-addon">万</span>
                                                 </div>
                                             </div><!-- /.form-group -->
@@ -48,7 +51,8 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="submit-description">描述</label>
-                                        <textarea class="form-control" id="submit-description" rows="8" name="remarks" required></textarea>
+                                        <textarea class="form-control" id="submit-description" rows="8" name="remarks"
+                                                  required></textarea>
                                     </div><!-- /.form-group -->
                                 </section><!-- /#basic-information -->
 
@@ -61,7 +65,7 @@
                                                     <div class="form-group">
                                                         <label for="submit-location">城市</label>
                                                         <select name="cityId" id="submit-location">
-                                                          <option value="0">选择城市</option>
+                                                            <option value="0">选择城市</option>
                                                           <#list citys as city >
                                                             <option value="${city.id}">${city.cityName}</option>
                                                           </#list>
@@ -70,7 +74,7 @@
                                                     <div class="form-group">
                                                         <label for="submit-location">选择名称</label>
                                                         <select name="communityId" id="submit-location">
-                                                          <option value="0">选择小区</option>
+                                                            <option value="0">选择小区</option>
                                                           <#list communitys as community >
                                                             <option value="${community.id}">${community.name}</option>
                                                           </#list>
@@ -80,7 +84,8 @@
                                                         <div class="col-md-6 col-sm-6">
                                                             <div class="form-group">
                                                                 <label for="submit-Beds">卧室</label>
-                                                                <input type="text" class="form-control" id="submit-Beds" name="beds" pattern="\d*" required>
+                                                                <input type="text" class="form-control" id="submit-Beds"
+                                                                       name="beds" pattern="\d*" required>
                                                             </div><!-- /.form-group -->
                                                         </div><!-- /.col-md-6 -->
                                                         <div class="col-md-6 col-sm-6">
@@ -98,7 +103,9 @@
                                                             <div class="form-group">
                                                                 <label for="submit-area">面积</label>
                                                                 <div class="input-group">
-                                                                    <input type="text" class="form-control" id="submit-area" name="area" pattern="\d*" required>
+                                                                    <input type="text" class="form-control"
+                                                                           id="submit-area" name="area" pattern="\d*"
+                                                                           required>
                                                                     <span class="input-group-addon">m<sup>2</sup></span>
                                                                 </div>
                                                             </div><!-- /.form-group -->
@@ -106,7 +113,9 @@
                                                         <div class="col-md-6 col-sm-6">
                                                             <div class="form-group">
                                                                 <label for="submit-Baths">卫生间</label>
-                                                                <input type="text" class="form-control" id="submit-Baths" name="baths" pattern="\d*" required>
+                                                                <input type="text" class="form-control"
+                                                                       id="submit-Baths" name="baths" pattern="\d*"
+                                                                       required>
                                                             </div><!-- /.form-group -->
                                                         </div><!-- /.col-md-6 -->
                                                     </div><!-- /.row -->
@@ -119,9 +128,10 @@
                                                     </header>
                                                     <div class="form-group">
                                                         <label for="address-map">地址</label>
-                                                        <input type="text" class="form-control" id="address-map" name="address">
+                                                        <input type="text" class="form-control" id="address-map"
+                                                               name="address">
                                                     </div><!-- /.form-group -->
-                                                  
+
                                                 </section>
                                             </div>
                                         </div>
@@ -132,44 +142,110 @@
                                     <header><h2>房屋图片</h2></header>
                                     <div class="center">
                                         <div class="form-group">
-                                            <input id="file-upload" type="file" class="file" multiple="true" data-show-upload="false" data-show-caption="false" data-show-remove="false" accept="image/jpeg,image/png" data-browse-class="btn btn-default" data-browse-label="Browse Images" name="houseFiles">
-                                            <figure class="note"><strong>Hint:</strong> You can upload all images at once!</figure>
+                                            <input id="file-upload" type="file" class="file" multiple="true"
+                                                   data-show-upload="false" data-show-caption="false"
+                                                   data-show-remove="false" accept="image/jpeg,image/png"
+                                                   data-browse-class="btn btn-default" data-browse-label="Browse Images"
+                                                   name="houseFiles">
+                                            <figure class="note"><strong>Hint:</strong> You can upload all images at
+                                                once!
+                                            </figure>
                                         </div>
                                     </div>
                                 </section>
 
-                                 <section class="block" id="gallery">
+                                <section class="block" id="gallery">
                                     <header><h2>户型图片</h2></header>
                                     <div class="center">
                                         <div class="form-group">
-                                            <input id="file-upload" type="file" class="file" multiple="true" data-show-upload="false" data-show-caption="false" data-show-remove="false" accept="image/jpeg,image/png" data-browse-class="btn btn-default" data-browse-label="Browse Images" name="floorPlanFiles">
-                                            <figure class="note"><strong>Hint:</strong> You can upload all images at once!</figure>
+                                            <input id="file-upload" type="file" class="file" multiple="true"
+                                                   data-show-upload="false" data-show-caption="false"
+                                                   data-show-remove="false" accept="image/jpeg,image/png"
+                                                   data-browse-class="btn btn-default" data-browse-label="Browse Images"
+                                                   name="floorPlanFiles">
+                                            <figure class="note"><strong>Hint:</strong> You can upload all images at
+                                                once!
+                                            </figure>
                                         </div>
                                     </div>
-                                </section> 
+                                </section>
 
                                 <section id="property-features" class="block">
                                     <section>
                                         <header><h2>房屋特点</h2></header>
                                         <ul class="submit-features">
-                                            <li><div class="checkbox"><label><input name="featureList" value="满五年" type="checkbox">满五年</label></div></li>
-                                            <li><div class="checkbox"><label><input name="featureList" value="满两年" type="checkbox">满两年</label></div></li>
-                                            <li><div class="checkbox"><label><input name="featureList" value="南北通透" type="checkbox">南北通透</label></div></li>
-                                            <li><div class="checkbox"><label><input name="featureList" value="采光好" type="checkbox">采光好</label></div></li>
-                                            <li><div class="checkbox"><label><input name="featureList" value="高楼层" type="checkbox">高楼层</label></div></li>
-                                            <li><div class="checkbox"><label><input name="featureList" value="环境好" type="checkbox">环境好</label></div></li>
-                                            <li><div class="checkbox"><label><input name="featureList" value="价格合理" type="checkbox">价格合理</label></div></li>
-                                            <li><div class="checkbox"><label><input name="featureList" value="楼龄新" type="checkbox">楼龄新</label></div></li>
-                                            <li><div class="checkbox"><label><input name="featureList" value="带阳台" type="checkbox">带阳台</label></div></li>
-                                            <li><div class="checkbox"><label><input name="featureList" value="税少" type="checkbox">税少</label></div></li>
-                                            <li><div class="checkbox"><label><input name="featureList" value="得房率高" type="checkbox">得房率高</label></div></li>
-                                            <li><div class="checkbox"><label><input name="featureList" value="临地铁" type="checkbox">临地铁</label></div></li>
-                                            <li><div class="checkbox"><label><input name="featureList" value="学区房" type="checkbox">学区房</label></div></li>
-                                            <li><div class="checkbox"><label><input name="featureList" value="户型好" type="checkbox">户型好</label></div></li>
-                                            <li><div class="checkbox"><label><input name="featureList" value="没有遮挡" type="checkbox">没有遮挡</label></div></li>
-                                            <li><div class="checkbox"><label><input name="featureList" value="次顶层"   type="checkbox">次顶层</label></div></li>
-                                            <li><div class="checkbox"><label><input name="featureList" value="落地窗"   type="checkbox">落地窗</label></div></li>
-                                            <li><div class="checkbox"><label><input name="featureList" value="精装修"   type="checkbox">精装修</label></div></li>
+                                            <li>
+                                                <div class="checkbox"><label><input name="featureList" value="满五年"
+                                                                                    type="checkbox">满五年</label></div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox"><label><input name="featureList" value="满两年"
+                                                                                    type="checkbox">满两年</label></div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox"><label><input name="featureList" value="南北通透"
+                                                                                    type="checkbox">南北通透</label></div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox"><label><input name="featureList" value="采光好"
+                                                                                    type="checkbox">采光好</label></div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox"><label><input name="featureList" value="高楼层"
+                                                                                    type="checkbox">高楼层</label></div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox"><label><input name="featureList" value="环境好"
+                                                                                    type="checkbox">环境好</label></div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox"><label><input name="featureList" value="价格合理"
+                                                                                    type="checkbox">价格合理</label></div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox"><label><input name="featureList" value="楼龄新"
+                                                                                    type="checkbox">楼龄新</label></div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox"><label><input name="featureList" value="带阳台"
+                                                                                    type="checkbox">带阳台</label></div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox"><label><input name="featureList" value="税少"
+                                                                                    type="checkbox">税少</label></div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox"><label><input name="featureList" value="得房率高"
+                                                                                    type="checkbox">得房率高</label></div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox"><label><input name="featureList" value="临地铁"
+                                                                                    type="checkbox">临地铁</label></div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox"><label><input name="featureList" value="学区房"
+                                                                                    type="checkbox">学区房</label></div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox"><label><input name="featureList" value="户型好"
+                                                                                    type="checkbox">户型好</label></div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox"><label><input name="featureList" value="没有遮挡"
+                                                                                    type="checkbox">没有遮挡</label></div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox"><label><input name="featureList" value="次顶层"
+                                                                                    type="checkbox">次顶层</label></div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox"><label><input name="featureList" value="落地窗"
+                                                                                    type="checkbox">落地窗</label></div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox"><label><input name="featureList" value="精装修"
+                                                                                    type="checkbox">精装修</label></div>
+                                            </li>
                                         </ul>
                                     </section>
                                 </section>
@@ -208,35 +284,35 @@
     <!-- end Page Footer -->
 </div>
 
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyABT1kCnk8CW4Ckpd0RisUg25PIdDD3Gfg"></script>
+<script type="text/javascript"
+        src="http://maps.google.com/maps/api/js?key=AIzaSyABT1kCnk8CW4Ckpd0RisUg25PIdDD3Gfg"></script>
 
 <@common.js/>
 <!--[if gt IE 8]>
 <script type="text/javascript" src="/static/assets/js/ie.js"></script>
 <![endif]-->
- <script  type="text/javascript" >
-     
-
-     $(document).ready(function() {
-          var errorMsg   = "${errorMsg!""}";
-          var successMsg = "${successMsg!""}";
-          if(errorMsg){ 
-              errormsg("error",errorMsg);
-          }
-          if(successMsg) {
-              successmsg("success",successMsg);
-          }
-        })
+<script type="text/javascript">
 
 
+    $(document).ready(function () {
+        var errorMsg = "${errorMsg!""}";
+        var successMsg = "${successMsg!""}";
+        if (errorMsg) {
+            errormsg("error", errorMsg);
+        }
+        if (successMsg) {
+            successmsg("success", successMsg);
+        }
+    })
 
 
-    var _latitude  = 39.99;
+    var _latitude = 39.99;
     var _longitude = 116.46;
 
-    google.maps.event.addDomListener(window, 'load', initSubmitMap(_latitude,_longitude));
-    function initSubmitMap(_latitude,_longitude){
-        var mapCenter = new google.maps.LatLng(_latitude,_longitude);
+    google.maps.event.addDomListener(window, 'load', initSubmitMap(_latitude, _longitude));
+
+    function initSubmitMap(_latitude, _longitude) {
+        var mapCenter = new google.maps.LatLng(_latitude, _longitude);
         var mapOptions = {
             zoom: 15,
             center: mapCenter,
@@ -257,8 +333,8 @@
         google.maps.event.addListener(marker, "mouseup", function (event) {
             var latitude = this.position.lat();
             var longitude = this.position.lng();
-            $('#latitude').val( this.position.lat() );
-            $('#longitude').val( this.position.lng() );
+            $('#latitude').val(this.position.lat());
+            $('#longitude').val(this.position.lng());
         });
 
 //      Autocomplete
@@ -294,11 +370,11 @@
 
     function success(position) {
         initSubmitMap(position.coords.latitude, position.coords.longitude);
-        $('#latitude').val( position.coords.latitude );
-        $('#longitude').val( position.coords.longitude );
+        $('#latitude').val(position.coords.latitude);
+        $('#longitude').val(position.coords.longitude);
     }
 
-    $('.geo-location').on("click", function() {
+    $('.geo-location').on("click", function () {
         if (navigator.geolocation) {
             $('#submit-map').addClass('fade-map');
             navigator.geolocation.getCurrentPosition(success);
@@ -306,7 +382,6 @@
             error('Geo Location is not supported');
         }
     });
-
 
 
 </script>

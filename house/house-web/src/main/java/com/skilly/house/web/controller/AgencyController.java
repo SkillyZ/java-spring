@@ -38,8 +38,8 @@ public class AgencyController {
     private MailService mailService;
 
     @RequestMapping("agency/create")
-    public String agencyCreate(){
-        User user =  UserContext.getUser();
+    public String agencyCreate() {
+        User user = UserContext.getUser();
         if (user == null || !Objects.equal(user.getEmail(), "spring_boot@163.com")) {
             return "redirect:/accounts/signin?" + ResultMsg.successMsg("请先登录").asUrlParams();
         }
@@ -48,7 +48,7 @@ public class AgencyController {
 
 
     @RequestMapping("/agency/agentList")
-    public String agentList(Integer pageSize,Integer pageNum,ModelMap modelMap){
+    public String agentList(Integer pageSize, Integer pageNum, ModelMap modelMap) {
         if (pageSize == null) {
             pageSize = 6;
         }
@@ -60,15 +60,15 @@ public class AgencyController {
     }
 
     @RequestMapping("/agency/agentDetail")
-    public String agentDetail(Long id,ModelMap modelMap){
-        User user =  agencyService.getAgentDeail(id);
+    public String agentDetail(Long id, ModelMap modelMap) {
+        User user = agencyService.getAgentDeail(id);
 //        List<House> houses =  recommendService.getHotHouse(CommonConstants.RECOM_SIZE);
         House query = new House();
         query.setUserId(id);
         query.setBookmarked(false);
-        PageData<House> bindHouse = houseService.queryHouse(query, new PageParams(3,1));
+        PageData<House> bindHouse = houseService.queryHouse(query, new PageParams(3, 1));
         if (bindHouse != null) {
-            modelMap.put("bindHouses", bindHouse.getList()) ;
+            modelMap.put("bindHouses", bindHouse.getList());
         }
 //        modelMap.put("recomHouses", houses);
         modelMap.put("agent", user);
@@ -77,13 +77,11 @@ public class AgencyController {
     }
 
     @RequestMapping("/agency/agentMsg")
-    public String agentMsg(Long id,String msg,String name,String email, ModelMap modelMap){
-        User user =  agencyService.getAgentDeail(id);
-        mailService.sendMail("咨询", "email:"+email+",msg:"+msg, user.getEmail());
-        return "redirect:/agency/agentDetail?id="+id +"&" + ResultMsg.successMsg("留言成功").asUrlParams();
+    public String agentMsg(Long id, String msg, String name, String email, ModelMap modelMap) {
+        User user = agencyService.getAgentDeail(id);
+        mailService.sendMail("咨询", "email:" + email + ",msg:" + msg, user.getEmail());
+        return "redirect:/agency/agentDetail?id=" + id + "&" + ResultMsg.successMsg("留言成功").asUrlParams();
     }
-
-
 
 
 }

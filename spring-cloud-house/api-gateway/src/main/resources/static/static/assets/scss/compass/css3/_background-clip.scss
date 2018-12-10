@@ -7,7 +7,6 @@ $background-clip-support-threshold: $critical-usage-threshold !default;
 // The default border-box model: [border-box | padding-box | content-box]
 $default-background-clip: padding-box !default;
 
-
 // Clip the background (image and color) at the edge of the padding, border, or content.
 //   $clip... : [padding-box | border-box | content-box]
 @mixin background-clip($clip...) {

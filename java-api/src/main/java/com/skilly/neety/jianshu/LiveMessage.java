@@ -5,7 +5,7 @@ package com.skilly.neety.jianshu;
  */
 public class LiveMessage {
 
-    private  String content;
+    private String content;
     private int length;
 
     public String getContent() {

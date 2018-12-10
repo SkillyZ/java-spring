@@ -3,7 +3,7 @@
 <mapper namespace="com.skilly.house.user.mapper.AgencyMapper">
 
     <sql id="agencyField">
-        id, 
+        id,
         name ,
         address ,
         phone ,
@@ -11,7 +11,7 @@
         about_us ,
         mobile ,
         web_site
-   </sql>
+    </sql>
 
 
     <select id="select" resultType="agency">
@@ -29,41 +29,41 @@
     </select>
 
     <insert id="insert">
-      insert into agency(
-				        name ,
-				        address ,
-				        phone ,
-				        email ,
-				        about_us ,
-				        mobile ,
-				        web_site)
-                  value(
-                       #{name},
-                       #{address},
-                       #{phone},
-                       #{email},
-                       #{aboutUs},
-                       #{mobile},
-                       #{webSite}
-                  )
-      
-    
+        insert into agency(
+        name ,
+        address ,
+        phone ,
+        email ,
+        about_us ,
+        mobile ,
+        web_site)
+        value(
+        #{name},
+        #{address},
+        #{phone},
+        #{email},
+        #{aboutUs},
+        #{mobile},
+        #{webSite}
+        )
+
+
     </insert>
 
 
     <sql id="agentField">
-      id,
-      name,
-      phone,
-      email,
-      aboutme,
-      passwd,
-      avatar,
-      type,
-      create_time,
-      enable,
-      agency_id
-   </sql>
+        id,
+        name,
+        phone,
+        email,
+        aboutme,
+        passwd,
+        avatar,
+        type,
+        create_time,
+        enable,
+        agency_id
+    </sql>
 
 
     <select id="selectAgent" resultType="user">

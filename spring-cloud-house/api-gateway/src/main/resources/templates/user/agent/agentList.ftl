@@ -28,24 +28,26 @@
                         <header><h1>经纪人列表</h1></header>
                         <div class="row">
                           <#list ps.list as agent>
-                            <div class="col-md-12 col-lg-6" >
-                                <div class="agent">
-                                    <a href="/agency/agentDetail?id=${agent.id!}" class="agent-image"><img alt="" src="${agent.avatar}"></a>
-                                    <div class="wrapper">
-                                        <header><a href="/agency/agentDetail?id=${agent.id!}"><h2>${agent.name!}</h2></a></header>
-                                        <dl>
-                                            <dt>Phone:</dt>
-                                            <dd>${agent.phone!}</dd>
-                                            <dt>Email:</dt>
-                                            <dd><a href="mailto:#">${agent.email!}</a></dd>
-                                            <dt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</dt>
-                                            <dd>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</dd>
-                                            <dt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</dt>
-                                            <dd>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</dd>
-                                        </dl>
-                                    </div>
-                                </div><!-- /.agent -->
-                            </div><!-- /.col-md-12 -->
+                              <div class="col-md-12 col-lg-6">
+                                  <div class="agent">
+                                      <a href="/agency/agentDetail?id=${agent.id!}" class="agent-image"><img alt=""
+                                                                                                             src="${agent.avatar}"></a>
+                                      <div class="wrapper">
+                                          <header><a href="/agency/agentDetail?id=${agent.id!}"><h2>${agent.name!}</h2>
+                                          </a></header>
+                                          <dl>
+                                              <dt>Phone:</dt>
+                                              <dd>${agent.phone!}</dd>
+                                              <dt>Email:</dt>
+                                              <dd><a href="mailto:#">${agent.email!}</a></dd>
+                                              <dt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</dt>
+                                              <dd>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</dd>
+                                              <dt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</dt>
+                                              <dd>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</dd>
+                                          </dl>
+                                      </div>
+                                  </div><!-- /.agent -->
+                              </div><!-- /.col-md-12 -->
 
 
 
@@ -80,18 +82,18 @@
 <!--[if gt IE 8]>
 <script type="text/javascript" src="/assets/js/ie.js"></script>
 <![endif]-->
- <script  type="text/javascript" >
-    $(document).ready(function() {
-          var errorMsg   = "${errorMsg!""}";
-          var successMsg = "${successMsg!""}";
-          if(errorMsg){ 
-              errormsg("error",errorMsg);
-          }
-          if(successMsg) {
-              successmsg("success",successMsg);
-          }
-        })
-        
- </script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var errorMsg = "${errorMsg!""}";
+        var successMsg = "${successMsg!""}";
+        if (errorMsg) {
+            errormsg("error", errorMsg);
+        }
+        if (successMsg) {
+            successmsg("success", successMsg);
+        }
+    })
+
+</script>
 </body>
 </html>

@@ -30,12 +30,14 @@
                         <section id="agent-info">
                             <div class="row">
                                 <div class="col-md-3 col-sm-3">
-                                    <figure class="agency-image"><img alt="" src="/static/assets/img/agency-logo-big-01.png"></figure>
+                                    <figure class="agency-image"><img alt=""
+                                                                      src="/static/assets/img/agency-logo-big-01.png">
+                                    </figure>
                                 </div><!-- /.col-md-3 -->
                                 <div class="col-md-5 col-sm-5">
                                     <h3>联系信息</h3>
                                     <address>
-                                        ${agency.address}
+                                    ${agency.address}
                                     </address>
                                     <dl>
                                         <dt>手机:</dt>
@@ -50,7 +52,7 @@
                                 </div><!-- /.col-md-5 -->
                                 <div class="col-md-4 col-sm-4">
                                     <h3>简单介绍</h3>
-                                    <p>${agency.aboutUs} 
+                                    <p>${agency.aboutUs}
                                     </p>
                                     <div id="social">
                                         <h3>Social Profiles</h3>
@@ -66,7 +68,7 @@
 
                             </div><!-- /.row -->
                         </section><!-- /#agent-info -->
-                      
+
                     </section><!-- /#agent-detail -->
                 </div><!-- /.col-md-9 -->
                 <!-- end Agent Detail -->
@@ -76,7 +78,7 @@
                     <section id="sidebar">
                         <@common.search />
                         <@common.hot />
-                       
+
                     </section><!-- /#sidebar -->
                 </div><!-- /.col-md-3 -->
                 <!-- end Sidebar -->
@@ -93,19 +95,19 @@
 <!--[if gt IE 8]>
 <script type="text/javascript" src="/assets/js/ie.js"></script>
 <![endif]-->
- <script  type="text/javascript" >
-    $(document).ready(function() {
-          var errorMsg   = "${errorMsg!""}";
-          var successMsg = "${successMsg!""}";
-          if(errorMsg){ 
-              errormsg("error",errorMsg);
-          }
-          if(successMsg) {
-              successmsg("success",successMsg);
-          }
-        })
-        
- </script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var errorMsg = "${errorMsg!""}";
+        var successMsg = "${successMsg!""}";
+        if (errorMsg) {
+            errormsg("error", errorMsg);
+        }
+        if (successMsg) {
+            successmsg("success", successMsg);
+        }
+    })
+
+</script>
 
 </body>
 </html>

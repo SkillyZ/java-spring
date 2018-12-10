@@ -13,13 +13,13 @@ public class Exception2CodeRepo {
 
 
     private static final ImmutableMap<Object, RestCode> MAP = ImmutableMap.<Object, RestCode>builder()
-            .put(IllegalParamsException.Type.WRONG_PAGE_NUM,RestCode.WRONG_PAGE)
-            .put(IllegalStateException.class,RestCode.UNKNOWN_ERROR)
-            .put(UserException.Type.USER_NOT_LOGIN,RestCode.TOKEN_INVALID)
+            .put(IllegalParamsException.Type.WRONG_PAGE_NUM, RestCode.WRONG_PAGE)
+            .put(IllegalStateException.class, RestCode.UNKNOWN_ERROR)
+            .put(UserException.Type.USER_NOT_LOGIN, RestCode.TOKEN_INVALID)
             /*.put(UserException.Type.USER_NOT_FOUND,RestCode.USER_NOT_EXIST)
             .put(UserException.Type.USER_AUTH_FAIL,RestCode.USER_NOT_EXIST)*/.build();
 
-    private static Object getType(Throwable throwable){
+    private static Object getType(Throwable throwable) {
         try {
             return FieldUtils.readDeclaredField(throwable, "type", true);
         } catch (Exception e) {
@@ -40,7 +40,7 @@ public class Exception2CodeRepo {
             }
         }
 
-        RestCode restCode =  MAP.get(target);
+        RestCode restCode = MAP.get(target);
         if (restCode != null) {
             return restCode;
         }

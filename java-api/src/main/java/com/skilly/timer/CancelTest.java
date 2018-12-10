@@ -21,8 +21,8 @@ public class CancelTest {
         System.out.println("start time is : " + simpleDateFormat.format(startTime));
         // task1首次执行是距离现在时间3秒后执行，之后每隔2秒执行一次
         // task1首次执行是距离现在时间1秒后执行，之后每隔2秒执行一次
-        timer.schedule(task1,3000L,2000L);
-        timer.schedule(task2,1000L,2000L);
+        timer.schedule(task1, 3000L, 2000L);
+        timer.schedule(task2, 1000L, 2000L);
         System.out.println("current canceled task number is : " + timer.purge());
         // 休眠5秒
         Thread.sleep(2000L);

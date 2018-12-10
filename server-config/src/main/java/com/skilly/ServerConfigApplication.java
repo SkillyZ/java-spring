@@ -10,9 +10,9 @@ import org.springframework.cloud.config.server.EnableConfigServer;
 @EnableDiscoveryClient
 public class ServerConfigApplication {
 
-//	启动类添加@EnableDiscoveryClient激活对配置中心的支持
-	public static void main(String[] args) {
-		SpringApplication.run(ServerConfigApplication.class, args);
-	}
+    //	启动类添加@EnableDiscoveryClient激活对配置中心的支持
+    public static void main(String[] args) {
+        SpringApplication.run(ServerConfigApplication.class, args);
+    }
 }
 

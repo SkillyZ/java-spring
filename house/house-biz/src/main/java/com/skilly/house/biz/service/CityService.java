@@ -12,7 +12,7 @@ import java.util.List;
 @Service
 public class CityService {
 
-    public List<City> getAllCitys(){
+    public List<City> getAllCitys() {
         City city = new City();
         city.setCityCode("110000");
         city.setCityName("北京");

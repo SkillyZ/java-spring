@@ -32,11 +32,11 @@ public class Main {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
-        System.out.println(c2==c3);
+        System.out.println(c2 == c3);
 
         //我们完全可以通过类的类类型创建该类的对象实例---->通过c1 or c2 or c3创建Foo的实例对象
         try {
-            Foo foo = (Foo)c1.newInstance();//需要有无参数的构造方法
+            Foo foo = (Foo) c1.newInstance();//需要有无参数的构造方法
             foo.print();
         } catch (InstantiationException e) {
             // TODO Auto-generated catch block
@@ -48,7 +48,7 @@ public class Main {
     }
 }
 
-class Foo{
+class Foo {
 
     void print() {
         System.out.println("foo");

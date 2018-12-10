@@ -8,7 +8,7 @@ import com.skilly.house.hsrv.model.City;
 
 @Mapper
 public interface CityMapper {
-  
-  public List<City> selectCitys(City city);
+
+    public List<City> selectCitys(City city);
 
 }

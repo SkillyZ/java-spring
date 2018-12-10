@@ -17,9 +17,10 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class GirlServiceTest {
     @Autowired
     private GirlService girlService;
+
     @Test
     public void findOneTest() {
-        Girl girl =girlService.findOne(2);
+        Girl girl = girlService.findOne(2);
         Assert.assertEquals(new Integer(18), girl.getAge());
     }
 }

@@ -19,32 +19,30 @@ public class GirlService {
 
     @Transactional
     public void insertTwo() {
-        Girl girlA= new Girl();
+        Girl girlA = new Girl();
         girlA.setCupSize("G");
         girlA.setAge(22);
-        girlA.setMoney((double)10);
+        girlA.setMoney((double) 10);
         girlRepository.save(girlA);
-        Girl girlB= new Girl();
+        Girl girlB = new Girl();
         girlB.setCupSize("Hss");
         girlB.setAge(22);
-        girlB.setMoney((double)10);
+        girlB.setMoney((double) 10);
         girlRepository.save(girlB);
     }
 
-    public void getAge(Integer id) throws Exception{
-        Girl girl =girlRepository.findOne(id);
-        Integer age= girl.getAge();
-        if(age<10) {
+    public void getAge(Integer id) throws Exception {
+        Girl girl = girlRepository.findOne(id);
+        Integer age = girl.getAge();
+        if (age < 10) {
             throw new GirlException(ResultEnum.PRIMARY_SCHOOL);
-        }else if(age>10 && age<16){
+        } else if (age > 10 && age < 16) {
             throw new GirlException(ResultEnum.MIDDLE_SCHOOL);
         }
     }
 
     /**
-
      * 通过ID查询妹纸的信息
-
      */
     public Girl findOne(Integer id) {
         return girlRepository.findOne(id);

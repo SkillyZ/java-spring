@@ -10,7 +10,7 @@ import org.springframework.cloud.netflix.ribbon.RibbonClient;
 //@RibbonClient(name="user",configuration=NewRuleConfig.class)
 public class UserServiceApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(UserServiceApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(UserServiceApplication.class, args);
+    }
 }

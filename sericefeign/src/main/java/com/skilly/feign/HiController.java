@@ -16,8 +16,8 @@ public class HiController {
     SchedualServiceHi schedualServiceHi;
 
     //在Web层的controller层，对外暴露一个”/hi”的API接口，通过上面定义的Feign客户端SchedualServiceHi 来消费服务。代码如下：
-    @RequestMapping(value = "/hi",method = RequestMethod.GET)
-    public String sayHi(@RequestParam String name){
+    @RequestMapping(value = "/hi", method = RequestMethod.GET)
+    public String sayHi(@RequestParam String name) {
         return schedualServiceHi.sayHiFromClientOne(name);
     }
 }
