@@ -1,0 +1,14 @@
+touch touch2
+touch
+touch2
+touch
+find
+find
+find2
+skilly
+skilly skilly3
+hello hadoop
+hello World
+Hello Java
+Hey man
+i am a programmer
