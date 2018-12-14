@@ -27,13 +27,13 @@ public class WordCount {
     public static void main(String[] args) throws Exception {
 //        File file = new File("src/main/java/Apriori/test.dat");
 
-        System.setProperty("hadoop.home.dir", "E:\\javaws\\hadoop-2.6.0");
+//        System.setProperty("hadoop.home.dir", "E:\\javaws\\hadoop-2.6.0");
         Configuration conf = new Configuration();
 
-        conf.set("fs.default.name", "hdfs://master:9000");
+        conf.set("fs.default.name", "hdfs://hadoop-master:9000");
         conf.set("mapreduce.app-submission.cross-platform", "true");
         conf.set("mapreduce.framework.name", "yarn");
-        conf.set("mapred.jar","E:\\javaws\\WordC\\WordC-1.0-SNAPSHOT-jar-with-dependencies.jar");
+        conf.set("mapred.jar","target/skilly-hadoop-1.0-SNAPSHOT");
 
         String[] otherArgs = new GenericOptionsParser(conf, args).getRemainingArgs();
         if (otherArgs.length < 2) {
@@ -95,22 +95,3 @@ public class WordCount {
     }
 
 }
-
-//其实呢很浅显的道理，你只需要为windows下的hadoop配置环境变量告诉系统你的hadoop在那就行了。
-//
-//        为HADOOP_HOME指定你的hadoop目录所在位置，为你的path添加hadoop的bin目录即可
-//
-//        此外，你也可以实例化conf以后设定该路径，例如：
-//
-//        Configuration conf = new Configuration();  // 构造一个用于封装配置参数的对象
-//                conf.set("fs.defaultFS", "hdfs://hdp21:9000");
-//                conf.set("hadoop.home.dir", "D:/Developer/hadoop-2.8.4");
-//
-//        即：conf.set("hadoop.home.dir", "D:/Developer/hadoop-2.8.4");设定你的hadoop的目录
-
-//System.setProperty("hadoop.home.dir", "E:\\javaws\\hadoop-2.6.0");//如果没有这句话，会报找不到winutils.exe的错误，也不知道是不是由于我修改了环境变量之后没有重启的原因。
-//        Configuration conf = new Configuration();
-//        conf.set("fs.default.name", "hdfs://master:9000");
-//        conf.set("mapreduce.app-submission.cross-platform", "true");//意思是跨平台提交，在windows下如果没有这句代码会报错 "/bin/bash: line 0: fg: no job control"，去网上搜答案很多都说是linux和windows环境不同导致的一般都是修改YarnRunner.java，但是其实添加了这行代码就可以了。
-//        conf.set("mapreduce.framework.name", "yarn");//集群的方式运行，非本地运行。
-//        conf.set("mapred.jar","E:\\javaws\\WordC\\WordC-1.0-SNAPSHOT-jar-with-dependencies.jar");
