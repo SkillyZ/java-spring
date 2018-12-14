@@ -12,9 +12,13 @@ import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
+import org.apache.hadoop.util.GenericOptionsParser;
 
 import java.io.IOException;
 import java.util.StringTokenizer;
+
+import static com.skilly.bigdata.HadoopUnitl.cat;
+import static com.skilly.bigdata.HadoopUnitl.removeFile;
 
 /**
  * Created by 1254109699@qq.com on 2018/12/9.
@@ -22,7 +26,23 @@ import java.util.StringTokenizer;
 public class WordCount {
     public static void main(String[] args) throws Exception {
 //        File file = new File("src/main/java/Apriori/test.dat");
+
+        System.setProperty("hadoop.home.dir", "E:\\javaws\\hadoop-2.6.0");
         Configuration conf = new Configuration();
+
+        conf.set("fs.default.name", "hdfs://master:9000");
+        conf.set("mapreduce.app-submission.cross-platform", "true");
+        conf.set("mapreduce.framework.name", "yarn");
+        conf.set("mapred.jar","E:\\javaws\\WordC\\WordC-1.0-SNAPSHOT-jar-with-dependencies.jar");
+
+        String[] otherArgs = new GenericOptionsParser(conf, args).getRemainingArgs();
+        if (otherArgs.length < 2) {
+            System.err.println("Usage: wordcount <in> [<in>...] <out>");
+            System.exit(2);
+        }
+
+        removeFile(conf, otherArgs[otherArgs.length - 1]);
+
         Job job = new Job(conf);
         job.setJarByClass(WordCount.class);
         job.setJobName("wordcount");
@@ -36,7 +56,14 @@ public class WordCount {
         FileOutputFormat.setOutputPath(job, new Path(args[1]));
 //        FileInputFormat.addInputPath(job, new Path("src/main/java/Apriori/test.dat"));
 //        FileOutputFormat.setOutputPath(job, new Path("src/main/java/Apriori/test.dat"));
-        job.waitForCompletion(true);
+
+        if (job.waitForCompletion(true)) {
+            cat(conf, otherArgs[1] + "/part-r-00000");
+            System.out.println("success");
+        } else {
+            System.out.println("fail");
+        }
+
     }
 
     public static class WordCountMap extends Mapper<LongWritable, Text, Text, IntWritable> {
@@ -80,3 +107,10 @@ public class WordCount {
 //                conf.set("hadoop.home.dir", "D:/Developer/hadoop-2.8.4");
 //
 //        即：conf.set("hadoop.home.dir", "D:/Developer/hadoop-2.8.4");设定你的hadoop的目录
+
+//System.setProperty("hadoop.home.dir", "E:\\javaws\\hadoop-2.6.0");//如果没有这句话，会报找不到winutils.exe的错误，也不知道是不是由于我修改了环境变量之后没有重启的原因。
+//        Configuration conf = new Configuration();
+//        conf.set("fs.default.name", "hdfs://master:9000");
+//        conf.set("mapreduce.app-submission.cross-platform", "true");//意思是跨平台提交，在windows下如果没有这句代码会报错 "/bin/bash: line 0: fg: no job control"，去网上搜答案很多都说是linux和windows环境不同导致的一般都是修改YarnRunner.java，但是其实添加了这行代码就可以了。
+//        conf.set("mapreduce.framework.name", "yarn");//集群的方式运行，非本地运行。
+//        conf.set("mapred.jar","E:\\javaws\\WordC\\WordC-1.0-SNAPSHOT-jar-with-dependencies.jar");
