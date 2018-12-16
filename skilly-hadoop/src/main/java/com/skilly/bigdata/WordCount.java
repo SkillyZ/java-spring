@@ -31,9 +31,13 @@ public class WordCount {
         Configuration conf = new Configuration();
 
         conf.set("fs.default.name", "hdfs://hadoop-master:9000");
-        conf.set("mapreduce.app-submission.cross-platform", "true");
-        conf.set("mapreduce.framework.name", "yarn");
+//        conf.set("fs.defaultFS", "hdfs://"+namenode+":8020");// 指定namenode
+        conf.set("mapreduce.app-submission.cross-platform", "true"); // 配置使用跨平台提交任务
+        conf.set("mapreduce.framework.name", "yarn"); // 指定使用yarn框架
         conf.set("mapred.jar","target/skilly-hadoop-1.0-SNAPSHOT");
+//        conf.set("yarn.resourcemanager.address", resourcenode+":8032"); // 指定resourcemanager
+//        conf.set("yarn.resourcemanager.scheduler.address", schedulernode+":8030");// 指定资源分配器
+//        conf.set("mapreduce.jobhistory.address", jobhistorynode+":10020");// 指定historyserver
 
         String[] otherArgs = new GenericOptionsParser(conf, args).getRemainingArgs();
         if (otherArgs.length < 2) {

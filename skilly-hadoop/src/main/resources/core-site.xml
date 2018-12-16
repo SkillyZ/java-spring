@@ -24,7 +24,11 @@
     <!--</property>-->
     <property>
         <name>fs.defaultFS</name>
-        <value>hdfs://localhost:9000</value>
+        <value>hdfs://hadoop-master:9000</value>
     </property>
 
+    <!--<property>-->
+        <!--<name>hadoop.tmp.dir</name>-->
+        <!--<value>file:///data/hadoop/data/tmp</value>-->
+    <!--</property>-->
 </configuration>
