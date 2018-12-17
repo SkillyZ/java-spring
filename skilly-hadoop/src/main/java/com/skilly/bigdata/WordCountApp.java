@@ -53,7 +53,7 @@ public class WordCountApp {
     public static void main(String[] args) throws Exception {
 //        download();
         System.setProperty("HADOOP_USER_NAME", "root");
-        System.setProperty("hadoop.home.dir", "E:\\BigData\\hadoop-3.1.1");
+        System.setProperty("hadoop.home.dir", "/usr/local/Cellar/hadoop/3.1.1");
         Configuration conf = new Configuration();
         Job job = Job.getInstance(conf, "word count");
         job.setJarByClass(WordCount.class);
@@ -63,7 +63,7 @@ public class WordCountApp {
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
 
-        job.setJar("F:\\javaProject\\java-spring\\skilly-hadoop\\target\\skilly-hadoop-1.0-SNAPSHOT.jar");
+        job.setJar("target/skilly-hadoop-1.0-SNAPSHOT.jar");
 
         FileInputFormat.addInputPath(job, new Path(args[0]));
         FileOutputFormat.setOutputPath(job, new Path(args[1]));
@@ -75,7 +75,8 @@ public class WordCountApp {
     {
         //以下两行用来指明登陆hadoop的用户和你本地的hadoop-2.6.0所存的目录。
         System.setProperty("HADOOP_USER_NAME", "root");
-        System.setProperty("hadoop.home.dir", "E:\\BigData\\hadoop-3.1.1");
+//        System.setProperty("hadoop.home.dir", "E:\\BigData\\hadoop-3.1.1");
+        System.setProperty("hadoop.home.dir", "/usr/local/Cellar/hadoop/3.1.1");
 
         Configuration conf = new Configuration();
         FileSystem fs = FileSystem.get(conf);
