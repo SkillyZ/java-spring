@@ -24,16 +24,16 @@ import static com.skilly.bigdata.HadoopUnitl.cat;
 public class MR1 {
 
     //输入相对路径
-    private static String inPath = "matrix_input/matrix2.txt";
+    private static String inPath = "/matrix_input/matrix2.txt";
     //输出相对路径
-    private static String outPath = "matrix_output";
+    private static String outPath = "/matrix_output";
     //hdfs地址
     private static String hdfs = "hdfs://hadoop-master:9000";
 
     public int run () {
         try {
             Configuration conf = new Configuration();
-//            conf.set("fs.default.name", hdfs);
+            conf.set("fs.default.name", hdfs);
             Job job = Job.getInstance(conf, "step1");
 
             job.setJarByClass(MR1.class);
@@ -48,6 +48,7 @@ public class MR1 {
 
             FileSystem fs = FileSystem.get(conf);
             Path inputPath = new Path(inPath);
+            FileInputFormat.addInputPath(job, inputPath);
             if (fs.exists(inputPath)) {
                 FileInputFormat.addInputPath(job, inputPath);
             }
