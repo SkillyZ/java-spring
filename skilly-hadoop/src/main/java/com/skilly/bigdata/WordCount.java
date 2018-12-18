@@ -35,6 +35,7 @@ public class WordCount {
         conf.set("mapreduce.app-submission.cross-platform", "true"); // 配置使用跨平台提交任务
         conf.set("mapreduce.framework.name", "yarn"); // 指定使用yarn框架
         conf.set("mapred.jar","target/skilly-hadoop-1.0-SNAPSHOT");
+//        conf.addResource("classpath:/hadoop/core-site.xml");
 //        conf.set("yarn.resourcemanager.address", resourcenode+":8032"); // 指定resourcemanager
 //        conf.set("yarn.resourcemanager.scheduler.address", schedulernode+":8030");// 指定资源分配器
 //        conf.set("mapreduce.jobhistory.address", jobhistorynode+":10020");// 指定historyserver
@@ -56,6 +57,7 @@ public class WordCount {
         job.setReducerClass(WordCountReduce.class);
         job.setInputFormatClass(TextInputFormat.class);
         job.setOutputFormatClass(TextOutputFormat.class);
+//      job.setCacheFiles(new URI[]{new Path("/20180312/cache_for_111.txt#cache111").toUri()});
         FileInputFormat.addInputPath(job, new Path(args[0]));
         FileOutputFormat.setOutputPath(job, new Path(args[1]));
 //        FileInputFormat.addInputPath(job, new Path("src/main/java/Apriori/test.dat"));
