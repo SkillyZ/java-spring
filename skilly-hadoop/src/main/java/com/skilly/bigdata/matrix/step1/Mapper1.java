@@ -1,12 +1,10 @@
-package com.skilly.bigdata.matrix.step;
+package com.skilly.bigdata.matrix.step1;
 
-import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 
 import java.io.IOException;
-import java.util.StringTokenizer;
 
 /**
  * @author 周闽强 1254109699@qq.com

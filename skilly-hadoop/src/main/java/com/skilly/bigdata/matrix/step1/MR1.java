@@ -1,9 +1,8 @@
-package com.skilly.bigdata.matrix.step;
+package com.skilly.bigdata.matrix.step1;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
-import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
@@ -12,8 +11,6 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 
 import java.io.IOException;
-
-import static com.skilly.bigdata.HadoopUnitl.cat;
 
 /**
  * @author 周闽强 1254109699@qq.com

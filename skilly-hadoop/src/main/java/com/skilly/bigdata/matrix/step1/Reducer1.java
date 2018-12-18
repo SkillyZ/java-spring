@@ -1,4 +1,4 @@
-package com.skilly.bigdata.matrix.step;
+package com.skilly.bigdata.matrix.step1;
 
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
