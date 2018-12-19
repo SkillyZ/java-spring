@@ -17,7 +17,6 @@ import java.net.URI;
  * @version 1.0.0
  * @since 18/12/18 下午7:29
  */
-
 public class MR2 {
 
     //输入相对路径
