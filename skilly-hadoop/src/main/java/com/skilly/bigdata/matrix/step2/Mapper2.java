@@ -26,7 +26,7 @@ public class Mapper2 extends Mapper<LongWritable, Text, Text, Text> {
     @Override
     protected void setup(Context context) throws IOException, InterruptedException {
         super.setup(context);
-        FileReader fr = new FileReader("Matrix2");
+        FileReader fr = new FileReader("matrix2");
         BufferedReader br = new BufferedReader(fr);
         String line = null;
         while((line = br.readLine()) != null) {
@@ -42,21 +42,20 @@ public class Mapper2 extends Mapper<LongWritable, Text, Text, Text> {
         String[] rowAndLine = text.toString().split("\t");
 
         String rowMatrix1 = rowAndLine[0];
-        String[] columnValues = rowAndLine[1].split(",");
+        String[] columnValues1 = rowAndLine[1].split(",");
         for(String line : cacheList) {
             String rowMatrix2 = line.toString().split("\t")[0];
-            String[] columns2 = line.toString().split("\t")[1].split(",");
+            String[] columnValues2 = line.toString().split("\t")[1].split(",");
 
             //矩阵相乘
             int result = 0;
             //遍历左侧矩阵每一列
-
-            for (String columnValue:columnValues) {
+            for (String columnValue:columnValues1) {
                 String column1 = columnValue.split("_")[0];
                 String value1 = columnValue.split("_")[1];
 
                 //遍历右侧矩阵每一列
-                for (String column2:columns2) {
+                for (String column2:columnValues2) {
                     if (column2.startsWith(column1 + "_")) {
                         String value2 = column2.split("_")[1];
                         //相加
