@@ -1,4 +1,4 @@
-package com.skilly.bigdata.itemcf.step2;
+package com.skilly.bigdata.itemcf.step4;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FileSystem;
@@ -17,14 +17,14 @@ import java.net.URI;
  * @version 1.0.0
  * @since 18/12/18 下午7:29
  */
-public class MR2 {
+public class MR4 {
 
     //输入相对路径
-    private static String inPath = "/itemcf_input/matrix.txt";
+    private static String inPath = "/itemcf_output2/part-r-00000";
     //输出相对路径
-    private static String outPath = "/itemcf_output2";
+    private static String outPath = "/itemcf_output4";
     //将step1输出的转置矩阵作为全局缓存
-    private static String cache = "/itemcf_output1/part-r-00000";
+    private static String cache = "/itemcf_output3/part-r-00000";
     //hdfs地址
     private static String hdfs = "hdfs://hadoop-master:9000";
 
@@ -32,16 +32,16 @@ public class MR2 {
         try {
             Configuration conf = new Configuration();
             conf.set("fs.default.name", hdfs);
-            Job job = Job.getInstance(conf, "step2");
+            Job job = Job.getInstance(conf, "step4");
             //添加分布式缓存
-            job.addCacheFile(new URI(cache + "#itemUserScore1"));
-            job.setJarByClass(MR2.class);
+            job.addCacheFile(new URI(cache + "#itemUserScore2"));
+            job.setJarByClass(MR4.class);
             job.setOutputKeyClass(Text.class);
             job.setOutputValueClass(Text.class);
             job.setMapOutputKeyClass(Text.class);
             job.setMapOutputValueClass(Text.class);
-            job.setMapperClass(Mapper2.class);
-            job.setReducerClass(Reducer2.class);
+            job.setMapperClass(Mapper4.class);
+            job.setReducerClass(Reducer4.class);
             job.setInputFormatClass(TextInputFormat.class);
             job.setOutputFormatClass(TextOutputFormat.class);
 
@@ -73,11 +73,11 @@ public class MR2 {
 
 
     public static void main(String[] args) throws Exception {
-        int result = new MR2().run();
+        int result = new MR4().run();
         if (result == 1) {
-            System.out.println("step2 运行成功");
+            System.out.println("step4 运行成功");
         } else {
-            System.out.println("step2 运行失败");
+            System.out.println("step4 运行失败");
         }
     }
 

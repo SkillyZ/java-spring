@@ -1,4 +1,4 @@
-package com.skilly.bigdata.itemcf.step2;
+package com.skilly.bigdata.itemcf.step5;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FileSystem;
@@ -10,19 +10,23 @@ import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 
+import java.io.IOException;
 import java.net.URI;
 
 /**
  * @author 周闽强 1254109699@qq.com
  * @version 1.0.0
  * @since 18/12/18 下午7:29
+ *
+ * 生成评分矩阵
  */
-public class MR2 {
+
+public class MR5 {
 
     //输入相对路径
-    private static String inPath = "/itemcf_input/matrix.txt";
+    private static String inPath = "/itemcf_output4";
     //输出相对路径
-    private static String outPath = "/itemcf_output2";
+    private static String outPath = "/itemcf_output5";
     //将step1输出的转置矩阵作为全局缓存
     private static String cache = "/itemcf_output1/part-r-00000";
     //hdfs地址
@@ -32,16 +36,16 @@ public class MR2 {
         try {
             Configuration conf = new Configuration();
             conf.set("fs.default.name", hdfs);
-            Job job = Job.getInstance(conf, "step2");
-            //添加分布式缓存
-            job.addCacheFile(new URI(cache + "#itemUserScore1"));
-            job.setJarByClass(MR2.class);
+            Job job = Job.getInstance(conf, "step5");
+
+            job.addCacheFile(new URI(cache + "#itemUserScore3"));
+            job.setJarByClass(MR5.class);
             job.setOutputKeyClass(Text.class);
             job.setOutputValueClass(Text.class);
             job.setMapOutputKeyClass(Text.class);
             job.setMapOutputValueClass(Text.class);
-            job.setMapperClass(Mapper2.class);
-            job.setReducerClass(Reducer2.class);
+            job.setMapperClass(Mapper5.class);
+            job.setReducerClass(Reducer5.class);
             job.setInputFormatClass(TextInputFormat.class);
             job.setOutputFormatClass(TextOutputFormat.class);
 
@@ -73,12 +77,11 @@ public class MR2 {
 
 
     public static void main(String[] args) throws Exception {
-        int result = new MR2().run();
+        int result = new MR5().run();
         if (result == 1) {
-            System.out.println("step2 运行成功");
+            System.out.println("step5 运行成功");
         } else {
-            System.out.println("step2 运行失败");
+            System.out.println("step5 运行失败");
         }
     }
-
 }
