@@ -1,7 +1,5 @@
 package com.skilly.bigdata.matrix.step2;
 
-import com.skilly.bigdata.matrix.step1.Mapper1;
-import com.skilly.bigdata.matrix.step1.Reducer1;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
@@ -12,7 +10,6 @@ import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 
-import java.io.IOException;
 import java.net.URI;
 
 /**
