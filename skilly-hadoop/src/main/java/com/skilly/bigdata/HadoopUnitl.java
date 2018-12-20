@@ -56,11 +56,12 @@ public class HadoopUnitl {
         Path file = new Path(filePath);
         FileSystem fileSystem = file.getFileSystem(conf);
         try {
+            //todo job一起运行为了方便先补关闭
             in = fileSystem.open(file);
-            IOUtils.copyBytes(in, System.out, 4096, true);
+            IOUtils.copyBytes(in, System.out, 4096, false);
         } finally {
             if (in != null) {
-                IOUtils.closeStream(in);
+//                IOUtils.closeStream(in);
             }
         }
     }
