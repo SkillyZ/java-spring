@@ -1,5 +1,6 @@
 package com.skilly.bigdata.contentcf.step1;
 
+import org.apache.commons.lang3.StringUtils;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
@@ -24,12 +25,14 @@ public class Mapper1 extends Mapper<LongWritable, Text, Text, Text> {
         String row = rowAndLine[0];
         String[] lines = rowAndLine[1].split(",");
         for (int i = 0; i < lines.length; i++) {
-            String column = lines[i].split("_")[0];
-            String valueStr = lines[i].split("_")[1];
+            if (StringUtils.isNotBlank(lines[i])) {
+                String column = lines[i].split("_")[0];
+                String valueStr = lines[i].split("_")[1];
 
-            outKey.set(column);
-            outValue.set(row + "_" + valueStr);
-            context.write(outKey, outValue);
+                outKey.set(column);
+                outValue.set(row + "_" + valueStr);
+                context.write(outKey, outValue);
+            }
         }
     }
 }

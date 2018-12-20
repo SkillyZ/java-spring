@@ -18,8 +18,6 @@ import static com.skilly.bigdata.HadoopUnitl.cat;
  * @author 周闽强 1254109699@qq.com
  * @version 1.0.0
  * @since 18/12/18 下午7:29
- *
- * 生成评分矩阵
  */
 
 public class MR1 {

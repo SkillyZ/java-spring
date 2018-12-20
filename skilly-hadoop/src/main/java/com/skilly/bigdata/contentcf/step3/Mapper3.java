@@ -87,8 +87,8 @@ public class Mapper3 extends Mapper<LongWritable, Text, Text, Text> {
                 continue;
             }
 
-            outKey.set(rowMatrix1);
-            outValue.set(rowMatrix2 + "_" + decimalFormat.format(cos));
+            outKey.set(rowMatrix2);
+            outValue.set(rowMatrix1 + "_" + decimalFormat.format(cos));
             context.write(outKey, outValue);
         }
     }
