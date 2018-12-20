@@ -12,6 +12,8 @@ import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 
 import java.io.IOException;
 
+import static com.skilly.bigdata.HadoopUnitl.cat;
+
 /**
  * @author 周闽强 1254109699@qq.com
  * @version 1.0.0
@@ -26,6 +28,8 @@ public class MR1 {
     private static String inPath = "/itemcf_input/itemcf.txt";
     //输出相对路径
     private static String outPath = "/itemcf_output1";
+
+    private static String result = outPath + "/part-r-00000";
     //hdfs地址
     private static String hdfs = "hdfs://hadoop-master:9000";
 
@@ -47,7 +51,6 @@ public class MR1 {
 
             FileSystem fs = FileSystem.get(conf);
             Path inputPath = new Path(inPath);
-            FileInputFormat.addInputPath(job, inputPath);
             if (fs.exists(inputPath)) {
                 FileInputFormat.addInputPath(job, inputPath);
             }
@@ -57,6 +60,7 @@ public class MR1 {
 
             try {
                 if (job.waitForCompletion(true)) {
+                    cat(conf, result);
                     return 1;
                 } else {
                     return -1;

@@ -45,7 +45,6 @@ public class MR1 {
 
             FileSystem fs = FileSystem.get(conf);
             Path inputPath = new Path(inPath);
-            FileInputFormat.addInputPath(job, inputPath);
             if (fs.exists(inputPath)) {
                 FileInputFormat.addInputPath(job, inputPath);
             }

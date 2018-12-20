@@ -12,6 +12,8 @@ import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 
 import java.net.URI;
 
+import static com.skilly.bigdata.HadoopUnitl.cat;
+
 /**
  * @author 周闽强 1254109699@qq.com
  * @version 1.0.0
@@ -20,11 +22,12 @@ import java.net.URI;
 public class MR4 {
 
     //输入相对路径
-    private static String inPath = "/itemcf_output2/part-r-00000";
+    private static String inPath = "/itemcf_output2";
     //输出相对路径
     private static String outPath = "/itemcf_output4";
     //将step1输出的转置矩阵作为全局缓存
     private static String cache = "/itemcf_output3/part-r-00000";
+    private static String result = outPath + "/part-r-00000";
     //hdfs地址
     private static String hdfs = "hdfs://hadoop-master:9000";
 
@@ -47,7 +50,6 @@ public class MR4 {
 
             FileSystem fs = FileSystem.get(conf);
             Path inputPath = new Path(inPath);
-            FileInputFormat.addInputPath(job, inputPath);
             if (fs.exists(inputPath)) {
                 FileInputFormat.addInputPath(job, inputPath);
             }
@@ -57,6 +59,7 @@ public class MR4 {
 
             try {
                 if (job.waitForCompletion(true)) {
+                    cat(conf, result);
                     return 1;
                 } else {
                     return -1;

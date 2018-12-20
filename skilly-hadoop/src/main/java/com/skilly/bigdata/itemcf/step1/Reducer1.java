@@ -22,16 +22,17 @@ public class Reducer1 extends Reducer<Text, Text, Text, Text> {
     protected void reduce(Text key, Iterable<Text> values, Context context) throws IOException, InterruptedException {
         String itemId = key.toString();
 
-        //uuserId score
+        //userId score
         Map<String, Integer> map = new HashMap();
         for (Text value : values) {
-            String userId = value.toString().split(",")[0];
-            String score = value.toString().split(",")[1];
+            String userId = value.toString().split("_")[0];
+            String score = value.toString().split("_")[1];
 
             if (map.get(userId) == null) {
                 map.put(userId, Integer.valueOf(score));
             } else {
-                map.put(userId, Integer.valueOf(score) + map.get(userId));
+                Integer preScore = map.get(userId);
+                map.put(userId, preScore + Integer.valueOf(score));
             }
         }
 
