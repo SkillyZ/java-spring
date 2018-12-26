@@ -27,7 +27,7 @@ object AccessConvertUtil {
       *
       * @param log 输入的每一行记录信息
       */
-    def parseLog(log: String) = {
+    def parseLog(log: String): Row = {
 
         try {
             val splits = log.split("\t")
@@ -37,14 +37,18 @@ object AccessConvertUtil {
             val ip = splits(3)
 
             val domain = "http://www.imooc.com/"
-            val cms = url.substring(url.indexOf(domain) + domain.length)
+//            if (url.trim.equalsIgnoreCase("-")) {
+//                return Row(0);
+//            }
+
+            val cms = url.substring(url.toString.indexOf(domain) + domain.length)
             val cmsTypeId = cms.split("/")
 
             var cmsType = ""
             var cmsId = 0l
             if (cmsTypeId.length > 1) {
                 cmsType = cmsTypeId(0)
-                cmsId = cmsTypeId(1).toLong
+//                cmsId = cmsTypeId(1).toLong
             }
 
             val city = IpUtils.getCity(ip)

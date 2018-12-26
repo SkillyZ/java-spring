@@ -17,7 +17,7 @@ object TopNStatJob2 {
                 .master("local[2]").getOrCreate()
 
 
-        val accessDF = spark.read.format("parquet").load("/Users/rocky/data/imooc/clean")
+        val accessDF = spark.read.format("parquet").load("data/clean")
 
         //    accessDF.printSchema()
         //    accessDF.show(false)
