@@ -7,22 +7,24 @@ import org.apache.spark.sql.{DataFrame, SparkSession}
 import scala.collection.mutable.ListBuffer
 
 /**
-  * TopN统计Spark作业
+  * TopN统计Spark作业:运行在YARN之上
   */
-object TopNStatJob {
+object TopNStatJobYARN {
 
     def main(args: Array[String]) {
-        val spark = SparkSession.builder().appName("TopNStatJob")
+
+        if (args.length != 2) {
+            println("Usage: TopNStatJobYARN <inputPath> <day>")
+            System.exit(1)
+        }
+
+        val Array(inputPath, day) = args
+        val spark = SparkSession.builder()
                 .config("spark.sql.sources.partitionColumnTypeInference.enabled", "false")
-                .master("local[2]").getOrCreate()
+                .getOrCreate()
 
 
-        val accessDF = spark.read.format("parquet").load("/Users/rocky/data/imooc/clean")
-
-        //    accessDF.printSchema()
-        //    accessDF.show(false)
-
-        val day = "20170511"
+        val accessDF = spark.read.format("parquet").load(inputPath)
 
         StatDAO.deleteData(day)
 
@@ -157,10 +159,6 @@ object TopNStatJob {
                     val day = info.getAs[String]("day")
                     val cmsId = info.getAs[Long]("cmsId")
                     val times = info.getAs[Long]("times")
-
-                    /**
-                      * 不建议大家在此处进行数据库的数据插入
-                      */
 
                     list.append(DayVideoAccessStat(day, cmsId, times))
                 })

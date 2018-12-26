@@ -1,6 +1,6 @@
 package com.imooc.log
 
-import org.apache.spark.sql.SparkSession
+import org.apache.spark.sql.{SaveMode, SparkSession}
 
 /**
   * 第一步清洗：抽取出我们所需要的指定列的数据
@@ -11,7 +11,7 @@ object SparkStatFormatJob {
 
         val spark = SparkSession.builder().appName("SparkStatFormatJob")
                 .master("local[2]").getOrCreate()
-        val acccess = spark.sparkContext.textFile("/Users/skilly/Project/Person/java-spring/skilly-spark/data/10000_access.log");
+        val acccess = spark.sparkContext.textFile("data/10000_access.log");
 
         //acccess.take(10).foreach(println)
 
@@ -28,7 +28,8 @@ object SparkStatFormatJob {
             val traffic = splits(9)
             //      (ip, DateUtils.parse(time), url, traffic)
             DateUtils.parse(time) + "\t" + url + "\t" + traffic + "\t" + ip
-        }).saveAsTextFile("file:///Users/rocky/data/imooc/output/")
+        }).saveAsTextFile("output")
+        //                .take(10).foreach(println)
 
         spark.stop()
     }

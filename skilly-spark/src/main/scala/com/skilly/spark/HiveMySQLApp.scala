@@ -15,7 +15,7 @@ object HiveMySQLApp {
     val hiveDF = spark.table("emp")
 
     // 加载MySQL表数据
-    val mysqlDF = spark.read.format("jdbc").option("url", "jdbc:mysql://localhost:3306").option("dbtable", "spark.DEPT").option("user", "root").option("password", "root").option("driver", "com.mysql.jdbc.Driver").load()
+    val mysqlDF = spark.read.format("jdbc").option("url", "jdbc:mysql://hadoop-master:3306").option("dbtable", "spark.DEPT").option("user", "root").option("password", "root").option("driver", "com.mysql.jdbc.Driver").load()
 
     // JOIN
     val resultDF = hiveDF.join(mysqlDF, hiveDF.col("deptno") === mysqlDF.col("DEPTNO"))
