@@ -1,0 +1,22 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8764
+spring:
+  application:
+    name: service-ribbon
+
+
+
+
+#    #取消Ribbon使用Eureka
+#  ribbon:
+#    eureka:
+#      enabled: false
+#
+#    #配置Ribbon能访问 的微服务节点，多个节点用逗号隔开
+#    microservice-provider-user:
+#      ribbon:
+#        listOfServers: localhost:8001,localhost:8002
