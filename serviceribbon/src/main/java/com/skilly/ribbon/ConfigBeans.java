@@ -23,6 +23,8 @@ public class ConfigBeans {
     public IRule myRule() {
         //return new RoundRobinRule();//轮询
         //return new RetryRule();//重试
-        return new BestAvailableRule();
+        //return new BestAvailableRule();//选择一个最小的并发请求的server
+
+        return new IpUserHashRule();
     }
 }
