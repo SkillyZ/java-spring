@@ -169,7 +169,7 @@ public class Graph {
         String path = "[" + dest.getName() + "]";
 
         setRoot(start);
-        updateChildren(vertexList.get(startIndex));
+        minChildren(vertexList.get(startIndex));
 
         int shortestLength = dest.getAdjuDist();
 
@@ -237,7 +237,7 @@ public class Graph {
      * @param startIndex
      * @param destIndex
      */
-    public void cmaxCountTravasal(int startIndex, int destIndex) {
+    public void maxCountTravasal(int startIndex, int destIndex) {
 
     }
 
@@ -248,7 +248,7 @@ public class Graph {
      *  step2 更新每一个子节点
      * @param v
      */
-    private void updateChildren(Vertex v) {
+    private void minChildren(Vertex v) {
         if (v == null) {
             return;
         }
@@ -277,7 +277,7 @@ public class Graph {
         }
 
         for (Vertex vc : childrenList) {
-            updateChildren(vc);
+            minChildren(vc);
         }
     }
 

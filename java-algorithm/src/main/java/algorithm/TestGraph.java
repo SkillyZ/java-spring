@@ -52,7 +52,6 @@ public class TestGraph {
         vertexEdgeListMap.put(D, DList);
         vertexEdgeListMap.put(E, EList);
 
-
         List<Integer> list = new ArrayList<Integer>();
         Graph g = new Graph(verList, vertexEdgeListMap);
 
